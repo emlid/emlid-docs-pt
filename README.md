@@ -12,9 +12,9 @@ We use mkdocs to build the docs and Pipenv to manage the dependencies.
 # Building
 
 ```bash
-git clone https://github.com/emlid/emlid-docs
+git clone https://github.com/emlid/emlid-docs-pt
 pip3 install pipenv
-cd emlid-docs
+cd emlid-docs-pt
 pipenv install
 pipenv run mkdocs build -f <target>.yml -d <dir>
 ```
