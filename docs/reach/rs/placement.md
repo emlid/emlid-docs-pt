@@ -1,35 +1,20 @@
-!!! tip ""
-    A well-placed Reach RS/RS+ module is essential for achieving good RTK positioning results.
+!!! Importante ""
+    A montagem do ne em um bom local é crucial para conseguir um bom resultado no posicionamento RTK!
 
-You can place your smartphone near the window in your house and it will obtain GPS coordinates after some time, but for RTK such environment won't be sufficient. For RTK to work there are special requirements for antenna placement.
+Você pode colocar o seu smartphone próximo a janela da sua casa e terá coordenadas GPS depois de algum tempo, mas para o RTK o ambiente não será suficiente. Para o RTK funcionar, existem requisitos especiais para a colocação de antenas que são muito mais rigorosas do que para um GPS autônomo.
 
-### Clear sky view without any obstacles
+#### Nenhum obstáculo bloqueando a visão do céu
 
-Reach RS/RS+ needs to have a clear sky view 30 degrees above the horizon. There should be no obstacles that could block the view like buildings, trees, cars, humans, laptops, etc.
+O módulo precisa ter uma visão clara de 30 graus acima do horizonte. Não deve haver obstáculos que possam bloquear a visão como: edifícios, árvores, carros, seres humanos, laptops etc.
 
 Take a look at 2 pictures below. The left picture demonstrates desirable conditions for Reach RS/RS+ location. The right one is an example of bad surrounding conditions such as the reduced view of the sky, possible obstructions or vegetation nearby.
 
 <div style="text-align: center;"><img src="../img/reachrs/placement/Reach-placement-correct-wrong.png" style="width: 800px;"></div><br>
 
-Examples of **good** environments for antenna placement:
+Exemplos de ambientes **ruins** para a colocação de antenas: em áreas internas, áreas urbanas, floresta, perto do solo.
 
-* field
+Exemplos de **bons** ambientes para colocação de antenas: campo, topo da colina, telhado de um prédio.
 
-* top of the hill
+#### Sem eletrônicos por perto
 
-* the rooftop
-
-Examples of **bad** environments for antenna placement: 
-
-* indoors
-
-* urban areas
-
-* forest
-
-* close to the ground
-
-
-### No electronics nearby
-
-Electronic devices may produce RF noise that could affect the reception of the GPS signal. Keep all electronics as far as possible from the antenna.
+Dispositivos eletrônicos podem produzir ruídos de RF que podem afetar a recepção do sinal de GPS. Mantenha todos os componentes eletrônicos o mais longe possível da antena.

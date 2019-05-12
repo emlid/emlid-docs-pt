@@ -1,41 +1,41 @@
-PPK stands for Post-Processed Kinematic.
+PPK significa cinemático pós-processado.
 
-### Definitions and differences from RTK
+### Definições e diferenças do RTK
 
-Post-Processed Kinematic (PPK) is an alternative technique to Real-Time Kinematic (RTK). With PPK workflow, accurate positioning doesn't happen in real time, all algorithms are applied afterwards. Both base on the ground and rover (usually on a UAV) record raw GNSS logs, which are then processed to receive an accurate positioning track.
+O cinemático pós-processado (PPK) é uma técnica alternativa ao cinemático em tempo real (RTK). Com o fluxo de trabalho PPK, o posicionamento preciso não acontece em tempo real, todos os algoritmos são aplicados posteriormente. Tanto a base no solo quanto o rover (geralmente em um VANT) registram dados GNSS brutos, que são então processados para receber uma pista de posicionamento precisa.
 
 <p style="text-align:center" ><img src="../img/reach/ppk-introduction/PPK.png" style="width: 800px;" /></p>
 
-While PPK is mainly used in UAV mapping, it can also be used as a back up for RTK for any surveying job. PPK offers more flexible workflow, allowing to run the processing multiple times using different settings. It also doesn't require a correction link between base and rover, making equipment setup simpler.
+Embora o PPK seja usado principalmente no mapeamento de UAV, ele também pode ser usado como backup para RTK para qualquer trabalho de pesquisa. O PPK oferece um fluxo de trabalho mais flexível, permitindo executar o processamento várias vezes usando configurações diferentes. Ele também não requer um link de correção entre a base e o rover, simplificando a configuração do equipamento.
 
-### PPK for UAV Mapping
+### PPK para mapeamento de VANT
 
-There are several advantages of using PPK for mapping with a drone. PPK doesn’t require placing Ground Control Points (GCPs), which allows to inspect much wider areas. It is especially useful when you need to map large territories or places with difficult terrain. 
+Existem várias vantagens de usar o PPK para mapear com um drone. O PPK não requer a implantação de Pontos de Controle no Solo (GCPs), que permite mapear áreas muito mais amplas. É especialmente útil quando você precisa mapear grandes territórios ou locais com terreno de difícil acesso.
 
 !!! note ""
-	For the PPK mapping, it is recommended to have few GCPs on site for data check (checkpoints).
+	Para o mapeamento de PPK, recomenda-se ter poucos GCPs no local para verificação de dados (pontos de verificação).
 
-The most critical part of PPK for UAV Mapping is synchronisation of a camera and Reach M+, because:
+A parte mais crítica do PPK para mapeamento de UAV é a sincronização de uma câmera e o Reach M +, porque:
 
-1. There is always a delay between camera trigger and the actual moment the photo is taken.
+1. Há sempre um atraso entre o disparo da câmera e o momento em que a foto é tirada.
 
-2. When a drone flies at high speeds, the autopilot receives position readings only each several meters. The accuracy of, say, 2 meters is not enough for surveying. 
+2. Quando um drone voa a altas velocidades, o piloto automático recebe leituras de posição apenas a cada vários metros. A precisão de 2 metros não é suficiente para o levantamento.
 
-Reach (M+) solves this by connecting to a camera shutter via hot shoe. The time of each photo is logged with a resolution of less than a microsecond. During PPK you receive coordinates of exact moments of each photo taken.
+Reach (M+) resolve isso conectando-se a um obturador de câmera via sapata. O tempo de cada foto é registrado com uma resolução de menos de um microssegundo. Durante PPK você recebe coordenadas de momentos exatos de cada foto tirada.
 
-There’s no need in integrating Reach to autopilot for UAV mapping.
- 
+Não há necessidade de integrar o Reach ao piloto automático para o mapeamento utilizando VANT.
+
 <p style="text-align:center" ><img src="../img/reach/ppk-introduction/emlid-hotshoe.jpg" style="width: 600px;" /></p>
 
-<p style="text-align:center" > <i>Connecting a camera and Reach M+ with a hot shoe adapter </i></p>
+<p style="text-align:center" > <i>Conectando uma câmera e Reach M+ com um adaptador de sapata </i></p>
 
-As a result of UAV PPK mapping with Reach, you'll have a set of images and a text file containing a list of accurate coordinates corresponding to each photo. This data is then imported in mapping software such as Agisoft PhotoScan, DroneDeploy, Pix4d, etc.
+Como resultado do mapeamento PPK do VANT com o Reach, você terá um conjunto de imagens e um arquivo de texto contendo uma lista de coordenadas precisas correspondentes a cada foto. Esses dados são importados em softwares de mapeamento, como o Agisoft PhotoScan, o DroneDeploy, o Pix4d etc.
 
-!!! tip "DJI Drones Workaround"
-	You can’t easily integrate Reach M+ with DJI Mavic or Phantom, as their cameras don’t have hot shoe. But you can always stick to working with GCPs, which is simple and efficient for small areas – just like your DJI drone.
+!!! tip "Solução alternativa de Drones DJI"
+	Você não pode integrar facilmente o Reach M + com o DJI Mavic ou o Phantom, já que suas câmeras não têm sapata. Você pode sempre trabalhar com os GCPs, o que é simples e eficiente para pequenas áreas - assim como seu drone DJI.
 
-Further Reading:
+Leitura adicional:
 
-* [Camera control](../../reachview/camera-control)
-* [Logging](../../reachview/logging)
-* [Post-Processing Guide](gps-post-processing.md)
+* [Controle da câmera](../../reachview/camera-control)
+* [Registro de dados](../../reachview/logging)
+* [Guia de pós-processamento](gps-post-processing.md)
