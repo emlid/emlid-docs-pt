@@ -1,50 +1,48 @@
-## RTK options
+## Opções RTK
 
 <p style="text-align:center" ><img src="../img/reachview/rtk_settings/rtk_set.png" style="width: 800px;" /></p>
 
-### Positioning mode
+### Modo de posicionamento
 
-+ **Single** - standalone positioning mode, does not provide improved precision.
-+ **Kinematic** - most used positioning mode, assumes that the receiver is moving.
-+ **Static** - an assumption is made that Reach is static. Constraining the system helps to resolve ambiguities faster as well as produce measurements with higher precision.
++	Single – modo de posicionamento sem fonte de correção.
++	Cinemática – modo mais utilizado de posicionamento, pressupõe que o receptor está se movendo.
++	Estática –  uma suposição é feita que o Reach é estático. Restringi o sistema a ajudar resolver ambiguidades mais rápido, bem como produzir medições com maior precisão.
 
-### GPS AR mode
 
-There are two main strategies for resolving ambiguities:
- 
-+ **Fix-and-hold**: after first ambiguity fix hold them constrained. Fix is more stable, but in case first initialization was not correct it will take longer to recover and initialize correctly. You can think of it as if Fix had inertia.
-+ **Continuous**: ambiguities are resolved epoch by epoch. Less stable, but no risk of holding a false fix.
+### AR (Resolução de Ambiguidade) mode
+Existem duas estratégias principais para a resolução de ambiguidades:
 
-In real-life conditions on a moving platform, Fix-and-hold provides better overall performance.
++ Corrigir e manter: após a primeira ambiguidade fixa (resolvida), forcar mantê-la. Fixo é mais estável, mas no caso da primeira inicialização não ser correta levará mais tempo para recuperar e inicializar corretamente. Você pode pensar nisso como se o Fixo tivesse inércia.
++	Contínuo: ambiguidades são resolvidas, época por época. Menos estável, mas sem risco de manter uma falsa correção.
 
-### GLONASS AR mode 
-Contrary to GPS, all GLONASS satellites transmit on different frequencies, which results in Inter Channel Biases (ICB) that are unique for each receiver model. 
+Em condições reais sobre uma plataforma em movimento, Corrigir e manter fornece melhor desempenho geral.
 
-Reach can correct GLONASS ICBs, allowing for GLONASS AR with non-Reach bases, such as NTRIP casters. The general recommendation is to always have GLONASS AR set to on.
+### Glonass AR mode
+Ao contrário do GPS, todos os satélites GLONASS transmitem em frequências diferentes, o que resulta em Inter Channel Biases (ICB) que são exclusivos para cada modelo de receptor. Ao usar a estação base que não seja Reach ou Reach RS/RS+ você deve desativar a resolução de ambiguidade Glonass ou calibrá-lo. Os ICBs podem ser calibrados utilizando satélites GPS, se você definir o GLONASS AR para Corrigir e manter. Neste modo de resolução de ambiguidade inicial será executada usando GPS e de acordo com o resultado ICBs GLONASS será calculado e usado mais tarde no posicionamento.
 
-### Elevation mask angle
-Satellites lower than set elevation will be excluded from the computation. The default setting is 15 degrees. Usually, satellites with a lower elevation provide too noisy measurements.
+### Ângulo da máscara de elevação
+- •	Satélites mais baixos que elevação definida, serão cálculo. Configuração padrão é 15 graus. Geralmente os satélites com menor elevação fornecem dados com muitos ruídos.
 
-### SNR mask
-Satellites with low SNR will be excluded from the computation. The default setting is 35.
+### Máscara SNR
+- •	Satélites com SNR baixo serão excluídos do cálculo. Configuração padrão é 35.
 
-### Max acceleration
-Set it according to what acceleration antenna experiences on your platform. If you are not sure about the correct value collect a dataset and use RTKPLOT to see what kind of accelerations are present in your application. Default value is 1 m/s^2.
+### Máxima aceleração
+- Configure de acordo com suas experiências de aceleração da sua plataforma. Se você não tiver certeza sobre o valor correto recorra ao catálogo e use RTKPLOT para ver que tipo de acelerações estão presentes na sua aplicação. O valor padrão é 1 m/s^2.
 
-## GNSS selection
+## Seleção GNSS
 
 <p style="text-align:center" ><img src="../img/reachview/rtk_settings/gnss_sel.png" style="width: 800px;" /></p>
 
-Depending on your location it might be beneficial to choose certain set of GNSS systems: 
+Dependendo da sua localização pode ser benéfico escolher certo conjunto de sistemas GNSS:
 
-+ GPS+Glonass+SBAS+QZSS at 5 Hz is our default recommendation.
-+ GPS+Beidou+SBAS+QZSS at 5 Hz recommended for APAC, where QZSS and Beidou is visible.
-+ GPS+SBAS+QZSS at 14 Hz for most dynamic platforms that require high update rate.
++ GPS + Glonass + SBAS + QZSS a 5 Hz é nossa recomendação padrão.
++	GPS + Beidou + SBAS + QZSS a 5 Hz recomendado para APAC, onde QZSS e Beidou é visível.
++	GPS + SBAS + QZSS a 14 Hz para plataformas mais dinâmicas que exigem atualização alta taxa.
 
-### GNSS selection for time marks logging 
-We recommend using the following configurations for PPK flights: 
+### Seleção de GNSS de acordo com o registro
+Recomendamos usar as seguintes configurações para voos PPK:
 
-| System                                | Frequency |
+| Sistema                               | Frequência |
 |---------------------------------------|-----------|
 | GPS + GLONASS + GALILEO + SBAS + QZSS | 1 Hz      |
 | GPS + GLONASS + QZSS                  | 5 Hz      |
@@ -52,7 +50,5 @@ We recommend using the following configurations for PPK flights:
 | GPS                                   | 10 Hz     |
 
 
-!!! danger "Attention"
-    Use one of the stable configurations above to avoid missing events in log files.
-
-
+!!! danger "Atenção"
+    Use uma das configurações acima estáveis para evitar perder registro de arquivos.
