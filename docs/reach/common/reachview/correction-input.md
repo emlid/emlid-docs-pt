@@ -1,73 +1,72 @@
-## Base correction
+## Correção da base
 
-Configuring correction is required if you want to go beyond standalone positioning. Reach supports following correction formats as input: RTCM2, RTCM3, OEM4, OEM3, UBX, SS2, HEMIS, SKYTRAQ, SP3. RTCM3 is the most popular format in the industry.  Data in any of these formats can be received via Serial, TCP, NTRIP, Bluetooth or LoRa for Reach RS/RS+.
+Configuração da correção é necessária se você quiser ir além do posicionamento autônomo. Reach suporta os seguintes formatos de correção: RTCM2, RTCM3, OEM4, OEM3, UBX, SS2, HEMIS, SKYTRAQ, SP3. RTCM3 é o formato mais popular na indústria. Dados em qualquer um desses formatos podem ser recebidos via Serial, TCP, NTRIP, Bluetooth ou LoRa para Reach RS/RS+.
 
 ### Serial
 
 <p style="text-align:center" ><img src="../img/reachview/correction_input/serial.png" style="width: 800px;" /></p>
 
-Serial port connection is available through several hardware connection options. All of them support following baud rates: 4800, 9600, 14400, 19200, 28800, 38400, 56000, 57600, 115200, 128000, 153600, 230400, 256000, 460800, 921600.
+Conexão de porta serial está disponível através de várias opções de conexão de hardware. Todos eles suportam as seguintes taxas de transmissão: 4800, 9600, 14400, 19200, 28800, 38400, 56000, 57600, 115200, 128000, 153600, 230400, 256000, 460800, 921600.
 
 #### UART
-Corresponds to TTL UART on Reach module or to RS232 port on Reach RS/RS+ extension connector. Common way to connect radio or another device providing correction.
+Corresponde a UART TTL no módulo Reach ou a porta RS232 no conector extensível do Reach RS/RS+. Maneira comum para ligar o rádio ou outro dispositivo que ofereça a correção.
 
 #### USB-to-PC
-When connected over USB to a PC Reach will show up as several devices, one of them will be a serial port. You can use this serial port to send corrections to the device.
+Quando conectado por USB a um PC Reach vai aparecer como vários dispositivos, um deles será uma porta serial. Você pode usar a porta serial para enviar correções para o PC.
 
 #### USB OTG
-Use a micro-USB OTG cable to connect USB accessories. In this mode only USB devices that emulate a serial port could be used. Example of popular chips that are supported: FT232, CP2102. There are numerous devices built on these chips that will provide you a TTL UART or RS232 port. This is an easy way to connect radio modems as well.
+Use um cabo micro-USB OTG para conectar acessórios a porta USB. Neste modo, apenas os dispositivos USB que emulam uma porta serial podem ser usados. Exemplo de placas populares que são suportadas: FT232, CP2102. Existem inúmeros dispositivos construídos sobre esses chips que irão fornecer-lhe uma porta TTL UART ou RS232. Esta é uma maneira fácil de conectar os modems de rádio também.
 
 ### NTRIP
 
 <p style="text-align:center" ><img src="../img/reachview/correction_input/ntrip.png" style="width: 800px;" /></p>
 
-NTRIP is industry standard way of transferring GNSS corrections over Internet, with ReachView you can use any public service or your own private caster. NTRIP does not support point-to-point communication e.g. you can not use it to transfer corrections from one Reach to another directly. In NTRIP terminology there are servers, clients and caster. Server sends correction to a caster and clients can receive them by connecting to that caster.
+NTRIP é a maneira padrão de indústria de transferir correções GNSS através da internet, com ReachView você pode usar qualquer serviço público ou seu próprio Caster privado. NTRIP não oferece suporte a comunicação ponto a ponto, por exemplo, você não pode usar isso para transferir correções de um Reach ao outro diretamente. Na terminologia NTRIP existem servidores, clientes e um caster. O servidor envia correção para um caster e clientes podem recebê-las, conectando-se a esse caster.
 
-In order to receive correction from NTRIP caster you need to know:
+A fim de receber correção de um caster NTRIP, você precisa saber:
 
-+ IP address or domain name of the caster
-+ Port
-+ Username
-+ Password
-+ Mount point
-+ Format (usually RTCM3)
++ Endereço de IP ou nome de domínio do caster
++	Porta (Port)
++	Usuário (Username)
++	Senha (Password)
++	Mountpoint
++	Formato (geralmente RTCM3)
 
-When connecting to a mount point that has VRS or Nearest feature, that automatically provides you with a connection to closest base station it is required to send your position back to the caster. Tick the “Send NMEA GGA messages to the corrections provider” and after Reach obtains single solution it will start sending it to the caster.
+
+Ao se conectar a uma estação de referência que tem VRS ou recurso “Nearest”, que automaticamente fornece uma conexão à estação base mais próxima, é necessário enviar sua posição para o caster. Marque a opção "enviar mensagens NMEA GGA para o servidor" e depois Reach obtém solução única ele vai começar a enviá-lo para o caster.
 
 ### TCP
 
 <p style="text-align:center" ><img src="../img/reachview/correction_input/tcp.png" style="width: 800px;" /></p>
 
 
-Typical scenario for using TCP correction input is when both base and rover are on the same network. Note that when devices are on different networks you can not send data directly unless public IP addresses are known and routers are setup for port forwarding. TCP can also be used to send data to or receive from a remote server with public IP.
+Cenário típico para usar correção TCP é quando a base e rover estão na mesma rede. Observe que quando os dispositivos estão em redes diferentes você não pode enviar dados diretamente a menos que os endereços de IP públicos são conhecidos e roteadores são configurados para encaminhamento de porta. TCP também pode ser usado para enviar dados para ou receber de um servidor remoto com IP público.
 
-TCP supports two roles:
+TCP suporta duas funções:
 
 #### Server  
-You need to specify port and after that clients will be able to connect to this device on it’s IP address. Many clients can be connected to the same server.
+Você precisa especificar a porta e depois os clientes poderão se conectar a este dispositivo através do endereço de IP. Muitos clientes podem se conectar ao mesmo servidor.
 
 #### Client
-You need to specify IP address of the server and port number.
+Você precisa especificar o endereço IP do servidor e número da porta.
 
-If ReachView does not allow to set a certain port number it means that it is reserved for internal use.
+Se ReachView não permite definir um determinado número de porta isso significa que é reservado para uso interno.
 
 ### LoRa Radio
 
 <p style="text-align:center" ><img src="../img/reachview/correction_input/Lora.png" style="width: 800px;" /></p>
 
-**Reach RS/RS+** has internal LoRa radio which is used for receiving or sending corrections. For **Reach M+** external LoRa radio is available, it can be connected via USB or S1/S2 port. The radio works only in one way, it could either be configured to send corrections (on base) or to receive them (on rover). Using LoRa modulation it is possible to hit up to 19km in line of sight or a few km in urban areas with just 20 dBm power output. As long as frequency and air rate settings match an unlimited number of rovers can listen for correction from the same base. 
+**Reach RS/RS+** tem rádio LoRa interno que é usado para receber ou enviar correções. Para Reach M+ o rádio externo LoRa está disponível, ele pode ser conectado via porta USB ou S1/S2. O rádio funciona apenas em uma forma, ele também poderia ser configurado para enviar correções (na base) ou para recebê-las (no rover). Usando módulo LoRa é possível alcançar até 19km em linha de visão ou alguns km em áreas urbanas com apenas 20 dBm de potência. Se os ajustes de taxa de frequência e intervalo forem o mesmo, um número ilimitado de rovers podem receber correção da mesma base.
 
-Frequency and air rate settings must match what was configured on the base.
+Frequência e o intervalo (Air Rate) devem ser iguais ao que foi configurado na base.
 
 ### Bluetooth
 
 <p style="text-align:center" ><img src="../img/reachview/correction_input/Bluetooth.png" style="width: 800px;" /></p>
 
-You can use Bluetooth for correction input. For example you can use your phone to pass NTRIP corrections via Bluetooth to Reach / Reach RS/RS+. Check out [Bluetooth section](connectivity/#bluetooth) to learn more about connecting your device via Bluetooth.
+Você pode usar o Bluetooth para entrada de correção. Por exemplo, você pode usar seu telefone para passar correções NTRIP via Bluetooth para o Reach RS/RS+. Confira a [seção de Bluetooth](connectivity/#bluetooth) para aprender mais sobre como conectar seu dispositivo através de Bluetooth.
 
-## Additional correction
-Will be used for precise ephemeris and clocks. Not implemented yet.
+## Correção adicional
+Será usado para efemérides precisas e correções de relógio. Ainda não implementado.
 
 <p style="text-align:center" ><img src="../img/reachview/correction_input/additional.png" style="width: 800px;" /></p>
-
-

@@ -3,40 +3,40 @@
 
 Reach supports various accessories via it's built-in USB OTG port and UART interface on the DF13 connector
 
-### Radio
+### Rádio
 
-It is possible to connect radio modules to Reach in order to obtain corrections or send calculated coordinates.
+É possível conectar módulos de rádio do Reach a fim de obter correções ou enviar coordenadas calculadas.
 
-Most radios nowadays use UART or USB as a connection.
+A maioria das rádios hoje em dia usam UART ou USB como conexão.
 
-#### Connecting UART radio
+#### Conectando radio UART
 
-Logic level on UART in Reach is 3.3V but pins are 5V tolerant, so you can use both 3.3V and 5V logic level radios.
+Nível de carga da porta UART no Reach é 3.3V mas os pinos suportam até 5V, então você pode usar rádios de 3.3V e 5V.
 
-UART radio is accessible on Reach as a serial device with the name **ttyMFD2**.
+Rádio UART é acessível no Reach como um dispositivo serial com o nome de **ttyMFD2**.
 
-To connect UART radio to Reach use upper DF13 port (the one near the USB).
+Para se conectar a rádio UART ao Reach use a porta JST-GH (S1).
 
-| Reach pins | Radio pins |
-|:----------:|:----------:|
-|     +5V    |     +5V    |
-|     TX     |     RX     |
-|     RX     |     TX     |
-|     GND    |     GND    |
+| Pinos do Reach | Pinos do Rádio |
+|:--------------:|:--------------:|
+|      +5V       |      +5V       |
+|      TX        |      RX        |
+|      RX        |      TX        |
+|      GND       |      GND       |
 
-#### 3DR Radio
+#### Rádio 3DR
 
 <div style="text-align: center;"><img src="../img/reach/hardware-integration/reach-3dr-radio.png" style="width: 550px;"></div><br>
 
-Connection diagram for 3DR Radio v2:
+Diagrama de conexão para 3DR Radio v2:
 
 <div style="text-align: center;"><img src="../img/reach/hardware-integration/reach-3dr-radio-connection-map.png" style="width: 550px;"></div><br>
 
-3DR Radio can also be connected over USB.
+Rádio 3DR também pode ser conectado via USB.
 
 Please note that a bug in the **Reach image before v1.2** prevents the Rover module from booting while it`s receiving UART correction signals from the base module. Current fix is powering up base module after the rover module has booted (LED are blinking red/blue/white).
 
-#### RFD900 Radio
+#### Rádio RFD900
 
 <div style="text-align: center;"><img src="../img/reach/hardware-integration/reach-rfd900-radio.png" style="width: 550px;"></div><br>
 
@@ -44,8 +44,8 @@ Connection diagram for RFD900 radio:
 
 <div style="text-align: center;"><img src="../img/reach/hardware-integration/reach-rfd900-radio-connection-map.png" style="width: 550px;"></div><br>
 
-!!! danger ""
-    Please mind that RFD can consume up to 800ma in peaks so make sure that your power source can provide enough power for both Reach and RFD900.
+!!! Atenção ""
+    Lembre-se que o RFD pode consumir até 800ma em picos, certifique-se que sua fonte de alimentação pode fornecer energia suficiente tanto para o Reach e para o RFD900.
 
 #### Connecting USB radio
 

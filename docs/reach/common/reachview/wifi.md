@@ -1,12 +1,10 @@
 <p style="text-align:center" ><img src="../img/reachview/wifi/wifi.png" style="width: 800px;" /></p>
 
-To add a Wi-Fi network click on the blue plus sign, enter your Wi-Fi credentials and click create. 
+Para adicionar rede Wi-Fi clique no sinal de mais azul, insira seus dados da rede Wi-Fi e clique em criar.
 
-To switch to hotspot mode click on “start hotspot” button.
+Para alternar ao modo ponto de acesso clique no botão "iniciar o ponto de acesso" (Start hotspot).
 
-During power up Reach will search for known Wi-Fi networks and if it does not see any create a hotspot. 
+Quando o Reach iniciar, ele irá procurar por redes de Wi-Fi conhecidas e se não encontrar, ficará no modo ponto de acesso.
 
-!!! tip ""
-    If you want to make Reach create hotspot every time, you should delete all Wi-Fi networks from the list. It is not possible to delete the network that you are currently connected to, so you will  need to switch Reach to hotspot mode. After switching to hotspot and connecting to it you will be able to delete all Wi-Fi networks and Reach will always start in hotspot mode.
-
-
+!!! Dica ""
+    Se você quer fazer com que o Reach cria um ponto de acesso toda vez, você deve excluir todas as redes Wi-Fi na lista. Não é possível excluir a rede que você está atualmente conectado, então você precisará mudar o Reach para o modo de ponto de acesso. Depois de mudar para o ponto de acesso e conectar a ele você será capaz de apagar todas as redes Wi-Fi e o Reach sempre irá iniciar em modo de ponto de acesso.

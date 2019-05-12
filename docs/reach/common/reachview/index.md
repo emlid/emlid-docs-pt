@@ -1,55 +1,55 @@
 <p style="text-align:center"><img src="img/reachview/introduction/reachview.gif" style="width: 550px;"/></p>
 
-## About 
+## Sobre
 
-ReachView is a web-based app that allows you to take full control of Reach RTK module and Reach RS/RS+. It is the most user friendly app ever created for an RTK system and apart from numerous features has OTA updates that ensure that you constantly work with up-to-date version of the app. It works on any device with a browser and does not require internet connection. ReachView is hosted on the Reach itself and is accessed via Wi-Fi connection, which makes it compatible with Windows, OSX, Linux, Android and iOS.
+O ReachView é um aplicativo baseado na web que permite que você assuma o controle total do módulo Reach RTK e Reach RS/RS +. É o aplicativo mais fácil de usar já criado para um sistema RTK e, além de vários recursos, possui atualizações OTA que garantem que você trabalhe constantemente com a versão atualizada do aplicativo. Ele funciona em qualquer dispositivo com um navegador e não requer conexão com a internet. O ReachView é hospedado no próprio Reach e é acessado via conexão Wi-Fi, o que o torna compatível com Windows, OSX, Linux, Android e iOS.
 
-## Resolving IP
+## Encontrando o IP
 
-ReachView app is served via a browser or a native app for iOS/Android. In order to access Reach device one needs to find the IP address of the Reach in the network. Depending on the operating system and ReachView app version on board of Reach or Reach RS/RS+ this might be done in different ways.
+O aplicativo ReachView é exibido por meio de um navegador ou de um aplicativo nativo para iOS/Android. Para acessar o dispositivo Reach, é necessário encontrar o endereço IP do Reach na rede. Dependendo do sistema operacional e da versão do aplicativo ReachView a bordo do Reach ou do Reach RS/RS +, isso pode ser feito de diferentes maneiras.
 
-??? note "ReachView version is older than v2.8.0"
+??? note "A versão do Reach View mais antiga que v2.8.0"
 
-    ### When Reach is connected to a Wi-Fi access point/router
+    ### Quando o Reach está conectado ao Wi-Fi
 
-    Your device must be connected to the same Wi-Fi network as Reach. Reach will show up as **Murata Manufacturing** device.
+    O seu dispositivo deve estar conectado na mesma rede Wi-Fi que o Reach. Reach será mostrado como dispositivo “Murata Manufacturing”.
 
     <p style="text-align:center"><img src="img/reachview/introduction/fing.png" style="width: 500px;"/></p>
 
     #### Windows
-    Access ReachView by typing **http://reach.local** in your browser. If you have changed name of the device, please type **http://device_name.local**. If the name could not be resolved:
+    Acesse o ReachView digitando **http://reach.local** no seu navegador. Se você mudou o nome do dispositivo, por favor digite **http://device_name.local**. Se o nome não resolver:
 
-    - Install Apple Bonjour (it is likely already installed on your system if you have iTunes or Skype).
-    - Find the IP address using ["Zenmap"](https://nmap.org/zenmap/).
+    - Instale o aplicativo Apple Bonjour (Já estará instalado no seu sistema de você tiver iTunes ou Skype)
+    -	Encontre o endereço de IP usando ["Zenmap"](https://nmap.org/zenmap/).
 
     #### OSX/Linux
-    Access ReachView by typing **http://reach.local** in your browser. If you have changed name of the device, please type **http://device_name.local**. If the name could not be resolved:
+    Acesse o ReachView digitando **http://reach.local** no seu navegador. Se você mudou o nome do dispositivo, por favor digite **http://device_name.local**. Se o nome não resolver:
 
-    - Find the IP address using [“nmap”](https://nmap.org/).
+    - Encontre o endereço IP usando  [“nmap”](https://nmap.org/).
 
     #### iOS
-    Access ReachView by typing **http://reach.local** in your browser. If you have changed name of the device, please type **http://device_name.local**.  If the name could not be resolved:
+    Acesse o ReachView digitando **http://reach.local** no seu navegador. Se você mudou o nome do dispositivo, por favor digite **http://device_name.local**. Se o nome não resolver:
 
-    - Find the IP address using **Fing** app.
+    - Encontre o endereço IP usando **Fing** o aplicativo.
 
     #### Android
-    Android does not support name resolution in local network. You will need to find the IP address:
+    O Android não suporta descrição de nomes na rede local. Você precisará encontrar o endereço IP:
 
-    - Find the IP address using **Fing** app.
-    - Use **Network Tools** app, it is also able to find Reach IP address when it is connected to your smartphone hotspot.
+    -  Encontre o endereço IP usando o aplicativo **Fing**.
+    - Use o aplicativo **Network Tools**, que também pode encontrar o endereço IP do Reach quando ele estiver conectado ao seu ponto de acesso de smartphone.
 
-    ### When your device is connected to Reach Hotspot
+    ### Quando o seu dispositivo está conectado ao ponto de acesso do Reach
 
-    By default Reach creates a Wi-Fi hotspot and you can connect to it as to any other Wi-Fi network. Beware that sometimes your mobile phone will attempt to automatically switch to 3G/4G connections as Wi-Fi hotspot created by Reach does not provide internet access.
+    Por padrão, o Reach cria um ponto de acesso Wi-Fi e você pode se conectar a ele como a qualquer outra rede Wi-Fi. Atenção que, as vezes, o seu smartphone tentará mudar automaticamente para as ligações 3G / 4G, uma vez que o ponto de acesso Wi-Fi criado pela Reach não fornece acesso à Internet.
 
-    + When prompted if you want to stay connected to the network without Internet connection answer “yes”.
-    + If your smartphone is still on 3G/4G connection and there is “?” mark near the Wi-Fi icon you might want to temporary disable mobile data. That will force your smartphone to connect to the Wi-Fi network.
+    +	Quando perguntado se você deseja permanecer conectado à rede sem conexão com a Internet, responda “sim”.
+    + Se o seu smartphone ainda estiver em conexão 3G / 4G e houver uma marca "?" Perto do ícone de Wi-Fi, convém desativar temporariamente os dados móveis. Isso forçará seu smartphone a se conectar à rede Wi-Fi.
 
-    **Access ReachView by typing “http://reach.local” or 192.168.42.1 in your browser on any OS.**
+    **Acesse o ReachView digitando “http://reach.local” ou 192.168.42.1 no seu navegador em qualquer sistema operacional.**
 
-??? note "ReachView version is higher than v2.8.0"
+??? note "A versão do ReachView é mais nova que v2.8.0"
 
-    Since ReachView v.2.8.0 you can connect to your Reach device with an app using your Android or iOS device.
+    Desde o ReachView v.2.8.0, você pode se conectar ao seu dispositivo Reach com um aplicativo usando seu dispositivo Android ou iOS.
 
     <center>
         <table>
@@ -64,52 +64,52 @@ ReachView app is served via a browser or a native app for iOS/Android. In order 
         </table>
     </center>
 
-    After launching the app you'll see the list of the available receivers in your network. 
+    Após o lançamento do aplicativo, você verá a lista dos receptores disponíveis em sua rede.
 
     <div style="text-align: center;"><img src="img/reachview/introduction/reach_view_ios_android.png" style="width: 400px;"></div><br>
 
-    !!! danger "Reach can't work on the 192.168.2.xx subnet "
-        As 192.168.2.x subnet is reserved inside Reach for Ethernet connections, you will need to perform initial setup in a different Wi-Fi or change router settings. Routers usually have a setting to change the subnet address, so you can set it to 192.168.1.xx.
+    !!! danger "O Reach não funciona na sub-rede 192.168.2.xx"
+        Como a sub-rede 192.168.2.x é reservada no Reach para conexões Ethernet, você precisará executar a configuração inicial em um Wi-Fi diferente ou alterar as configurações do roteador. Os roteadores geralmente têm uma configuração para alterar o endereço da sub-rede, portanto, você pode configurá-lo para 192.168.1.xx.
 
-## First setup
+## Iniciando pela primeira vez
 
-### Connecting to Reach
+### Conectando ao Reach
 
-When Reach is powered for the first time it will create a Wi-Fi hotspot.
+ndo o Reach é ligado pela primeira vez, ele criará um ponto de acesso Wi-Fi.
 
-+ Open a list of Wi-Fi networks on your smartphone, tablet or laptop.
-+ Connect to a network named reach:xx:xx (ex. reach:66:ac).
-+ Type network password: emlidreach.
++	Abra a lista de Wi-Fi no seu smartphone, tablet ou laptop.
++	Conecte-+e a rede chamada reach:xx:xx (ex. reach:66:ac).
++	Coloque a senha: emlidreach
 
-### Setting up Wi-Fi
 
-After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop. 
+### Configurando o Wi-Fi
 
-Type http://192.168.42.1 in the address bar and you will see ReachView Updater.
+Após conectar-se ao ponto de acesso do Reach, abra um navegador da web em seu smartphone, tablet ou laptop.
+
+Digite http://192.168.42.1 na barra de endereços e você verá o ReachView Updater.
 
 <p style="text-align:center"><img src="img/reachview/introduction/reach_view_updater_main.png" style="width: 350px;"/></p>
 
-Press plus button and enter your Wi-Fi network name, security type and password. Press Save button. That will make Reach remember your Wi-Fi network.
+Pressione o botão + e insira o nome da rede Wi-Fi, o tipo de segurança e a senha. Pressione o botão Salvar. Isso fará com que o Reach memorize sua rede Wi-Fi.
 <p style="text-align:center"><img src="img/reachview/introduction/reach_view_updater_wifi.png" style="width: 350px;"/></p>
 
-Press on your added network and click Connect.
+Pressione na sua rede adicionada e clique em Conectar.
 <p style="text-align:center"><img src="img/reachview/introduction/reach_view_updater_wifi_connect.png" style="width: 450px;"/></p>
 
+O Reach tentará se conectar à sua rede Wi-Fi. Você também deve conectar seu dispositivo a essa rede.
 
-Reach device will now attempt to connect to your Wi-Fi network. You should connect your device to that network too.
+Se o Reach não se conectar à rede Wi-Fi, ele alternará automaticamente para o modo de ponto de acesso. Tente novamente desde o começo deste capítulo. Verifique se o nome e a senha da sua rede estão corretos.
 
-If Reach did not connect to Wi-Fi network it will automatically switch to hotspot mode. Try again from the beginning of this chapter. Check that your network name and password are correct.
+### Atualizando
 
-### Updating
-
-If connection to Wi-Fi was successful you can [now find Reach on your network](#resolving-ip) and open ReachView. During first setup you will see the ReachView Updater. It is a separate app that handles self-testing, time synchronization and updates of the main ReachView app.
+Se a conexão ao Wi-Fi for bem-sucedida, você poderá [encontrar o Reach na sua rede](#resolving-ip) e abrir o ReachView. Durante a primeira configuração, você verá o ReachView Updater. É um aplicativo separado que lida com autoteste, sincronização de horário e atualizações do aplicativo principal do ReachView.
 <p style="text-align:center"><img src="img/reachview/introduction/reach_view_updater_finish.png" style="width: 350px;"/></p>
 
-ReachView updater will check for software updates and will install them.
+O ReachView Updater verificará as atualizações de software e as instalará.
 
-Press Reboot and go to the app! button. Wait while device reboots.
+Pressione Reiniciar e vá para o app! Aguarde enquanto o dispositivo é reinicializado.
 
-In about a minute refresh the page with ReachView app.
+Em cerca de um minuto, atualize a página com o aplicativo ReachView.
+
 
 <p style="text-align:center"><img src="img/reachview/introduction/reach_view_app.png" style="width: 800px;"/></p>
-
