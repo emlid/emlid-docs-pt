@@ -1,130 +1,126 @@
-## Correction output
+## Saída de posição
 
 <p style="text-align:center"><img src="../img/reachview/base_mode/output.png" style="width: 800px;"/></p>
 
-Reach outputs correction in industry standard RTCM3 format. Correction data can be sent via Serial, TCP, NTRIP or LoRa for Reach RS/RS+.
+Reach envia correção em formato de RTCM3 padrão da indústria. Dados corrigidos podem ser enviados via Serial, TCP, NTRIP ou LoRa para Reach RS/RS+.
 
 ### Serial
-Serial port connection is available through several hardware connection options. All of them support the following baud rates: 4800, 9600, 14400, 19200, 28800, 38400, 56000, 57600, 115200, 128000, 153600, 230400, 256000, 460800.
+Conexão de porta serial está disponível através de várias opções de conexão de hardware. Todos eles suportam as seguintes taxas de transmissão: 4800, 9600, 14400, 19200, 28800, 38400, 56000, 57600, 115200, 128000, 153600, 230400, 256000, 460800.
 
 #### UART
-Corresponds to TTL UART on Reach module or to RS232 port on Reach RS/RS+ extension connector. Common way to connect to radio to send correction data.
+Corresponde a UART TTL no módulo Reach ou a porta RS232 no conector extensível do Reach RS/RS+. Maneira comum para ligar o rádio ou outro dispositivo que ofereça a correção.
 
 #### USB-to-PC
-When connected over USB to a PC Reach will show up as several devices, one of them will be a serial port. You can use this serial port to send correction data to the PC.
+Quando conectado por USB a um PC Reach vai aparecer como vários dispositivos, um deles será uma porta serial. Você pode usar a porta serial para enviar correções para o PC.
 
 #### USB OTG
-Use a micro-USB OTG cable to connect USB accessories. In this mode only USB devices that emulate a serial port could be used. Example of popular chips that are supported: FT232, CP2102. There are numerous devices built on these chips that will provide you a TTL UART or RS232 port. 
+Use um cabo micro-USB OTG para conectar acessórios a porta USB. Neste modo, apenas os dispositivos USB que emulam uma porta serial podem ser usados. Exemplo de placas populares que são suportadas: FT232, CP2102. Existem inúmeros dispositivos construídos sobre esses chips que irão fornecer-lhe uma porta TTL UART ou RS232.
 
 ### NTRIP
-NTRIP is industry standard way of transferring GNSS corrections over Internet, with ReachView you can use any public service or your own private caster. NTRIP does not support point-to-point communication e.g. you can not use it to transfer corrections from one Reach to another directly. In NTRIP terminology there are servers, clients and caster. Server sends correction to a caster and clients can receive them by connecting to that caster.
+NTRIP é a maneira padrão de indústria de transferir correções GNSS através da internet, com ReachView você pode usar qualquer serviço público ou seu próprio Caster privado. NTRIP não oferece suporte a comunicação ponto a ponto, por exemplo, você não pode usar isso para transferir correções de um Reach ao outro diretamente. Na terminologia NTRIP existem servidores, clientes e um caster. O servidor envia correção para um caster e clientes podem recebê-las, conectando-se a esse caster.
 
-In order to send correction to NTRIP caster you need to know: 
+A fim de receber correção de um caster NTRIP, você precisa saber:
 
-- IP address or domain name of the caster
-- Port
-- Username
-- Password
-- Mount point
+-	Endereço de IP ou nome de domínio do caster
+-	Porta (Port)
+-	Usuário (Username)
+-	Senha (Password)
+-	Mountpoint
+-	Formato (geralmente RTCM3)
 
-When connecting via NTRIP in base mode Reach acts as a NTRIP server.
+Quando conectando via NTRIP em modo base o Reach atua como um servidor NTRIP.
 
 ### TCP
-Typical scenario for using TCP is sending correction data to an application on the same network or to a server with public IP. 
+Cenário típico para usar TCP é o envio dados de posição para uma aplicação na mesma rede ou a um servidor com IP público.
 
-TCP supports two roles:
+TCP suporta duas funções:
 
 #### Server
-You need to specify port and after that clients will be able to connect to this device on it’s IP address. Many clients can be connected to the same server.
+Você precisa especificar a porta e depois os clientes poderão se conectar a este dispositivo através do endereço de IP. Muitos clientes podem se conectar ao mesmo servidor.
 #### Client
-You need to specify IP address of the server and port number.
+Você precisa especificar o endereço IP do servidor e número da porta.
 
-If ReachView does not allow to set a certain port number it means that it is reserved for internal use.
+Se ReachView não permite definir um determinado número de porta isso significa que é reservado para uso interno.
+
 
 ### LoRa Radio
-**Reach RS/RS+** has internal LoRa radio which is used for receiving or sending corrections. For **Reach M+** external LoRa radio is available, it can be connected via USB or S1/S2 port. The radio works only in one way, it could either be configured to send corrections (on base) or to receive them (on rover). Using LoRa modulation it is possible to hit up to 19km in line of sight or a few km in urban areas with just 20 dBm power output. As long as frequency and air rate settings match an unlimited number of rovers can listen for correction from the same base.
+**Reach RS/RS+** tem rádio LoRa interno que é usado para receber ou enviar correções. Para **Reach M+** o rádio externo LoRa está disponível, ele pode ser conectado via porta USB ou S1/S2. O rádio funciona apenas em uma forma, ele também poderia ser configurado para enviar correções (na base) ou para recebê-las (no rover). Usando módulo LoRa é possível alcançar até 19km em linha de visão ou alguns km em áreas urbanas com apenas 20 dBm de potência. Se os ajustes de taxa de frequência e intervalo forem o mesmo, um número ilimitado de rovers podem receber correção da mesma base.
+Menor o intervalo, maior a distância de trabalho será. Dependendo do seu RTCM3 seleção de mensagens ReachView bloqueará automaticamente intervalos insuficientes. Desative mensagens de correção para desbloquear intervalos mais baixos. Intervalos de transmissão e recepção do Reach devem corresponder.
+Certifique-se de selecionar a potência de saída apropriada e a frequência de acordo com os regulamentos locais
 
-The lower the air rate, the longer the working distance will be. Depending on your RTCM3 messages selection ReachView will automatically block insufficient air rates. Disable correction messages or reduce rate in order to unlock lower air rates. Air rate on transmitting Reach and on receiving must match.
-
-Make sure to select appropriate output power and frequency according to your local regulations.
 
 ### Bluetooth
-You can use Bluetooth for correction output. Note that you can’t set both position output and base correction output to Bluetooth at the same time.
+Você pode usar o Bluetooth para entrada de correção. Observe que você não pode definir tanto a saída de posição e envio de correção da base via Bluetooth ao mesmo tempo.
 
-## RTCM3 messages
+## Mensagens RTCM3
 
 <p style="text-align:center"><img src="../img/reachview/base_mode/messages.png" style="width: 800px;"/></p>
-The minimal subset that is required for RTK to function is 1002 message for 1Hz with GPS observations and 1006 message for 0.1Hz with base station antenna position. Enabling more messages or higher rates requires higher connection bandwidth.
+O conjunto mínimo que é exigido para função RTK é a mensagem 1002 para 1Hz com observações GPS e 1006 mensagem para 0,1 Hz com posição de antena de estação base. Habilitar mais mensagens ou taxas mais elevadas exige maior conexão de banda.
 
-In the Data rate row you can find an estimation of bps when messages are configured at 1 Hz.
+Na linha de taxa de dados você pode encontrar uma estimativa de bps quando mensagens são configuradas em 1 Hz.
 
-|RTCM3 messages|Message type|Data rate, bps (1Hz)|
+|Mensagens RTCM3|Tipo de mensagem|Taxa de dados, bps (1Hz)|
 |:---:|:---:|:---:|
-||**Minimal required messages**||
-|1002|GPS L1 observations      |156|
+||**Mensagens mínimas requeridas**||
+|1002|Observações GPS L1      |156|
 |1006|ARP station coordinate   | 21|
-||**Specific messages for not-typical applications** ||
-|1008 |Antenna type                  | 68|
-|1019 |GPS Ephemeris                     |976|
-|1020 |GLONASS Ephemeris                 |540|
-||**Optional messages for other GNSS **||
-|1010|GLONASS L1 observation|126.125|
+||**Mensagens específicas para aplicações atípicas** ||
+|1008 |Tipo da antena                  | 68|
+|1019 |Efemérides GPS                     |976|
+|1020 |Efemérides GLONASS                 |540|
+||**Mensagens opcionais para outro GNSS**||
+|1010|Observações GLONASS L1|126.125|
 |1097|GALILEO MSM|754|
 |1107|SBAS MSM|520|
 |1117|QZSS MSM|520|
 |1127|BeiDou MSM|1573|
 
 
-Here is some information about each message from RTCM STANDARD 10403.3<sup>[1](#myfootnote1)</sup>:
+Aqui estão algumas informações sobre cada mensagem RTCM padrão 10403.31[1](#myfootnote1)</sup>:
 
-- **Message Type 1002 and 1010** contain L1 RTK GPS and GLONASS raw satellite data respectively. GPS 1002 message is mandatory to use due to RTKLIB code. You could turn on GLONASS 1010 message if you want to use this GNSS.
+- **Mensagem 1002 e 1010** contém L1 RTK GPS e dados do satélite GLONASS, respectivamente. Mensagem de GPS 1002 é obrigatória usar devido ao código de RTKLIB. Você poderia ligar a mensagem 1010 GLONASS se você quiser usar esta constelação GNSS.
 
-- **Message Type 1006** provides the earth-centered, earth-fixed (ECEF) coordinates of the antenna reference point (ARP)
-for a stationary reference station and the height of the ARP above a survey monument. It is the second mandatory message to turn on after GPS 1002.
+- **Mensagem 1006** fornece as coordenadas (ECEF) do ponto de referência da antena (ARP) para uma estação de referência e a altura do ARP do levantamento. É a segunda mensagem obrigatória para ligar depois de GPS 1002.
 
-- **Message Type 1008** provides a descriptor of the reference station antenna and the antenna serial number. Turning it on could help to remove ambiguity about the model number or production run.
+- **Mensagem 1008** fornece uma descrição da antena da estação de referência e o número de série da antena. Ligá-la poderia ajudar a remover a ambiguidade sobre o número do modelo ou de produção.
 
-- **Messages 1019 and 1020** contain GPS and GLONASS satellite ephemerides respectively. That means broadcasting satellite position in geostationary orbit which helps Reach with getting it coordinates. Usually, the ephemeris is updated with 30 min. - 2 h. frequency and valid for 4 hours. Downloading and averaging takes around 1 min. So, you can turn on messages at the beginning of the work to get update and turn them off after, if you want.
+- **Mensagem 1019 e 1020** contêm, respectivamente, efemérides de satélite GPS e GLONASS. Isso significa transmitir a posição do satélite em órbita geoestacionária, que ajuda o Reach a obter coordenadas. Geralmente, a efeméride é atualizada com frequência de 30 min. - 2h. e válido por 4 horas. Download leva em média 1 min. Então, você pode ativar mensagens no início do trabalho para obter a atualização e desligá-los depois, se quiser.
 
-- **Messages 1097 (GALILEO), 1107 (SBAS), 1117 (QZSS), 1127 (BeiDou)** are MSM7 (Multiple Signal Messages). MSM7 are high precision messages which contains a complete set of RINEX observations with extended resolution. That means that you should turn on only one message of choosen system to get all data about it.
+- **Mensagem 1097 (GALILEO), 1107 (SBAS), 1117 (QZSS), 1127 (BeiDou)** são MSM7 (Multiple Signal Messages). MSM7 são mensagens de alta precisão que contém um conjunto completo de observações RINEX. Isso significa que você deve ligar somente uma mensagem do sistema escolhido para obter todos os dados.
 
-	!!! tip ""
-		Remember, that you can not use GLONASS and BeiDou systems together.
+	!!! Dica ""
+		Lembre-se, que você não pode usar sistemas GLONASS e BeiDou juntos.
 
-	!!! tip ""
-		* Use 1117 QZSS message if you are located in East-Southeast Asia and Australia.
-		* Use 1107 SBAS message if you are located in Noth America, Europe, North Africa, Near East, South Asia and East Asia, Russia
-		* Use 1127 BeiDou message if you are located in Asian region and Australia.
+	!!! Dica ""
+		* Use a mensagem 1117 (QZSS) se você estiver localizado no sudeste asiático e Austrália.
+		* Use a mensagem 1107 (SBAS) se você está localizado na America do Norte, Europa, Norte da África, Oriente Médio, sul da Ásia e sudeste Asiático, Rússia.
+		* Use a mensagem 1127 (BeiDou) se você estiver localizado na região da Ásia e Austrália.
 
 
 ## Base position
 
 <p style="text-align:center"><img src="../img/reachview/base_mode/position.jpg" style="width: 800px;"/></p>
 
-There are two main options how to specify base station position. Note that RTK positioning is relative to the base station, so any inaccuracy in it’s position will result in a constant shift of rover coordinates. For many applications it is not critical and averaged single coordinate of the base could be used. If your application requires absolute accuracy for rover position an accurate  base coordinate must be entered.
+Existem duas opções principais como especificar a posição da estação base. Observe que o posicionamento RTK é relativo a estação de base, então qualquer imprecisão em sua posição irá resultar em uma mudança constante nas coordenadas do rover. Para muitas aplicações não é crítica, e pode ser utilizada uma média de coordenadas autônomas da base. Se seu aplicativo requer precisão absoluta para posição de rover que uma coordenada base exata deve ser inserida.
 
 ### Manual
-In this mode you supply an a priori known coordinate by locating the unit above surveyed point. Coordinate has to be supplied in ECEF XYZ or in WGS84 Latitude and Longitude and WGS84 ellipsoid height. Antenna height offset is entered at this stage as well, offset is limited to 6.5535 m by the RTCM message.
+Neste modo você fornecer um a priori coordenada conhecida do ponto em que a base está instalada. Coordenada deve ser inserida no formato ECEF XYZ ou WGS84 Latitude e Longitude e altura elipsoidal do WGS84. A altura da antena também é inserida nesta etapa, esta altura é limitado a 6,5535m pela mensagem RTCM.
 
-You can change position format in the top right corner of Base coordinates frame.
+Você pode alterar o formato da posição no canto superior direito do quadro de coordenadas Base.
 
 <p style="text-align:center"><img src="../img/reachview/base_mode/manual.jpg" style="width: 800px;"/></p>
 
-### Average 
-By default Reach will average base position every time it starts. This feature significantly simplifies initial setup in a new location, however it will not provide an accurate absolute coordinate.
+### Média (Average)
+Por padrão Reach utiliza uma média de leituras autônomas para iniciar a base. Esse recurso simplifica significativamente a configuração inicial em um novo local, porém não fornecerá uma coordenada absoluta precisa.
+ReachView tem uma característica única que lhe permite determinar a posição da base, enquanto trabalhando como um rover de outra base. Isto é feito através da obtenção de solução RTK fixa, durante um período de tempo e assim obter uma posição exata para a base. Um cenário típico envolveria a criação de uma estação de base local por determinar suas coordenadas de NTRIP e então transmitindo correção localmente, reduzindo assim a linha de base para rovers melhorando o posicionamento e desempenho.
+Se a estação de referência está muito longe... é possível inserir uma média de solução flutuante e ainda melhorar a precisão da posição.
+Caso nenhuma correção esteja disponível ao configurar a base ou absoluta precisão não é necessária, a média de coordenadas autônomas podem ser usadas.
 
-ReachView has a unique feature that allows it to determine base station position while working as a rover from another base. This is done by obtaining RTK Fixed solution, averaging it over a period of time and this way obtaining an accurate position for the base. A typical scenario would involve setting up a local base station by determining its coordinate from NTRIP and then broadcasting correction locally, thus reducing the baseline for rovers and improving positioning performance.
 
-If the reference station is too far away it is possible to average float and still improve the accuracy of the position.
-
-In case no correction is available when setting up base or absolute accuracy is not required averaged single coordinates could be used.
-
-**Save averaged position to manual**  
-After you have successfully obtained averaged position you might want to save it for future use. Click on the “save coordinates” icon and position will be saved as if it was entered in manual mode. Now every time Reach starts it will broadcast this position in correction messages.
+**Salvar posição média manual**  
+Após obtido uma média de posição, você pode querer guardar para uso futuro. Clique no ícone "Salvar coordenadas" (Save coordinates) e a posição será salvo como se ela fosse inserida no modo manual. Agora toda vez que o Reach iniciar, ele enviará correção a utilizando esta posição como referência.
 
 **Repeat averaging**  
-If you would like to restart base position averaging process you can click on “repeat averaging” icon.This is especially useful in a situation when you accidentally moved Reach during averaging.
+Se vice deseja reiniciar a posição da base através de uma média, você pode clicar no ícone “Repetir média” (Repeat averaging). Isto é especialmente útil em uma situação em que você acidentalmente moveu o Reach durante a coleta da média.
 
 <p style="font-size:70%;"><a name="myfootnote1">1</a>: Radio Technical Commission for Maritime Services. 2016. RTCM STANDARD 10403.3 DIFFERENTIAL GNSS (GLOBAL NAVIGATION SATELLITE SYSTEMS) SERVICES – VERSION 3. Virginia: Radio Technical Commission for Maritime Services, pp. 108-262</p>
-
-

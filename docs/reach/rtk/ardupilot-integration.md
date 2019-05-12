@@ -1,183 +1,184 @@
 !!! tip ""
-	Reach has been replaced with [Reach M+](https://emlid.com/reach). Documentation for Reach M+ can be found [here](https://docs.emlid.com/reachm-plus/).
+	Reach foi substituído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M + pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
 
-Since ReachView version **0.3.0** Reach supports RTK-enhanced coordinates output to Navio and Pixhawk autopilots. To make this possible, we implemented a custom gps protocol we call **ERB**(Emlid Reach Binary protocol).
+Como o ReachView versão **0.3.0** o Reach oferece suporte à saída de coordenadas aprimoradas por RTK para os pilotos automáticos Navio e Pixhawk. Para tornar isso possível, implementamos um protocolo personalizado que chamamos de **ERB**(Emlid Reach Binary protocol).
 
-Here is a demo video with our results:
+Aqui está um vídeo de demonstração com nossos resultados:
 <div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/oq9H19ikAdM" frameborder="0" allowfullscreen></iframe></div>
 
-## ERB Protocol specification
+## Especificação do protocolo ERB
 
-Protocol description is available [here](https://files.emlid.com/ERB.pdf).
+A descrição do protocolo está disponível [aqui](https://files.emlid.com/ERB.pdf).
 
-## Requirements
+## Requisitos
 
-ERB support is included to ArduPilot starting with the following versions:
+O suporte do ERB está incluído no ArduPilot, começando com as seguintes versões:
 
 * ArduCopter 3.4
 * ArduPlane  3.5.0
 * APMrover   3.1
 
-## Recommended setup
+## Configuração recomendada
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-ardupilot-scheme.png" style="width: 800px;"></div>
 
-The setup we recommend goes as follows:
+A configuração que recomendamos é a seguinte:
 
-* Navio or Pixhawk with the ArduPilot firmware (not less version 3.4.0 for ArduCopter, 3.6.0 for ArduPlane and 3.0.1 for ArduRover). It's preferable to use the last stable version
-* Base stations is a Reach unit in Wi-Fi AP mode, configured as a TCP server
-* GCS is a laptop with Mission Planner(version 1.3.35 and higher), connected to the base Reach Wi-Fi hosted network
-* Telemetry connection via a serial radio
-* Rover Reach unit is mounted on a drone and connected to Navio or Pixhawk via the 6P-to-6P wire. This connection type will solve three problems at once: power Reach, allow ArduPilot board to pass base corrections and allow Reach to pass RTK solution back.
-
-The following guide will show how to configure both Navio or Pixhawk and Reach to work in this setup. If you wish alter to this workflow, it should be fairly easy to do so, as every part of the system is independent of others.
+*	Navio ou Pixhawk com o firmware do ArduPilot (não menos que a versão 3.4.0 para ArduCopter, 3.6.0 para ArduPlane e 3.0.1 para ArduRover). É preferível usar a última versão estável
+* Estações base é uma unidade Reach RS/RS+ no modo Wi-Fi AP, configurada como um servidor TCP
+* O GCS é um laptop com o Mission Planner (versão 1.3.35 e superior), conectado à rede Wi-Fi do Reach.
+* Conexão de telemetria através de um rádio serial
+* A unidade Rover Reach M + é montada em um drone e conectada ao Navio ou ao Pixhawk através do fio 6P-to-6P. Esse tipo de conexão resolverá três problemas de uma vez: power Reach, permite que a placa ArduPilot passe por correções de base e permita que Reach passe a solução RTK de volta.
 
 
+O guia a seguir mostrará como configurar o Navio ou o Pixhawk e o Reach para funcionar nessa configuração. Se você deseja alterar este fluxo de trabalho, deve ser bastante fácil fazê-lo, já que todas as partes do sistema são independentes das outras.
 
 
-## Connecting Reach to Pixhawk
+
+
+## Conectando Reach M+ a Pixhawk
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/pixhawk-reach-radio.png" style="width: 500px;"></div>
 
-To provide RTK solution to Pixhawk, Reach needs to be connected via a serial port. You can do that by plugging the serial cable into Reach's upper DF13 port and Pixhawk's **"Serial 4/5"** connector.
+Para fornecer a solução RTK para a Pixhawk, o Reach precisa estar conectado por meio de uma porta serial. Você pode fazer isso conectando o cabo serial na porta JST-GH do Reach e no conector **"Serial 4/5"** da Pixhawk.
 
-## Connecting Reach to Navio over UART
+## Conectando o Reach M+ ao Navio sobre o UART
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/navio2-reach.png" style="width: 500px;"></div>
 
-Connect Reach's upper DF13 port with Navio's **UART** port.
+Conecte a porta JST-GH do Reach com a porta **UART** do Navio.
 
-## Connecting Reach to Navio over USB
+## Conectando o Reach M+ ao Navio via USB
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/navio2-reach-usb.jpg" style="width: 500px;"></div>
 
-Connect Reach's Micro-USB port with RPi's **USB** port.
+Conecte a porta Micro-USB do Reach com a porta **USB** do RPi.
 
-## Configuring Reach to work with ArduPilot
+## Configurando o Reach para trabalhar com o ArduPilot
 
 ### Rover setup
 
-!!! note
-    The serial connection is used to accept base corrections and send solution at the same time.
+!!! nota
+    A conexão serial é usada para aceitar correções de base e enviar a solução ao mesmo tempo.
 
-Start with configuration base correction input:
+Comece com a entrada de correção da base de configuração:
 
-* Select **Correction input** tab
-* Select **Serial**
-* Choose **UART** or **USB-to-PC** as the device
-* Choose the desired baud rate(38400 for default)
-* Choose **RTCM3** as base corrections format
-* Hit **Apply** button to save settings
+* Selecione a aba de **Correction input**
+* Selecione **Serial**
+* Escolha **UART** ou **USB-to-PC** como o dispositivo
+* Escolha a taxa de transmissão desejada (38400 por padrão)
+* Escolha **RTCM3** como formato de correções base
+* Clique no botão **Apply** para salvar as configurações
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-base-correction-input.png" style="width: 100%;"></div>
 
-Now configure position output:
+Agora configure a saída de posição (Position output):
 
-* Select **Position output** tab
-* Select **Serial**
-* Choose **UART** or **USB-to-PC** as the device
-* Choose the desired baud rate(38400 for default)
-* Choose **ERB** as position output format
-* Hit **Apply** button to save settings
+* Selecione a aba **Position output**
+* Selecione **Serial**
+* Escolha **UART** ou **USB-to-PC** como o dispositivo
+* Escolha a taxa de transmissão desejada (38400 por padrão)
+* Escolha **ERB** como formato de saída de posição
+* Clique no botão  **Apply** para salvar as configurações
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-position-output.png" style="width: 100%;"></div>
 
-!!! note
-	**ERB** is a custom protocol, used to send location data to the autopilot.
+!!! nota
+	**ERB** é um protocolo personalizado, usado para enviar dados de localização para o piloto automático.
 
 
-### Setting up a correction link
+### Configurando um link de correção
 
-Reach supports a number of ways to accept [base corrections](common/reachview/correction-input/#base-correction), including the popular in UAV area serial radios. However, having a separate radio link for base corrections only is highly ineffective.
+O Reach suporta várias maneiras de aceitar [correções da base](common/reachview/correction-input/#base-correction), incluindo os rádios seriais populares da área UAV. No entanto, ter um link de rádio separado para correções básicas é altamente ineficaz.
 
-To solve this, you can use the telemetry radio as a carrier for RTK corrections. GCS can pass these corrections to the autopilot with a feature called **GPS inject**. This funcionality is available in **Mission planner** only.
+Para resolver isso, você pode usar o rádio de telemetria como uma portadora para correções RTK. O GCS pode passar essas correções para o piloto automático com um recurso chamado **GPS inject**. Essa funcionalidade está disponível somente no **Mission planner**.
 
-### Configuring radio for embedding corrections into telemetry
+### Configurando o rádio para incorporar correções na telemetria
 
-With default settings radio telemetry is not optimised for sending RTK corrections. This may cause correction data delivery delays and even loss. These slips will deteriorate RTK solution quality, so we need to minimize them.
+Com as configurações padrão, a telemetria de rádio não é otimizada para o envio de correções RTK. Isso pode causar atrasos de entrega de dados de correção e até mesmo perda. Esses atrasos irão atrapalhar a qualidade da solução RTK, por isso precisamos minimizá-los.
 
-!!! note
-    Radio configuration is done with telemetry disconnected.
+!!! nota
+    A configuração de rádio é feita com a telemetria desconectada.
 
-To change radio settings, make sure **Mavlink connection is disabled**. Then, go to **Initial setup** menu, and select **Sik Radio** in the side menu. Click **Load settings** and wait for the parameters of both radios to load.
+Para alterar as configurações de rádio, verifique se a **Mavlink connection is disabled**. Em seguida, vá para o menu **Initial setup** e selecione **Sik Radio** no menu lateral. Clique em **Load settings** e aguarde os parâmetros dos dois rádios serem carregados.
 
-You need to clear the field **ECC** and choose **Raw Data** in the Mavlink select field.
+Você precisa limpar o campo **ECC** e selecionar **Raw Data** no campo de seleção Mavlink.
 
-After this, click **Save settings**. If your radio's firmware is outdated, update with **Update Firmware(Local)**.
+Depois disso, clique em **Save settings**. Se o firmware do seu rádio estiver desatualizado, atualize com **Update Firmware(Local)**.
 
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-radio-setup.png" style="width: 800px;"></div>
 
-### Configuring ArduPilot to accept Reach solution
+### Configurando o ArduPilot para aceitar a solução Reach
 
-!!! attention
-    It is recommended to use Reach as a second GPS unit only.
+!!! Atenção
+    Recomenda-se usar o Reach como uma segunda unidade GPS apenas.
 
-For launch ArduPilot on Navio add to your starting command one of the following arguments:
+Para iniciar o ArduPilot no Navio, adicione ao seu comando de partida um dos seguintes argumentos:
 
-* For UART connection
+* Para conexão UART
 ```bash
 -E /dev/ttyAMA0
 ```
 
-* For USB connection
+* Para conexão USB
 ```bash
 -E /dev/ttyACM0
 ```
-This will enable to use Reach as external GPS.
+Isso permitirá usar o Reach como GPS externo.
 
-ArduPilot configuration will require setting some parameters via Mission planner. After connecting, go to **CONFIG/TUNING** menu, then click **Full parameters list** on the left. To find the desired parameter more quickly, use a search box on the right(highlighted in red).
+A configuração do ArduPilot exigirá a configuração de alguns parâmetros usando o Mission Planner. Após a conexão, vá para o menu **CONFIG/TUNING** e clique em **Full parameters list** à esquerda. Para encontrar o parâmetro desejado mais rapidamente, use uma caixa de pesquisa à direita (destacada em vermelho).
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-full-parameter-list.png" style="width: 800px;"></div>
 
-Start with settings **GPS-TYPE2** parameter to **"1"** - AUTO. This will enable the second GPS input.
+Comece com as configurações do parâmetro **GPS-TYPE2** para **"1"** - AUTO. Isso permitirá a segunda entrada do GPS.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-type2-parameter.png" style="width: 800px;"></div>
 
-Next, set **SERIAL4_BAUD** parameter (for UART connection) or **SERIAL0_BAUD** parameter (for USB connection) to the same baud rate, as chosen in ReachView solution output. Note the options corresponding to the different baud rates.
+Em seguida, defina o parâmetro **SERIAL4_BAUD** parâmetro (para conexão UART) ou **SERIAL0_BAUD** parâmetro (para conexão UART) para a mesma taxa de transmissão, conforme escolhido na saída da solução ReachView. Observe as opções correspondentes às diferentes taxas de transmissão.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-serial4-baud-parameter.png" style="width: 800px;"></div>
 
-Set **GPS_AUTO_SWITCH** to **"1"** - Enabled. Autopilot will automatically switch between the two GPS receivers, picking the one with better solution.
+Defina **GPS_AUTO_SWITCH** para **"1"** - Ativado. O piloto automático irá alternar automaticamente entre os dois receptores GPS, escolhendo aquele com melhor solução.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-auto-switch-parameter.png" style="width: 800px;"></div>
 
-Finally, set **GPS_INJECT_TO** parameter to **"1"**. **"1"** here stands for the second GPS input. If you configured Reach as the first input, set this parameter to **"0"**.
+Finalmente, defina o parâmetro **GPS_INJECT_TO** para **"1"**. **"1"** aqui representa a segunda entrada do GPS. Se você configurou o Reach como a primeira entrada, defina este parâmetro como **"0"**.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-to-parameter.png" style="width: 800px;"></div>
 
-### Configuring Mission planner to inject RTK corrections into telemetry
+### Configurando Mission Planner para mostrar correções RTK em telemetria
 
-To enable and configure GPS inject options in Mission planner press **"ctrl+F"** button combination. This will open a window with advanced GCS settings. Click **Inject GPS** button on the right.
+Para habilitar e configurar as opções de “GPS Inject” no Mission Planner, pressione a combinação de botões **"ctrl+F"** Isso abrirá uma janela com configurações avançadas do GCS. Clique no botão **Inject GPS** à direita.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-settings.png" style="width: 70%;"></div>
 
-In the new window, choose parameters for base connection. Reach in base mode supports TCP and serial modes. For the sake of this example, **let's assume base corrections are coming from another Reach in base TCP server mode**. This is a setup we usually use in our test flights.
+Na nova janela, escolha os parâmetros para a conexão básica. O Reach no modo base suporta os modos TCP e serial. Para o propósito deste exemplo, **suponhamos que as correções básicas sejam provenientes de outro Reach configurado para envio de correção da base via TCP**. Esta é uma configuração que normalmente usamos em nossos voos de teste.
 
-### Base setup
+### Configuração de base
 
-Let's configure our Reach device:
+Vamos configurar nosso Reach:
 
-* Open **Base mode** tab on Reach device
-* Choose TCP in Correction output options
-* Set **Server** in Role field
-* Set 9000 as Port
-* Hit **Apply** button button to save settings
+* Abra a guia **Base mode** no Reach
+* Escolha TCP nas opções “correction output”
+* Definir **Server** no campo de função
+* Definir 9000 como porta
+* Clique no botão  **Apply** para salvar as configurações
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-base-mode.png" style="width: 100%;"></div>
 
-In order to connect, choose TCP client mode in Mission Planner.
+Para conectar-se, escolha o modo “TCP Client” no Mission Planner.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-connection-type-new.png" style="width: 80%;"></div>
 
-Enter Base Reach's IP address.
+Digite o endereço IP do Reach.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-ip-new.png" style="width: 60%;"></div>
 
-And port the server port number.
+E o número da porta do servidor.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-port-new.png" style="width: 60%;"></div>
 
-Finally, check the corrections are coming in.
+Finalmente, verifique se as correções estão chegando.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-connected-new.png" style="width: 70%;"></div>

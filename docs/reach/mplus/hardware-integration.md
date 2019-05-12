@@ -1,55 +1,54 @@
 
-Reach supports various accessories via it's built-in USB OTG port and UART interface on the JST-GH connectors.
+Reach suporta vários acessórios através da porta USB OTG e interface UART nos conectores de JST-GH.
 
-### Radio
+### Rádio
 
-It is possible to connect radio modules to Reach in order to obtain corrections or send calculated coordinates.
+É possível conectar módulos de rádio do Reach a fim de obter correções ou enviar coordenadas calculadas.
 
-Most radios nowadays use UART or USB as a connection.
+A maioria das rádios hoje em dia usam UART ou USB como conexão.
 
-#### Connecting UART radio
+#### Conectando radio UART
 
-Logic level on UART in Reach is 3.3V but pins are 5V tolerant, so you can use both 3.3V and 5V logic level radios.
+Nível de carga da porta UART no Reach é 3.3V mas os pinos suportam até 5V, então você pode usar rádios de 3.3V e 5V.
 
-UART radio is accessible on Reach as a serial device with the name **ttyMFD2**.
+Rádio UART é acessível no Reach como um dispositivo serial com o nome de **ttyMFD2**.
 
-To connect UART radio to Reach use lower JST-GH port (S1).
+Para se conectar a rádio UART ao Reach use a porta JST-GH (S1).
 
-| Reach pins | Radio pins |
-|:----------:|:----------:|
-|     +5V    |     +5V    |
-|     TX     |     RX     |
-|     RX     |     TX     |
-|     GND    |     GND    |
+| Pinos do Reach | Pinos do Rádio |
+|:--------------:|:--------------:|
+|      +5V       |      +5V       |
+|       TX       |       RX       |
+|       RX       |       TX       |
+|       GND      |       GND      |
 
-#### 3DR Radio
+#### Rádio 3DR
 
 <div style="text-align: center;"><img src="../img/reachm-plus/hardware-integration/3dr.png" style="width: 700px;"></div><br>
 
 
-3DR Radio can also be connected over USB.
+Rádio 3DR também pode ser conectado via USB.
 
-#### RFD900 Radio
+#### Rádio RFD900
 
 <div style="text-align: center;"><img src="../img/reachm-plus/hardware-integration/rfd.png" style="width: 700px;"></div><br>
 
-!!! danger ""
-    Please mind that RFD can consume up to 800ma in peaks so make sure that your power source can provide enough power for both Reach and RFD900.
+!!! Atenção ""
+    Lembre-se que o RFD pode consumir até 800ma em picos, certifique-se que sua fonte de alimentação pode fornecer energia suficiente tanto para o Reach e para o RFD900.
 
 <br>
-#### Connecting USB radio or LTE modem
+#### Conectando radio USB ou modem LTE
 
 <div style="text-align: center;"><img src="../img/reachm-plus/hardware-integration/lte-modem.png" style="width: 700px;"></div><br>
 
-To connect USB radio or LTE-modem to Reach use USB-OTG cable provided with the package.
-Plug radio into USB-F port and plug Micro-USB end of the cable in Reach.
-**When using USB port in OTG mode Reach has to be [powered](power-supply.md) over one of the JST-GH ports**.
+Para se conectar o rádio USB ou modem LTE para o Reach use cabo USB-OTG, fornecido com o pacote. Ligue o rádio a porta USB-F e ligue o cabo Micro-USB no Reach.
+**Quando usando a porta USB no modo OTG Reach tem [powered](power-supply.md) que ser alimentado por uma das portas JST-GH**.
 
-!!! note "Connecting LTE modem"
-	Make sure that Reach M+ is in hotspot mode, and an LTE modem is preconfigured to connect to the Internet automatically after powering.
+!!! note "Conectando modem LTE"
+	Tenha certeza que o Reach M+ está no modo ponto de acesso e o modem LTE foi pré-configurado para se conectar a internet automaticamente após iniciar.
 <br>
-#### Connecting LoRa radio
+#### Conectando rádio LoRa
 
 <div style="text-align: center;"><img src="../img/reachm-plus/hardware-integration/lora.png" style="width: 700px;"></div><br>
 
-To connect LoRa radio to Reach use upper JST-GH port (S2).
+Para conectar o rádio LoRa ao Reach use o conector JST-GH de cima (porta S2).

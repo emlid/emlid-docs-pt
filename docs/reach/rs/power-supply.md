@@ -1,17 +1,17 @@
-## Power supply
+## Fonte de energia
 
-Reach RS/RS+ has built-in LiFePO4 battery providing 30 hours of operating time. 
+O Reach RS / RS + possui uma bateria LiFePO4 interna que fornece tempo de operação de 30 horas.
 
-## Charging over USB
+## Carga via USB
 
-You can power and charge Reach RS/RS+ over Micro-USB cable using power supplies like:
+Você pode ligar e carregar Reach RS/RS+ por cabo Micro-USB usando fontes de alimentação como:
 
 * Power bank
-* USB wall adapter
+* Adaptador AC para USB
 
-## Powering Reach RS+ from external connector
+## Carregando Reach RS+ a partir do conector externo
 
-!!! note ""
-	Works only for Reach RS+
+!!! nota ""
+	Funciona somente para o Reach RS+
 
-Reach RS+ can automatically turn on when the power is supplied to the device via an external 9-pin bottom connector with a voltage in the range from 5V to 40V. To charge the receiver 5 watts is required. For operating 7,5 watts on average is required (10 watts maximum). 
+Reach RS+ pode ser automaticamente ligado quando a energia é fornecida no conector de 9 pinos com uma voltagem entre 5V a 40V. Para carregar o receptor é necessário 5 watts. Para operação, é necessário uma média de 7,5 watts (10 watts no máximo).

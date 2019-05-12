@@ -34,10 +34,10 @@ Standalone Reach units come with the following:
 * Micro-USB <-> USB-F OTG cable
 
 
-### Collaboration
+### Colaboração
 
-This document can be edited on GitHub in markdown. If you find any mistakes, typos or  pieces that are not documented well enough simply open an issue or contribute by sending a pull request.
+Este documento pode ser editado no GitHub no markdown. Se você encontrar qualquer erro, equipamentos ou pelas que não estão com descrições suficientes, simplesmente abra um chamado ou contribua enviando uma solicitação.
 
-### Discussion
+### Discussão
 
-We are happy to answer any questions at [community.emlid.com](http://community.emlid.com)
+Estamos felizes em responder a quaisquer perguntas em [community.emlid.com](http://community.emlid.com)

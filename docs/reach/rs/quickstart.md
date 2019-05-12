@@ -1,236 +1,234 @@
-### Intro
+### Introdução
 
-In this tutorial we will go through the next steps:
+Neste tutorial seguiremos estas etapas:
 
-* Connecting Reach RS/RS+ to another Wi-Fi network
-* Updating ReachView for the first time
-* Setting up a rover and a base to work in RTK mode with correction link over Lo-Ra radio
+* Conectando Reach RS/RS+ em uma rede Wi-Fi
+* Atualizando o ReachView pela primeira vez
+* Configurando base e rover para funcionar no modo RTK com correção através do rádio LoRa
 
-The video below covers the process of the first update: powering Reach RS/RS+ on, connecting to a Wi-Fi and installing the latest version of ReachView app. After completing the video instructions continue the tutorial on [Placing Reach RS/RS+](#placing-reach-rs-module) step or follow through the video guide [Base and Rover setup](#base-and-rover-setup).
+O vídeo abaixo aborda o processo da primeira atualização: ligando o Reach RS/RS+, conectar a um Wi-Fi e instalar a última versão do app ReachView. Depois de completar as instruções de vídeo contine o tutorial [montagem do Reach RS/RS+](#placing-reach-rs-module) ou através do vídeo de [configuração da Base e Rover](#base-and-rover-setup).
 
-???+ note "My Reach RS/RS+ has the ReachView app sticker on top"
+???+ note "Meu Reach RS/RS+ tem o adesivo do aplicativo ReachView em cima"
     <div style="text-align: center;"><iframe title="Emlid manuals" width="560" height="315" src="https://www.youtube.com/embed/fIY__hNjcNI" allowfullscreen></iframe></div>
 
-??? note "My Reach RS has no sticker on top"
+??? note "Meu Reach RS não tem o adesivo em cima"
     <div style="text-align: center;"><iframe title="Emlid manuals" width="560" height="315" src="https://www.youtube.com/embed/HCOqtSUumow" allowfullscreen></iframe></div>
 
 
-!!! tip ""
-    If you encounter any issues performing these steps, we will be happy to help at our [**community forum**](http://community.emlid.com/).
+!!! Dica ""
+    Se você encontrou problemas em seguir estes passos, estaremos contentes em te ajudar no nosso [**fórum da comunidade**](http://community.emlid.com/).
 
-This tutorial only covers one use case. To get more information, follow these links:
+Este tutorial cobre apenas um caso de uso. Para obter mais informações, siga estes links:
 
-* [Mechanical specs](specs.md)
-* [Electrical specs](specs.md)
-* [ReachView app](common/reachview)
+* [Espefificações físicas](specs.md)
+* [Espeficifações elétricas](specs.md)
+* [•	Aplicativo ReachView](common/reachview)
 
-## Powering up
+## Ligando
 
-* To power on Reach RS/RS+ hold Power button for 3 seconds. Power LED is on to show Reach RS/RS+ is turned on. Solid network state LED (blue) indicates Reach RS/RS+ has launched its own Wi-fi hotspot.
+* •	Para ligar Reach RS/RS+ segure o botão Power por 3 segundos. O LED de energia  é para mostrar que o Reach RS/RS+ está ligado. O LED de rede (azul) aceso continuamente indica que o Reach RS/RS+ está no modo ponto de acesso.
 
-!!! note  ""
-    Reach RS/RS+ has internal battery designed for 30-hours of autonomous work. Reach RS/RS+ may be charged on the go with the micro-usb cable coming within the package. Battery status check is available through ReachView interface.
+!!! Nota  ""
+    Reach RS/RS+ tem bateria interna projetada para 30 horas de trabalho. O Reach RS/RS+ pode ser recarregado utilizando o cabo micro USB que o acompanha. A quantidade de carga da bateria está disponível na interface do ReachView.
 
-## Connecting to Reach RS/RS+
+## Conectando-se ao Reach RS/RS+
 
-When Reach RS/RS+ is powered for the first time it will create a Wi-Fi hotspot.
+Quando o Reach RS/RS+ é ligado pela primeira vez, ele cria um ponto de acesso Wi-Fi.
 
-* Open a list of Wi-Fi networks on your smartphone, tablet or laptop.
+* Abra a lista de redes Wi-Fi no seu smartphone, tablet ou laptop.
 
-* Connect to a network named **reach:xx:xx** (ex. reach:66:ac).
+* Conecte-se a rede chamada **reach:xx:xx** (ex. reach:66:ac).
 
-* Type network password: **emlidreach**.
+* Coloque a senha: **emlidreach**.
 
-## Setting up Wi-Fi
+## Configurando Wi-Fi
 
-After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop.
+Depois de conectar à rede hospedado por Reach, abra um navegador web em seu smartphone, tablet ou laptop.
 
-* Type either **http://reach.local** or **http://192.168.42.1** in the address bar and you will see ReachView Updater.
+* Digite  **http://reach.local** ou **http://192.168.42.1** na barra de navegação e você verá o ReachView Updater.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_main.png" style="width: 350px;"></div><br>
 
-!!! note ""
-    If your interface looks different, you need to reflash Reach device with v2.3 image by following [this guide](common/reachview/firmware-reflashing). You only need to do this if your device was purchased before 1 March 2017.
+!!! Nota ""
+    Se sua interface for diferente, você precisa fazer reflash no Reach com a imagem v2.3, basta seguir [este guia](common/reachview/firmware-reflashing). Você só precisa fazer isso se o seu aparelho foi adquirido antes de 1 de março de 2017.
 
-* Press plus button and enter your Wi-Fi network name, security type and password. Press Save button
+* Pressione o botão mais e entre com o nome da sua rede Wi-Fi, tipo de segurança e senha. Pressione o botão salvar
 
-!!! danger "Assure you are connecting to the existing network (such as home wi-fi, mobile phone hotspot, etc)"
-    Use your Wi-Fi network name and password. The name of the network on the screenshot below is an example. 
+!!! danger "Assegurar que você está se conectando a uma rede existente (tais como wi-fi em casa, ponto de acesso do smartphone, etc)"
+    Use o nome e senha da sua rede Wi-Fi. O nome da rede na imagem abaixo é um exemplo.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_wifi.png" style="width: 350px;"></div><br>
 
-* Press on your added network and click Connect. 
+* Pressione na sua rede adicionada e depois em Conectar (Connect).
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_wifi_connect.png" style="width: 600px;"></div><br>
 
-* After that Reach device will attempt to connect your Wi-Fi network.
+* •	Em seguida, o Reach tentará se conectar a sua rede Wi-Fi.
 
-!!! tip ""
-    If your device did not connect to Wi-Fi network it will switch to hotspot mode.
-    You can find Reach on **http://reach.local** or **http://192.168.42.1**.
-    Check your network name and password and try again.  
+!!! Dica ""
+    Se seu dispositivo não se conectou à rede Wi-Fi ele continuará no modo de ponto de acesso. Você pode encontrar o Reach em **http://reach.local** ou **http://192.168.42.1**.
+    Verifique seu nome de rede e senha e tente novamente.
 
-## Accessing Reach RS/RS+ device in a network
+## Acessando Reach RS/RS+ conectado a rede
 
-After connecting Reach device to an existing Wi-Fi network, you will need to identify it's IP. You may either use network scanning tools or use ReachView app for Android/iOS. 
+Após conectar o Reach a uma rede Wi-Fi existente, você precisará identificar qual é o IP dele. Você pode usar ferramentas para encontrar o IP em rede ou usar ReachView app para Android/iOS.
 
-### Network scanning tools
+### Ferramentas de busca de rede
 
-For this you can use:
+Para isto você pode usar:
 
-* "**Fing**" app for [iOS](https://goo.gl/Ho0qB) or [Android](https://goo.gl/7Wuwu).
+* Aplicativo  "**Fing**" para  [iOS](https://goo.gl/Ho0qB) ou [Android](https://goo.gl/7Wuwu).
 
-* ["**Nmap**"](https://nmap.org/) on Linux/OS X.
+* ["**Nmap**"](https://nmap.org/) para Linux/OS X.
 
-* ["**Zenmap**"](https://nmap.org/zenmap/) on Windows. 
+* ["**Zenmap**"](https://nmap.org/zenmap/) para Windows.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/fing.png" style="width: 500px;"></div><br>
 
-* Reach will show up as "**Murata Manufacturing**" device in these apps.
+* Reach será exibido como dispositivo "**Murata Manufacturing**" nestes aplicativos.
 
-* Put Reach IP in address bar and go.
+* Coloque o endereço de IP na barra de endereços e pronto.
 
-Read more on resolving IP addresses in the [ReachView section](common/reachview/).
+Leia mais sobre encontrar o endereço de IP na [seção ReachView](common/reachview/).
 
 ### App for iOS/Android
 
-Since ReachView v.2.8.0 you can connect to your Reach device with an app using your Android or iOS device.
+Desde ReachView v.2.8.0 você pode se conectar ao seu Reach com um app usando seu dispositivo Android ou iOS.
 
 
-| Download links |  |
+| Links para download |  |
 |-------------|----------|
 |[Google Play](https://play.google.com/store/apps/details?id=com.reachview)|[App Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)|
 
-After launching the app you'll see the list of the available receivers in your network. 
+Após abrir o app, você verá a lista dos receptores disponíveis em sua rede.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_ios_android.png" style="width: 400px;"></div><br>
 
-!!! danger "Reach can't work on the 192.168.2.xx subnet "
-    As 192.168.2.x subnet is reserved inside Reach for Ethernet connections, you will need to perform initial setup in a different Wi-Fi or change router settings. Routers usually have a setting to change the subnet address, so you can set it to 192.168.1.xx.
+!!! danger "Reach não pode trabalhar com ip 192.168.2.xx"
+    Como a sub-rede 192.168.2.x é reservada para o Reach fazer conexões Ethernet, você precisará executar configuração inicial em um Wi-Fi diferente ou alterar as configurações do roteador. Os roteadores geralmente têm uma configuração para alterar o endereço de sub-rede, então você pode configurá-lo para 192.168.1.xx.
 
-## Updating ReachView
+## Atualizando o ReachView
 
-After connecting to Reach RS/RS+ you will see ReachView Updater again which will install latest updates.
+Depois de conectar o Reach RS/RS+ você verá ReachView Updater novamente que irá instalar as atualizações mais recentes.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_finish.png" style="width: 350px;"></div><br>
 
-* Press **Reboot and go to the app!** button. Wait while device reboots.
+* Pressione o botão Reiniciar e ir para o app! (**Reboot and go to the app!**). Aguarde enquanto o dispositivo reinicia.
 
-* In about a minute refresh the page with ReachView app.
+* Em cerca de um minuto, atualize a página com o app ReachView.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_loading.png" style="width: 800px;"></div><br>
 
-## Base and Rover setup
+## Configurando Base e Rover
 
-This tutorial will guide you through the setup process of two Reach RS units as rover and base station and will help you to configure communication between them via LoRa radio in RTK mode.
+Este tutorial irá guiá-lo através do processo de instalação de duas unidades de Reach RS/RS+ como rover e base e vai ajudar você a configurar a comunicação entre eles via rádio LoRa no modo RTK.
 
 <div style="text-align: center;"><iframe title="Emlid manuals" width="560" height="315" src="https://www.youtube.com/embed/4GfUDoDwEAE" allowfullscreen></iframe></div>
 
 ## Placing Reach RS/RS+ module
 
- 
-* Reach RS/RS+ may be placed on a tripod with a 1/4" mount thread. Each package comes with an adapter to 5/8" survey pole thread.
 
-!!! danger "Attention"
-    There **should be no** obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
-    **Do not** test the device indoors or near buildings, do not cover the skyview for the antennas with laptops, cars or yourself. RTK requires good satellite visibility and reception.
+* Reach RS/RS+ pode ser colocado sobre um tripé com rosca de 1/4". Cada pacote vem com um adaptador para 5/8" para bastão.
 
-A guide how to properly place the antennas is available in [Reach RS/RS+ placement](placement) section.
+!!! danger "Importante"
+    **Não deve haver** nenhum obstáculo próximo à antena que possam obstruir a visão do céu superior a 30 graus acima do horizonte. Não teste o dispositivo dentro de casa ou perto de edifícios, não cubra a visão do céu das antenas com computadores portáteis, carros ou você mesmo. RTK requer satélite, boa visibilidade e recepção
+
+Um guia de como instalar as antenas está disponível na seção [Reach RS/RS+ placement](placement).
 
 
-## Working with ReachView app
+## Trabalhando com o aplicativo ReachView
 
-### Battery status check
+### Verificação da bateria
 
-You may check Reach RS/RS+ battery status by clicking on the sign in the upper right corner.
+Você pode verificar o estado da bateria do Reach RS/RS+, clicando sobre o sinal no canto superior direito.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/battery.png" style="width: 450px;"></div><br>
 
-### Interface walkthrough
+### Passo a passo da interface
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_status_menu.png" style="width: 800px;"></div><br>
 
-ReachView menu consists of 9 tabs, but we only need three of them to start work:
+Menu de ReachView é composto por 9 abas, mas só precisamos de três para começar a trabalhar:
 
-* **Status** tab which shows current satellite levels, RTK parameters, coordinates and map.
+* Aba de **status** mostra os níveis atuais de satélite, parâmetros RTK, coordenadas e mapa.
 
-* **Base mode** tab is used to set correction output type, base coordinates and RTCM3 messages.
+* Aba do **modo base** é usado para definir o tipo de saída de correção, coordenadas da base e mensagens RTCM3.
 
-* **Correction input** tab is used to set base correction for the rover.
+* Aba de **entrada de correção** é usado para definir a correção da base enviada para o rover.
 
-### Setting up base station
+### Configurando a base
 
-* Connect to Reach RS/RS+ you want to use as a base.
+* Conecte-se ao Reach RS/RS+ que você deseja utilizar como base.
 
-* Go to settings and change the name to "reach-base". This will help to simplify the work in field when you need to switch between the devices.
+* Vá em configurações e mude o nome para “reach-base”. Isto irá simplificar o trabalho em campo quando você precisar alternar entre os dispositivos.
 
-* Navigate to **Base mode** tab and turn on Correction output box toggle.
+* Vá até a aba **Modo Base (base mode)** e ligue a Saída de correção (Correction output), marcando a caixa.
 
-* Select LoRa tab and set frequency between 862 MHz and 1020 Mhz and set output power. 
+* Selecione a aba LoRa e configure uma frequência entre 862 MHz a 1020 MHz e selecione a potência de saída.
 
-!!! tip ""
-    Using LoRa modulation it is possible to hit up to 19km in line of sight or a few km in urban areas with just 20 dBm power output.
+!!! Dica ""
+    Usando a rádio LoRa é possível bater até 19km em linha de visão ou alguns km em áreas urbanas com apenas 20 dBm de potência.
 
 
-!!! danger ""
-    Make sure to select appropriate output power and frequency according to your local regulations. 
+!!! Aviso ""
+    Certifique-se de selecionar a potência de saída apropriada e a frequência de acordo com os regulamentos locais.
 
-* Next set the parameter of air rate. 
+* Em seguida, defina o parâmetro de intervalo (Air Rate).
 
-!!! tip ""
-    The lower the air rate, the longer the working distance will be. In order to unlock lower air rates disable correction messages or reduce rate. 
+!!! Dica ""
+    Menor intervalo (Air Rate), maior será a distância de trabalho. A fim de desbloquear intervalos menores, desative mensagens de correção ou reduza o intervalo.
 
-* Apply settings and wait until base averages it's position in Base coordinates box.
+* Aplicar configurações e aguarde até que a base armazene uma posição média.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reachrs-lora-base.png" style="width: 1200px;"></div><br>
 
 
-### Setting up rover
+### Configurando o rover
 
-* Connect to the second Reach. 
+* Conecte-se ao Segundo Reach.
 
-* Go to settings and change the name to "reach-rover".
+* Vá em configurações e mude o nome para “reach-rover”.
 
-* Navigate to **Correction input** tab. 
+* Vá até a aba **Entrada de correção (Correction input)**.
 
-* Choose LoRa correction mode.
+* Selecione modo de correção LoRa.
 
-* Frequency and air rate settings must match what was configured on the base. 
+*	Frequência e intervalo (Air Rate) dever ser iguais o que foi configurado na base.
 
-* Apply changes and you will see rover is connected to base.
+*	Aplique as mudanças e você verá que o rover está conectado a base.
+
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reachrs-lora-rover.png" style="width: 1200px;"></div><br>
 
-* The base now is sending corrections on rover via LoRa radio in RTCM 3 format. 
+* A base agora está enviando correções para o rover via rádio LoRa no formato RTCM3.
 
-### Viewing results
+### Informações
 
-* Go to **Status** tab of the app on the rover device.
+* •	Vá até a aba **Status** do dispositivo rover.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_status_menu_correction.png" style="width: 800px;"></div>
 
-You can see a bar chart with satellite levels, RTK parameters, positioning mode and solution status, current coordinates of rover and base in LLH format, velocity and map. In this quick tutorial, positioning mode is set to "Kinematic" which is the main RTK mode.
+Você pode ver um gráfico de barras com níveis de satélite, parâmetros RTK, modo de posicionamento e status da solução, coordenadas do rover e base em formato LLH, velocidade e mapa. Neste tutorial rápido, o modo de posicionamento é definido como "Cinemático", que é o principal modo RTK.
 
-* If everything has been set up correctly, **Solution status** will be **Float** and **you should see grey bars near satellite levels bars**. 
+* •	Se tudo foi configurado corretamente, **status de solução** será **Float** e **você deve ver barras cinzentas, perto das barras de níveis de satélite**.
 
 !!! note ""
-    **Float** means that base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved.  
+    **Float** significa que as correções da base estão sendo levadas em consideração e o posicionamento é relativo a base, mas as ambiguidades ainda não foram resolvidas.
 
-    If you see **"-"** or **Single** in **Solution status** box on this step, that means that some settings are incorrect.  
+    Se você ver “-“ ou **Autônomo (Single)** no **Status de solução** significa que algo não está correto.
+“-“ significa que não há nenhuma informação para o software processar. Ou até mesmo não passou tempo suficiente ou a antena não está posicionada em um lugar com visão para o céu.
 
-    **"-"** means there is no information for the software to process. Either not enough time has passed or the antenna is not placed correctly.  
+    **Autônomo (Single)** significa que o rover encontrou solução independente da base, as correções da base ainda não estão sendo levadas em consideração. Se o rover for iniciado no modo autônomo (single), este também será o resultado.
 
-    **Single** means that rover has found a solution relying on it's own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result.
 
-* If everything has been set up correctly and base and rover have good sky visibility, you should see **Solution status** change to **Fix** in a few minutes. **Fix** means that positioning is relative to the base and the integer ambiguity is resolved.
+* Se tudo foi configurado corretamente e a base e o rover tiver uma boa visão do céu, você deverá ver o **status da solução** alterar para **fix** em poucos minutos. **Fix** significa que o posicionamento está relativo a base e a ambiguidade foi resolvida.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_status_menu_fix.png" style="width: 800px;"></div><br>
 
-* Now you can see <font color="green"> green </font> points on the map below. <font color="orange"> Orange </font> points show **Float** solution. <font color="red"> Red </font> - **Single** solution.
+* •	Agora você pode ver os pontos <font color="green"> verdes </font> no mapa abaixo. Os pontos <font color="orange"> laranja  </font> são **Float**. <font color="red"> Vermelho </font> - solução **Autônomo (single)**.
 
-* You're ready to go!
+* •	Você está pronto para começar!
 
-## More reading
+## Mais informações
 
-Congratulations on finishing the quickstart tutorial! Continue to learn about setting up different correction links in the [ReachView section](common/reachview).
-
+Parabéns por finalizar o tutorial guia rápido! Continue aprendendo como configurar utilizando diferentes métodos de correção [na seção ReachView](common/reachview).
