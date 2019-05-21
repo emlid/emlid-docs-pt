@@ -146,6 +146,44 @@ You can upload files in CSV, GeoJSON or DXF formats or just enter coordinates ma
 !!! note ""
 	Check the templates to find out what exactly your data should look like.
 
+	??? note "CSV template"
+		    name,longitude,latitude,elevation
+		    Point 1,30.339,59.958,53.618
+		    Point 2,30.334,59.960,58.944
+
+	??? note "GeoJSON template"
+		    {
+		      "type": "FeatureCollection",
+		      "crs": {
+		        "type": "name",
+		          "properties": {
+		            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+		          }
+		       },
+		      "features": [
+		        {
+		          "type": "Feature",
+		          "properties": {
+		            "name": "Point 1"
+		          },
+		          "geometry": {
+		            "type": "Point",
+		            "coordinates": [ 30.339, 59.958, 53.618 ]
+		          }
+		        },
+		        {
+		          "type": "Feature",
+		          "properties": {
+		            "name": "Point 2"
+		          },
+		          "geometry": {
+		            "type": "Point",
+		            "coordinates": [ 30.334, 59.960, 58.944 ]
+		          }
+		        }
+		      ]
+		    }
+
 After you finish adding coordinates, hit the **Import** button.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/import-points-2.gif" style="width: 800px;" /></p>
@@ -162,7 +200,7 @@ Let’s get in touch with the stake out interface before proceeding.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/stakeout-interface.PNG" style="width: 800px;" /></p>
 
-* You can see [solution status](status/#solution-status), [AR ratio](status/#ar-validation-ratio), [age of differential](status/#age-of-differential), satellite number and [Reach name](settings/#change-reach-name) in the status bar placed in the top of the page. Make sure you have Fix
+* You can see [solution status](../../reachview/status/#solution-status), [AR ratio](../../reachview/status/#ar-validation-ratio), [age of differential](../../reachview/status/#age-of-differential), satellite number and [Reach name](../../reachview/settings/#change-reach-name) in the status bar placed in the top of the page. Make sure you have Fix
 * **The antenna height value** can be found under the status bar
 * In this mode, the map is always **North-oriented**
 * There’s a dark-gray field at the bottom of the window. The left value is the **horizontal distance** to the point, the right value is **vertical**
