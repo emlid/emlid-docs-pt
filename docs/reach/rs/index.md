@@ -18,9 +18,9 @@ Na caixa:
 
 * 1 x Antena de rádio
 
-* •	1 x Adaptador para bastão (5/8”)
+* 1 x Adaptador para bastão (5/8”)
 
-* •	1 x Cabo USB
+* 1 x Cabo USB
 
 ### Colaboração
 

@@ -22,11 +22,11 @@ Este tutorial cobre apenas um caso de uso. Para obter mais informações, siga e
 
 * [Espefificações físicas](specs.md)
 * [Espeficifações elétricas](specs.md)
-* [•	Aplicativo ReachView](common/reachview)
+* [Aplicativo ReachView](common/reachview)
 
 ## Ligando
 
-* •	Para ligar Reach RS/RS+ segure o botão Power por 3 segundos. O LED de energia  é para mostrar que o Reach RS/RS+ está ligado. O LED de rede (azul) aceso continuamente indica que o Reach RS/RS+ está no modo ponto de acesso.
+* Para ligar Reach RS/RS+ segure o botão Power por 3 segundos. O LED de energia  é para mostrar que o Reach RS/RS+ está ligado. O LED de rede (azul) aceso continuamente indica que o Reach RS/RS+ está no modo ponto de acesso.
 
 !!! Nota  ""
     Reach RS/RS+ tem bateria interna projetada para 30 horas de trabalho. O Reach RS/RS+ pode ser recarregado utilizando o cabo micro USB que o acompanha. A quantidade de carga da bateria está disponível na interface do ReachView.
@@ -63,7 +63,7 @@ Depois de conectar à rede hospedado por Reach, abra um navegador web em seu sma
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_wifi_connect.png" style="width: 600px;"></div><br>
 
-* •	Em seguida, o Reach tentará se conectar a sua rede Wi-Fi.
+* Em seguida, o Reach tentará se conectar a sua rede Wi-Fi.
 
 !!! Dica ""
     Se seu dispositivo não se conectou à rede Wi-Fi ele continuará no modo de ponto de acesso. Você pode encontrar o Reach em **http://reach.local** ou **http://192.168.42.1**.
@@ -204,30 +204,30 @@ Menu de ReachView é composto por 9 abas, mas só precisamos de três para come�
 
 ### Informações
 
-* •	Vá até a aba **Status** do dispositivo rover.
+* Vá até a aba **Status** do dispositivo rover.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_status_menu_correction.png" style="width: 800px;"></div>
 
 Você pode ver um gráfico de barras com níveis de satélite, parâmetros RTK, modo de posicionamento e status da solução, coordenadas do rover e base em formato LLH, velocidade e mapa. Neste tutorial rápido, o modo de posicionamento é definido como "Cinemático", que é o principal modo RTK.
 
-* •	Se tudo foi configurado corretamente, **status de solução** será **Float** e **você deve ver barras cinzentas, perto das barras de níveis de satélite**.
+* Se tudo foi configurado corretamente, **status de solução** será **Float** e **você deve ver barras cinzentas, perto das barras de níveis de satélite**.
 
 !!! note ""
-    **Float** significa que as correções da base estão sendo levadas em consideração e o posicionamento é relativo a base, mas as ambiguidades ainda não foram resolvidas.
-
-    Se você ver “-“ ou **Autônomo (Single)** no **Status de solução** significa que algo não está correto.
-“-“ significa que não há nenhuma informação para o software processar. Ou até mesmo não passou tempo suficiente ou a antena não está posicionada em um lugar com visão para o céu.
+     **Float** significa que as correções da base estão sendo levadas em consideração e o posicionamento é relativo a base, mas as ambiguidades ainda não foram resolvidas.
+ 
+     Se você ver **“-“** ou **Autônomo (Single)** no **Status de solução** significa que algo não está correto.
+	
+     **“-“** significa que não há nenhuma informação para o software processar. Ou até mesmo não passou tempo suficiente ou a antena não está posicionada em um lugar com visão para o céu.
 
     **Autônomo (Single)** significa que o rover encontrou solução independente da base, as correções da base ainda não estão sendo levadas em consideração. Se o rover for iniciado no modo autônomo (single), este também será o resultado.
-
 
 * Se tudo foi configurado corretamente e a base e o rover tiver uma boa visão do céu, você deverá ver o **status da solução** alterar para **fix** em poucos minutos. **Fix** significa que o posicionamento está relativo a base e a ambiguidade foi resolvida.
 
 <div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_status_menu_fix.png" style="width: 800px;"></div><br>
 
-* •	Agora você pode ver os pontos <font color="green"> verdes </font> no mapa abaixo. Os pontos <font color="orange"> laranja  </font> são **Float**. <font color="red"> Vermelho </font> - solução **Autônomo (single)**.
+* Agora você pode ver os pontos <font color="green"> verdes </font> no mapa abaixo. Os pontos <font color="orange"> laranja  </font> são **Float**. <font color="red"> Vermelho </font> - solução **Autônomo (single)**.
 
-* •	Você está pronto para começar!
+* Você está pronto para começar!
 
 ## Mais informações
 
