@@ -1,23 +1,22 @@
-Reach is able to trigger cameras as well as register events. Event mark feature is a must for aerial mapping as it allows to register precise time when shutter was activated.
+Reach é capaz de disparar câmeras, bem como registrar eventos. Recurso de marcar um evento é indispensável para mapeamento aéreo, pois permite para registrar o tempo exato quando o obturador foi ativado.
 
 <p style="text-align:center" ><img src="../img/reachview/camera_control/camera.png" style="width: 800px;" /></p>
 
-### Camera trigger
-Camera trigger is only available on Reach module and not available on Reach RS. By altering the duty cycle and period parameters you can match settings required for triggering your camera module. Real-time signal graph is shown on the same page. Note, that this feature does not have to be used if your autopilot is able to trigger the camera, as it has more information about the flight plan and can make more informed decisions on when to fire the camera. 
+### Disparador da câmera
+Disparador da câmera é apenas disponível no módulo Reach e Reach M+ e não está disponível no Reach RS. Alterando o modo de trabalho e o tempo de disparo, você pode encontrar as configurações necessárias para disparar sua câmera. Gráfico de sinal em tempo real é mostrado na mesma página. Nota, este recurso não deve ser usado se seu piloto automático é capaz de acionar a câmera, pois tem mais informações sobre o plano de voo e pode tomar decisões mais embasadas em relação ao disparo da câmera.
 
-### Camera events
-You see the time of the last event for real-time debugging. Only works with GNSS satellites in view for time synchronization. An event is triggered by driving time mark pin down, usually by a camera hot shoe. It is possible to connect Reach M+ with [an adapter to any camera](#connecting-reach-m-to-a-camera-using-hsa) with hot shoe (e.g. Sony, Canon, Nikon). All event marks are stored in the raw data log. Time mark pin is designed to be directly connected to a hot shoe cable without any additional electronic parts such as resistors or capacitors.
+### Registros da câmera
+Você vê o tempo do último registro para depuração em tempo real. Só funciona com satélites GNSS na vista de sincronização de tempo. Um registro é acionado por um pino marcador de tempo, geralmente uma sapata da câmera. É possível conectar Reach M+ com um adaptador para qualquer câmera com sapata (por exemplo, Sony, Canon, Nikon). Todos registros são armazenados nos dados brutos. Pino marcador de tempo é projetado para ser conectado diretamente a um cabo de sapata sem quaisquer peças eletrônicas adicionais tais como resistores ou capacitores.
 
-#### Connecting Reach M+ to a camera using HSA
+#### Conectando Reach M+ a uma câmera utilizando HSA
 
-To connect Reach to a camera with hot shoe adapter (HSA) use 5-pin JST-GH cable. Make sure you connect the adapter to a hot shoe of a camera correctly:
+Para conectar o Reach uma câmera com adaptador de sapata (HSA) use cabo de 5 pinos JST-GH. Certifique-se de que ligar o adaptador a uma sapata de uma câmera corretamente:
 
 <p style="text-align:center" ><img src="../img/reachview/camera_control/emlid-hotshoe.jpg" style="width: 500px;" /></p>
 
-Connect JST-GH connector to С1 port on Reach M+.
+Conecte o conector JST-GH a porta С1 no Reach M+.
 
 <p style="text-align:center" ><img src="../img/reachview/camera_control/s1port-connection.jpg" style="width: 500px;" /></p>
 
-!!! danger "Attention"
-    Check the [RTK Settings](../../reachview/rtk-settings/#gnss-selection-for-time-marks-logging) section of ReachView docs for the recommended GNSS selection when recording time marks with Reach.
-
+!!! danger "Atenção"
+    Verifique a seção de [Verifique a seção de Configurações RTK](../../reachview/rtk-settings/#gnss-selection-for-time-marks-logging) dos documentos ReachView para seleção recomendada de GNSS ao registrar marcadores com o Reach.

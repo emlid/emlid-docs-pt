@@ -1,37 +1,36 @@
-## Mechanical specs
+## Especificações físicas
 
-Reach RS/RS+ general drawing can be found [here](files/reachrs-drawing.pdf).
+Desenho geral do Reach RS/RS+ está disponível [aqui](files/reachrs-drawing.pdf).
 
-Reach RS/RS+ 3D models can be found here:
+Modelos em 3D do Reach RS/RS+ estão disponíveis aqui:
 
-* [Step file](https://github.com/emlid/hardware/blob/master/Reach_RS_RSplus.step)
+* [Arquivo Step](https://github.com/emlid/hardware/blob/master/Reach_RS_RSplus.step)
 
-* [Iges file](https://github.com/emlid/hardware/blob/master/Reach_RS_RSplus.iges)
+* [Arquivo Iges](https://github.com/emlid/hardware/blob/master/Reach_RS_RSplus.iges)
 
-Pattern of mounting holes for Reach RS/RS+ damping platform can be found [here](files/reachrs-damping-platform.pdf).
+Padrão de furos montagem para Reach RS/RS+ e a plataforma amortecimento pode ser encontrada [aqui](files/reachrs-damping-platform.pdf).
 
 
-## Electrical specs
+## Especificações elétricas
 
-Reach RS/RS+ extension connector pinout can be found [here](files/RS232_port.pdf).
+Esquema da pinagem do conector do Reach RS/RS+ está disponível [aqui](files/RS232_port.pdf).
 
-## Extension cables specs
+## Especificações de cabos extensores
 
-| Cable type | Spec sheet |
+| Tipo do cabo | Catálogo |
 |-----------|------|
-| Without second connector 2m |[Datasheet](files/without-connector.pdf) |
-| DB9F 2m |[Datasheet](files/DB9F.pdf) |
-| DB9 2m |[Datasheet](files/DB9.pdf) |
+| Sem o segundo conector 2m |[Catálogo](files/without-connector.pdf) |
+| DB9F 2m |[Catálogo](files/DB9F.pdf) |
+| DB9 2m |[Catálogo](files/DB9.pdf) |
 
 
 
-## Compliance
+## Certificados
 
-CE Compliance documents can be found here:
+Documentos com certificados estão disponíveis aqui:
 
 * [Reach RS CE Declaration of conformity](https://files.emlid.com/compliance/RRS_CE_declaration.pdf)
 * [Reach RS test report main page](https://files.emlid.com/compliance/RRS_CE_test_report.pdf)
 
 * [Reach RS+ CE Declaration of conformity](https://files.emlid.com/compliance/RRSP_CE_declaration.pdf)
 * [Reach RS+ test report main page](https://files.emlid.com/compliance/RRSP_CE_test_report.pdf)
-

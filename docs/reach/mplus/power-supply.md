@@ -1,29 +1,28 @@
-## How to power Reach M+
+## Como ligar o Reach M+
 
-Emlid Reach M+ module can be powered using **Micro-USB** port or **JST-GH** ports. Power circuit is shared for all ports, so when you power the device over one port it will pass power to other ports.
+O módulo Emlid Reach M+ pode ser alimentado usando a porta **Micro-USB** ou portas de **JST-GH** Circuito de potência é compartilhado para todas as portas, então quando você liga o dispositivo sobre uma porta vai passar energia para outras portas.
 
-!!! danger "Attention"
-    Do not plug two power supplies at the same time as it may damage the device.
+!!! danger "Atenção"
+    Não conecte duas fontes de alimentação ao mesmo tempo, pois poderá danificar o dispositivo.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/power-supply/wrong-power-supply.png" style="width: 550px;"></div><br>
 
-### Power supply over USB
+### Energia via USB
 
 <div style="text-align: center;"><img src="../img/reachm-plus/power-supply/usb-power-supply.png" style="width: 550px;"></div><br>
 
-You can power Reach over Micro-USB cable using power supplies like:
+Você pode ligar o Reach através do micro-USB usando fontes de alimentação como:
 
 * Power bank
-* USB wall adapter
-* Computer USB ports
+* Adaptador de parede (AC) USB
+* Portas USB do computador
 
 <div style="text-align: center;"><img src="../img/reachm-plus/power-supply/power-supply-options.png" style="width: 550px;"></div><br>
 
-### Powering using JST-GH ports
+### Energia via porta JST-GH
 
-Reach can be powered by providing 5 Volts to corresponding pins on any of the two JST-GH ports.
+Reach pode ser alimentado com energia de 5 volts para pinos correspondentes em qualquer das duas portas JST-GH.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/power-supply/jst-gh-power-supply.png" style="width: 550px;"></div><br>
 
-When Reach is powered over JST-GH port it will pass power to devices connected to Micro-USB OTG port such as flash drives, 3G\4G modems, USB radios etc.
-
+Quando o Reach é alimentado pela porta de JST-GH, irá passar energia para dispositivos conectados à porta Micro-USB OTG como flash drives, modens 3G\4G, USB rádios etc.

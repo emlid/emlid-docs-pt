@@ -1,31 +1,31 @@
-Welcome to your Emlid Reach RS / Reach RS+!
+Bem vindo ao seu Emlid Reach RS/Reach RS+
 
   [![](img/reachrs/Quickstart.png){: style="width: 200px;"} ](quickstart.md)
-  [![](img/reachrs/Tutorials.png){: style="width: 200px;"}](common/tutorials/intro.md)
+  [![](img/reachrs/Tutorials.png){: style="width: 200px;"}](tutorials.md)
   [![](img/reachrs/ReachView.png){: style="width: 200px;"}](common/reachview)
 
   [![](img/reachrs/Placement.png){: style="width: 200px;"} ](placement.md)
   [![](img/reachrs/Power-supply.png){: style="width: 200px;"}](power-supply.md)
   [![](img/reachrs/Specs.png){: style="width: 200px;"}](specs.md)
 
-### Package contents
+### Conteúdo da embalagem
 
-In the box:
+Na caixa:
 
-* 1 x Reach receiver
+* 1 x Receptor Reach
 
-* 1 x Carry case
+* 1 x Maleta para transporte
 
-* 1 x Radio antenna
+* 1 x Antena de rádio
 
-* 1 x Adapter for survey pole ( 5/8'')
+* •	1 x Adaptador para bastão (5/8”)
 
-* 1 x USB cable
+* •	1 x Cabo USB
 
-### Collaboration
+### Colaboração
 
-This document can be edited on GitHub in markdown. If you find any mistakes, typos or  pieces that are not documented well enough simply open an issue or contribute by sending a pull request.
+Este documento pode ser editado no GitHub no markdown. Se você encontrar qualquer erro, equipamentos ou pelas que não estão com descrições suficientes, simplesmente abra um chamado ou contribua enviando uma solicitação.
 
-### Discussion
+### Discussão
 
-We are happy to answer any questions at [community.emlid.com](http://community.emlid.com)
+Estamos felizes em responder a quaisquer perguntas em community.emlid.com
