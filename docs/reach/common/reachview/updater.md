@@ -4,24 +4,15 @@ ReachView app constantly improves ([changelogs](../../reachview/changelogs)). Th
 
 * Conecte seu dispositivo à rede com acesso à Internet
 
-*	Quando conectado a internet, o ReachView verifica automaticamente se há uma nova versão disponível e exibe uma notificação
+* Quando conectado a internet, o ReachView verifica automaticamente se há uma nova versão disponível e exibe uma notificação
 
-*	Vá para configurações para verificar a versão atual do ReachView e veja as opções de atualização
+* Vá para configurações para verificar a versão atual do ReachView e veja as opções de atualização
 
-
-* Go to **Settings** to check the current version of ReachView and see update options
-
-* Clique "Atualizar" (Upgrade) para ir até a página de atualização e então clique em “Atualizar ReachView” (Update ReachView"
-
-* Click **Update ReachView** to go to Update Center
-
-* Depois que a instalação estiver completa clique em “Reiniciar e ir para o aplicativo!” (Reboot and go to the app!)
-
-* Hit **Update ReachView** to update the firmware
+* Clique "Atualizar" (Upgrade) para ir até a página de atualização e então clique em “Atualizar ReachView” (Update ReachView)
 
 <p style="text-align:center" ><img src="../img/reachview/updater/update.png" style="width: 370px;" /></p>
 
-* After the installation is complete click **Reboot and go to the app!**
+* Depois que a instalação estiver completa clique em “Reiniciar e ir para o aplicativo!” (Reboot and go to the app!)
 
 <p style="text-align:center" ><img src="../img/reachview/updater/reboot.png" style="width: 370px;" /></p>
 

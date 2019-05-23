@@ -26,7 +26,7 @@ Para usar o Reach com aplicativo Android, você precisará fazer o seguinte:
 	5. Launch ReachView app
 	6. Choose Reach from the list
 
-* •	Na aba "Position output”, defina a saída de posição para BT e formato para **NMEA**
+* Na aba "Position output”, defina a saída de posição para BT e formato para **NMEA**
 
 !!! Dica ""
     Não se esqueça de aplicar as novas configurações do rover
@@ -89,9 +89,7 @@ Para conectar o Reach, faça o seguinte:
 
 <p style="text-align:center"><img src="../img/reach/mock-location/lefebure-receiver-settings-1.jpg" style="width: 800px;"/></p>
 
-* •	Volte para a tela principal, aperte **Conectar** e veja a conexão!
-
-* Go back to the main screen and hit **Connect** button
+* Volte para a tela principal, aperte **Conectar** e veja a conexão!
 
 !!! tip ""
 	Check the log messages to confirm the Bluetooth connection got established and the information about satellites is updated.

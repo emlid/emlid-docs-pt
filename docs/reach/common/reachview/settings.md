@@ -23,7 +23,6 @@ O nome do Reach pode ser alterado para distinguir entre vários dispositivos. Um
 
 ### Redefinir as configurações para o padrão  
 Clique no botão “Redefinir as configurações para o padrão” para retornar todas as configurações para a configuração de fábrica. Apenas registros e configurações sem fio são mantidos. Se você gostaria de realizar uma reinicialização de fábrica completa e limpar todos os seus dados, você pode usar o [reflash imagem do firmware](firmware-reflashing).
->>>>>>> 06110d1... Translation from Alezi
 
 ### Alterar a senha do ponto de acesso
 A senha padrão do ponto de acesso é “emlidreach”, você pode alterá-la por motivos de segurança. Se você esquecer sua nova senha de ponto de acesso, ainda poderá acessar o Reach, levando-o a uma rede Wi-Fi conhecida. Se você perder o acesso ao Reach, poderá usar o [reflashreflash image firmware](firmware-reflashing) e configurá-lo novamente.
