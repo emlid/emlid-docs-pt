@@ -3,7 +3,7 @@
 
 You can place your smartphone near the window in your house and it will obtain GPS coordinates after some time, but for RTK such environment won't be sufficient. For RTK to work there are special requirements for antenna placement.
 
-### Clear sky view without obstacles
+### Céu limpo sem obstáculos
 
 An antenna needs to have a clear sky view 30 degrees above the horizon. There should be no obstacles that could block the view like buildings, trees, cars, humans, laptops, etc.
 
