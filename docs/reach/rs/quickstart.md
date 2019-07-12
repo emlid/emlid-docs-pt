@@ -91,7 +91,7 @@ Para isto você pode usar:
 
 Leia mais sobre encontrar o endereço de IP na [seção ReachView](common/reachview/).
 
-### App for iOS/Android
+### App para iOS/Android
 
 Desde ReachView v.2.8.0 você pode se conectar ao seu Reach com um app usando seu dispositivo Android ou iOS.
 
@@ -125,10 +125,10 @@ Este tutorial irá guiá-lo através do processo de instalação de duas unidade
 
 <div style="text-align: center;"><iframe title="Emlid manuals" width="560" height="315" src="https://www.youtube.com/embed/4GfUDoDwEAE" allowfullscreen></iframe></div>
 
-## Placing Reach RS/RS+ module
+## Onde colocar o Reach RS/RS+
 
 
-* Reach RS/RS+ pode ser colocado sobre um tripé com rosca de 1/4". Cada pacote vem com um adaptador para 5/8" para bastão.
+* O Reach RS/RS+ pode ser colocado sobre um tripé com rosca de 1/4". Cada pacote vem com um adaptador para 5/8" para bastão.
 
 !!! danger "Importante"
     **Não deve haver** nenhum obstáculo próximo à antena que possam obstruir a visão do céu superior a 30 graus acima do horizonte. Não teste o dispositivo dentro de casa ou perto de edifícios, não cubra a visão do céu das antenas com computadores portáteis, carros ou você mesmo. RTK requer satélite, boa visibilidade e recepção
