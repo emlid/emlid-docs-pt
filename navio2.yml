@@ -40,22 +40,22 @@ markdown_extensions:
     - pymdownx.details
 
 nav:
-- Introduction : 'index.md'
-- Hardware setup: 'ardupilot/hardware-setup.md'
-- Raspberry Pi configuration: 'common/ardupilot/configuring-raspberry-pi.md'
+- Introdução: 'index.md'
+- Montagem: 'ardupilot/hardware-setup.md'
+- Configuração Raspberry Pi: 'common/ardupilot/configuring-raspberry-pi.md'
 - ArduPilot:
-  - 'Typical setup schemes': 'ardupilot/typical-setup-schemes.md'
-  - 'Installation and running' : 'common/ardupilot/installation-and-running.md'
-  - 'Configuration' : 'ardupilot/tips.md'
-  - 'Upgrading' : 'common/ardupilot/upgrade.md'
-  - 'Building from sources': 'common/ardupilot/building-from-sources.md'
+  - 'Esquemas típicos de montagem': 'ardupilot/typical-setup-schemes.md'
+  - 'Instação e execução' : 'common/ardupilot/installation-and-running.md'
+  - 'Configuração' : 'ardupilot/tips.md'
+  - 'Atualizando' : 'common/ardupilot/upgrade.md'
+  - 'Criando de fontes': 'common/ardupilot/building-from-sources.md'
 - ROS : 'common/dev/ros.md'
-- Navio2 for developers:
+- Navio2 para desenvolvedores:
   - 'Pinout': 'dev/pinout.md'
   - 'Video streaming': 'common/dev/video-streaming.md'
-  - 'Wi-Fi Broadcast' : 'common/dev/wbc.md'
-  - 'Examples setup': 'common/dev/navio-repository-cloning.md'
-  - 'Barometer' : 'common/dev/barometer.md'
+  - 'Transmissão Wi-Fi' : 'common/dev/wbc.md'
+  - 'Exemplos de montagem': 'common/dev/navio-repository-cloning.md'
+  - 'Barômetro' : 'common/dev/barometer.md'
   - 'ADC' : 'dev/adc.md'
   - 'PWM output' : 'dev/pwm-output.md'
   - 'RC input' : 'dev/rc-input.md'
@@ -67,5 +67,5 @@ nav:
   - 'RGB LED' : 'common/dev/rgb-led.md'
   - 'Emlidtool' : 'common/dev/emlidtool.md'
 - Changelogs: 'common/dev/changelogs.md'
-- Community projects:
+- Projetos da comunidade:
   - 'Windows IoT': 'common/community-projects/Windows-IoT.md'
