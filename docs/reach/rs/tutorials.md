@@ -1,27 +1,27 @@
-#Tutorials
+#Tutoriais
 
-Explore these step-by-step guides to get a better understanding of your Reach possibilities and use-cases.
+Explore estes guias passo-a-passo para melhor entendimento e todas as possibilidades de uso do seu Reach.
 
-###Basics
+###Básicos
 
-* [How RTK works](common/tutorials/rtk-introduction.md)
-* [How PPK works](common/tutorials/ppk-introduction.md)
-* [Connecting Reach to the Internet](common/tutorials/connecting-to-the-internet.md)
-* [Working with NTRIP service](common/tutorials/ntrip-workflow.md)
-* [Placing GCPs in RTK mode](common/tutorials/placing-gcps.md)
-* [How to download files from Reach](common/tutorials/downloading-files.md)
-* [Placing the base](common/tutorials/placing-the-base.md)
+* [Como funciona o RTK](common/tutorials/rtk-introduction.md)
+* [Como funciona o PPK](common/tutorials/ppk-introduction.md)
+* [Conectando o Reach a internet](common/tutorials/connecting-to-the-internet.md)
+* [Trabalhando com serviço NTRIP](common/tutorials/ntrip-workflow.md)
+* [Colocando GCP's no modo RTK](common/tutorials/placing-gcps.md)
+* [Como baixar arquivos do Reach](common/tutorials/downloading-files.md)
+* [Instalando a base](common/tutorials/placing-the-base.md)
 
-###Post-processing workflow
+###Fluxo de pós processamento
 
-* [How PPK works](common/tutorials/ppk-introduction.md)
-* [GPS post-processing](common/tutorials/gps-post-processing.md)
-* [Analyzing PPK solution and logs](common/tutorials/analyzing-logs.md)
+* [Como funciona o PPK](common/tutorials/ppk-introduction.md)
+* [Pós processamento](common/tutorials/gps-post-processing.md)
+* [Entendendo a solução PPK e os registros](common/tutorials/analyzing-logs.md)
 
 ###Integration with external software
 
-* [Bluetooth output and Android mock location](common/tutorials/mock-location.md)
-* [Using QGIS as survey tool](qgis-survey.md)
-* [Microsurvey FieldGenius setup guide](common/tutorials/fieldgenius.md)
-* [Carlson SurvCE/SurvPC setup guide](common/tutorials/survce.md)
-* [Topcon MAGNET Field Layout setup guide](common/tutorials/magnetfield.md)
+* [Bluetooth output e Android mock location](common/tutorials/mock-location.md)
+* [Usando QGIS como uma ferramenta na topografia](qgis-survey.md)
+* [Guia de configuração Microsurvey FieldGenius](common/tutorials/fieldgenius.md)
+* [Guia de configuração Carlson SurvCE/SurvPC](common/tutorials/survce.md)
+* [Guia de configuração Topcon MAGNET Field](common/tutorials/magnetfield.md)
