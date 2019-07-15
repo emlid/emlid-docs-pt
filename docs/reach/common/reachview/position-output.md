@@ -23,7 +23,7 @@ Definição de protocolo pode ser encontrada no [Manual do RTKLIB versão 2.4.2]
 Usado para comunicação com o Ardupilot, a descrição do protocolo pode ser encontrada [aqui](https://files.emlid.com/ERB.pdf).
 
 
-**Data in any of these formats can be sent via Serial, TCP or Bluetooth.**
+**Dados em qualquer um destes formatos podem ser enviados via Serial, TCP ou Bluetooth.**
 
 ### Serial
 Conexão de porta serial está disponível através de várias opções de conexão de hardware. Todos eles suportam as seguintes taxas comunicação: 4800, 9600, 14400, 19200, 28800, 38400, 56000, 57600, 115200, 128000, 153600, 230400, 256000, 460800.
@@ -54,4 +54,4 @@ Se ReachView não permite definir um determinado número de porta isso significa
 Saída de Bluetooth é usada para transmitir dados de posição para smartphones, tablets ou coletores de dados. Por favor, certifique-se de emparelhar o seu dispositivo em configurações de Bluetooth.
 
 !!! note ""
-	iOS devices don't support getting a location over Bluetooth from third-party hardware.
+	Dispositivos iOS não suportam obter posição através do Bluetooth usando hardware de terceiros.
