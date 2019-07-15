@@ -41,10 +41,10 @@ markdown_extensions:
     - attr_list
 
 nav:
-- Introduction: index.md
-- Power supply: power-supply.md
-- Antenna placement: antenna-placement.md
-- Hardware integration: hardware-integration.md
+- Intrudução: index.md
+- Como ligar: power-supply.md
+- Montando a antena: antenna-placement.md
+- Integração de hardware: hardware-integration.md
 - ReachView:
   - Introduction: common/reachview/index.md
   - Settings: common/reachview/settings.md
@@ -61,22 +61,22 @@ nav:
   - Firmware reflashing: common/reachview/firmware-reflashing.md
   - Updater: common/reachview/updater.md
   - Changelogs: common/reachview/changelogs.md
-- LED status: led-status.md
-- Specification: specs.md
-- Quickstart: quickstart.md
-- Tutorials:
-  - Basics:
-    - How RTK works: common/tutorials/rtk-introduction.md
-    - How PPK works: common/tutorials/ppk-introduction.md
-    - Connecting Reach to the Internet: common/tutorials/connecting-to-the-internet.md
-    - Working with NTRIP service: common/tutorials/ntrip-workflow.md
-    - Placing GCPs in RTK mode: common/tutorials/placing-gcps.md
-    - How to download files from Reach: common/tutorials/downloading-files.md
-    - Placing the base: common/tutorials/placing-the-base.md
-  - Post-processing workflow:
-    - How PPK works: common/tutorials/ppk-introduction.md
-    - GPS post-processing: common/tutorials/gps-post-processing.md
-    - Analyzing PPK solution and logs: common/tutorials/analyzing-logs.md
-  - Integration with external software:
-    - ArduPilot integration: ardupilot-integration.md
-    - Bluetooth output and Android mock location: common/tutorials/mock-location.md
+- Estado do LED: led-status.md
+- Especificações: specs.md
+- Guia Rápido: quickstart.md
+- Tutoriais:
+  - Básicos:
+    - Como funciona o RTK: common/tutorials/rtk-introduction.md
+    - Como funciona o PPK: common/tutorials/ppk-introduction.md
+    - Conectando o Reach a internet: common/tutorials/connecting-to-the-internet.md
+    - Trabalhando com serviço NTRIP: common/tutorials/ntrip-workflow.md
+    - Colocando GCP's no modo RTK: common/tutorials/placing-gcps.md
+    - Como baixar arquivos do Reach: common/tutorials/downloading-files.md
+    - Instalando a base: common/tutorials/placing-the-base.md
+  - Fluxo de pós processamento:
+    - Como funciona o PPK: common/tutorials/ppk-introduction.md
+    - Pós processamento: common/tutorials/gps-post-processing.md
+    - Entendendo a solução PPK e os registros: common/tutorials/analyzing-logs.md
+  - Integração com software externo:
+    - Integração com ArduPilot: ardupilot-integration.md
+    - Bluetooth output e Android mock location: common/tutorials/mock-location.md
