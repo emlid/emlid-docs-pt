@@ -40,46 +40,46 @@ markdown_extensions:
     - pymdownx.details
 
 nav:
-- Introduction : 'index.md'
-- GCS installation: 'gcs-installation.md'
-- Firmware update: 'firmware-update.md'
-- Quickstart: 'quickstart.md'
-- Hardware installation:
-  - 'Ports and pinouts': 'hardware/pinout.md'
+- Introdução : 'index.md'
+- Instalação GCS: 'gcs-installation.md'
+- Atualização de Firmware: 'firmware-update.md'
+- Guia rápido: 'quickstart.md'
+- Instalação de Hardware:
+  - 'Portas e pinouts': 'hardware/pinout.md'
   - 'Edge GNSS': 'hardware/gnss.md'
   - 'Camera': 'hardware/camera.md'
   - 'Wi-Fi (Antenna placement)': 'hardware/wifi.md'
-  - '3D models': 'hardware/3dmodels.md'
-  - 'Power module': 'hardware/power-module.md'
-  - 'Mounting': 'hardware/mounting.md'
-  - 'Connection schemes': 'hardware/connection-schemes.md'
-- Optional Accessories:
-  - 'Vibration damping': 'accessories/vibro.md'
-- Flying with QGroundControl:
-  - 'Frame configuration': 'qgc/frame.md'
-  - 'Calibration': 'qgc/calibration.md'
-  - 'Connection': 'qgc/connection.md'
+  - 'Modelos 3D': 'hardware/3dmodels.md'
+  - 'Módulo de potência': 'hardware/power-module.md'
+  - 'Montagem': 'hardware/mounting.md'
+  - 'Esquemas de conexões': 'hardware/connection-schemes.md'
+- Acessórios opcionais:
+  - 'Plataforma anti vibração': 'accessories/vibro.md'
+- Voando com o QGroundControl:
+  - 'Configuração do modelo': 'qgc/frame.md'
+  - 'Calibração': 'qgc/calibration.md'
+  - 'Conexão': 'qgc/connection.md'
   - 'Arming checks': 'qgc/arming-checks.md'
-  - 'Flight modes': 'qgc/flight-modes.md'
+  - 'Modos de voo': 'qgc/flight-modes.md'
   - 'Failsafe': 'qgc/failsafe.md'
   - 'Logging': 'qgc/logging.md'
   - 'RC Input and Output': 'qgc/rcinput-and-output.md'
-  - 'Video streaming': 'qgc/video.md'
-  - 'WiFi setup': 'qgc/wifi-setup.md'
-  - 'Additional parameters': 'qgc/parameters.md'
-  - 'Sensors temperature': 'qgc/sensor-temperature.md'
-- LED status: 'led-status.md'
-- Edge for developers:
+  - 'Streaming de vídeo': 'qgc/video.md'
+  - 'Configuração do WiFi': 'qgc/wifi-setup.md'
+  - 'Parâmetros adicionais': 'qgc/parameters.md'
+  - 'Temperatura dos sensores': 'qgc/sensor-temperature.md'
+- Estado do LED: 'led-status.md'
+- Edge para desenvolvedores:
   - 'ArduPilot': 'dev/ardupilot.md'
   - 'QGC': 'dev/qgc.md'
-  - 'Firmware update': 'dev/firmware-update.md'
+  - 'Atualização de Firmware': 'dev/firmware-update.md'
   - 'emlidtool': 'dev/emlidtool.md'
-- Specifications:
-  - 'Mechanical': 'specs/mechanical.md'
-  - 'Electrical': 'specs/electrical.md'
-  - 'Features': 'specs/features.md'
-- Tutorials:
-  - 'Reach integration': 'tutorials/reach-integration.md'
+- Especificações:
+  - 'Físicas': 'specs/mechanical.md'
+  - 'Elétricas': 'specs/electrical.md'
+  - 'Características': 'specs/features.md'
+- Tutoriais:
+  - 'Integração ao Reach': 'tutorials/reach-integration.md'
 - Changelogs:
   - 'QGC changelog': 'changelogs/qgc-changelog.md'
   - 'Edge changelog': 'changelogs/edge-changelog.md'
