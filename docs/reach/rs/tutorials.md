@@ -6,6 +6,7 @@ Explore estes guias passo-a-passo para melhor entendimento e todas as possibilid
 
 * [Como funciona o RTK](common/tutorials/rtk-introduction.md)
 * [Como funciona o PPK](common/tutorials/ppk-introduction.md)
+* [Tuning LoRa for RTK](common/tutorials/tuning-lora.md)
 * [Conectando o Reach a internet](common/tutorials/connecting-to-the-internet.md)
 * [Trabalhando com serviço NTRIP](common/tutorials/ntrip-workflow.md)
 * [Colocando GCP's no modo RTK](common/tutorials/placing-gcps.md)
