@@ -21,7 +21,7 @@ Explore estes guias passo-a-passo para melhor entendimento e todas as possibilid
 ###Integration with external software
 
 * [Bluetooth output e Android mock location](common/tutorials/mock-location.md)
-* [Usando QGIS como uma ferramenta na topografia](qgis-survey.md)
+* [Usando QGIS como uma ferramenta na topografia](common/tutorials/qgis-survey.md)
 * [Guia de configuração Microsurvey FieldGenius](common/tutorials/fieldgenius.md)
 * [Guia de configuração Carlson SurvCE/SurvPC](common/tutorials/survce.md)
 * [Guia de configuração Topcon MAGNET Field](common/tutorials/magnetfield.md)
