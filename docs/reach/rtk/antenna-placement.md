@@ -1,28 +1,28 @@
 !!! tip ""
-	Reach has been replaced with [Reach M+](https://emlid.com/reach). Documentation for Reach M+ can be found [here](https://docs.emlid.com/reachm-plus/).
+	O Reach foi substituído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
 
-### A well-placed antenna is crucial to achieve good RTK positioning results
+### Uma antena bem posicionada é crucial para alcançar bons resultados de posicionamento RTK
 
-You can place your smartphone near the window in your house and it will obtain GPS coordinates after some time, but for RTK such environment won't be sufficient. For RTK to work there are special requirements for antenna placement that are much more strict that for a standalone GPS.
+Você pode colocar o seu smartphone perto da janela da sua casa e ele obterá as coordenadas do GPS depois de algumn tempo, mas para o RTK esse não será suficiente. Para o RTK funcionar, existem requisitos especiais para o posicionamento de antenas que são muito mais rigorosas do que para um GPS autônomo.
 
-#### No obstacles blocking the skyview
+#### Nenhum obstáculo bloqueando a vista para o céu
 
-Antenna needs to have a clear skyview 30 degrees above the horizon. There should be no obstacles that could block the view like: buildings, trees, cars, humans, laptops etc.
+A antena precisa ter uma visão clara de 30 graus acima do horizonte. Não deve haver obstáculos que possam bloquear a visão como: edifícios, árvores, carros, seres humanos, laptops, etc.
 
 <div style="text-align: center;"><img src="../img/reach/antenna-placement/antenna-mount.png" style="width: 550px;"></div><br>
 
-Examples of **bad** environments for antenna placement: indoors, urban areas, forest, close to the ground.
+Exemplos de ambientes **ruins** para colocação de antenas: em ambientes fechado, áreas urbanas, florestas, perto do solo.
 
-Examples of **good** environments for antenna placement: field, top of the hill, rooftop of a building.
+Exemplos de ambientes **bons** para colocação de antenas: campos, topo de montanhas, telhado de edifícios.
 
-#### No electronics nearby
+#### Nenhum dispositivo eletrônico nas proximidades
 
-Electronic devices may produce RF noise that could affect reception of the GPS signal. Keep all electronics (including the Reach itself) as far as possible from the antenna.
+Dispositivos eletrônicos podem produzir ruídos de RF que podem afetar a recepção do sinal de GPS. Mantenha todos os componentes eletrônicos (incluindo o próprio Reach o mais longe possível da antena.
 
-#### Ground plane
+#### Plano de apoio
 
-Antenna has to be placed on a ground plane which reduces multipath, provides shielding and improves signal reception. Ground plane is a conductive plate, it may be a piece of metal, a roof of a car, a metal roof of a building, etc.
+A antena deve ser colocada em um plano de apoio que reduza o multicaminho, forneça blindagem e melhore a recepção do sinal. O plano de apoio deve ser uma placa condutora, pode ser uma chapa de metal, o teto de um carro, o teto de metal de um prédio, etc.
 
-Tallysman TW4721 requires ground plane no less than 70x70mm.
+A antena Tallysman TW4721 requer uma plano de apoio não inferior a 70x70mm.
 
 <div style="text-align: center;"><img src="../img/reach/antenna-placement/antenna-ground-plane.png" style="width: 550px;"></div><br>
