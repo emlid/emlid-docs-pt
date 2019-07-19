@@ -1,65 +1,65 @@
 !!! tip ""
-	Reach has been replaced with [Reach M+](https://emlid.com/reach). Documentation for Reach M+ can be found [here](https://docs.emlid.com/reachm-plus/).
+	O Reach foi substituído por [Reach M+](https://emlid.com/reach). A documentação do Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
 
 
 !!! note ""
-    LED functionality is available with ReachView version 2.7.0 and newer 
+    Funcionalidade de LED está disponível com o ReachView versão 2.7.0 e mais recente 
 
 
-## Reach boot LED sequence
+## Sequência do LED de inicialização do Reach
 
-Reach LED is an RGB LED that cycles through a simple pattern:
+O LED do Reach é um LED RGB que percorre um padrão simples:
 
-Network state -> App state
+Estado da rede -> estado do aplicativo
 
-During boot Reach will go through 3 steps:
+Durante o boot, o Reach passará por três etapas:
 
-* Network scan
-* Time sync
-* ReachView launch
+* Varredura de rede
+* Sincronização de tempo
+* Acesso ao ReachView
 
-### Network scan
+### Varredura de rede
 
-During boot, Reach enters a network scan state in which it will try to connect to any known Wi-Fi networks it can find. This might result in connecting to a previously added network or creating its own hotspot.
+Durante a inicialização, o Reach entre em um estado de varredura de rede no qual ele tentará se conectar a qualquer rede Wi-Fi conhecida que possa encontrar. Isso pode resultar no conexão a uma rede adicionada anteriormente ou no criação de seu próprio ponto de acesso.
 
-| Network state | Demo |
+| Descrição | Demo |
 |-----------|------|
-|Scanning|<div style="text-align: center;"><img src="../img/reach/led-status/network-scanning-led.gif" style="width: 30px;"></div>  |
-|Client Wi-Fi mode|<div style="text-align: center;"><img src="../img/reach/led-status/blue.png" style="width: 30px;"></div>  |
-|Hotspot Wi-Fi mode|<div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="width: 30px;"></div>  |
+|Procurando|<div style="text-align: center;"><img src="../img/reach/led-status/network-scanning-led.gif" style="width: 30px;"></div>  |
+|Conectado a rede Wi-Fi|<div style="text-align: center;"><img src="../img/reach/led-status/blue.png" style="width: 30px;"></div>  |
+|Modo ponto de acesso|<div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="width: 30px;"></div>  |
 
 
-### Time sync
+### Sincronização de tempo
 
-After network configuration is done, **<font color="magenta">magenta</font> blinks** will be added to the LED. They are shown during time sync.
+Após a configuração, **<font color="magenta">magenta</font> piscará** e será adicionada ao LED. Eles são mostrados durante a sincronização de tempo.
 
 !!! danger ""
-    The app will not launch until the time sync is complete. Internet connection allows this to happen automatically, but in hotspot mode Reach requires a connected antenna with some satellite visibility.
+    O aplicativo não será iniciado até que a sincronização de tempo seja concluída. A conexão com a internet permite que isso aconteça automaticamente, mas no modo de ponto de acesso, o Reach requer uma antena conectada com alguma visibilidade de satélite.
 
-### ReachView launch and operation
+### Acesso e operação do ReachView
 
-After the time sync is done, the **magenta blinks** stop and ReachView is launched. **<font color="green">Green</font> solid** light will take its place, showing app start. You can see several additional states:
+Após a sincronização de tempo, o **piscar magenta** parará e o ReachView será iniciado. Entrará a **<font color="luz verde">Green</font> sólido** em seu lugar, mostrando o inicío do aplicativo. Você pode ver vários status adicionais:
 
-| App state | Demo |
+| Status do LED | Demo |
 |-----------|------|
-|Normal app operation|<div style="text-align: center;"><img src="../img/reach/led-status/green.png" style="width: 30px;"></div>  |
-|Point collection|<div style="text-align: center;"><img src="../img/reach/led-status/point-collection-led.gif" style="width: 30px;"></div>  |
-|App internal error|<div style="text-align: center;"><img src="../img/reach/led-status/red.png" style="width: 30px;"></div>  |
+|Operação normal do Aplicativo|<div style="text-align: center;"><img src="../img/reach/led-status/green.png" style="width: 30px;"></div>  |
+|Coletando pontos|<div style="text-align: center;"><img src="../img/reach/led-status/point-collection-led.gif" style="width: 30px;"></div>  |
+|Erro interno do aplicativo|<div style="text-align: center;"><img src="../img/reach/led-status/red.png" style="width: 30px;"></div>  |
 
 
-### LED Behavior
+### Comportamento do LED
 
-The table below demonstrates possible flash patterns describing various states of the receiver.  
+A tabela abaixo demonstra possíveis padrões de flash descrevendo vários status do recptor.  
 
 
-| Reach State | Time Sync   -> | Network   -> | App Status | Sequence Demo |
+| Statu do Reach | Sincronização de tempo   -> | Rede   -> | Status do aplicativo | Demo |
 |--------------|-----------|---------------------|---------|-----------|
-|<br> <div style="text-align: center;">    OFF   </div>                   | <br>  </div>    |  <br> </div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/off.png" style="width: 150px;"></div>   |
-|<br> <div style="text-align: center;">    Lack of power   </div>                   | <br>  <div style="text-align: center;"><img src="../img/reach/led-status/magenta.png" style="height: 30px;"><br>Blinks each 10-15 sec</div>    |  <br> </div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/low-power.gif" style="width: 150px;"></div>   |
-|<br> <div style="text-align: center;">    Network scan   </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/blue.png" style="height: 30px;"><br>Fast blinks</div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/network-scan.gif" style="width: 150px;"></div>   |
-|<br> <div style="text-align: center;">    Time sync in client Wi-Fi mode   </div>                   | <br>  <div style="text-align: center;"><img src="../img/reach/led-status/magenta.png" style="height: 30px;"><br>Solid</div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/blue.png" style="width: 30px;"><br>Solid</div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/time-sync-client.gif" style="width: 150px;"></div>   |
-|<br> <div style="text-align: center;">    Time sync in Hotspot mode, <br> _sattelite visibility is required_   </div>                   | <br>  <div style="text-align: center;"><img src="../img/reach/led-status/magenta.png" style="height: 30px;"><br>Solid</div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="width: 30px;"><br>Solid</div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/time-sync-hotspot.gif" style="width: 150px;"></div>   |
-|<br> <div style="text-align: center;">    App running,<br> Wi-Fi client mode   </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/blue.png" style="height: 30px;"><br>Solid</div> | <br><div style="text-align: center;"><img src="../img/reach/led-status/green.png" style="height: 30px;"><br>Solid </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/running-client.gif" style="width: 150px;"></div>   |
-|<br> <div style="text-align: center;">    App running, <br>hotspot mode    </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="height: 30px;"><br>Solid</div> | <br><div style="text-align: center;"><img src="../img/reach/led-status/green.png" style="height: 30px;"><br>Solid </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/running-hotspot.gif" style="width: 150px;"></div>   | 
-|<br> <div style="text-align: center;"> Point collection, <br> _assuming Reach is_ <br> _in Hotspot mode_     </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="height: 30px;"><br>Solid <br> </div> | <br><div style="text-align: center;"><img src="../img/reach/led-status/green.png" style="height: 30px;"><br>Fast blinks </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/point-collection.gif" style="width: 150px;"></div>   |
-|<br> <div style="text-align: center;">    Internal error, <br>_assuming Reach is_ <br> _in Hotspot mode_   </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="height: 30px;"><br>Solid <br> </div> | <br><div style="text-align: center;"><img src="../img/reach/led-status/red.png" style="height: 30px;"><br>Solid </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/error.gif" style="width: 150px;"></div>   |
+|<br> <div style="text-align: center;">    Desligado   </div>                   | <br>  </div>    |  <br> </div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/off.png" style="width: 150px;"></div>   |
+|<br> <div style="text-align: center;">    Falta de energia   </div>                   | <br>  <div style="text-align: center;"><img src="../img/reach/led-status/magenta.png" style="height: 30px;"><br>Pisca a cada 10-15 seg</div>    |  <br> </div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/low-power.gif" style="width: 150px;"></div>   |
+|<br> <div style="text-align: center;">    Procurando rede   </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/blue.png" style="height: 30px;"><br>Pisca rápido</div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/network-scan.gif" style="width: 150px;"></div>   |
+|<br> <div style="text-align: center;">    Sincronização de tempo no modo Wi-Fi   </div>                   | <br>  <div style="text-align: center;"><img src="../img/reach/led-status/magenta.png" style="height: 30px;"><br>Solido</div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/blue.png" style="width: 30px;"><br>Solido</div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/time-sync-client.gif" style="width: 150px;"></div>   |
+|<br> <div style="text-align: center;">    Sincronização de tempo no modo ponto de acesso, <br> _a visibilidade de satélites é necessária_   </div>                   | <br>  <div style="text-align: center;"><img src="../img/reach/led-status/magenta.png" style="height: 30px;"><br>Solido</div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="width: 30px;"><br>Solido</div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/time-sync-hotspot.gif" style="width: 150px;"></div>   |
+|<br> <div style="text-align: center;">    Aplicativo em execução,<br> Modo Wi-Fi   </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/blue.png" style="height: 30px;"><br>Solid</div> | <br><div style="text-align: center;"><img src="../img/reach/led-status/green.png" style="height: 30px;"><br>Solido </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/running-client.gif" style="width: 150px;"></div>   |
+|<br> <div style="text-align: center;">    Aplicativo em execução, <br>Modo ponto de acesso    </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="height: 30px;"><br>Solido</div> | <br><div style="text-align: center;"><img src="../img/reach/led-status/green.png" style="height: 30px;"><br>Solido </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/running-hotspot.gif" style="width: 150px;"></div>   | 
+|<br> <div style="text-align: center;"> Coletando pontos, <br> _assumindo que o Reach está_ <br> _no modo ponto de acesso_     </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="height: 30px;"><br>Solido <br> </div> | <br><div style="text-align: center;"><img src="../img/reach/led-status/green.png" style="height: 30px;"><br>Pisca rápido </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/point-collection.gif" style="width: 150px;"></div>   |
+|<br> <div style="text-align: center;">    Erro interno, <br>_assumindo que o Reach está_ <br> _no modo ponto de acesso_   </div>                   | <br>  </div>    |  <br> <div style="text-align: center;"><img src="../img/reach/led-status/white.png" style="height: 30px;"><br>Solido <br> </div> | <br><div style="text-align: center;"><img src="../img/reach/led-status/red.png" style="height: 30px;"><br>Solido </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/error.gif" style="width: 150px;"></div>   |
