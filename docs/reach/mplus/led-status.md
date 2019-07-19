@@ -1,70 +1,70 @@
 !!! note ""
-    LED functionality is available with ReachView version 2.7.0 and newer 
+    Funcionalidade de LED está disponível com o ReachView versão 2.7.0 e atualizações mais recentes 
 
-## Reach M+ LED indicators
+## Indicadores LED do Reach M+
 
-Reach M+ has three LEDs, which are used as status indicators for three different parts of the system:
+O Reach M+ tem três LEDs, que são usados como indicadores de status para três partes diferentes do sistema:
 
-| System part | Indicator |
+| Parte do Sitema | Indicador |
 |-----------|------|
-|Power|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/orange.png" style="width: 30px;"></div>  |
-|Network|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/blue.png" style="width: 30px;"></div>  |
-|Stat|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/green.png" style="width: 30px;"></div>  |
+|Energia|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/orange.png" style="width: 30px;"></div>  |
+|Rede|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/blue.png" style="width: 30px;"></div>  |
+|Status|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/green.png" style="width: 30px;"></div>  |
 
 
 
-### Power LED 
+### LED de energia
 
-| LED state | Demo |
+| Descrição | Demo |
 |-----------|------|
-|Reach M+ is OFF |<div style="text-align: center;"><img src="../img/reachm-plus/led-status/grey.png" style="width: 30px;"></div>  |
-|Normal operation|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/orange.png" style="width: 30px;"></div>  |
+|Reach M+ desligado |<div style="text-align: center;"><img src="../img/reachm-plus/led-status/grey.png" style="width: 30px;"></div>  |
+|Operação normal|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/orange.png" style="width: 30px;"></div>  |
 
 
-### Network LED
+### LED de rede
 
-During boot, Reach M+ enters a network scan state in which it will try to connect to any known Wi-Fi networks it can find. This might result in connecting to a previously added network or creating its own hotspot.
+Durante a inicialização, o Reach M+ entra em um estado de procura de rede no qual ele tentará se conectar a qualquer rede Wi-Fi conhecida que tenha acesso. Isso pode resultar na conexão a uma rede adicionada anteriormente ou na criação de seu prórpio ponto de acesso.
 
-| LED state | Demo |
+| Descrição | Demo |
 |-----------|------|
-|Scanning|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/network-scanning-led.gif" style="width: 30px;"></div>  |
-|Client Wi-fi mode|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/client-led.gif" style="width: 30px;"></div>  |
-|Hotspot mode|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/blue.png" style="width: 30px;"></div>  |
+|Procurando|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/network-scanning-led.gif" style="width: 30px;"></div>  |
+|Conecectado a rede Wi-Fi|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/client-led.gif" style="width: 30px;"></div>  |
+|Modo ponto de acesso|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/blue.png" style="width: 30px;"></div>  |
 
-The Network LED behavior changes every time you change the Wi-Fi mode via ReachView. It will reflect turning hotspot on, scanning and connecting to existing wireless networks.
+O comportamento do Led de rede muda toda vez que você altera o modo Wi-Fi via ReachView. Ele refletirá a ativação do ponto de acesso, a procura por redes Wi-Fi e a conexão a redes sem fio existentes.
 
-### Stat LED
+### LED de status
 
-Stat LED is used to display ReachView status. 
+O LED de status é usado para exibir o status do ReachView. 
 
-| LED state | Demo |
+| Descrição | Demo |
 |-----------|------|
-|Time sync|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/time-sync-led.gif" style="width: 30px;"></div>  |
-|Normal operation|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/green.png" style="width: 30px;"></div>  |
-|Point collection|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/point-collection-led.gif" style="width: 30px;"></div>  |
-|Internal error|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/grey.png" style="width: 30px;"></div>  |
+|Sincronização do relógio|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/time-sync-led.gif" style="width: 30px;"></div>  |
+|Operação normal|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/green.png" style="width: 30px;"></div>  |
+|Coleta de pontos|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/point-collection-led.gif" style="width: 30px;"></div>  |
+|Erro interno|<div style="text-align: center;"><img src="../img/reachm-plus/led-status/grey.png" style="width: 30px;"></div>  |
 
 
-### Time sync
-After network configuration is done, green LED will start blinking. It is shown during time sync.
+### Sincronização do relógio
+Após a configuração da rede, o LED verde começará a piscar. É mostrado durante a sincronização do relógio.
 
-!!! danger ""
-    The app will not launch until the time sync is complete. Internet connection allows this to happen automatically, but in hotspot mode Reach requires a connected antenna with some satellite visibility.
-
-
-
-### LED Behavior
-
-The table below demonstrates possible flash patterns describing various states of the receiver.  
+!!! Alerta ""
+    O aplicativo não será iniciado até que a sincronização de tempo seja concluída. A conexão com a internet permite que isso aconteça automaticamente, mas no modo de ponto de acesso, o Reach requer uma antena conectada com alguma visibilidade de satélite.
 
 
-| Reach State  |  Demo |
+
+### Comportamento do LED
+
+A tabela abaixo demonstra possíveis combinações de flash dos LEDs, descrevendo vários status do receptor.  
+
+
+| Status do Reach M+  |  Demo |
 |--------------|-------|
-|<br><br><br><br> <div style="text-align: center;">    OFF   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/off.png" style="height: 150px;"></div> |
-|<br><br><br><br> <div style="text-align: center;">    Loading   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/loading.gif" style="height: 150px;"></div> |
-|<br><br><br><br> <div style="text-align: center;">    Time sync   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/time-sync.gif" style="height: 150px;"></div> |
-|<br><br><br><br> <div style="text-align: center;">    Network scan   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/network-scan.gif" style="height: 150px;"></div> |
-|<br><br><br><br> <div style="text-align: center;">     App running, client Wi-Fi mode   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/running-client.gif" style="height: 150px;"></div>
-|<br><br><br><br> <div style="text-align: center;">    App running, hotspot mode   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/running-hotspot.gif" style="height: 150px;"></div> |
-|<br><br><br><br> <div style="text-align: center;">    Point collection <br> _assuming the device is in hotspot mode_   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/point-collection.gif" style="height: 150px;"></div>
-|<br><br><br><br> <div style="text-align: center;">    Internal error <br> _assuming the device is in hotspot mode_   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/error.png" style="height: 150px;"></div>
+|<br><br><br><br> <div style="text-align: center;">    Desligado   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/off.png" style="height: 150px;"></div> |
+|<br><br><br><br> <div style="text-align: center;">    Carregando   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/loading.gif" style="height: 150px;"></div> |
+|<br><br><br><br> <div style="text-align: center;">    Sincronização do relógio   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/time-sync.gif" style="height: 150px;"></div> |
+|<br><br><br><br> <div style="text-align: center;">    Procurando rede Wi-Fi   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/network-scan.gif" style="height: 150px;"></div> |
+|<br><br><br><br> <div style="text-align: center;">     App em execução, modo conectado a uma rede Wi-Fi   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/running-client.gif" style="height: 150px;"></div>
+|<br><br><br><br> <div style="text-align: center;">    App em execução, modo ponto de acesso   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/running-hotspot.gif" style="height: 150px;"></div> |
+|<br><br><br><br> <div style="text-align: center;">    Ponto coletado <br> _assumindo que o dispositivo está no modo ponto de acesso_   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/point-collection.gif" style="height: 150px;"></div>
+|<br><br><br><br> <div style="text-align: center;">    Erro interno <br> _assumindo que o dispositivo está no modo ponto de acesso_   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachm-plus/led-status/error.png" style="height: 150px;"></div>
