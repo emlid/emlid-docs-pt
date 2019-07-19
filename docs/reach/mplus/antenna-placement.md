@@ -1,40 +1,40 @@
 !!! tip ""
-	A well-placed antenna is essential for achieving good RTK positioning results
+	Uma antena bem posicionada é essencial para alcançar bons resultados com o posicionamento RTK
 
-You can place your smartphone near the window in your house and it will obtain GPS coordinates after some time, but for RTK such environment won't be sufficient. For RTK to work there are special requirements for antenna placement.
+Você pode colocar o seu smartphone perto da janela da sua casa e ele obterá as coordenadas do GPS depois de algum tempo, mas para o RTK esse ambiente não será suficiente. Para o RTK funcionar, existem requisitos especiais para a colocação das antenas. 
 
 ### Céu limpo sem obstáculos
 
-An antenna needs to have a clear sky view 30 degrees above the horizon. There should be no obstacles that could block the view like buildings, trees, cars, humans, laptops, etc.
+Uma antena precisa ter uma visão claro do céu, 30 graus acima do horizonte. Não deve haver obstáculos que possam bloquear a visão, como edifícios, árvores, carros, seres humanos, laptops, etc.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/antenna-placement/antenna-mount.png" style="width: 550px;"></div><br>
 
-Examples of **good** environments for antenna placement:
+Exemplos de ambientes **bons** para colocação de antenas:
 
-* field
+* campos
 
-* top of the hill
+* topo de montanhas
 
-* the rooftop
+* terraços
 
-Examples of **bad** environments for antenna placement:
+Exemplos de ambientes **ruins** para colocação de antenas:
 
-* indoors
+* dentro de ambientes fechados
 
-* urban areas
+* areas urbanas
 
-* forest
+* florestas
 
-* close to the ground
+* próximo do chão
 
-### No electronics nearby
+### Nenhum dispositivo eletrônico nas proximidades
 
-Electronic devices may produce RF noise that could affect the reception of the GPS signal. Keep all electronics (including the Reach itself) as far as possible from the antenna.
+Dispositivos eletrônicos podem produzir ruídos de RF que podem afetar a recepção do sinal de GPS. Mantenha todos os componentes eletrônicos (incluindo o próprio Reach) o mais longe possível da antena.
 
-### Ground plane
+### Plano de apoio
 
-An antenna has to be placed on a ground plane which reduces multipath, provides shielding and improves signal reception. A ground plane is a conductive plate, it may be a piece of metal, a roof of a car, a metal roof of a building, etc.
+Uma antena deve ser colocada em um plano de apoio que reduza o multicaminho, fornecendo blindagem e melhorando a recepção do sinal. Um plano de apoio é uma placa condutora, poder uma peça de metal, o teto de um carro, o telhado de metal de um prédio, etc.
 
-Tallysman TW4721 requires ground plane no less than 70x70mm.
+A antena Tallysman TW4721 requer um plano de apoio não inferior a 70x70mm.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/antenna-placement/antenna-ground-plane.png" style="width: 550px;"></div><br>
