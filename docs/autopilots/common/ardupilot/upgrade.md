@@ -1,19 +1,19 @@
-## Overview
+## Visão global
 
-We use a conventional Debian scheme to upgrade software, i.e. using **APT**.
+Usamos um esquema Debian convencional para atualizar o software, ou seja, usando o **APT**.
 
-!!! danger "Attention"
-    Please, backup your parameters before proceeding!
+!!! danger "Atenção"
+    Por favor, faça um backup dos seus parâmetros antes de prosseguir!
 
-## Upgrade
+## Atualizando
 
 ```bash
 pi@navio: ~ $ sudo apt-get update && sudo apt-get dist-upgrade
 ```
 ![compass-warning](img/navio2-compass-recalibration.png)
 
-Read the warning once more and please obey the instructions!
+Leia o aviso mais uma vez e por favor obedeça as instruções!
 
-## Final thoughts
+## Pensamentos finais
 
-If this tutorial is confusing in any way, please let us now! We'd be glad to help you out and fix the instructions accordingly.
+Se este guia é confuso de alguma forma, por favor, deixe-nos agora! Ficaremos felizes em ajudá-lo e corrigir as intruções de acordo.
