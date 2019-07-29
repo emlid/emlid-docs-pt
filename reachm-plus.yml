@@ -46,7 +46,7 @@ markdown_extensions:
     - attr_list
 
 nav:
-- Intrudução: index.md
+- Introdução: index.md
 - Como ligar: power-supply.md
 - Montando a antena: antenna-placement.md
 - Integração de hardware: hardware-integration.md
