@@ -1,44 +1,44 @@
-## Where to get the code
+## Onde obter o código
 
-Navio2 is supported in the upstream [ArduPilot repository](https://github.com/ArduPilot/ardupilot).
+O Navio2 é suportado no upstream [Repositório ArduPilot](https://github.com/ArduPilot/ardupilot).
 
-## How to build
+## Como construir
 
-ArduPilot binary for can be built using two ways:
+O binário do ArduPilot pode ser construído de deuas maneiras:
 
-1) Directly on your Raspberry Pi. Simpler, but slower. Build takes approximately 15 minutes.
+1) Diretamente no seu Raspberry Pi. Mais simples, mas mais lento. A compilação leva aproximadamente 15 minutos.
 
-2) Using a cross-compiler (on Linux PC or virtual machine). This is much faster, but requires one-time setup.
+2) Usando um compilador cruzado (PC com Linux ou na máquina virtual). Isso é muito mais rápido, mas requer uma configuração única.
 
-If you'd like to build on Raspberry Pi skip the next step.
+Se você gostaria de construir no Raspberry Pi pule o próximo passo.
 
-## Cross-compiler setup on Linux (optional)
+## Configuração de compilador cruzado no Linux (opcional)
 
-Recommended compiler is the one that is provided by Raspberry Pi Foundation. Download and extract it somewhere, for example in /opt/:
+Compilador recomendado é aquele que é fornecido pela Fundação Raspberry Pi.Faça o download e extraia-o em algum diretório, por exemplo, em /opt/:
 
 ```bash
 sudo git clone --depth 1 https://github.com/raspberrypi/tools.git /opt/tools
 ```
 
-If you're using 32-bit distro add the following to your PATH:
+Se você estiver usando a distro de 32-bit, adicione o seguinte ao seu PATH:
 
 ```bash
 export PATH=/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin:$PATH
 ```
 
-For 64-bit distro add this to your PATH
+Para distro de 64-bit, adicione isto ao seu PATH
 
 ```bash
 export PATH=/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin:$PATH
 ```
 
-If you would like to add the compiler to the PATH permanently edit /etc/environment.
+Se você gostaria de adicionar o compilador ao ambiente PATH, edite permanentemente o /etc/.
 
-## Building ArduPilot using Waf build system
+## Construindo o ArduPilot usando o sistema de compilação Waf
 
-These steps are the same both for compiling ArduPilot directly on Raspberry Pi and cross-compiling.
+Estas etapas são as mesmas tanto para compilar o ArduPilot diretamente no Raspberry Pi quanto para compilação cruzada.
 
-Download the ArduPilot code and update submodules:
+Faça o download do código do ArduPilot e atualize os submódulos:
 
 ```bash
 git clone https://github.com/ArduPilot/ardupilot.git
@@ -49,45 +49,45 @@ git submodule update --init --recursive
 Checkout to a specific tag in order not to fly off master.
 <sub> `git tag` to get a list of tags </sub>
 
-For example, to build a copter binary:
+Por exemplo, para construir um binário de um arducopter:
 ```bash
 git checkout ArduCopter-stable
 or
 git checkout ArduCopter-beta
 ```
 
-Note that Waf should always be called from the ardupilot's root directory.
+Note que o Waf deve sempre ser chamado a partir do diretório raiz do ardupilot.
 
-To keep access to Waf convenient, use the following alias from the root ardupilot directory:  
+Para manter o acesso ao Waf conveniente, use o seguinte caminho do diretório raiz do ardupilot:  
 ```bash
 alias waf="$PWD/modules/waf/waf-light"
 ```  
-Differently from the make-based build, with Waf there's a configure step to choose the board to be used:
+Diferentemente da construção baseada automação, com o Waf há uma etapa da configuração para escolher a placa a ser usada:
 ```bash
 waf configure --board=navio2
 ```
 
-If ```future``` isn't installed then you should install it:
+Se o ```future``` não estiver instalado, você deverá instalá-lo:
 ```bash
 pip install future
 ```
 
-Now you can build arducopter. For a copter use the following command:
+Agora você pode construiu o arducopter. Para um arducopter, use o seguinte comando:
 ```bash
 waf copter
 ```  
-In the end of compilation binaries with the name like ```arducopter-quad``` will be placed in ```ardupilot/build/navio2/bin/``` directory.
+No final da compilação, binários com o nome ```arducopter-quad``` seráo colocados no diretório ```ardupilot/build/navio2/bin/```.
 
 !!! tip ""
-    We suggest checking out ArduPilot docs for further details [here](https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md). This is the most up-to-date reference.
+    Sugerimos verifciar os documentos da ArduPilot para mais detalhes [aqui](https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md). Está é a referência mais utilizada.
 
-If you're using cross-compiler transfer the binary to your Raspberry Pi:
+Se você estiver usando o compilador cruzado, transfira o binário para o seu Raspberry Pi:
 
 ```bash
 rsync -avz ardupilot/build/navio2/bin/arducopter-quad pi@192.168.1.3:/home/pi/
 ```
 
-Where 192.168.1.3 is an IP address of your Raspberry Pi with a Navio.
+Onde 192.168.1.3 é um endereço IP do seu Raspberry Pi com um Navio.
 
 
-Instructions how to run ArduPilot on Raspberry Pi and to connect GCS to it are available in  [Installation and running section](installation-and-running.md).
+Instruções sobre como executar o ArduPilot no Raspberry Pi e conectar o GCS a ele estão disponíveis em [Seção de instalação e execução](installation-and-running.md).
