@@ -1,19 +1,19 @@
-## Overview
+## Visão global
 
-You can run ArduPilot on Raspberry Pi 3 or 2 with Navio. The autopilot's code works directly on Raspberry Pi. For ArduPilot to work properly please use the configured Raspbian distribution that we provide.  
+Você pode executar o  ArduPilot no Raspberry Pi 3 ou 2 com o Navio. O código do piloto automático funciona diretamente no Raspberry Pi. Para que o ArduPilot funcione corretamente, use a distribuioção Raspbian configurada que fornecemos.  
 
-## Current vehicle versions
+## Versões atuais do veículo
 
-Emlid Raspbian has preinstalled ArduPilot. It includes all vehicles and is based on the most stable branch available. Currently these are:
+Emlid Rasbian tem o ArduPilot pré-instalado. Inclui todos os veículos e baseia-se no ramo estável disponível. Atualmente estes são:
 
 * ArduCopter: **3.6.5**
 * ArduPlane: **3.9.5**
 * ArduRover: **3.4.2**
 * ArduSub: **3.5.3**
 
-## Greeting
+## Cumprimento
 
-Once you ssh into Raspberry Pi you'll be greated with a message that looks like this:
+Uma vez que você acessar (ssh) o Raspberry Pi você será recebido com uma mensagem que se parece com isso:
 
 ```
                                                                 
@@ -25,183 +25,182 @@ Once you ssh into Raspberry Pi you'll be greated with a message that looks like 
                 #    ## #     #   # #    #  #     # 
                 #     # #     #    #    ### ####### 
                                                                 
-STEP 1: 
-Choose your vehicle and ArduPilot version using emlidtool
-(Please, read carefully all options and select appropriate one for either Navio 2 or Navio+)
+Passo 1: 
+Escolha seu veículo e versão do ArduPilot usando o emlidtool
+(Por favor, leia atentamente todas as opções e selecione uma apropriada para o Navio 2 ou o Navio+)
 - sudo emlidtool ardupilot
 
-STEP 2:
-Set your GCS IP 
+Passo 2:
+Defina seu IP do GCS 
         - sudo nano /etc/default/arducopter
         - sudo nano /etc/default/arduplane
         - sudo nano /etc/default/ardurover
-STEP 3:
-Reload configuration by issuing these commands
+Passo 3:
+Recarregar configurações emitindo esses comandos
         - sudo systemctl daemon-reload
 
-Launch, and enable on boot
+Inicie e ative na inicialização
 
 - sudo emlidtool ardupilot
 
-IMPORTANT:
+IMPORTANTE:
 
-To show this message one more time type "sudo emlidtool ardupilot help"
+Para mostrar esta mensagem mais uma vez digite "sudo emlidtool ardupilot help"
 
-* Documentation: https://docs.emlid.com/
+* Documentação: https://docs.emlid.com/
 ```
 
-We'll guide you through what's going on under the hood in the sections below.
+Nós vamos guiá-lo através do que está acontecendo sob o capô nas seções abaixo.
 
 ## Systemd
 
-For launching ArduPilot we are using `systemd` init system which provides manager for all services and processes. 
-The main command used to control systemd is `systemctl`. Some of its uses are:
+Para lançar o ArduPilot, estamos usando o sistema init `systemd`, que fornece o gerenciador para todos os serviçoes e processos. 
+O comando principal usado para controlar o  systemd é `systemctl`. Alguns de seus usos são:
 
-* examining the system state 
-* managing the system and services. 
+* examinando o estado do sistema 
+* gerenciar o sistema e os serviçoes. 
 
-See `man systemctl` for more details.
+Veja `man systemctl` para mais detalhes.
 
-## Choosing a vehicle, version and board
+## Escolhendo um veículo, versão e placa
 
-To select the vehicle that would be launched by default you should configure it with emlidtool:
+Para selecionar o veículo que seria lançado por padrão. você deve configurá-lo com o emlidtool:
 ```bash
 sudo emlidtool ardupilot
 ```
 
-Before configuration emlidtool checks your [RCIO](https://docs.emlid.com/navio2/dev/rcio) firmware and will suggest to update it if you have the outdated one:
+Antes da configuração, o emlidtool verifica seu [RCIO](https://docs.emlid.com/navio2/dev/rcio) firmware and will suggest to update it if you have the outdated one:
 
 !!! note ""
-    Only for Navio2
+    Apenas para Navio2
 
 ![emlidtool-ui](img/emlidtool-rcio-update-dialog.png)
 
-In the example below we'll use arducopter but it could've been just as well arduplane or ardurover.
-Once the command is running, it will produce the output like this:
+No exemplo abaixo, vamos usar o arducopter, mas poderia ter sido bem arduplane oo ardurover.
+Quando o comando estiver em execução, ele produzirá a saída assim:
 
 ![emlidtool-ui](img/emlidtool.png)
 
-At this point you should enter the right choices in the left menu corresponding to your vehicle and frame.
-Also, you need to decide whether you want to get ardupilot enabled on boot or not and start/stop it now.
+Neste ponto, você deve inserir as opções corretas no menu à esquerda correspondente ao seu veículo e frame.
+Além disso, você precisa decidir se deseja ativar o ardupilot no inicialização ou não e iniciá-lo/interrompê-lo agora.
   
-Let's assume that we have arducopter, and we've decided to enable it on boot and start.
+Vamos supor que temos o arducopter e decidimos ativá-lo na inicialização e no início.
 
-After clicking the 'Apply' button ArduPilot will be configured and you'll see the changes in the ArdupilotInfo widget:
+Depois de clicar no botão 'Apply', o ArduPilot será configurado e você verá as mudanças no widget ArdupilotInfo:
 
 ![emlidtool-ui](img/emlidtool-after-configure.png)
 
-## Specifying launching options
+## Especificando opções de inicialização
  
-Open the file:
+Abra o arquivo:
 
 ```bash
 pi@navio: ~ $ sudo nano /etc/default/arducopter 
 ```
 
-Here you can specify IP of your ground station.
+Aqui você pode especificar o IP da sua estação.
 
 ```bash
 TELEM1="-A udp:127.0.0.1:14550"
 #TELEM2="-C /dev/ttyAMA0"
 
-# Options to pass to ArduPilot
+# Opções para passar para o ArduPilot
 ARDUPILOT_OPTS="$TELEM1 $TELEM2"
 
-# -A is a console switch (usually this is a Wi-Fi link)
+# -A é um comutador de console (geralmente esse é um link de Wi-Fi)
 
-# -C is a telemetry switch
-# Usually this is either /dev/ttyAMA0 - UART connector on your Navio
-# or /dev/ttyUSB0 if you're using a serial to USB convertor
+# -C é um comutador de telemetria
+# Normalmente, isso é /dev/ttyAMA0 - conector UART no seu Navio
+# or /dev/ttyUSB0 se você estiver usando um serial para o conversor USB
 
-# -B or -E is used to specify non default GPS
+# -B ou -E é usado para especificar o GPS não padrão
 ```
 
-All lines marked '#' are comments and have no effect. 
+Todas as linhas marcadas com '#' são comentários e não têm efeito. 
 
-For example, you'll need to modify TELEM1 to point to your IP like this:
+Por exemplo, você precisará modificar o TELEM1 para apontar para o seu IP desta forma:
 
 `TELEM1`="-A udp:192.168.1.2:14550"
 
-Where 192.168.1.2 is the IP address of the device with the Ground Control Station - your laptop, smartphone etc.
+Onde 192.168.1.2 é o endereço IP do dispositivo com a estação de controle no solo - seu laptop, smartphone, etc.
 
 !!! tip ""
-    You can add additional options to `ARDUPILOT_OPTS` that are then passed to ArduPilot by adding new `TELEM` environment variables like this: `TELEM3`="-E /dev/ttyUSB1" `ARDUPILOT_OPTS`="$TELEM1 $TELEM2 $TELEM3"
+    Você pode adicionar opções adicionais ao `ARDUPILOT_OPTS` que são então passadas para o ArduPilot adicionando novas variáveis de ambiente `TELEM` como: `TELEM3`="-E /dev/ttyUSB1" `ARDUPILOT_OPTS`="$TELEM1 $TELEM2 $TELEM3"
 
-Mapping between switches and serial ports (TCP or UDP can be used instead of serial ports):
+Mapeamento entre comutadores e portas seriais (TCP ou UDP podem ser usados em vez de portas seriais):
 
-* -A - serial 0 (always console; default baud rate 115200)  
-* -C - serial 1 (normally telemetry 1; default baud rate 57600)  
-<sub>3DR Radios are configured for 57600 by default, so the simplest way to connect over them is to run with -C option.</sub>
-* -D - serial 2 (normally telemetry 2; default baud rate 57600)  
-* -B - serial 3 (normally 1st GPS; default baud rate 38400)  
-* -E - serial 4 (normally 2st GPS; default baud rate 38400)  
+* -A - serial 0 (sempre console; taca de transmissão padrão 115200)  
+* -C - serial 1 (normalmente telemetria 1; taxa de transmissão padrão 57600)  
+<sub>Rádios 3DR são configurados para 57600 por padrão, então a maneira mais simples de se conectar a eles é executar com a opção -C .</sub>
+* -D - serial 2 (normalmente telemetria 2; taxa de transmissão padrão 57600)  
+* -B - serial 3 (normalmente 1st GPS; taxa de transmissão padrão 38400)  
+* -E - serial 4 (normalmente 2st GPS; taxa de transmissão padrão 38400)
 * -F - serial 5  
 
-Additionally take a look at [list of serial parameters](http://ardupilot.org/copter/docs/parameters.html?highlight=serial#serial-parameters) for Mission Planner.
+Além disso, dê uma olhada na [lista de parâmetros de seriais](http://ardupilot.org/copter/docs/parameters.html?highlight=serial#serial-parameters) para o Mission Planner.
 
-When using UART for telemetry please keep in mind that serial ports have default baud rates.   
+Ao usar a UART para telemetria, lembre-se de que as portas seriais têm taxas de transmissão padrão.   
 
 
-## Reload configuration
+## Recarregar configuração
 
-If you changed something in the previous step you need to reload configuration for systemd to work properly.
+Se você alterou alguma coisa na etapa anterior, precisará recarregar a configuração para que o systemd funcione corretamente.
 
 ```bash
 pi@navio: ~ $ sudo systemctl daemon-reload
 ```
 
-## Starting
+## Iniciando
 
-Now you can start ArduPilot:
+Agora você pode iniciar o ArduPilot:
 
 ```bash
 pi@navio: ~ $ sudo systemctl start arducopter
 ```
 
-To stop the service run:
+Para parar a execução do serviço:
 
 ```bash
 pi@navio: ~ $ sudo systemctl stop arducopter
 ```
 
-## Autostarting on boot
+## Autoinicialização no boot
 
-To automatically start ArduPilot on boot you need to enable `arducopter`:
+Para iniciar automaticamente o ArduPilot na inicialização, você precisa ativar o `arducopter`:
 
 ```bash
 pi@navio: ~ $ sudo systemctl enable arducopter
 ```
 
-To disable the autostart:
+Para desativar o início automático:
 ```bash
 pi@navio: ~ $ sudo systemctl disable arducopter
 ```
 
-You can check is ArduPilot already enabled or not:
+Você pode verificar se o ArduPilot já está ativado ou não:
 ```bash
 pi@navio: ~ $ systemctl is-enabled arducopter
 ```
 
 
-## Connecting to the GCS
+## Conectando-se ao GCS
 
 ### Mission Planner
 
-A Windows only ground station. It is the most feature complete, though.
-It can be downloaded from the [ardupilot.com](http://firmware.ardupilot.org/Tools/MissionPlanner/)
+A Windows only ground station. É o recurso mais completo, no entendo.
+Pode ser baixado no [ardupilot.com](http://firmware.ardupilot.org/Tools/MissionPlanner/)
 
 ### QGroundControl
 
 A crossplatform ground station for Mavlink-based flight stacks (like Ardupilot).
-It can be downloaded from the [qgroundcontrol.com](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
+Pode ser baixado no site [qgroundcontrol.com](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
 
 ### APM Planner
 
-APM Planner is a ground station software for ArduPilot. It can be downloaded from the
-[ardupilot.com](http://firmware.ardupilot.org/Tools/APMPlanner/)
+APM Planner is a ground station software for ArduPilot. Pode ser baixado no [ardupilot.com](http://firmware.ardupilot.org/Tools/APMPlanner/)
 
-APM Planner listens on UDP port 14550, so it should catch telemetry from the drone automatically.
-Also, if you are using Linux, you have to add your user to dialout group:
+O APM Planner capta na porta UDP 14550, por isso deve capturar a telemetria do drone automaticamente.
+Além disso, se você estiver usando o Linux, você deve adicionar seu usuário ao grupo de discagem:
  
 ```bash
 sudo adduser $USER dialout
@@ -211,33 +210,33 @@ sudo adduser $USER dialout
 
 MAVProxy is a console-oriented ground station software written in Python. It’s well suited for advanced users and developers.
 
-To install MAVProxy use [Download and Installation](http://ardupilot.github.io/MAVProxy/html/getting_started/download_and_installation.html) instructions.
+Para instalar o MAVProxy use [Download E Instalação](http://ardupilot.github.io/MAVProxy/html/getting_started/download_and_installation.html) instructions.
 
 
-To run it specify the --master port, which can be serial, TCP or UDP. It also can perform data passthrough using --out option.
+Para executá-lo, especifique a --master port, que pode ser serial, TCP ou UDP. Também pode executar passagem de dados usando a opção --out.
 
 ```bash
 pi@navio: ~ $ mavproxy.py --master 192.168.1.2:14550 --console
 ```
 
-Where 192.168.1.2 is the IP address of the GCS, not RPi.
+Onde 192.168.1.2 é o endereço IP do GCS, não o RPi.
 
-## Launching a custom ArduPilot binary
+## Iniciando um binário personalizado do ArduPilot
 
-Navio is supported in ArduPilot upstream and if you'd like to build the binary yourself please proceed to the [Building from sources](building-from-sources.md). Also you can download the latest stable binary files from ArduPilot buildserver. To download arducopter binary:
+O Navio é suportado no ArduPilot upstream e, se você quiser construir o binário, por favor, vá para o [Construindo a partir de fontes](building-from-sources.md). Além disso, você pode fazer o download dos arquivos binários mais recentes do ArduPilot buildserver. Para baixar o binário arducopter:
 
 ```bash
 pi@navio: ~ $ wget http://firmware.eu.ardupilot.org/Copter/stable/navio2/arducopter
 pi@navio: ~ $ chmod +x arducopter
 ```
-In case of use helicopter, change tail of the link. For example `/navio2-heli/arducopter-heli`. Supported vehicle types are listed below:
+Em caso de uso de helicopter, mude a cauda do link.  Por exemplo, `/navio2-heli/arducopter-heli`. Os tipos de veículos suportados estão listados abaixo:
 
 * ArduRover
 * ArduPlane
 * ArduCopter
 * ArduCopter-heli
 
-If you want to launch a custom binary you're expected to modify and use /etc/systemd/system/ardupilot.service
+Se você deseja iniciar um binário personalizado, é esperado que você modifique e use /etc/systemd/system/ardupilot.service
 
 ```bash
 
@@ -250,19 +249,16 @@ Conflicts=arduplane.service arducopter.service ardurover.service
 [Service]
 EnvironmentFile=/etc/default/ardupilot
 
-###############################################################################
-####### DO NOT EDIT ABOVE THIS LINE UNLESS YOU KNOW WHAT YOU"RE DOING #########
-###############################################################################
+###################################################################################### ### NÃO EDITAR ACIMA DESTA LINHA, A AMENOS QUE VOCÊ SAIBA O QUE VOCÊ ESTÁ FAZENDO ####
+######################################################################################
 
-# Uncomment and modify this line if you want to launch your own binary
+# Descomente e modifique esta linha de você quiser lançar seu próprio binário
 #ExecStart=/bin/sh -c "/home/pi/<path>/<to>/<your>/<binary> ${ARDUPILOT_OPTS}"
 
 ##### CAUTION ######
-# There should be only one uncommented ExecStart in this file
+# Deve haver apenas um ExecStart não comentado neste arquivo
 
-###############################################################################
-######## DO NOT EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU"RE DOING ########
-###############################################################################
+######################################################################################### NÃO EDITAR ABAIXO DESTA LINHA, A MENOS QUE VOCÊ SAIBA O QUE VOCÊ ESTÁ FAZENDO #### ######################################################################################
 
 Restart=on-failure
 
@@ -270,17 +266,17 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-The comments speak for themselves. The only thing you need to adjust is 
+Os comentários falam por si. A única coisa que você presica ajustar é 
 ```bash
 #ExecStart=/bin/sh -c "/home/pi/<path>/<to>/<your>/<binary> ${ARDUPILOT_OPTS}"
 ```
-to something like this
+para algo assim
 ```bash
 ExecStart=/bin/sh -c "/home/pi/arducopter-quad ${ARDUPILOT_OPTS}"
 ```
-Other than that the launching procedure is no different than the one described above with the only exception that you need to use systemctl utility with `ardupilot` service instead of `arducopter`/`arduplane`/`ardurover` and use `/etc/default/ardupilot` for `ARDUPILOT_OPTS` modifications.
+Além disso, o procedimento de inicialização não é diferente do descrito acima, com a única exceção que você presica usar o utilitário systemctl com o serviço `arducopter`/`arduplane`/`ardurover` e usar `/etc/default/ardupilot` para modificações de `ARDUPILOT_OPTS`.
 
-The command below  will start custom ArduPilot binary and then mark it to launch on boot:
+O comando abaixo irá iniciar o binário do ArduPilot personalizado e depois marcá-lo para iniciar na inicialização:
 
 ```bash
 pi@navio: ~ sudo systemctl start ardupilot && sudo systemctl enable ardupilot
