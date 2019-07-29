@@ -1,27 +1,27 @@
 #Tutoriais
 
-Explore estes guias passo-a-passo para melhor entendimento e todas as possibilidades de uso do seu Reach.
+Explore estes guias passo a passo para entender melhor as possibilidades e cada caso de uso do seu Reach.
 
-###Básicos
+###Noções básicas
 
 * [Como funciona o RTK](common/tutorials/rtk-introduction.md)
 * [Como funciona o PPK](common/tutorials/ppk-introduction.md)
-* [Tuning LoRa for RTK](common/tutorials/tuning-lora.md)
-* [Conectando o Reach a internet](common/tutorials/connecting-to-the-internet.md)
-* [Trabalhando com serviço NTRIP](common/tutorials/ntrip-workflow.md)
-* [Colocando GCP's no modo RTK](common/tutorials/placing-gcps.md)
-* [Como baixar arquivos do Reach](common/tutorials/downloading-files.md)
+* [Configurando o LoRa para RTK](common/tutorials/tuning-lora.md)
+* [Conectando o Reach à internet](common/tutorials/connecting-to-the-internet.md)
+* [Trabalhando com o serviço NTRIP](common/tutorials/ntrip-workflow.md)
+* [Colocando os GCPs no modo RTK](common/tutorials/placing-gcps.md)
+* [Baixando arquivos do Reach](common/tutorials/downloading-files.md)
 * [Instalando a base](common/tutorials/placing-the-base.md)
 
-###Fluxo de pós processamento
+###Fluxo de pós-processamento
 
 * [Como funciona o PPK](common/tutorials/ppk-introduction.md)
-* [Pós processamento](common/tutorials/gps-post-processing.md)
-* [Entendendo a solução PPK e os registros](common/tutorials/analyzing-logs.md)
+* [Pós-processamento GPS](common/tutorials/gps-post-processing.md)
+* [Analisando a solução PPK e logs](common/tutorials/analyzing-logs.md)
 
-###Integration with external software
+###Integração com software externo
 
-* [Bluetooth output e Android mock location](common/tutorials/mock-location.md)
+* [Saída bluetooth e mock location no Android](common/tutorials/mock-location.md)
 * [Usando QGIS como uma ferramenta na topografia](common/tutorials/qgis-survey.md)
 * [Guia de configuração Microsurvey FieldGenius](common/tutorials/fieldgenius.md)
 * [Guia de configuração Carlson SurvCE/SurvPC](common/tutorials/survce.md)
