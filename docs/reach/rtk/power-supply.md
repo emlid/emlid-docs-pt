@@ -1,33 +1,33 @@
 !!! tip ""
-	Reach has been replaced with [Reach M+](https://emlid.com/reach). Documentation for Reach M+ can be found [here](https://docs.emlid.com/reachm-plus/).
+O Reach foi substituiído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
 
-## How to power Reach RTK
+## Como carregar o Reach RTK
 
-Emlid Reach RTK module can be powered using **Micro-USB** port or **DF13** ports. Power circuit is shared for all ports, so when you power the device over one port it will pass power to other ports.
+O módulo RTK Reach da Emlid pode ser carregado usando as portas **Micro-USB** ou **DF13**. O circuito de energia é compartilhado para todas as portas, portanto, quando você liga o dispositivo em uma porta, ele passa energia para outras portas.
 
-!!! danger "Attention"
-    Do not plug two power supplies at the same time as it may damage the device.
+!!! danger "Atenão"
+Não conecte duas fonte de energia ao mesmo tempo, isso pode danificar o dispositivo.
 
 <div style="text-align: center;"><img src="../img/reach/power-supply/wrong-power-supply.png" style="width: 550px;"></div><br>
 
-### Power supply over USB
+### Fonte de energia pelo USB
 
 <div style="text-align: center;"><img src="../img/reach/power-supply/usb-power-supply.png" style="width: 550px;"></div><br>
 
-You can power Reach over Micro-USB cable using power supplies like:
+Você pode carregar o Reach por um cabo Micro-USB usando fontes de energia como:
 
 * Power bank
-* USB wall adapter
-* Computer USB ports
+* Adaptador de tomada USB
+* Portas USB do computador
 
 <div style="text-align: center;"><img src="../img/reach/power-supply/power-supply-options.png" style="width: 550px;"></div><br>
 
-### Powering using DF13 ports
+### Carregando usando portas DF13
 
-Reach can be powered by providing 5 Volts to corresponding pins on any of the two DF13 ports.
+O Reach pode ser ativado fornecendo 5Volts aos pinos correspondentes em qualquer umas das duas portas DF13.
 
 <div style="text-align: center;"><img src="../img/reach/power-supply/df13-power-supply.png" style="width: 550px;"></div><br>
 
-When Reach is powered over DF13 port it will pass power to devices connected to Micro-USB OTG port such as flash drives, 3G\4G modems, USB radios etc.
+Quando o Reach é carregado pela porta DF13, ele passa energia para dispositivos conectados à porta Micro-USB OTG, como pen drives, modems 3G\4G, rádios USB, etc.
 
 <div style="text-align: center;"><img src="../img/reach/power-supply/accessory-power-supply.png" style="width: 550px;"></div><br>
