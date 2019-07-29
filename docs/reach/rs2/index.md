@@ -1,4 +1,4 @@
-Welcome to your Emlid Reach RS2!
+Bem vindo ao seu Emlid Reach RS2!
 
   [![](img/reachrs2/Quickstart.png){: style="width: 200px;"} ](quickstart.md)
   [![](img/reachrs2/Tutorials.png){: style="width: 200px;"}](tutorials.md)
@@ -8,22 +8,22 @@ Welcome to your Emlid Reach RS2!
   [![](img/reachrs2/Power-supply.png){: style="width: 200px;"}](power-supply.md)
   [![](img/reachrs2/Specs.png){: style="width: 200px;"}](specs.md)
 
-### Package contents
+### Conteúdo da embalagem
 
-In the box:
+Na caixa:
 
-* 1 x Reach RS2 receiver
+* 1 x Receptor Reach RS2 
 
-* 1 x Carry case
+* 1 x Maleta para transporte
 
-* 1 x Radio antenna
+* 1 x Antena para rádio
 
-* 1 x USB-C cable
+* 1 x Cabo USB-C
 
-### Collaboration
+### Colaboração
 
-This document can be edited on GitHub in markdown. If you find any mistakes, typos or  pieces that are not documented well enough simply open an issue or contribute by sending a pull request.
+Este documento pode ser editado no GitHub no markdown. Se você encontrar qualquer erro, equipamentos ou pelas que não estão com descrições suficientes, simplesmente abra um chamado ou contribua enviando uma solicitação.
 
-### Discussion
+### Discussão
 
-We are happy to answer any questions at [community.emlid.com](http://community.emlid.com)
+Estamos felizes em responder a quaisquer perguntas em [community.emlid.com](http://community.emlid.com)
