@@ -6,7 +6,7 @@ O RTK existe a um longo tempo, usado principalmente por topógrafo. Se você pre
 
 O Reach roda um software de processamento RTK de código aberto chamado RTKLIB escrito por Tomoji Takasu. Anteriormente, era necessário um computador para executar o RTKLIB, mas agora todos os recursos do RTKLIB estão disponíveis diretamente no Reach.
 
-### WhatO que é um RTK?
+### O que é um RTK?
 
 RTK é uma técnica usada para melhorar a precisão do sistema GPS. Receptores GPS tradicionais, como um que você pode encontrar em seu smartphone, ou na maioria das plataformas robóticas, só poderiam determinar sua posição com precisão de 2-4 metros. O RTK pode dar-lhe centímetros.
 
