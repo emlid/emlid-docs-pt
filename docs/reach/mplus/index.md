@@ -1,4 +1,4 @@
-Welcome to your Emlid Reach M+!
+Bem vindo ao seu Emlid Reach M+!
 
   [![](img/reachm-plus/quickstart.png){: style="width: 200px;"}](quickstart.md)
   [![](img/reachm-plus/tutorials.png){: style="width: 200px;"}](tutorials.md)
