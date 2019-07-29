@@ -1,25 +1,25 @@
-#Tutorials
+#Tutoriais
 
-Explore these step-by-step guides to get a better understanding of your Reach possibilities and use-cases.
+Explore estes guias passo a passo para entender melhor as possibilidades e cada caso de uso do seu Reach.
 
-###Basics
+###Noções básicas
 
-* [How RTK works](common/tutorials/rtk-introduction.md)
-* [How PPK works](common/tutorials/ppk-introduction.md)
-* [Tuning LoRa for RTK](common/tutorials/tuning-lora.md)
-* [Connecting Reach to the Internet](common/tutorials/connecting-to-the-internet.md)
-* [Working with NTRIP service](common/tutorials/ntrip-workflow.md)
-* [Placing GCPs in RTK mode](common/tutorials/placing-gcps.md)
-* [How to download files from Reach](common/tutorials/downloading-files.md)
-* [Placing the base](common/tutorials/placing-the-base.md)
+* [Como funciona o RTK](common/tutorials/rtk-introduction.md)
+* [Como funciona o PPK](common/tutorials/ppk-introduction.md)
+* [Configurando o LoRa para RTK](common/tutorials/tuning-lora.md)
+* [Conectando o Reach à internet](common/tutorials/connecting-to-the-internet.md)
+* [Trabalhando com o serviço NTRIP](common/tutorials/ntrip-workflow.md)
+* [Colocando os GCPs no modo RTK](common/tutorials/placing-gcps.md)
+* [Baixando arquivos do Reach](common/tutorials/downloading-files.md)
+* [Instalando a base](common/tutorials/placing-the-base.md)
 
-###Post-processing workflow
+###Fluxo de pós-processamento
 
-* [How PPK works](common/tutorials/ppk-introduction.md)
-* [GPS post-processing](common/tutorials/gps-post-processing.md)
-* [Analyzing PPK solution and logs](common/tutorials/analyzing-logs.md)
+* [Como funciona o PPK](common/tutorials/ppk-introduction.md)
+* [Pós-processamento GPS](common/tutorials/gps-post-processing.md)
+* [Analisando a solução PPK e logs](common/tutorials/analyzing-logs.md)
 
-###Integration with external software
+###Integração com software externo
 
-* [Bluetooth output and Android mock location](common/tutorials/mock-location.md)
-* [ArduPilot integration](ardupilot-integration.md)
+* [Saída bluetooth e mock location no Android](common/tutorials/mock-location.md)
+* [Integração do ArduPilot](ardupilot-integration.md)
