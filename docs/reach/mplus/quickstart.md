@@ -1,182 +1,182 @@
-## Intro
+## Introdução
 
-In this quick tutorial we will show you how to two set up two Reach devices as a base and a rover with correction link over Wi-Fi.
+Neste guia rápido, mostraremos como configurar dois dispositivos Reach, um como base e outro como rover com link de correção via Wi-Fi.
 
-!!! tip ""
-    If you encounter any issues performing these steps, we will be happy to help
-    at our [**community forum**](http://community.emlid.com/).
+!!! Tip ""
+Se você encontrar algum problema ao executar essas etapas, ficaremos felizes em ajudar no nosso [**fórum da comunidade**](http://community.emlid.com/).
 
 
-This tutorial only covers one use case. To get more information, follow these links:
 
-* [Mechanical specs](../specs/#mechanical-specs)
-* [Electrical specs](../specs/#electrical-specs)
-* [Hardware integration](hardware-integration.md)
-* [ReachView app](common/reachview/index.md)
+Este tutorial mostra apenas um caso de uso. Para obter mais informações, siga estes links:
 
-## Powering up
+* [Especificações mecânicas](../specs/#mechanical-specs)
+* [Especificações elétricas](../specs/#electrical-specs)
+* [Integração de hardware](hardware-integration.md)
+* [Aplicativo ReachView](common/reachview/index.md)
 
-* Take **Micro-USB <--> USB cable** that is coming with the package.
+## Carregando
 
-* Plug **Micro-USB end** of the cable into **Micro-USB port** on Reach and plug another end into 5V power source such as USB power bank, USB wall adapter or USB port of a computer.
+* Pegue o **Micro-USB <--> cabo USB** que vem com o pacote.
 
-!!! danger "Attention"
-    Do not plug two power supplies at the same time as it may damage the device.
+* Ligue a **ponta Micro-USB** do cabo à **porta Micro-USB** do Reach e ligue a outra ponta a uma fonte de energia de 5V, como um power bank, ou um adaptador USB para tomada ou ainda uma porta USB de um camputador.
 
-More on power supply you can read [here](power-supply.md).
+!!! danger "Atenção"
+Não conecte duas fontes de energia ao mesmoa tempo, pois pode danificar o dispositivo.
 
-## Connecting and placing GPS antenna
+Mais sobre o carregamento você pode ler [aqui](power-supply.md).
 
-* Plug antenna cable into MCX socket on Reach. 
+## Conectando e colocando a antena GPS
 
-* Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building. 
+* Conecte o cabo da antena na entrada MCX no Reach. 
+
+* Coloque a antena em um plano de apoio. Pode ser um pedaço de metal > 100 mm de diâmetro, um teto de um carro ou um teto de metal de um prédio. 
 
 !!! danger ""
-    There **should be no** obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
-     **Do not** test the device indoors or near buildings, do not cover the skyview for the antennas with laptops, cars or yourself. RTK requires good satellite visibility and reception.
+Lá **não deve haver** obstáculos perto da antena que possam bloquear a vista do céu 30 graus acima do horizonte.
+**Não** teste o dispositivo dentro de ambientes fechado ou perto de edifícios, não cubra a vista do céu das antenas com laptops, carros ou você mesmo. O RTK requer boa visibilidade e recepção por satélite.
 
-A guide how to properly place the antennas is available in [Antenna Placement](antenna-placement.md) section.
+Um guia sobre como posicionar corretamente as antenas está disponível na seção [Montando a antena](antenna-placement.md) section.
 
-## Connecting to Reach
+## Conectando-se ao Reach
 
-When Reach M+ is powered for the first time it will create a Wi-Fi hotspot.
+Quando o Reach M+ é ligado pela primeira vez, ele cria um ponto de acesso Wi-Fi.
 
-* Open a list of Wi-Fi networks on your smartphone, tablet or laptop.
+* Abra a lista de redes Wi-Fi no seu smatphone, tablet ou laptop.
 
-* Connect to a network named **reach:xx:xx** (ex. reach:66:ac).
+* Conecte-se a uma rede chamada **reach:xx:xx** (ex. reach:66:ac).
 
-* Type network password: **emlidreach**.
+* Digite a senha da rede **emlidreach**.
 
-## Setting up Wi-Fi
+## Configurando o Wi-Fi
 
-* Get ReachView app for your mobile device:
+* Obtenha o aplicativo ReachView para o seu dispositivo móvel:
 
-| Download links |  |
+| Links para Download | |
 |-------------|----------|
 |[Google Play](https://play.google.com/store/apps/details?id=com.reachview)|[App Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)|
 
-* Launch the app and choose available Reach M+ from the list. You will see ReachView updater.
+* Inicie o aplicativo e escolha o Reach M+ disponível na lista. Você verá a atela de atualização do ReachView.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_updater_main.png" style="width: 350px;"></div><br>
 
-* Press plus button and enter your Wi-Fi network name, security type and password. Press Save button
+* Pressione o botão Mais e insira o nome da rede Wi-Fi, o tipo de segurança e a senha. Pressione o botão Salvar.
 
-!!! danger "Assure you are connecting to the existing network (such as home wi-fi, mobile phone hotspot, etc)"
-    Use your Wi-Fi network name and password. The name of the network on the screenshot below is an example. 
+!!! danger "Assegure-se de que você está se conectando à uma rede existente (como o Wi-Fi de sua casa, o Wi-fi roteado pelo seu telefone celular, etc)"
+Use o nome e a senha da sua rede Wi-Fi. O nome da rede na imagem abaixo é um exemplo. 
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_updater_wifi.png" style="width: 350px;"></div><br>
 
-* Press on your added network and click Connect. 
+* Pressione na sua rede adicionada e clique em Conectar. 
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_updater_wifi_connect.png" style="width: 350px;"></div><br>
 
-* After that Reach device will attempt to connect your Wi-Fi network.
+* Depois disso, o dispositivo Reach tentará conectar a sua rede Wi-Fi.
 
 !!! tip ""
-    If your device did not connect to Wi-Fi network it will switch to hotspot mode. Check your network name and password and try again.
+Se o seu dispositivo não se conectou à rede Wi-Fi, ele alternará para o modo de ponto de acesso. Verifique o nome e senha da sua rede e tente novamente.
 
 
-* After connecting Reach device to an existing Wi-Fi network you can reconnect with your mobile device to the same network and see your Reach M+ in iOS/Android ReachView app.
+* Depois de conectar o dispositivo Reach a uma rede Wi-Fi existente, você pode se reconectar ao seu dispositivo móvel na mesma rede e ver seu Reach M+ no aplicativo ReachView do iOS/Android.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_ios_android.png" style="width: 400px;"></div><br>
 
 
-Read more on resolving IP addresses in the [ReachView section](common/reachview/index.md#resolving-ip).
+Leia mais sobre como resolver endereços de IP na [Seção ReachView](common/reachview/index.md#resolving-ip).
 
-!!! danger "Reach can't work on the 192.168.2.xx subnet "
-    As 192.168.2.x subnet is reserved inside Reach for Ethernet connections, you will need to perform initial setup in a different Wi-Fi or change router settings. Routers usually have a setting to change the subnet address, so you can set it to 192.168.1.xx.
+!!! danger "O Reach não pode funcionar na sub-rede 192.168.2.xx subnet"
+Como a sub-rede 192.168.2.x é reservada dentro do Reach para conexões via Ethernet, você precisará executar a configuração inicial em um Wi-Fi diferente ou alterar as configurações do roteador. Os roteadores geralmente têm uma configuração para alterar o endereço da sub-rede, portanto, você pode configurá-lo para 192.168.1.xx.
 
-## Updating ReachView
+## Atualizando o ReachView
 
-After connecting to Reach you will see ReachView Updater again which will install latest updates.
+Após conectar-se ao Reach, você verá novamente a tela de atualização do ReachView, que instalará as atualizações mais recentes.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_updater_finish.png" style="width: 350px;"></div><br>
 
-* Press **Reboot and go to the app!** button. Wait while device reboots.
+* Pressione o botão **Reboot and go to the app!**. Aguarde enquanto o dispositivo é reinicializado.
 
-* In about a minute refresh the page with ReachView app.
+* Em cerca de um minuto, atualize a página com o aplicativo ReachView.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_loading.png" style="width: 800px;"></div><br>
 
 
-## Working with ReachView app
+## Trabalhando com o aplicativo ReachView
 
 
-### Interface walkthrough
+### Passo a passo da interface
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_status_menu.png" style="width: 800px;"></div><br>
 
-ReachView menu consists of 9 tabs, but we only need three of them to start work:
+O menu do ReachView contém 9 guias, mas só precisamos de três para começar a trabalhar:
 
-* **Status** tab which shows current satellite levels, RTK parameters, coordinates and map.
+* **Status** guia que mostra os níveis atuais de satélites, parâmetros RTK, coordenadas e mapa.
 
-* **Base mode** tab is used to set correction output type, base coordinates and RTCM3 messages.
+* **Base mode** guia usada para definir o tipo de saída de correção, coordenadas de base e mensagens RTCM3.
 
-* **Correction input** tab is used to set base correction for the rover.
+* **Correction input** guia usada para definir a correção básica para o rover.
 
-### Setting up base station
+### Configurando a base
 
-* Connect to Reach you want to use as a base.
+* Conecte-se ao Reach que você deseja usar como base.
 
-* Navigate to **Base mode** tab and turn on Correction output box toggle.
+* Navegue até a guia **Base mode** e ative a opção Correction output.
 
-* Wait until base averages it's position in Base coordinates box.
+* Espere até que a média das coordenadas para base seja calculada.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_base_mode_menu.png" style="width: 1200px;"></div><br>
 
-By default, base output stream will be available on a **TCP port 9000**.
+Por padrão, a saída de correção estará disponível em uma porta **TCP port 9000**.
 
 
-### Setting up rover
+### Configurando o rover
 
-* Connect to the second Reach. 
+* Conecte-se ao segundo Reach. 
 
-* Navigate to **Correction input** tab. 
+* Navegue até a guia **Correction input**. 
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_correction_input_tab.png" style="width: 800px;"></div><br>
 
-* Choose TCP correction mode.
+* Escolha o modo de correção TCP.
 
-* Choose **Client** in **Role** field.
+* Escolha **Client** no campo **Role**.
 
-* Add base IP in **Address** field.
+* Adicione o IP base no campo **Address**.
 
-* Add base correction port in **Port** field. Default one is **9000**.
+* Adicione a porta de correção base no campo **Port**. O padrão é **9000**.
 
-* Choose correction input **Format**. Default one is **RTCM3**. 
+* Escolha a entrada de correção **Format**. O padrão é **RTCM3**. 
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_correction_input_tcp.png" style="width: 800px;"></div><br>
 
-* Save settings by pushing **Apply** button.
+* Salve as configurações pressionando o botão **Apply**.
 
 
-### Viewing results
+### Resultados
 
-* Go to **Status** tab of the app on the rover device.
+* Vá para a guia **Status** do aplicativo no dispositivo rover.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_status_menu_correction.png" style="width: 800px;"></div><br>
 
-You can see a bar chart with satellite levels, RTK parameters, positioning mode and solution status, current coordinates of rover and base in LLH format, velocity and map. In this quick tutorial, positioning mode is set to "Kinematic" which is the main RTK mode.
+Você pode ver um gráfico de barras com níveis de satélites, parâmetros RTK, mode de posicionamento e status da solução, coordenadas atuais do rover e base no formato LLH, velocidade e mapa. Neste guia rápido, o modo de posicionamento é definido como "Kinematic", que é o principal modo RTK.
 
-* If everything has been set up correctly, **Solution status** will be **Float** and **you should see grey bars near satellite levels bars**. 
+* Se tudo tiver sido configurado corretamente, o **Solution status** será **Float** e **você deverá ver barras cinzas perto das barras de nível dos satélites**. 
 
 !!! warning ""
-    **Float** means that base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved.  
+**Float** significa que as correções da base agora são levadas em consideração e o posicionamento é relativo às coordenadas da base, mas a ambiguidade não foi resolvida. 
 
-    If you see **"-"** or **Single** in **Solution status** box on this step, that means that some settings are incorrect.  
+Se você ver **"-"** ou **Single** na caixa **Solution status** nesta etapa, isso significa que algumas configurações estão incorretas. 
 
-    **"-"** means there is no information for the software to process. Either not enough time has passed or the antenna is not placed correctly.  
+**"-"** significa que não há informações para o software processar. Não houve tempo suficiente ou a antena não foi colocada corretamente. 
 
-    **Single** means that rover has found a solution relying on it's own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result.
+**Single** significa que o rover encontrou uma solução que depende de seu próprio receptor e as correções básicas não são levadas em consideração ainda. Se o rover for iniciado sozinho, este também será o resultado.
 
-* If everything has been set up correctly and base and rover have good sky visibility, you should see **Solution status** change to **Fix** in a few minutes. **Fix** means that positioning is relative to the base and the integer ambiguity is resolved.
+* Se tudo tiver sido configurado corretamente e a base e o rover tiverem boa visibilidade do céu, você deverá ver **Solution status** mudar para **Fix** em alguns minutos. **Fix** significa que o posicionamento é relativo à base e a ambiguidade foi resolvida.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_status_menu_fix.png" style="width: 800px;"></div><br>
 
-* Now you can see <font color="green"> green </font> points on the map below. <font color="orange"> Orange </font> points show **Float** solution. <font color="red"> Red </font> - **Single** solution.
+* Agora você pode ver <font color="green"> pontos verde </font> no mapa abaixo. <font color="orange"> Pontos laranja </font> mostram solução **Float**. <font color="red"> Pontos vermelho </font> - mostram solução **Single**.
 
-* You're ready to go!
+* Você está pronto para ir!
 
-## More reading
+## Documentos complementares
 
-Congratulations on finishing the quickstart tutorial! Continue to learn about setting up different correction links in the [ReachView section](common/reachview/index.md).
+Parabéns por terminar o guia rápido! Continue a aprender sobre a configuração de diferentes links de correção na seção [ReachView section](common/reachview/index.md).
