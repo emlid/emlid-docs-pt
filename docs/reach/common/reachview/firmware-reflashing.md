@@ -1,31 +1,31 @@
-On this page, you will find the information on how to reflash Reach firmware.
+Nestsa página, você ecnontrará as informações sobre como realizar o reflash de firmware do Reach.
 
-Note that you **do not** need to do this unless you want to bring Reach to its initial state.
+Observe que você **não** precisa fazer isso, a menos que queira levar o Reach ao estado inicial.
 
 !!! tip ""
-	Most new features are released via ReachView app and can be updated simply via its interface. More information on how to update ReachView app is available in [introduction section](../../reachview/#updating).
+	A maiora dos novos recursos são lançados por meio do aplicativo ReachView e pode ser atualizado simplesmente por meio de sua interface. Mais informações sobre como atualizar o aplicativo ReachView estão disponíveis na [seção de introdução](../../reachview/#updating).
 
-??? note "Firmware Flash Guide for Reach RS2 / RS+ / M+"
+??? note "Guia do flash de firmware para o Reach RS2 / RS+ / M+"
 
-	### Reach RS2 / RS+ / M+ firmware download
+	### Download do firmware do Reach RS2 / RS+ / M+
 
-	Get the latest ReachView image version and unzip it:
+	Obtenha a versão mais recente da imagem do ReachView e descompacte-a:
 
 	<center>
 	
-	|For Reach RS2|For Reach RS+ / M+|
+	|Para o Reach RS2|Para o Reach RS+ / M+|
 	|:-------------:|:-------------:|
 	|[**Reach RS2 Image v2.20.2  ↓**](http://files.emlid.com/images/reach-rs2-v2.20.2.zip), [(md5)](http://files.emlid.com/images/reach-rs2-MD5SUMS)|[**Reach RS+/M+ Image v2.18  ↓**](http://files.emlid.com/images/reach-plus-v2.18.1.zip), [(md5)](http://files.emlid.com/images/reach-plus-MD5SUMS)|
 
 	</center>
 	
 
-	### Reach Firmware Flash Tool download
+	### Download do Reach Firmware Flash Tool
 
 	!!! note "" 
-		In the meantime, please use **Windows** or **Linux** operating systems to flash your Reach RS2 / RS+ / M+ devices. Flash Tool for **Mac OS X** is coming soon.
+		Enquanto isso, use os sistemas operacionais **Windows** ou **Linux** para exibir seus dispositivos Reach RS2 / RS+ / M+. O Reach Firmware Flash Tool para o **Mac OS X** estará disponível em breve.
 	
-	* Get the Reach Firmware Flash Tool:
+	* Obtenha o Reach Firmware Flash Tool:
 
 	<center>
 	
@@ -35,99 +35,99 @@ Note that you **do not** need to do this unless you want to bring Reach to its i
 
 	</center>
 
-	* Double click on the downloaded file
+	* Clique duas vezes no arquivo baixado
 	
-	* Follow the instructions to install Reach Firmware Flash Tool on your PC
+	* Siga as instruções para instalar o Reach Firmware Flash Tool no seu PC
 
-	### Flashing process
+	### Processo de flashing
 
-	* Open Reach Firmware Flash Tool and choose Reach model
+	* Abra o Reach Firmware Flash Tool e escolha o modelo de Reach
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step1-device-select.png" style="width: 300px;" /></p>
 
 	<!-- delete part with RS -->
 
-	* Select ReachView firmware .img file
+	* Selecione o arquivo .img do firmware do ReachView
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step2-image-select.png" style="width: 300px;" /></p>
 
-	* Disconnect all Reach units. If there are none, Flash Tool will automatically skip this step
+	* Desconecte todas as unidades do Reach. Se não houver nenhuma, o Flash Tool pulará automaticamente esta etapa
 	
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step3-disconnect-devices.png" style="width: 300px;" /></p>
 
-	* Connect Reach device and turn it on. "Reach connected" message will appear
+	* Conecte o dispositivo Reach e ligue-o. A mensagem "Reach conectado" será exibida
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step4-connected-reach.png" style="width: 300px;" /></p>
 
-	* Wait until the end of the flashing process
+	* Espere até o final do processo de flash
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step5-flashing.png" style="width: 300px;" /></p>
 
-	* After reflashing, Reach will reboot
+	* Após o reflashing, o Reach será reinicializado
 
 	!!! danger ""
-		Do not unplug the Reach on this step.
+		Não desconecte o Reach nesta etapa.
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step5-rebooting.png" style="width: 300px;" /></p>
 
-	* When Reach successfully reboots, you'll see "Reach is flashed and ready to use" message
+	* Quando o Reach for reinicializado com sucesso, você verá a mensagem "Reach is flashed and ready to use" e estará pronto para o uso.
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step5-flashed-reach.png" style="width: 300px;" /></p>
 
-	??? danger ""Flashing failed" error troubleshooting"
+	??? danger ""Flashing failed" erro no flash"
 
-		If you faced "Flashing failed" error, we recommend following the next steps:
+		Se aparecer o erro "Flashing failed", recomendamos que siga as próximas etapas:
 
 		<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-flashing-failed.png" style="width: 300px;" /></p>
 
-		??? note "Steps for RS2 device"
+		??? note "Etapa para o Reach RS2"
 			
-			* Disconnect **Reach RS2** device from the PC
+			* Desconecte o dispositivo **Reach RS2** do PC
 			
-			* Hold the power button for 10 seconds until Reach turns off
+			* Segure o botão liga/desliga por 10 segundos até que o Reach desligue
 
-			* Press *Try again* button in the Reach Firmware Flash Tool on PC
+			* Pressione o botão *Try again* no Reach Firmware Flash Tool no PC
 
-			* Now you need to enter Firmware Update Mode. To enable it on Reach RS2 press and hold the power button and then plug the USB into PC. All LEDs should blink several times simultaneously, and then start blinking one after another
+			* Agora você precisa entrar no no modo Firmware Update. Para ativá-lo no Reach RS2, pressione e segure o botão liga/desliga e, em seguida, conecte o USB ao PC. Todos os LEDs devem piscar várias vezes simultaneamente e começar a piscar um após o outro.
 			<br> <p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/failed-rs2.gif" style="width: 400px;" /></p>
 
 
-		??? note "Steps for RS+ device"
+		??? note "Etapa para o Reach RS+"
 			
-			* Disconnect **Reach RS+** device from the PC
+			* Desconecte o dispositivo **Reach RS+** do PC
 			
-			* Hold the power button for 10 seconds until Reach turns off
+			* Segure o botão liga/desliga por 10 segundos até que o Reach desligue
 
-			* Press *Try again* button in the Reach Firmware Flash Tool on PC
+			* Pressione o botão *Try again* no Reach Firmware Flash Tool no PC
 
-			* Now you need to enter Firmware Update Mode. To enable it on Reach RS+ press and hold the power button and then plug the USB into PC. All LEDs should blink several times simultaneously, and then start blinking one after another 
+			* Agora você precisa entrar no no modo Firmware Update. Para ativá-lo no Reach RS+, pressione e segure o botão liga/desliga e, em seguida, conecte o USB ao PC. Todos os LEDs devem piscar várias vezes simultaneamente e começar a piscar um após o outro. 
 			<br> <p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/failed-rs-plus.gif" style="width: 400px;" /></p>
 		
 		
-		??? note "Steps for M+ device"
+		??? note "Etapa para o Reach M+"
 			
-			* Disconnect **Reach M+** device from the PC
+			* Desconecte o dispositivo **Reach M+**do PC
 
-			* Press *Try again* button in the Reach Firmware Flash Tool on PC
+			* Pressione o botão *Try again* no Reach Firmware Flash Tool no PC
 
-			* Now you need to enter Firmware Update Mode. To enable Firmware Update mode on Reach M+ use a pin to press and hold the button, located in the deepening under the power LED and then plug the USB into PC. No LEDs should blink
+			* Agora você precisa entrar no modo Firmware Update. Para ativá-lo no Reach M+, use o pino para pressionar e manter pressionado o botão localizado próximo ao LED de energia e , em seguida, conecte o USB ao PC. Nenhum LED deve piscar.
 			<br> <p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/failed-m-plus.gif" style="width: 400px;" /></p>
 
-	### After flashing
+	### Depois do flashing
 
-	If the flashing has been completed successfully, you will see "Reach is flashed and ready to use" message. You may disconnect your Reach at this point.
+	Se o flash tiver sido completado com sucesso, você verá a mensagem "Reach is flashed and ready to use" e o dispositivo estará pronto para o uso. Você pode desconectar seu Reach neste momento.
 
-	Proceed to Quickstart section to set up your Reach RS2, RS+ or Reach M+:
+	Prossiga para seção guia rápido para configurar o seu Reach RS2, RS+ ou Reach M+:
 
-	* [Quickstart for Reach RS2](https://docs.emlid.com/reachrs2/quickstart/)
-	* [Quickstart for Reach RS+](https://docs.emlid.com/reachrs/quickstart/first-setup)
-	* [Quickstart for Reach M+](https://docs.emlid.com/reachm-plus/quickstart/)
+	* [Guia rápido para Reach RS2](https://docs.emlid.com/reachrs2/quickstart/)
+	* [Guia rápido para Reach RS+](https://docs.emlid.com/reachrs/quickstart/first-setup)
+	* [Guia rápido para Reach M+](https://docs.emlid.com/reachm-plus/quickstart/)
 
-??? note "Firmware Flash Guide for Reach RS / RTK"
+??? note " Guia para o flash de firmware do Reach RS / RTK"
 
-	### Reach RS / RTK firmware download
+	### Download do firmware do Reach RS / RTK
 
-	Get the latest ReachView image version:
+	Obtenha a versão mais recente da imagem ReachView:
 
 	<center>
 	
@@ -137,76 +137,76 @@ Note that you **do not** need to do this unless you want to bring Reach to its i
 
 	</center>
 
-	### Flashing process
+	### Processo de flashing
 
-	??? note "Steps for Windows"
+	??? note "Etapa para o Windows"
 
 		#### Windows
 
-		Before flashing:
+		Antes do flashing:
 
-		* Install [Intel Edison driver](http://files.emlid.com/firmware-reflashing-tool/IntelEdisonDriverSetup1.2.1.exe)
-		* Unzip the downloaded image
-		* Download copy of [dfu-util.exe](https://files.emlid.com/images/dfu-util/dfu-util.exe) and [libusb-1.0.dll](https://files.emlid.com/images/dfu-util/libusb-1.0.dll)
-		* Place these files in the same folder as the image files
-		* Unplug Reach if it's plugged in
+		* Instale o [Intel Edison driver](http://files.emlid.com/firmware-reflashing-tool/IntelEdisonDriverSetup1.2.1.exe)
+		* Descompacte a imagem baixada
+		* Download da cópia do [dfu-util.exe](https://files.emlid.com/images/dfu-util/dfu-util.exe) e [libusb-1.0.dll](https://files.emlid.com/images/dfu-util/libusb-1.0.dll)
+		* Coloque esses arquivos na mesma pasta que os arquivos da imagem
+		* Desconecte o Reach se ele estiver conectado
 
-		To flash:
+		Flash:
 
-		1. Navigate to the image directory
-		2. Run `flashall.bat`
-		3. Plug Reach in
-		4. Monitor progress in the terminal window
-		5. Proceed to "After flashing" section below
+		1. Navigue até o diretório de imagens
+		2. Execute `flashall.bat`
+		3. Plug o Reach
+		4. Monitore o progresso na janela do terminal
+		5. Prossega para seção "Depois do flashing" abaixo
 
 
-	??? note "Steps for Mac OS X"
+	??? note "Etapa para o Mac OS X"
 		
 		#### Mac OS X
 
-		Before flashing:
+		Antes do flashing:
 
-		* Unzip downloaded image
-		* Install **[homebrew](http://brew.sh)**
-		* Install dependencies with `brew install dfu-util coreutils gnu-getopt lsusb`
-		* Unplug Reach if it's plugged in
+		* Descompacte a imagem baixada
+		* Instale o **[homebrew](http://brew.sh)**
+		* Instale o anexo com `brew install dfu-util coreutils gnu-getopt lsusb`
+		* Desconecte o Reach se ele estiver conectado
 
-		To flash:
+		Flash:
 
-		1. `cd` into the image directory
-		2. Run `./flashall.sh`
-		3. Plug Reach in
-		4. Monitor progress in the terminal window
-		5. Proceed to "After flashing" section below
+		1. `cd` no diretório de imagens
+		2. Execute `./flashall.sh`
+		3. Plug o Reach
+		4. Monitore o progresso na janela do terminal
+		5. Prossega para seção "Depois do flashing" abaixo
 
 
-	??? note "Steps for Linux"
+	??? note "Etapa para o Linux"
 
 		#### Linux
 
-		Before flashing:
+		Antes do flashing:
 
-		* Unzip downloaded image
-		* Install dfu-util with `sudo apt-get install dfu-util`
-		* Unplug Reach if it's plugged in
+		* Descompacte a imagem baixada
+		* Instale o dfu-util com o comando `sudo apt-get install dfu-util`
+		* Desconecte o Reach se ele estiver conectado
 
-		To flash:
+		Flash:
 
-		1. `cd` into the image directory
-		2. Run `sudo ./flashall.sh`
-		3. Plug Reach in
-		4. Monitor progress in the terminal window
-		5. Proceed to "After flashing" section below
+		1. `cd` no diretório de imagens
+		2. Execute `sudo ./flashall.sh`
+		3. Plug o Reach
+		4. Monitore o progresso na janela do terminal
+		5. Prossega para seção "Depois do flashing" abaixo
 
-	## After flashing
+	## Depois flashing
 
-	After the initial process is done, Reach will reboot. 
+	Depois que o processo inicial for concluído, o Reach será reinicializado. 
 	
 	!!! danger ""
-		Do not unplug it until it reboots and goes through the initial setup process completely.
+		Não desconecte-o até que ele seja reinicializado e passe completamente pelo processo de configuração inicial.
 
 
-	Proceed to Quickstart section to set up your Reach RS / RTK:
+	Continue na seção guia rápido para configurar o seu Reach RS / RTK:
 
-	* [Quickstart for Reach RS](https://docs.emlid.com/reachrs/quickstart/first-setup)
-	* [Quickstart for Reach RTK](https://docs.emlid.com/reach/quickstart/)
+	* [Guia rápido para Reach RS](https://docs.emlid.com/reachrs/quickstart/first-setup)
+	* [Guia rápido para Reach RTK](https://docs.emlid.com/reach/quickstart/)
