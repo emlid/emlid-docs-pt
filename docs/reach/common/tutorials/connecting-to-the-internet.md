@@ -1,117 +1,117 @@
-# Connecting Reach to the Internet
+# Conectando o Reach à internet
 
-Connect Reach to the Internet to update ReachView to the latest version or to get the corrections from your NTRIP service.
-
-
-## Connecting to ReachView
-
-??? note "Connecting to Reach with iOS/Android device"
-
-	1. Get the app from [Google Play](https://play.google.com/store/apps/details?id=com.reachview) or [Apple Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)
-	2. Go to Wi-Fi settings on your device
-	3. Connect to Reach hotspot. It appears as **reach:XX:XX**
-	4. Enter password **emlidreach**
-	5. Launch ReachView app
-	6. Choose Reach from the list
-
-??? note "Connecting via a web browser from any device"
-
-	1. Go to Wi-Fi settings on your device
-	2. Connect to Reach hotspot. It appears as **reach:XX:XX**
-	3. Enter password **emlidreach**
-	4. Launch a web browser (we recommend using Chrome or Mozilla)
-	5. Go to 192.168.42.1
+Conecte o Reach à internet para atualizar o ReachView para a versão mais recente ou para obter correções do seu serviço NTRIP.
 
 
-## Connecting to Wi-Fi
+## Conectando-se ao ReachView
 
-* Go to the Wi-Fi tab
+??? note "Conectando-se ao Reach com dispositivos iOS/Android"
 
-* Choose Wi-Fi network
+	1. Baixe o aplicativo no [Google Play](https://play.google.com/store/apps/details?id=com.reachview) ou [Apple Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)
+	2. Vá para as configurações de Wi-Fi no seu dispositivo
+	3. Conecte-se ao ponto de acesso do Reach. Aparecerá como **reach:XX:XX**
+	4. Digite a senha **emlidreach**
+	5. Abra o aplicativo ReachView
+	6. Escolha o Reach na lista
+
+??? note "Conectando-se através de um navegador da web em qualquer dispositivo"
+
+	1. Vá para as configurações de Wi-Fi no seu dispositivo
+	2. Conecte-se ao ponto de acesso do Reach. Aparecerá como **reach:XX:XX**
+	3. Digite a senha **emlidreach**
+	4. Abra um navegador da web (recomendamos usar o Chrome ou Mozilla)
+	5. Digite o seguinte IP 192.168.42.1
+
+
+## Conectando-se ao Wi-Fi
+
+* Vá para guia Wi-Fi
+
+* Escolha a rede Wi-Fi
 	
-	* Choose the available one if it’s visible
+	* Escolha a sua rede se estiver visível
 	
-	* If you can’t see your mobile hotspot, press **Connect to a hidden network**
+	* Se você não conseguir ver a sua rede móvel, pressione **Connect to a hidden network**
 
 <p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/hidden-network.gif" style="width: 800px;" /></p>
 
-* Fill in the connection form
+* Preencha os campos para a conexão
 	
 	<details close>
-	<summary> **Steps for Wi-Fi network** </summary>
+	<summary> **Passos para conectar a rede Wi-Fi** </summary>
 
-	For Wi-Fi network fill in a password
+	Preencha o campo com a senha da rede Wi-Fi
 
 	</details>
 
 
 	<details close>
-	<summary> **Steps for mobile hotspot** </summary>
+	<summary> **Passos para conectar ao ponto de acesso por dispositivos móveis** </summary>
 
-	For mobile hotspot fill in Network name. Choose Security type and add a password if you have it.
+	Para adicionar o ponto de acesso de uma rede móvel, digite o nome da rede. Escolha o tipo de segurança e insira uma senha, se você tiver.
 
 	</details>
 
 
-	!!! danger "Double check the password!"
-		You can unmask the password by clicking on an eye symbol at the end of a password field.
+	!!! danger "Verifique a senha!"
+		Você pode desmascarar a senha clicando no símbolo de um olho no final do campo de inserir a senha.
 
 <p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/new-connection.gif" style="width: 800px;" /></p>
 
-* Press the **Connect** button. Blue LED should start blinking on Reach
+* Pressione o botão **Connect**. O LED azul deve começar a piscar no Reach
 
 	<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/network-scan.gif" style="width: 400px;" /></p>
 
 
-## Connecting process
+## Processo de conexão
 
-??? note "Steps for Wi-Fi network"
+??? note "Passos para conectar a rede Wi-Fi"
 
-	If you connecting to Wi-Fi wait until the blue LED starts blinking slowly.
-
-
-??? note "Steps for mobile hotspot"
-
-	If you connecting to mobile hotspot do the following steps:
-
-	* Enable Wi-Fi hotspot on your mobile device
-	* Check that it has the same name and password as you filled in the previous step
-	* Now reboot the device with the **Power** button
-	* Reach should connect to your hotspot during the next boot
+	Se você se conectar a rede Wi-Fi, espere até que o LED azul comece a piscar lentamente.
 
 
-* If the connection is successful, you will see blue LED is blinking slowly
+??? note "Passos para conectar ao ponto de acesso por dispositivos móveis"
+
+	Se você se conectar ao ponto de acesso móvel, siga as etapas a seguir:
+
+	* Ative o ponto de acesso Wi-Fi no seu dispositivo móvel
+	* Verifique se tem o mesmo nome e senha que você preencheu na etapa anterior
+	* Agora reinicie o dispositivo pressionando o botão **Power**
+	* O Reach deve se conectar ao seu ponto de acesso durante a próxima inicialização
+
+
+* Se a conexão for bem sucedida, você verá o LED azul piscando lentamente
 
 	<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/running-client.gif" style="width: 400px;" /></p>
 
-* If the connection fails, you will see the blue LED stays solid
+* Se a conexão falhar, você verá que o LED azul permanecerá sem piscar
 
 	<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/running-hotspot.png" style="width: 400px;" /></p>
 
-	!!! tip "If the connection fails:"
-		* Connect to Reach hotspot again
-		* Check entered password
-		* Check that your network is configured correctly
-		* Try another Wi-Fi network
+	!!! tip "Se a conexão falhar:"
+		* Conecte-se ao ponto de acesso do Reach novamente
+		* Verifique a senha
+		* Verifique se a sua rede está configurada corretamente
+		* Tente outra rede Wi-Fi
 
 
-## Go back to ReachView
+## Volte para o ReachView
 
-??? note "Connecting to Reach with iOS/Android device"
+??? note "Conectando-se ao Reach com dispositivos iOS/Android"
 	
-	1. Connect your mobile device to the same Wi-Fi network as Reach
-	2. Scan for available Reach devices
-	3. Choose Reach from the list in the app
+	1. Conecte seu dispositivo móvel à mesma rede Wi-Fi que o Reach
+	2. Verifique os dispositivos Reach desponíveis
+	3. Escolha o Reach na lista do aplicativo
 
 
-??? note "Connecting via a web browser from any device"
+??? note "Conectando-se através de um navegador da web de qualquer dispositivo"
 
-	1. Connect your device to the same Wi-Fi network as Reach
-	2. Use [one of the Network Scan utility](https://docs.emlid.com/reachrs/quickstart/#accessing-reach-rsrs-device-in-a-network) or ReachView app to determine the Reach IP address 
-	3. Go to IP address in a web browser
+	1. Conecte seu dispositivo móvel à mesma rede Wi-Fi que o Reach
+	2. Use um dos software de varredura [Network Scan](https://docs.emlid.com/reachrs/quickstart/#accessing-reach-rsrs-device-in-a-network) ou use o aplicativo ReachView para encontrar o endereço de IP do Reach 
+	3. Insira o endereço de IP em um navegador da web
 
 
-Once Reach is connected to a Wi-Fi, you can:
+Depois que o Reach for conectado a uma rede Wi-Fi, você poderá:
 
-* [Update the receiver](../../reachview/settings/#check-app-version)
-* [Connect to NTRIP](../../reachview/correction-input/#ntrip)
+* [Atualizar o receptor](../../reachview/settings/#check-app-version)
+* [Conectar-se NTRIP](../../reachview/correction-input/#ntrip)
