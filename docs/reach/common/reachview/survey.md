@@ -1,157 +1,157 @@
-You can collect points with the ReachView app using Point Collection tool. The feature allows to make project-based point collection with auto-save rules or manually and then export the data into different formats. 
+Você pode coletar pontos com o aplicativo ReachView usando a ferramenta Point Collection. O recurso permite criar uma lista de pontos baseada no projeto, estes pontos podem serem salvos automáticamente ou manualmente e os dados podem ser exportados em diferentes formatos. 
 
 !!! tip ""
-    The tool is perfect for surveying and ground control points collection. 
+    A ferramenta é perfeita para levantamentos e coleta de pontos de controle em campo.
 
-###Creating New Project
+###Criando um novo projeto
 
-* Go to Reach rover with a browser or ReachView mobile app
-* Choose the Survey tab in the menu
-* To create a new project press **New project** or click on the project name to open it
+* No aplicativo ReachView selecione o dispositivo Reach utilizado como Rover
+* Escolha a guia Survey no menu
+* Para criar um novo projeto, pressione **New project** ou clique no nome do projeto para abri-lo
 
 <p style="text-align:center" ><img src="../img/reachview/survey/create-new-project.gif" style="width: 800px;" /></p>
 
 
-###Project settings 
+###Configurações do projeto 
 
-####Basic information
+####Informação básica
 
-On the first step, you can fill in Project name, Author and add Comment if you want. However, you can use default settings and press **Next** button.
+Na primeira etapa, você pode preencher o nome do projeto, autor e adicionar comentários, se quiser. No entanto, você pode usar as configurações padrão e pressionar o botão **Next**.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/step1-fill-in.gif" style="width: 800px;" /></p>
 
-####Auto-save rules
+####Coletar pontos automaticamente
 
-Auto-save rules are set for Single, Float or Fix statuses and allow to automate point collection process. 
+As opções para salvar pontos automaticamente são definidas pelos status Single, Float ou Fix e permitem automatizar o processo de coleta de pontos. 
 
-To configure auto-save rules:
+Para configurar a coleta de pontos automaticamente:
 
-* Select the solution status at which the device will save points automatically by clicking on the checkbox
+* Selecione o status da solução no qual o dispositivo coletará os pontos automaticamente clicando na caixa de seleção
 	
-	The menu with settings will open. You can use recommended default values for the required observation time, precision and DOP or set yours.
+	O menu com as configurações será aberto. Você pode usar os valores padrão recomendados para o tempo de observação, precisão e DOP ou definir os seus valores.
 
-	#####Default observation time
-	| Solution status  | Time |
+	#####Tempo de observação padrão
+	| Status da solução  | Tempo |
 	| :-------------: | :-------------: |
 	| Fix  | 40 sec  |
 	| Float  | 5 min  |
 	| Single  | 10 min  |
 
-	#####Precision
-	This parameter indicates the highest possible RMS error within the measurement. The deviation for the single solution is usually several meters, with the float solution you may expect sub-meter precision, with the fix status you can get centimeter-level precision.
+	#####Precisão
+	Este parâmetro indica o maior erro RMS possível dentro da medição. O desvio para a solução single é normalmente de vários metros, com a solução float você pode esperar precisão submétrica, com a solução fix você pode obter precisão de nível centimétrico.
 
 	#####DOP
-	DOP stands for “the dilution of precision” and specifies the effect of satellite geometry on measurement precision. The better the geometry - the lower the DOP value. For auto-save rules default value is 2, when DOP is higher it is not recommended to collect points as bad satellite geometry might affect accuracy.
+	DOP significa “diluição da precisão” e especifica o efeito da geometria do satélite na precisão da medição. Quanto melhor a geometria, menor o valor de DOP. O valor padrão para coleta automática é 2, quando o DOP é mais alto, não é recomendado coletar pontos, pois a má geometria dos satélites pode afetar a precisão.
 
-* If you don’t need auto-saving, you can click **Done** to go further. In that case, you’ll need to start and stop point collection manually
+* Se você não quer coletar pontos automaticamente, clique em **Done** para continuar. Nesse caso, você precisará iniciar e interromper a coleta de pontos manualmente.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/step2-auto-save-rules.gif" style="width: 800px;" /></p>
 
 
-####Survey tool interface
+####Interface do projeto
 
-Survey tool interface shows the map with base and rover on it. 
+A interface do projeto mostra o mapa com a base e o rover. 
 
-* **B** stands for the base station
-* **R** stands for the rover
+* **B** representa a base
+* **R** representa o rover
 
 <p style="text-align:center" ><img src="../img/reachview/survey/map-rover-icon.gif" style="width: 800px;" /></p>
 
-####Antenna height setup
+####Configuração da altura da antena
 
-* Press <img src="../img/reachview/survey/antenna-height-icon.png" align="center" /> to open the Pole height menu
-* If you use thread adapter, check the box
-* Change pole height in the next form if it differs from the standard 2m value
-* Press the **Save** button
+* Pressione <img src="../img/reachview/survey/antenna-height-icon.png" align="center" /> para abrir o menu de configuração da altura da antena
+* Se você usa o adaptador de rosca 5/8, marque a caixa
+* Altere a altura do bastão se ela for diferente do valor padrão de 2m
+* Pressione o botão **Save**
 
 <p style="text-align:center" ><img src="../img/reachview/survey/antenna-height.gif" style="width: 800px;" /></p>
 
-####Collecting the point
+####Coletando pontos
 
-* Press <img src="../img/reachview/survey/new-point-icon.png" align="center" /> to go to the next window
+* Pressione <img src="../img/reachview/survey/new-point-icon.png" align="center" /> para ir para a próxima janela
 	
-	You can set the point’s name or use the default value. If you leave the name field blank the default point name will be “Point 1”, “Point 2”, etc.
+	Você pode definir o nome do ponto ou usar o padrão. Se você deixar o campo do nome em branco, o nome padrão será “Point 1”, “Point 2”, etc.
 
 	!!! note ""
-    	You can also set the new Pole height value if it changed.
+    	Você tembém pode definir o novo valor da altura do bastão caso ele tenha mudado.
 
-* Press **Collect** to start point collecting process
+* Pressione **Collect** para iniciar o processo de coleta do ponto
 
 <p style="text-align:center" ><img src="../img/reachview/survey/start-point-collecting.gif" style="width: 800px;" /></p>
 
-If you set Auto-save rules, you’ll see the status bar indicating the time until the end of point collection. Otherwise, you need to stop collecting point by pressing the **Accept** button.
+Se você definiu para coletar pontos automaticamente, verá a barra de status indicando o tempo até o final da coleta dos pontos. Caso contrário, você precisa interromper a coleta do ponto pressionando o botão **Accept**.
 
 !!! danger ""
-    If the **Collect** button is unavailable and you see the message “Waiting for solution status”, you won’t be able to start point collection. Check the solution status.
+    Se o botão **Collect** não estiver disponível e você ver a mensagem “Waiting for solution status”, não será possível iniciar a coleta do ponto. Verifique o status da solução.
 
-You can stop the process by pressing the **Cancel** button. In that case, the point will not be saved.
+Você pode interromper o processo pressionando o botão **Cancel**. Nesse caso, o ponto não será salvo.
 
-* If you want to end surveying or look at the result, press the **Back** button.
-You’ll see the map with all the points you’ve collected
+* Se você quiser terminar o levantamento ou olhar para o resultado, pressione o botão **Back**.
+Você verá o mapa com todos os pontos que você coletou
 
 <p style="text-align:center" ><img src="../img/reachview/survey/back-button.gif" style="width: 800px;" /></p>
 
-####Point options
+####Lista de pontos
 
-To open the list of all points, press <img src="../img/reachview/survey/points-list-icon.png" align="center" />. You can open point details, edit the point info, find it on the map or stake out the point.
-[Read more about Stake out function in our guide](#point-stakeout).
+Para abrir a lista de todos os ontos, pressione <img src="../img/reachview/survey/points-list-icon.png" align="center" />. Você pode abrir os detalhes do ponto, editar as informações do ponto, localizá-lo no mapa ou implantar o ponto.
+[Leia mais sobre a função Implantação no nosso guia](#point-stakeout).
 
 <p style="text-align:center" ><img src="../img/reachview/survey/list-all-points.gif" style="width: 800px;" /></p>
 
-Also, you can work with each point separately by choosing it on the map. 
+Além disso, você pode trabalhar com cada ponto separadamente, escolhendo-o no mapa. 
 
 <p style="text-align:center" ><img src="../img/reachview/survey/point-options.gif" style="width: 800px;" /></p>
 
-When the surveying is done, press <img src="../img/reachview/survey/back-button-icon.png" align="center" /> to close and save the project. It’ll be available in Survey tab menu.
+Quando quiser pausar ou terminar o levantamento, pressione <img src="../img/reachview/survey/back-button-icon.png" align="center" /> para fechar e salvar o projeto. Ele estará disponível no menu da guia Survey.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/close-project.gif" style="width: 800px;" /></p>
 
-####Exporting Data
+####Exportando dados
 
-When you finish collecting points, you can export your project in CSV, DXF, GeoJSON, DroneDeploy CSV or ESRI Shapefiles format.
+Quando você terminar a coleta dos pontos, poderá exportar o seu projeto nos formatos CSV, DXF, GeoJSON, DroneDeploy CSV ou ESRI Shapefiles.
 
-To do it, press "•••", click **Export** and choose the right format. The downloading will start automatically. Large projects might take some time to process. After that, you can find your archive in the default Downloads folder.
+Para isso, pressione "•••", clique em **Export** e escolha o formato desejado. O download será iniciado automaticamente. Grandes projetos podem levar algum tempo para serem exportados. Depois disso, você pode encontrar o seu arquivo na apsta de downloads padrão.
 
 !!! note ""
-	If you use ReachView app on Android, exporting will be made in a Downloads folder. As for iOS, you’ll need to choose the way you want to save your project.
+	Se você usar o aplicativo ReachView no Android, a exportação será feita em uma pasta de downloads. Quanto ao iOS, você precisa escolher o jeito que deseja salvar seu projeto.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/export-button.gif" style="width: 800px;" /></p>
 
-It’s also possible to export your project in Survey tab without opening it. Click the **Export** button in the project window and choose the format as in a previous way.
+Também é possível exportar seu projeto na guia Survey sem abri-lo. Clique no botão **Export** na janela do projeto e escolha o formato de exportação da mesma maneira explicada anteriormente.
 
-## Point stakeout
+## Implantação de pontos
 
-Point stakeout is a feature that allows finding points with known coordinates.
+A implantação de pontos é um recurso que permite localizar pontos com coordenadas conhecidas.
 
-### Preparing data
+### Preparando os dados
 
-Open the Survey tab in ReachView.
+Abra a guia Survey no ReachView.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/survey.png" style="width: 800px;" /></p>
 
-* If there is a ready project, click to the project name to open it
+* Se houver um projeto pronto, clique no nome do projeto para abri-lo
 
-* If you don’t have any projects or want to create a new one, [check Creating New Project part of this article](#creating-new-project)
+* Se você não tiver nenhum projeto ou quiser criar um novo, [Cheque a seção Criando um novo projeto deste artigo](#creating-new-project)
 
-You can use coordinates collected earlier or just upload a list with required points.
+Você pode usar as coordenadas coletadas anteriormente ou apenas fazer a importação de uma lista com os pontos conhecidos.
 
-#### Points import
+#### Importando pontos
 
-Hit "•••" button on the right side of the project name and choose **Import** in the drop-down list.
+Clique no botão "•••" no lado direito do nome do projeto e escolha **Import** na lista.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/import-points-1.gif" style="width: 800px;" /></p>
 
-You can upload files in CSV, GeoJSON or DXF formats or just enter coordinates manually. 
+Você pode importar arquivos nos formatos CSV, GeoJSON ou DXF ou apenas inserir coordenadas manualmente. 
 
 !!! note ""
-	Check the templates to find out what exactly your data should look like.
+	Verifique os modelos para descobrir exatamente como seus dados devem ser.
 
-	??? note "CSV template"
+	??? note "Modelo CSV"
 		    name,longitude,latitude,elevation
 		    Point 1,30.339,59.958,53.618
 		    Point 2,30.334,59.960,58.944
 
-	??? note "GeoJSON template"
+	??? note "Modelo GeoJSON"
 		    {
 		      "type": "FeatureCollection",
 		      "crs": {
@@ -184,51 +184,51 @@ You can upload files in CSV, GeoJSON or DXF formats or just enter coordinates ma
 		      ]
 		    }
 
-After you finish adding coordinates, hit the **Import** button.
+Depois de terminar de adicionar as coordenadas, pressione o botão **Import**.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/import-points-2.gif" style="width: 800px;" /></p>
 
 ### Interface
 
-Tap the point you want to stake out. It will be highlighted in blue. At the bottom of the screen, you’ll see point description that includes the name of the point, point collection UTC date and time and solution status.
+Selecione o ponto que você deseja implantar. Será destacado em azul. Na parte inferiror da tela, você verá a descrição do ponto que inclui o nome do ponto, a data e a hora UTC da coleta dos pontos e o status da solução.
 
-Hit the **Stake out** button to start.
+Clique no botão **Stake out** para começar a implantação.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/start-stakeout.gif" style="width: 800px;" /></p>
 
-Let’s get in touch with the stake out interface before proceeding.
+Vamos verificar interface de implantação antes de prosseguir.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/stakeout-interface.PNG" style="width: 800px;" /></p>
 
-* You can see [solution status](../../reachview/status/#solution-status), [AR ratio](../../reachview/status/#ar-validation-ratio), [age of differential](../../reachview/status/#age-of-differential), satellite number and [Reach name](../../reachview/settings/#change-reach-name) in the status bar placed in the top of the page. Make sure you have Fix
-* **The antenna height value** can be found under the status bar
-* In this mode, the map is always **North-oriented**
-* There’s a dark-gray field at the bottom of the window. The left value is the **horizontal distance** to the point, the right value is **vertical**
-* **Done** button finishes the stakeout
-* There are **other points** you can switch under the distance values
+* Você pode ver [Status da solução](../../reachview/status/#solution-status), [Relação AR](../../reachview/status/#ar-validation-ratio), [Latência](../../reachview/status/#age-of-differential), número de satélites e [Nome do Reach](../../reachview/settings/#change-reach-name) na barra de status colocada no topo da página. Verifique se você está com solução Fix
+* **O valor da altura da antena** pode ser encontrado na barra de status
+* Neste modo, o mapa é sempre **Orientado para o norte**
+* Há um campo cinza escuro na parte inferior da janela. O valor da esquerda é a  **distância horizontal** até o ponto, o valor correto é **vertical**
+* Para terminar a implantação do ponto clique em **Done**
+* Se existir **outros pontos** para implantar pode alternar para implantá-lo
 
-### Staking out points
+### Implantando pontos
 
-Try to move in the direction to the point. The map zooms in automatically. 
+Tente se mover na direção do ponto. O mapa aumenta automaticamente. 
 
-!!! tip "How to understand in which direction the point is?"
-	Once start walking, you will see Rover symbol changes to the arrow.
+!!! tip "Como entender qual a direção certa do ponto?"
+	Quando começar a andar, você verá o símbolo do Rover mudar para uma seta.
 
-When the distance to the point is less than 50 centimeters, stakeout changes the mode.
+Quando a distância até o ponto for menor que 50 centímetros, o modo implantação muda.
 
-You need to put a blue rover circle into the white ring by moving the pole. Ensure the pole isn’t tilted. Does rover circle become green? Good job! We’ve almost finished.
+Você precisa colocar o círculo rover azul no anel branco movendo o bastão. Certifique-se de que o bastão não esteja inclinada. O círculo do rover se torna verde? Bom trabalho! Estamos quase terminando.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/stakeout-process.gif" style="width: 800px;" /></p>
 
-Here you also can choose the **2D** or **3D** option. **2D** stands for latitude and longitude coordinates only. With **3D** you can also find the height of the point.
+Aqui você também pode escolher as opções **2D** ou **3D**. **2D** significa que a implantação está considerando somente as coordenadas latitude e longitude. Com o **3D** você também pode encontrar a altura do ponto.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/2D-3D.gif" style="width: 800px;" /></p>
 
-Congratulations! You’ve just staked out your first point! Now you can switch to another point to continue or hit **Done** button to finish.
+Parabéns! Você acabou de implantar o seu primeiro ponto! Agora você pode alternar para outro ponto para continuar ou clicar no botão **Done** para concluir.
 
 ## To-Dos
 
-Survey Tool is constantly improving. Many features including new export formats, new project settings are coming soon. The discussion, including questions and feature request, is available on [the community forum](https://community.emlid.com).
+A ferramenta Survey está melhorando constantemente. Muitos recursos, incluindo novos formatos de exportação, novas configurações de projeto estão chegando em breve. A discussão, incluindo perguntas e solicitação de recursos, está disponível no [fórum da comunidade emlid](https://community.emlid.com).
 
 
 
