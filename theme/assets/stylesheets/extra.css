@@ -7,6 +7,10 @@
   box-shadow: none;
 }
 
+.md-sidebar {
+  width: 14rem;
+}
+
 .md-typeset h1 {
   font-size: 40px;
   color: #181818;
