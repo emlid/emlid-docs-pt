@@ -111,7 +111,7 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 ??? note "Conectando-se através de um navegador da web de qualquer dispositivo"
 
 	1. Conecte seu dispositivo móvel à mesma rede Wi-Fi que o Reach
-	2. Use um dos software de varredura [Network Scan](https://docs.emlid.com/reachrs/quickstart/#accessing-reach-rsrs-device-in-a-network) ou use o aplicativo ReachView para encontrar o endereço de IP do Reach 
+	2. Use um dos software de [Varredura de rede](https://docs.emlid.com/reachrs/quickstart/#acessando-o-reach-RSRS-em-uma-rede) ou use o aplicativo ReachView para encontrar o endereço de IP do Reach
 	3. Insira o endereço de IP em um navegador da web
 
 
