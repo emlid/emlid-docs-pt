@@ -18,9 +18,9 @@ Na caixa:
 
 * 1x cabo USB-OTG
 
-* 1x JST-GH 6-pin to jumper pin cable
+* 1x cabo com conector JST-GH 6-pin x jumper
 
-* 1x JST-GH 5-pin to jumper pin cable
+* 1x cabo com conector JST-GH 5-pin x jumper
 
 Opcional:
 
@@ -29,7 +29,7 @@ Opcional:
 
 ### Colaboração
 
-Este documento pode ser editado no GitHub no markdown. Se você encontrar qualquer erro, equipamentos ou pelas que não estão com descrições suficientes, simplesmente abra um chamado ou contribua enviando uma solicitação.
+Este documento pode ser editado no GitHub no markdown. Se você encontrar qualquer erro, equipamentos ou partes que não estão com descrições suficientes, simplesmente abra um chamado ou contribua enviando uma solicitação (pull request).
 
 ### Discussão
 
