@@ -41,8 +41,8 @@ Rádio 3DR também pode ser conectado via USB.
 
 <div style="text-align: center;"><img src="../img/reachm-plus/hardware-integration/lte-modem.png" style="width: 700px;"></div><br>
 
-Para se conectar o rádio USB ou modem LTE para o Reach use cabo USB-OTG, fornecido com o pacote. Ligue o rádio a porta USB-F e ligue o cabo Micro-USB no Reach.
-**Quando usando a porta USB no modo OTG Reach tem [powered](power-supply.md) que ser alimentado por uma das portas JST-GH**.
+Para conectar o rádio USB ou modem LTE para o Reach use cabo USB-OTG, fornecido com o pacote. Ligue o rádio a porta USB-F e ligue o cabo Micro-USB no Reach.
+**Ao usar a porta USB no modo OTG o Reach deve ser [alimentado](power-supply.md) por uma das portas JST-GH**.
 
 !!! note "Conectando modem LTE"
 	Tenha certeza que o Reach M+ está no modo ponto de acesso e o modem LTE foi pré-configurado para se conectar a internet automaticamente após iniciar.
