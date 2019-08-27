@@ -9,8 +9,8 @@ Toda vez que você liga o Reach em uma rede Wi-Fi, ele verifica se há uma nova 
 ### Modo noturno
 O modo noturno permite que você desligue os LEDs até a próxima reinicialização do dispositivo.
 
-### Bottom connector settings
-Enables automatic boot using the bottom connector on Reach RS+. Perfect for integrating the receiver with cars or tractors.
+### Configurações do conector inferior
+Ativa a inicialização automática usando o conector inferior no Reach RS +. Perfeito para integrar o receptor com carros ou tratores.
 
 ### Relatório do sistema
 A ferramenta é usada para facilitar os relatórios de problemas. Existem dois tipos: um em texto simples e outro como um arquivo zip. O primeiro é para o fórum e facilita o compartilhamento de configurações, estado da rede e versão do aplicativo. O último é para casos mais difíceis e contém registros do sistema e detalhes técnicos do seu dispositivo.
