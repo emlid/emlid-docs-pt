@@ -1,31 +1,49 @@
-### O que é o Reach e para que serve?
+RTK é uma técnica usada para melhorar a precisão do receptor GNSS. Os receptores GNSS tradicionais, como o de um smartphone, só podem determinar a posição com uma precisão de 2-4 metros. O RTK pode lhe dar precisão centimétrica.
 
-O Reach é um receptor GNSS RTK para aplicações quando o seu GPS padrão com vários metros de precisão não é suficiente. Ele depende da tecnologia RTK (cinemática em tempo real) para fornecer precisão em nível centimétrico.
+Os receptores GNSS medem quanto tempo leva para um sinal viajar de um satélite para o receptor. Os sinais transmitidos viajam através da ionosfera e atmosfera e são retardados e perturbados no caminho. Por exemplo, o tempo de viagem em um dia nublado e em condições de céu claro seria diferente. É por isso que é difícil para um receptor independente determinar precisamente sua posição. O RTK é uma tecnologia que resolve esse problema.
 
-O RTK existe a um longo tempo, usado principalmente por topógrafo. Se você precisasse de posicionamento preciso centimétrico, precisaria gastar milhares de reais em um sistema RTK. Com o Reach, queremos mudar isso.
+## Alta precisão em tempo real
 
-O Reach roda um software de processamento RTK de código aberto chamado RTKLIB escrito por Tomoji Takasu. Anteriormente, era necessário um computador para executar o RTKLIB, mas agora todos os recursos do RTKLIB estão disponíveis diretamente no Reach.
+Dois receptores são usados no modo RTK. Um dele estático, e o outro se movendo. Eles são chamados de estação **base** e **rover**.
 
-### O que é um RTK?
+<p style="text-align:center" ><img src="../img/reach/rtk-introduction/base-rover.jpg" style="width: 800px;" /></p>
 
-RTK é uma técnica usada para melhorar a precisão do sistema GPS. Receptores GPS tradicionais, como um que você pode encontrar em seu smartphone, ou na maioria das plataformas robóticas, só poderiam determinar sua posição com precisão de 2-4 metros. O RTK pode dar-lhe centímetros.
+A missão da Base é ficar em um lugar, calcular distorções nos sinais de satélites e enviar correções para um receptor em movimento. O Rover usa esses dados para alcançar a posição precisa, na casa do centímetro. Qualquer número de rovers pode se conectar a uma base se suas configurações de entrada corresponderem à saída da base.
 
-Todo o sistema GPS é baseado na medição de quanto tempo leva para um sinal viajar de um satélite para o receptor. Conhecendo as órbitas precisas dos veículos espaciais - as efemérides, e pelo menos 4 tempos de viagem - pode-se determinar sua posição no planeta. Dado que a frequência da portadora GPS L1 é de 1575 MHz, cada onda tem cerca de 19 cm de comprimento. Um receptor também mede a fase de portadora de cada um dos sinais. Teoricamente, isso deveria nos dar precisão milimétrica, então por que ainda temos que lutar com precisão de 2-4 metros? Quais são as fontes de erro e o que podemos fazer para removê-las?
+<p style="text-align:center" ><img src="../img/reach/rtk-introduction/multiple-rovers.jpg" style="width: 800px;" /></p>
 
-Os satélites orbitam a 20 200 km acima da superfície da Terra. Os sinais transmitidos viajam através da ionosfera e atmosfera e são retardados e perturbados no caminho. Por exemplo, o tempo de viagem em dia nublado e em condições de céu claro seria diferente! Muitos fatores podem aumentar o erro de posição, o melhor é que podemos supor que esses fatores não mudam muito em uma área.
+## Correções via NTRIP
 
-Existem sistemas de aumento de GPS (DGPS), como SBAS ou WAAS, que medem as perturbações do sinal de corrente em muitas estações de controle terrestre em todo o mundo, construindo um modelo de propagação de erros e transmitindo correções através de satélites ou rádio. Muitos receptores comerciais podem usar esses sinais para precisão submétrica. Mas o que fazer se você quiser se aproximar de centímetros?
+Você não precisa necessariamente de um segundo receptor para o RTK o tempo todo. Geralmente, existem serviços locais que enviam correções de base via Internet. Essa tecnologia é chamada NTRIP.
 
-A tecnologia que nos permite fazer isso é chamada RTK (cinemática em tempo real). Dois receptores são usados, um deles é estacionário e é chamado de “estação base”, o outro é “rover”. A estação base mede os erros e, sabendo que está parada, transmite correções ao rover. A ideia é simples, mas não a matemática. Os sistemas comerciais podem chegar a precisões centimétricas e custariam uma fortuna (R$ 60 mil).
+O NTRIP é uma boa opção para áreas com boa cobertura 3G/LTE e uma rede de bases NTRIP próximas. Em outros casos, usar o segundo receptor como uma estação base local tem duas vantagens:
 
-Além disso, se você não precisa das coordenadas precisas em tempo real, basta gravar os dados do rover e da base e processá-los posteriormente, eliminando assim a necessidade de uma transmissão de rádio constante. Esse método é chamado de pós-processamento e é o mais preciso entre todos.
+* autonomia em áreas remotas, pois não há necessidade de conexão com a Internet
+* independência de fornecedores locais, sem taxas adicionais pelo serviço NTRIP
 
-** Comparação de coordenadas RTK e autônomas **
+<p style="text-align:center" ><img src="../img/reach/rtk-introduction/NTRIP-corrections.jpg" style="width: 800px;" /></p>
 
-*Modo estático:*
+## Receptores de simples e multi-frequência
 
-<p style="text-align:center" ><img src="../img/reach/rtk-introduction/reach-static-rtk-demo.png" style="width: 800px;" /></p>
+No grosso modo, existem dois tipos de receptores: simples frequência (L1) e multi-frequência (L1/L2 ou mais). Suas diferenças vêm da quantidade de dados que eles podem receber dos satélites.
 
-*Modo cinemático:*
+Por exemplo, ajuda a aumentar a distância máxima entre a base e o rover, também chamado de **linha de base**:
 
-<p style="text-align:center" ><img src="../img/reach/rtk-introduction/reach-kinematic-rtk-demo.png" style="width: 800px;" /></p>
+<center>
+
+|     | Máxima linha de base simples frequência | Máxima linha de base multi-frequência |
+|:---:|:------------:|:------------:|
+| RTK | 10 km | 60 km |
+| PPK | 30 km | 100 km |
+
+</center>
+
+O receptor multi-frequência também é muito mais robusto no que diz respeito à vista do céu. Ele pode manter a precisão do centímetro, mesmo se você operar em condições desafiadoras: floresta, cidade, locais de mineração, pedreiras, etc.
+
+<br>
+
+Leituras adicionais:
+
+* [Como funciona o PPK](ppk-introduction.md)
+* [Montando a base base](placing-the-base.md)
+* [Trabalhando com o serviço NTRIP](ntrip-workflow.md)
