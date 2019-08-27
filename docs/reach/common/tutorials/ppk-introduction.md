@@ -1,4 +1,4 @@
-PPK significa cinemático pós-processado.
+PPK significa Cinemático Pós-Processado.
 
 ### Definições e diferenças do RTK
 
@@ -6,7 +6,7 @@ O cinemático pós-processado (PPK) é uma técnica alternativa ao cinemático e
 
 <p style="text-align:center" ><img src="../img/reach/ppk-introduction/PPK.png" style="width: 800px;" /></p>
 
-Embora o PPK seja usado principalmente no mapeamento de UAV, ele também pode ser usado como backup para RTK para qualquer trabalho de pesquisa. O PPK oferece um fluxo de trabalho mais flexível, permitindo executar o processamento várias vezes usando configurações diferentes. Ele também não requer um link de correção entre a base e o rover, simplificando a configuração do equipamento.
+Embora o PPK seja usado principalmente no mapeamento de UAV, ele também pode ser usado como backup para RTK para qualquer trabalho de levantamento. O PPK oferece um fluxo de trabalho mais flexível, permitindo executar o processamento várias vezes usando configurações diferentes. Ele também não requer um link de correção entre a base e o rover, simplificando a configuração do equipamento.
 
 ### PPK para mapeamento de VANT
 
@@ -34,8 +34,8 @@ Como resultado do mapeamento PPK do VANT com o Reach, você terá um conjunto de
 !!! tip "Solução alternativa de Drones DJI"
 	Você não pode integrar facilmente o Reach M + com o DJI Mavic ou o Phantom, já que suas câmeras não têm sapata. Você pode sempre trabalhar com os GCPs, o que é simples e eficiente para pequenas áreas - assim como seu drone DJI.
 
-Leitura adicional:
+Leituras adicionais:
 
-* [Controle da câmera](../../reachview/camera-control)
-* [Registro de dados](../../reachview/logging)
-* [Guia de pós-processamento](gps-post-processing.md)
+* [Camera control](../../reachview/camera-control)
+* [Logging](../../reachview/logging)
+* [Pós processamento](gps-post-processing.md)
