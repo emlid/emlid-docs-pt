@@ -22,7 +22,7 @@ Na caixa:
 
 ### Colaboração
 
-Este documento pode ser editado no GitHub no markdown. Se você encontrar qualquer erro, equipamentos ou pelas que não estão com descrições suficientes, simplesmente abra um chamado ou contribua enviando uma solicitação.
+Este documento pode ser editado no GitHub no markdown. Se você encontrar qualquer erro, equipamentos ou partes que não estão com descrições suficientes, simplesmente abra um chamado ou contribua enviando uma solicitação (pull request).
 
 ### Discussão
 
