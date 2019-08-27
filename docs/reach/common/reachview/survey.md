@@ -7,20 +7,20 @@ Você pode coletar pontos com o aplicativo ReachView usando a ferramenta Point C
 
 * No aplicativo ReachView selecione o dispositivo Reach utilizado como Rover
 * Escolha a guia Survey no menu
-* Para criar um novo projeto, pressione **New project** ou clique no nome do projeto para abri-lo
+* Para criar um novo projeto, pressione **"New project"** (Novo projeto) ou clique no nome do projeto para abri-lo
 
 <p style="text-align:center" ><img src="../img/reachview/survey/create-new-project.gif" style="width: 800px;" /></p>
 
 
 ###Configurações do projeto 
 
-####Informação básica
+####Informações básicas
 
-Na primeira etapa, você pode preencher o nome do projeto, autor e adicionar comentários, se quiser. No entanto, você pode usar as configurações padrão e pressionar o botão **Next**.
+Na primeira etapa, você pode preencher o "Project name" (Nome do projeto), "Author" (Autor) e adicionar um "Comment" (Comentário), se quiser. No entanto, você pode usar as configurações padrão e pressionar o botão **"Next"** (Próximo).
 
 <p style="text-align:center" ><img src="../img/reachview/survey/step1-fill-in.gif" style="width: 800px;" /></p>
 
-####Coletar pontos automaticamente
+####Regra para salvamento automático
 
 As opções para salvar pontos automaticamente são definidas pelos status Single, Float ou Fix e permitem automatizar o processo de coleta de pontos. 
 
@@ -43,7 +43,7 @@ Para configurar a coleta de pontos automaticamente:
 	#####DOP
 	DOP significa “diluição da precisão” e especifica o efeito da geometria do satélite na precisão da medição. Quanto melhor a geometria, menor o valor de DOP. O valor padrão para coleta automática é 2, quando o DOP é mais alto, não é recomendado coletar pontos, pois a má geometria dos satélites pode afetar a precisão.
 
-* Se você não quer coletar pontos automaticamente, clique em **Done** para continuar. Nesse caso, você precisará iniciar e interromper a coleta de pontos manualmente.
+* Se você não quer coletar pontos automaticamente, clique em **"Done"** (Pronto) para continuar. Nesse caso, você precisará iniciar e interromper a coleta de pontos manualmente.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/step2-auto-save-rules.gif" style="width: 800px;" /></p>
 
@@ -61,8 +61,12 @@ A interface do projeto mostra o mapa com a base e o rover.
 
 * Pressione <img src="../img/reachview/survey/antenna-height-icon.png" align="center" /> para abrir o menu de configuração da altura da antena
 * Se você usa o adaptador de rosca 5/8, marque a caixa
+
+!!! note ""
+	Reach RS2 possui o padrão de rosca 5/8" e não precisa de adaptador
+	
 * Altere a altura do bastão se ela for diferente do valor padrão de 2m
-* Pressione o botão **Save**
+* Pressione o botão **"Save"** (Salvar)
 
 <p style="text-align:center" ><img src="../img/reachview/survey/antenna-height.gif" style="width: 800px;" /></p>
 
@@ -75,18 +79,18 @@ A interface do projeto mostra o mapa com a base e o rover.
 	!!! note ""
     	Você tembém pode definir o novo valor da altura do bastão caso ele tenha mudado.
 
-* Pressione **Collect** para iniciar o processo de coleta do ponto
+* Pressione **"Collect"** (Coletar) para iniciar o processo de coleta do ponto
 
 <p style="text-align:center" ><img src="../img/reachview/survey/start-point-collecting.gif" style="width: 800px;" /></p>
 
-Se você definiu para coletar pontos automaticamente, verá a barra de status indicando o tempo até o final da coleta dos pontos. Caso contrário, você precisa interromper a coleta do ponto pressionando o botão **Accept**.
+Se você definiu para coletar pontos automaticamente, verá a barra de status indicando o tempo até o final da coleta dos pontos. Caso contrário, você precisa interromper a coleta do ponto pressionando o botão **"Accept"** (Aceitar).
 
 !!! danger ""
-    Se o botão **Collect** não estiver disponível e você ver a mensagem “Waiting for solution status”, não será possível iniciar a coleta do ponto. Verifique o status da solução.
+    Se o botão **"Collect"** (Coletar) não estiver disponível e você ver a mensagem “Waiting for solution status” (Aguardando por status da solução), não será possível iniciar a coleta do ponto. Verifique o status da solução.
 
-Você pode interromper o processo pressionando o botão **Cancel**. Nesse caso, o ponto não será salvo.
+Você pode interromper o processo pressionando o botão **"Cancel"** (Cancelar). Nesse caso, o ponto não será salvo.
 
-* Se você quiser terminar o levantamento ou olhar para o resultado, pressione o botão **Back**.
+* Se você quiser terminar o levantamento ou olhar para o resultado, pressione o botão **"Back"** (Voltar).
 Você verá o mapa com todos os pontos que você coletou
 
 <p style="text-align:center" ><img src="../img/reachview/survey/back-button.gif" style="width: 800px;" /></p>
@@ -94,7 +98,7 @@ Você verá o mapa com todos os pontos que você coletou
 ####Lista de pontos
 
 Para abrir a lista de todos os ontos, pressione <img src="../img/reachview/survey/points-list-icon.png" align="center" />. Você pode abrir os detalhes do ponto, editar as informações do ponto, localizá-lo no mapa ou implantar o ponto.
-[Leia mais sobre a função Implantação no nosso guia](#point-stakeout).
+[Leia mais sobre a função Locação no nosso guia](#locacao-de-pontos).
 
 <p style="text-align:center" ><img src="../img/reachview/survey/list-all-points.gif" style="width: 800px;" /></p>
 
@@ -110,18 +114,18 @@ Quando quiser pausar ou terminar o levantamento, pressione <img src="../img/reac
 
 Quando você terminar a coleta dos pontos, poderá exportar o seu projeto nos formatos CSV, DXF, GeoJSON, DroneDeploy CSV ou ESRI Shapefiles.
 
-Para isso, pressione "•••", clique em **Export** e escolha o formato desejado. O download será iniciado automaticamente. Grandes projetos podem levar algum tempo para serem exportados. Depois disso, você pode encontrar o seu arquivo na apsta de downloads padrão.
+Para isso, pressione "•••", clique em **"Export"** (Exportar) e escolha o formato desejado. O download será iniciado automaticamente. Grandes projetos podem levar algum tempo para serem exportados. Depois disso, você pode encontrar o seu arquivo na apsta de downloads padrão.
 
 !!! note ""
 	Se você usar o aplicativo ReachView no Android, a exportação será feita em uma pasta de downloads. Quanto ao iOS, você precisa escolher o jeito que deseja salvar seu projeto.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/export-button.gif" style="width: 800px;" /></p>
 
-Também é possível exportar seu projeto na guia Survey sem abri-lo. Clique no botão **Export** na janela do projeto e escolha o formato de exportação da mesma maneira explicada anteriormente.
+Também é possível exportar seu projeto na guia Survey sem abri-lo. Clique no botão **"Export"** (Exportar) na janela do projeto e escolha o formato de exportação da mesma maneira explicada anteriormente.
 
-## Implantação de pontos
+## Locação de pontos
 
-A implantação de pontos é um recurso que permite localizar pontos com coordenadas conhecidas.
+A locação de pontos é um recurso que permite localizar pontos com coordenadas conhecidas.
 
 ### Preparando os dados
 
@@ -131,13 +135,13 @@ Abra a guia Survey no ReachView.
 
 * Se houver um projeto pronto, clique no nome do projeto para abri-lo
 
-* Se você não tiver nenhum projeto ou quiser criar um novo, [Cheque a seção Criando um novo projeto deste artigo](#creating-new-project)
+* Se você não tiver nenhum projeto ou quiser criar um novo, [veja a seção Criando um novo projeto deste artigo](#criando-um-novo-projeto)
 
 Você pode usar as coordenadas coletadas anteriormente ou apenas fazer a importação de uma lista com os pontos conhecidos.
 
 #### Importando pontos
 
-Clique no botão "•••" no lado direito do nome do projeto e escolha **Import** na lista.
+Clique no botão "•••" no lado direito do nome do projeto e escolha **"Import"** (Importar) na lista.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/import-points-1.gif" style="width: 800px;" /></p>
 
@@ -190,13 +194,13 @@ Depois de terminar de adicionar as coordenadas, pressione o botão **Import**.
 
 ### Interface
 
-Selecione o ponto que você deseja implantar. Será destacado em azul. Na parte inferiror da tela, você verá a descrição do ponto que inclui o nome do ponto, a data e a hora UTC da coleta dos pontos e o status da solução.
+Selecione o ponto que você deseja locar. Será destacado em azul. Na parte inferiror da tela, você verá a descrição do ponto que inclui o nome do ponto, a data e a hora UTC da coleta dos pontos e o status da solução.
 
-Clique no botão **Stake out** para começar a implantação.
+Clique no botão **"Stakeout"** (Locar) para começar a locação do ponto.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/start-stakeout.gif" style="width: 800px;" /></p>
 
-Vamos verificar interface de implantação antes de prosseguir.
+Vamos verificar interface de locação antes de prosseguir.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/stakeout-interface.PNG" style="width: 800px;" /></p>
 
@@ -204,32 +208,28 @@ Vamos verificar interface de implantação antes de prosseguir.
 * **O valor da altura da antena** pode ser encontrado na barra de status
 * Neste modo, o mapa é sempre **Orientado para o norte**
 * Há um campo cinza escuro na parte inferior da janela. O valor da esquerda é a  **distância horizontal** até o ponto, o valor correto é **vertical**
-* Para terminar a implantação do ponto clique em **Done**
-* Se existir **outros pontos** para implantar pode alternar para implantá-lo
+* Para terminar a locação do ponto pressione **"Done"** (Pronto)
+* Se existir para locar pode alternar usando as setas
 
-### Implantando pontos
+### Locando pontos
 
 Tente se mover na direção do ponto. O mapa aumenta automaticamente. 
 
 !!! tip "Como entender qual a direção certa do ponto?"
 	Quando começar a andar, você verá o símbolo do Rover mudar para uma seta.
 
-Quando a distância até o ponto for menor que 50 centímetros, o modo implantação muda.
+Quando a distância até o ponto for menor que 50 centímetros, o modo de locação muda.
 
 Você precisa colocar o círculo rover azul no anel branco movendo o bastão. Certifique-se de que o bastão não esteja inclinada. O círculo do rover se torna verde? Bom trabalho! Estamos quase terminando.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/stakeout-process.gif" style="width: 800px;" /></p>
 
-Aqui você também pode escolher as opções **2D** ou **3D**. **2D** significa que a implantação está considerando somente as coordenadas latitude e longitude. Com o **3D** você também pode encontrar a altura do ponto.
+Aqui você também pode escolher as opções **2D** ou **3D**. **2D** significa que a locação está considerando somente as coordenadas latitude e longitude. Com o **3D** você também pode encontrar a altura do ponto.
 
 <p style="text-align:center" ><img src="../img/reachview/survey/2D-3D.gif" style="width: 800px;" /></p>
 
-Parabéns! Você acabou de implantar o seu primeiro ponto! Agora você pode alternar para outro ponto para continuar ou clicar no botão **Done** para concluir.
+Parabéns! Você acabou de locar o seu primeiro ponto! Agora você pode alternar para outro ponto para continuar ou clicar no botão **"Done"** (Pronto) para concluir.
 
-## To-Dos
+## A fazer
 
 A ferramenta Survey está melhorando constantemente. Muitos recursos, incluindo novos formatos de exportação, novas configurações de projeto estão chegando em breve. A discussão, incluindo perguntas e solicitação de recursos, está disponível no [fórum da comunidade emlid](https://community.emlid.com).
-
-
-
-
