@@ -1,5 +1,5 @@
 !!! Importante ""
-    A montagem do ne em um bom local é crucial para conseguir um bom resultado no posicionamento RTK!
+    A montagem em um bom local é crucial para conseguir um bom resultado no posicionamento RTK!
 
 Você pode colocar o seu smartphone próximo a janela da sua casa e terá coordenadas GPS depois de algum tempo, mas para o RTK o ambiente não será suficiente. Para o RTK funcionar, existem requisitos especiais para a colocação de antenas que são muito mais rigorosas do que para um GPS autônomo.
 
@@ -11,10 +11,25 @@ Dê uma olhada nas duas imagens abaixo. A imagem a esquerda mostra condições f
 
 <div style="text-align: center;"><img src="../img/reachrs/placement/Reach-placement-correct-wrong.png" style="width: 800px;"></div><br>
 
-Exemplos de ambientes **ruins** para a colocação de antenas: em áreas internas, áreas urbanas, floresta, perto do solo.
+Exemplos de **bons** ambientes para colocar o Reach: 
 
-Exemplos de **bons** ambientes para monstagem de antenas: campo, topo da colina, telhado de um prédio.
+* campo
+
+* topo da montanha
+
+* telhado
+
+Exemplos de ambientes **ruins** para colocar o Reach:
+
+* áreas internas
+
+* áreas urbanas
+
+* floresta
+
 
 #### Sem eletrônicos por perto
 
 Dispositivos eletrônicos podem produzir ruídos de RF que podem afetar a recepção do sinal de GPS. Mantenha todos os componentes eletrônicos o mais longe possível da antena.
+
+[Leia mais sobre a montagem da base neste link.](common/tutorials/placing-the-base.md)
