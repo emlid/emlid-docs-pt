@@ -35,9 +35,9 @@ Quando o Reach RS/RS+ é iniciado, ele busca por redes conhecidas e tenta conect
 
 O comportamento do LED de rede muda toda vez que você alterar o modo do Wi-Fi via ReachView. Ele irá virar um ponto de acesso, buscar uma rede e conectar a uma rede Wi-Fi existente.
 
-### LED Stat
+### LED de status
 
-LED Stat é usado para exibir o status de ReachView.
+LED de status é usado para exibir o status de ReachView.
 
 | Descrição | Demo |
 |-----------|------|
@@ -46,7 +46,7 @@ LED Stat é usado para exibir o status de ReachView.
 |Coleta de ponto|<div style="text-align: center;"><img src="../img/reachrs/led-status/point-collection-led.gif" style="width: 30px;"></div>  |
 |Erro interno|<div style="text-align: center;"><img src="../img/reachrs/led-status/grey.png" style="width: 30px;"></div>  |
 
-!!! Atenção ""
+!!! danger ""
     Reach RS/RS+ requer tempo sincronização apenas durante a configuração inicial. Conexão de Internet, que é necessário para primeira inicialização, permitirá que o processo de sincronização de tempo aconteça automaticamente.
 
 ### Comportamento do LED
@@ -58,15 +58,15 @@ A tabela abaixo demonstra as possibilidades de combinações descrevendo vários
 |--------------|-------|
 |<br><br><br><br> <div style="text-align: center;">    Desligado   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/off.png" style="height: 250px;"></div> |
 |<br><br><br><br> <div style="text-align: center;">    Reach RS+ carregando   </div>   | <br> <div style="text-align: center;"><img src="../img/reachrs/led-status/RS-plus-charging.gif" style="height: 250px;"></div> |
-|<br><br><br><br> <div style="text-align: center;">   Reach RS carregando     </div>   | <br> <div style="text-align: center;"><img src="../img/reachrs/led-status/off.png" style="height: 265px;"></div>  |
-|<br><br><br><br> <div style="text-align: center;">    Reach RS+ charging after connecting the cable   </div>|<br> <div style="text-align: center;"><img src="../img/reachrs/led-status/RS-plus-charging-after-connecting-the-cable.gif" style="height: 250px;"></div>|
-|<br><br><br><br> <div style="text-align: center;">    Reach RS behavior after connecting the cable   </div>|<br> <div style="text-align: center;"><img src="../img/reachrs/led-status/RS-no-reaction.gif" style="height: 250px;"></div>|
+|<br><br><br><br> <div style="text-align: center;">    Reach RS carregando     </div>   | <br> <div style="text-align: center;"><img src="../img/reachrs/led-status/off.png" style="height: 265px;"></div>  |
+|<br><br><br><br> <div style="text-align: center;">    Reach RS+ carregando a bateria após conectar o cabo   </div>|<br> <div style="text-align: center;"><img src="../img/reachrs/led-status/RS-plus-charging-after-connecting-the-cable.gif" style="height: 250px;"></div>|
+|<br><br><br><br> <div style="text-align: center;">    Comportamento do Reach RS após conectar o cabo   </div>|<br> <div style="text-align: center;"><img src="../img/reachrs/led-status/RS-no-reaction.gif" style="height: 250px;"></div>|
 |<br><br><br><br> <div style="text-align: center;">    Carregando   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/loading.gif" style="height: 265px;"></div> |
-|<br><br><br><br> <div style="text-align: center;">    Reach RS+ loading after connecting the cable   </div>|<br> <div style="text-align: center;"><img src="../img/reachrs/led-status/RS-plus-loading-after-connecting-the-cable.gif" style="height: 250px;"></div>|
+|<br><br><br><br> <div style="text-align: center;">    Reach RS+ carregando após conectar o cabo   </div>|<br> <div style="text-align: center;"><img src="../img/reachrs/led-status/RS-plus-loading-after-connecting-the-cable.gif" style="height: 250px;"></div>|
 |<br><br><br><br> <div style="text-align: center;">    Sincronização de tempo   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/time-sync.gif" style="height: 250px;"></div> |
 |<br><br><br><br> <div style="text-align: center;">    Bateria baixa   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/lack-of-power.gif" style="height: 250px;"></div> |
 |<br><br><br><br> <div style="text-align: center;">    Procurando de rede   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/network-scan.gif" style="height: 250px;"></div> |
-|<br><br><br><br> <div style="text-align: center;">     Conectado a um Wi-Fi   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/running-client.gif" style="height: 250px;"></div>
+|<br><br><br><br> <div style="text-align: center;">    Conectado a um Wi-Fi   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/running-client.gif" style="height: 250px;"></div>
 |<br><br><br><br> <div style="text-align: center;">    Modo ponto de acesso   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/running-hotspot.png" style="height: 250px;"></div> |
 |<br><br><br><br> <div style="text-align: center;">    Coleta de ponto <br> _assumindo que o dispositivo está em modo ponto de acesso_   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/point-collection.gif" style="height: 250px;"></div>
 |<br><br><br><br> <div style="text-align: center;">    Erro interno  <br> _assumindo que o dispositivo está em modo ponto de acesso_   </div>   | <br>  <div style="text-align: center;"><img src="../img/reachrs/led-status/error.png" style="height: 250px;"></div>
