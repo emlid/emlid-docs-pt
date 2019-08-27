@@ -9,8 +9,8 @@ Se você encontrar algum problema ao executar essas etapas, ficaremos felizes em
 
 Este tutorial mostra apenas um caso de uso. Para obter mais informações, siga estes links:
 
-* [Especificações mecânicas](../specs/#mechanical-specs)
-* [Especificações elétricas](../specs/#electrical-specs)
+* [Especificações mecânicas](../specs/#especificacoes-mecanicas)
+* [Especificações elétricas](../specs/#especificacoes-eletricas)
 * [Integração de hardware](hardware-integration.md)
 * [Aplicativo ReachView](common/reachview/index.md)
 
@@ -21,9 +21,9 @@ Este tutorial mostra apenas um caso de uso. Para obter mais informações, siga 
 * Ligue a **ponta Micro-USB** do cabo à **porta Micro-USB** do Reach e ligue a outra ponta a uma fonte de energia de 5V, como um power bank, ou um adaptador USB para tomada ou ainda uma porta USB de um camputador.
 
 !!! danger "Atenção"
-Não conecte duas fontes de energia ao mesmoa tempo, pois pode danificar o dispositivo.
+    Não conecte duas fontes de energia ao mesmoa tempo, pois pode danificar o dispositivo.
 
-Mais sobre o carregamento você pode ler [aqui](power-supply.md).
+Mais sobre o alimentação você pode ler [aqui](power-supply.md).
 
 ## Conectando e colocando a antena GPS
 
@@ -32,8 +32,8 @@ Mais sobre o carregamento você pode ler [aqui](power-supply.md).
 * Coloque a antena em um plano de apoio. Pode ser um pedaço de metal > 100 mm de diâmetro, um teto de um carro ou um teto de metal de um prédio. 
 
 !!! danger ""
-Lá **não deve haver** obstáculos perto da antena que possam bloquear a vista do céu 30 graus acima do horizonte.
-**Não** teste o dispositivo dentro de ambientes fechado ou perto de edifícios, não cubra a vista do céu das antenas com laptops, carros ou você mesmo. O RTK requer boa visibilidade e recepção por satélite.
+    **Não pode ter** obstáculos perto da antena que possam bloquear a vista do céu 30 graus acima do horizonte.
+    **Não** teste o dispositivo dentro de ambientes fechado ou perto de edifícios, não cubra a vista do céu das antenas com laptops, carros ou você mesmo. O RTK requer boa visibilidade e recepção por satélite.
 
 Um guia sobre como posicionar corretamente as antenas está disponível na seção [Montando a antena](antenna-placement.md) section.
 
@@ -62,11 +62,11 @@ Quando o Reach M+ é ligado pela primeira vez, ele cria um ponto de acesso Wi-Fi
 * Pressione o botão Mais e insira o nome da rede Wi-Fi, o tipo de segurança e a senha. Pressione o botão Salvar.
 
 !!! danger "Assegure-se de que você está se conectando à uma rede existente (como o Wi-Fi de sua casa, o Wi-fi roteado pelo seu telefone celular, etc)"
-Use o nome e a senha da sua rede Wi-Fi. O nome da rede na imagem abaixo é um exemplo. 
+    Use o nome e a senha da sua rede Wi-Fi. O nome da rede na imagem abaixo é um exemplo. 
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_updater_wifi.png" style="width: 350px;"></div><br>
 
-* Pressione na sua rede adicionada e clique em Conectar. 
+* Pressione na sua rede adicionada e clique em "Connect" (Conectar). 
 
 <div style="text-align: center;"><img src="../img/reachm-plus/quickstart/reach_view_updater_wifi_connect.png" style="width: 350px;"></div><br>
 
@@ -84,7 +84,7 @@ Se o seu dispositivo não se conectou à rede Wi-Fi, ele alternará para o modo 
 Leia mais sobre como resolver endereços de IP na [Seção ReachView](common/reachview/index.md#resolving-ip).
 
 !!! danger "O Reach não pode funcionar na sub-rede 192.168.2.xx subnet"
-Como a sub-rede 192.168.2.x é reservada dentro do Reach para conexões via Ethernet, você precisará executar a configuração inicial em um Wi-Fi diferente ou alterar as configurações do roteador. Os roteadores geralmente têm uma configuração para alterar o endereço da sub-rede, portanto, você pode configurá-lo para 192.168.1.xx.
+    Como a sub-rede 192.168.2.x é reservada dentro do Reach para conexões via Ethernet, você precisará executar a configuração inicial em um Wi-Fi diferente ou alterar as configurações do roteador. Os roteadores geralmente têm uma configuração para alterar o endereço da sub-rede, portanto, você pode configurá-lo para 192.168.1.xx.
 
 ## Atualizando o ReachView
 
@@ -161,13 +161,13 @@ Você pode ver um gráfico de barras com níveis de satélites, parâmetros RTK,
 * Se tudo tiver sido configurado corretamente, o **Solution status** será **Float** e **você deverá ver barras cinzas perto das barras de nível dos satélites**. 
 
 !!! warning ""
-**Float** significa que as correções da base agora são levadas em consideração e o posicionamento é relativo às coordenadas da base, mas a ambiguidade não foi resolvida. 
+    **Float** significa que as correções da base agora são levadas em consideração e o posicionamento é relativo às coordenadas da base, mas a ambiguidade não foi resolvida. 
 
-Se você ver **"-"** ou **Single** na caixa **Solution status** nesta etapa, isso significa que algumas configurações estão incorretas. 
+    Se você ver **"-"** ou **Single** na caixa **Solution status** nesta etapa, isso significa que algumas configurações estão incorretas. 
 
-**"-"** significa que não há informações para o software processar. Não houve tempo suficiente ou a antena não foi colocada corretamente. 
+    **"-"** significa que não há informações para o software processar. Não houve tempo suficiente ou a antena não foi colocada corretamente. 
 
-**Single** significa que o rover encontrou uma solução que depende de seu próprio receptor e as correções básicas não são levadas em consideração ainda. Se o rover for iniciado sozinho, este também será o resultado.
+    **Single** significa que o rover encontrou uma solução que depende de seu próprio receptor e as correções básicas não são levadas em consideração ainda. Se o rover for iniciado sozinho, este também será o resultado.
 
 * Se tudo tiver sido configurado corretamente e a base e o rover tiverem boa visibilidade do céu, você deverá ver **Solution status** mudar para **Fix** em alguns minutos. **Fix** significa que o posicionamento é relativo à base e a ambiguidade foi resolvida.
 
@@ -179,4 +179,4 @@ Se você ver **"-"** ou **Single** na caixa **Solution status** nesta etapa, iss
 
 ## Documentos complementares
 
-Parabéns por terminar o guia rápido! Continue a aprender sobre a configuração de diferentes links de correção na seção [ReachView section](common/reachview/index.md).
+Parabéns por terminar o guia rápido! Continue a aprender sobre a configuração de diferentes links de correção na [seção ReachView](common/reachview/index.md).
