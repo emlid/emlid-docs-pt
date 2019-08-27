@@ -1,4 +1,4 @@
-## Saída de posição
+## Corrections output
 
 <p style="text-align:center"><img src="../img/reachview/base_mode/output.png" style="width: 800px;"/></p>
 
@@ -46,8 +46,10 @@ Se ReachView não permite definir um determinado número de porta isso significa
 ### LoRa Radio
 **Reach RS/RS+** tem rádio LoRa interno que é usado para receber ou enviar correções. Para **Reach M+** o rádio externo LoRa está disponível, ele pode ser conectado via porta USB ou S1/S2. O rádio funciona apenas em uma forma, ele também poderia ser configurado para enviar correções (na base) ou para recebê-las (no rover). Usando módulo LoRa é possível alcançar até 19km em linha de visão ou alguns km em áreas urbanas com apenas 20 dBm de potência. Se os ajustes de taxa de frequência e intervalo forem o mesmo, um número ilimitado de rovers podem receber correção da mesma base.
 Menor o intervalo, maior a distância de trabalho será. Dependendo do seu RTCM3 seleção de mensagens ReachView bloqueará automaticamente intervalos insuficientes. Desative mensagens de correção para desbloquear intervalos mais baixos. Intervalos de transmissão e recepção do Reach devem corresponder.
-Certifique-se de selecionar a potência de saída apropriada e a frequência de acordo com os regulamentos locais
+Certifique-se de selecionar a potência de saída apropriada e a frequência de acordo com os regulamentos locais.
 
+	!!! Dica ""
+	No Brasil, a frequência de operação do rádio LoRa é reservada para uso civil, portanto não há necessidade de homologação.
 
 ### Bluetooth
 Você pode usar o Bluetooth para entrada de correção. Observe que você não pode definir tanto a saída de posição e envio de correção da base via Bluetooth ao mesmo tempo.
@@ -55,25 +57,21 @@ Você pode usar o Bluetooth para entrada de correção. Observe que você não p
 ## Mensagens RTCM3
 
 <p style="text-align:center"><img src="../img/reachview/base_mode/messages.png" style="width: 800px;"/></p>
-O conjunto mínimo que é exigido para função RTK é a mensagem 1002 para 1Hz com observações GPS e 1006 mensagem para 0,1 Hz com posição de antena de estação base. Habilitar mais mensagens ou taxas mais elevadas exige maior conexão de banda.
+O conjunto mínimo que é exigido para função RTK é a mensagem 1002 para 1Hz com observações GPS e mensagem 1006 para 0,1 Hz com posição de antena da estação base. Habilitar mais mensagens ou taxas mais elevadas exige maior conexão de banda.
 
-Na linha de taxa de dados você pode encontrar uma estimativa de bps quando mensagens são configuradas em 1 Hz.
+Na linha de taxa de dados você pode encontrar uma estimativa de bytes/s quando as mensagens são configuradas em 1 Hz.
 
-|Mensagens RTCM3|Tipo de mensagem|Taxa de dados, bps (1Hz)|
+|Mensagens RTCM3|Tipo de mensagem|Taxa de dados, bytes/s (1 satélite, 1Hz)|
 |:---:|:---:|:---:|
-||**Mensagens mínimas requeridas**||
-|1002|Observações GPS L1      |156|
-|1006|ARP station coordinate   | 21|
-||**Mensagens específicas para aplicações atípicas** ||
-|1008 |Tipo da antena                  | 68|
-|1019 |Efemérides GPS                     |976|
-|1020 |Efemérides GLONASS                 |540|
-||**Mensagens opcionais para outro GNSS**||
-|1010|Observações GLONASS L1|126.125|
-|1097|GALILEO MSM|754|
-|1107|SBAS MSM|520|
-|1117|QZSS MSM|520|
-|1127|BeiDou MSM|1573|
+||**Mensagens mecessárias**||
+|1002|Observações GPS L1|10.39|
+|1006|Coordenada ARP da estação| 27|
+||**Mensagens opcionais para outros GNSS**||
+|1010|Observações GLONASS L1|11.3|
+|1097|GALILEO MSM|21.5|
+|1107|SBAS MSM|37.5|
+|1117|QZSS MSM|42|
+|1127|BeiDou MSM|17.78|
 
 
 Aqui estão algumas informações sobre cada mensagem RTCM padrão 10403.31[1](#myfootnote1)</sup>:
@@ -81,10 +79,6 @@ Aqui estão algumas informações sobre cada mensagem RTCM padrão 10403.31[1](#
 - **Mensagem 1002 e 1010** contém L1 RTK GPS e dados do satélite GLONASS, respectivamente. Mensagem de GPS 1002 é obrigatória usar devido ao código de RTKLIB. Você poderia ligar a mensagem 1010 GLONASS se você quiser usar esta constelação GNSS.
 
 - **Mensagem 1006** fornece as coordenadas (ECEF) do ponto de referência da antena (ARP) para uma estação de referência e a altura do ARP do levantamento. É a segunda mensagem obrigatória para ligar depois de GPS 1002.
-
-- **Mensagem 1008** fornece uma descrição da antena da estação de referência e o número de série da antena. Ligá-la poderia ajudar a remover a ambiguidade sobre o número do modelo ou de produção.
-
-- **Mensagem 1019 e 1020** contêm, respectivamente, efemérides de satélite GPS e GLONASS. Isso significa transmitir a posição do satélite em órbita geoestacionária, que ajuda o Reach a obter coordenadas. Geralmente, a efeméride é atualizada com frequência de 30 min. - 2h. e válido por 4 horas. Download leva em média 1 min. Então, você pode ativar mensagens no início do trabalho para obter a atualização e desligá-los depois, se quiser.
 
 - **Mensagem 1097 (GALILEO), 1107 (SBAS), 1117 (QZSS), 1127 (BeiDou)** são MSM7 (Multiple Signal Messages). MSM7 são mensagens de alta precisão que contém um conjunto completo de observações RINEX. Isso significa que você deve ligar somente uma mensagem do sistema escolhido para obter todos os dados.
 
@@ -110,17 +104,20 @@ Você pode alterar o formato da posição no canto superior direito do quadro de
 
 <p style="text-align:center"><img src="../img/reachview/base_mode/manual.jpg" style="width: 800px;"/></p>
 
-### Média (Average)
+### Average (Média)
 Por padrão Reach utiliza uma média de leituras autônomas para iniciar a base. Esse recurso simplifica significativamente a configuração inicial em um novo local, porém não fornecerá uma coordenada absoluta precisa.
-ReachView tem uma característica única que lhe permite determinar a posição da base, enquanto trabalhando como um rover de outra base. Isto é feito através da obtenção de solução RTK fixa, durante um período de tempo e assim obter uma posição exata para a base. Um cenário típico envolveria a criação de uma estação de base local por determinar suas coordenadas de NTRIP e então transmitindo correção localmente, reduzindo assim a linha de base para rovers melhorando o posicionamento e desempenho.
+
+ReachView tem uma opção que permite determinar a posição da base, enquanto trabalhando como um rover de outra base. Isto é feito através da obtenção de solução RTK fixa, durante um período de tempo e assim obter uma posição exata para a base. Um cenário típico envolveria a criação de uma estação de base local com suas coordenadas determinadas via NTRIP e então transmitindo correção localmente, a partir de um ponto conhecido, reduzindo assim a linha de base para rovers melhorando o posicionamento e desempenho.
+
 Se a estação de referência está muito longe... é possível inserir uma média de solução flutuante e ainda melhorar a precisão da posição.
-Caso nenhuma correção esteja disponível ao configurar a base ou absoluta precisão não é necessária, a média de coordenadas autônomas podem ser usadas.
+
+Caso nenhuma correção esteja disponível ao configurar a base ou precisão absoluta não é necessária, a média de coordenadas navegadas podem ser usadas.
 
 
-**Salvar posição média manual**  
-Após obtido uma média de posição, você pode querer guardar para uso futuro. Clique no ícone "Salvar coordenadas" (Save coordinates) e a posição será salvo como se ela fosse inserida no modo manual. Agora toda vez que o Reach iniciar, ele enviará correção a utilizando esta posição como referência.
+**Salvar posição média para manual**  
+Após obtido uma média de posição, você pode querer guardar para uso futuro. Clique no ícone Save coordinates (Salvar coordenadas) e a posição será salva, como se ela fosse inserida no modo manual. Agora toda vez que o Reach iniciar, ele enviará correção a utilizando esta posição como referência.
 
-**Repeat averaging**  
-Se vice deseja reiniciar a posição da base através de uma média, você pode clicar no ícone “Repetir média” (Repeat averaging). Isto é especialmente útil em uma situação em que você acidentalmente moveu o Reach durante a coleta da média.
+**Repetir média**  
+Se você deseja reiniciar a posição da base através de uma média, você pode clicar no ícone Repeat averaging (Repetir média). Isto é especialmente útil em uma situação em que você acidentalmente moveu o Reach durante a coleta da média.
 
 <p style="font-size:70%;"><a name="myfootnote1">1</a>: Radio Technical Commission for Maritime Services. 2016. RTCM STANDARD 10403.3 DIFFERENTIAL GNSS (GLOBAL NAVIGATION SATELLITE SYSTEMS) SERVICES – VERSION 3. Virginia: Radio Technical Commission for Maritime Services, pp. 108-262</p>
