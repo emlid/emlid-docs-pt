@@ -19,6 +19,10 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 	1. Vá para as configurações de Wi-Fi no seu dispositivo
 	2. Conecte-se ao ponto de acesso do Reach. Aparecerá como **reach:XX:XX**
 	3. Digite a senha **emlidreach**
+	
+		!!! tip "Windows OS"
+			Se o Windows sugerir você entrar com um PIN a partir da etiqueta, selecione a opção **Connect using a security key instead** (Conectar utilizando chave de segurança).	
+	
 	4. Abra um navegador da web (recomendamos usar o Chrome ou Mozilla)
 	5. Digite o seguinte IP 192.168.42.1
 
@@ -31,7 +35,7 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 	
 	* Escolha a sua rede se estiver visível
 	
-	* Se você não conseguir ver a sua rede móvel, pressione **Connect to a hidden network**
+	* Se você não conseguir ver a sua rede móvel, pressione **"Connect to a hidden network"** (Conectar a uma rede oculta)
 
 <p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/hidden-network.gif" style="width: 800px;" /></p>
 
@@ -48,17 +52,17 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 	<details close>
 	<summary> **Passos para conectar ao ponto de acesso por dispositivos móveis** </summary>
 
-	Para adicionar o ponto de acesso de uma rede móvel, digite o nome da rede. Escolha o tipo de segurança e insira uma senha, se você tiver.
+	Para adicionar o ponto de acesso de uma rede móvel, digite o "Network name" (nome), "Security" (tipo de senha) e "Password" (senha) da sua rede Wi-Fi
 
 	</details>
 
 
 	!!! danger "Verifique a senha!"
-		Você pode desmascarar a senha clicando no símbolo de um olho no final do campo de inserir a senha.
+		Você pode exibir a senha clicando no símbolo de um olho no final do campo de inserir a senha.
 
 <p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/new-connection.gif" style="width: 800px;" /></p>
 
-* Pressione o botão **Connect**. O LED azul deve começar a piscar no Reach
+* Pressione o botão **"Connect"** (Conectar). O LED azul deve começar a piscar no Reach
 
 	<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/network-scan.gif" style="width: 400px;" /></p>
 
@@ -113,5 +117,5 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 
 Depois que o Reach for conectado a uma rede Wi-Fi, você poderá:
 
-* [Atualizar o receptor](../../reachview/settings/#check-app-version)
-* [Conectar-se NTRIP](../../reachview/correction-input/#ntrip)
+* [Atualizar o receptor](../../reachview/settings/#verifique-a-versao-do-aplicativo)
+* [Receber correções NTRIP](../../reachview/correction-input/#ntrip)
