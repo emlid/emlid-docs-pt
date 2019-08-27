@@ -3,7 +3,7 @@
 Este tutorial mostra como registrar os logs para análise de dados e pós-processamento cinemático (PPK) e como baixá-los do Reach para o seu computador.
 
 !!! tip ""
-	Para saber mais sobre o PPK leia [este artigo](../../tutorials/ppk-introduction).
+	Para saber mais sobre o PPK leia [este tópico](../../tutorials/ppk-introduction).
 
 ##Período de devisão de log
 
@@ -28,7 +28,7 @@ Time marks para mapeamento UAV também são armazenadas nesse arquivo.
 O log de posição pode ser registrado em diferentes formatos. Abra a lista para escolher o formato das coordenadas de posição.
 
 !!! note ""
-	Aqui está uma visão geral dos formatos. A descrição mais detalhada dos formatos podem ser encontradas na seção Position output[docs](../../reachview/position-output/#formats).
+	Aqui está uma visão geral dos formatos. A descrição mais detalhada dos formatos podem ser encontradas na seção [Position  output](../../reachview/position-output/#formats).
 
 * **LLH**
 
@@ -52,20 +52,22 @@ O formato ERB é usado para comunicação com o Ardupilot.
 
 ###Base corrections
 
-A última opção de log é a correção básica. Esse formato de log é definido pelas correções aceitas pelo Reach da base. Se você usar o Reach como base, esse log será registrado cem RTCM3.
+A última opção de log é a correção da base. Esse formato de log é definido pelas correções recebidas pelo Reach da base. Se você usar o Reach como base, esse log será registrado em RTCM3.
 
 ##Baixando os logs
 
 Depois de concluir a coleta, você pode salvar os logs em seu Mac, Windows, Linux ou dispositivo móvel. Você pode fazer isso na mesma guia "Logging" no ReachView.
 
-Clique em <img src="../img/reachview/logging/toggle.png" align="middle" /> para interromper a coleta dos logs. Encontre os seus logs abaixo na guia "Logging" no  ReachView.
+Clique em <img src="../img/reachview/logging/toggle.png" align="middle" /> para interromper a coleta dos dados. Encontre os seus logs embaixo na guia "Logging" no  ReachView.
 
 <p style="text-align:center" ><img src="../img/reachview/logging/download-logs.gif" style="width: 800px;" /></p>
 
 Você pode ver a data e o horário da gravação. 
+!!! note ""
+	O horário referido ao de Greenwich (GMT0).
 
 Existem dois botões no lado direito de cada log: <img src="../img/reachview/logging/blue-arrow.png" align="middle" alt="blue arrow" />  este botão permite baixar o log, and <img src="../img/reachview/logging/garbage-can.png" align="middle" alt="red garbage can" /> este botão exclui o log.
 
 Agora, após baixar os logs, você pode usar o [software RTKLIB](../../tutorials/gps-post-processing) encontrado nos documentos da Emlid para começar a trabalhar com seus dados.
 
-Verifique o [guia PPK](../../tutorials/gps-post-processing) encontrado nos documentos da Emlid para saber mais sobre o PPK.
+Verifique o [guia PPK](../../tutorials/gps-post-processing) nos documentos da Emlid para saber mais sobre o PPK.
