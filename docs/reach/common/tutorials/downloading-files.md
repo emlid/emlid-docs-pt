@@ -1,110 +1,126 @@
-#How to download files from Reach
+#Como baixar arquivos do Reach
 
-This guide overviews how to download system report, export survey project or save logs from Reach on your PC, laptop, tablet or smartphone.
+Este guia descreve como fazer o download do *"System report"* (Relatório do sistema), exportar projeto de levantamento ou salvar logs do Reach no seu PC, laptop, tablet ou smartphone.
 
 !!! note ""
-	You need to connect to ReachView over Wi-Fi to download files. Files can’t be transferred over USB.
+	É necessário conectar ao ReachView através do Wi-Fi para baixar os arquivos. Dados não podem ser transferidos via USB.
 
-##Turning Reach on
+##Ligando o Reach
 
-Press Reach power button and wait until it boots. When the red LED and green LED stay solid, check the blue LED status.
+Pressione o botão "Power" (Liga/Desliga) do Reach e espere ele ligar.
 
-* **Blue LED is solid.** Reach is in hotspot mode and you can connect your laptop or phone to it. [Click this link to continue following the guide.](#reach-is-in-hotspot-mode)
-* **Blue LED blinks slowly.** Reach is in client mode and connected to the Wi-Fi network. [Proceed to this part of the guide to continue.](#reach-is-in-client-mode)
-<br>
+??? note "Guia Reach RS/RS+"
 
-|Hotspot mode|Client mode|
-|:----------:|:---------:|
-|<img src="../img/reach/downloading-files/running-hotspot.png" style="height: 200px;">|<img src="../img/reach/downloading-files/running-client.gif" style="height: 200px;">|
+	Quando o LED vermelho e o LED verde ficarem sólidos, verifique o status do LED azul.
 
-##Connecting to ReachView
+	* **O LED azul é sólido.** O Reach está no modo hotspot (roteador) e você pode conectar seu laptop ou smartphone a ele. [Clique neste link para continuar seguindo o guia.](#reach-esta-no-modo-hotspot)
+	* **O LED azul pisca lentamente.** O Reach está no modo cliente e conectado à rede Wi-Fi. [Siga para esta parte do guia para continuar.](#reach-esta-no-modo-cliente)
+	<br>	
 
-### Reach is in hotspot mode
+	|Modo hotspot|Modo cliente|
+	|:----------:|:---------:|
+	|<img src="../img/reach/downloading-files/running-hotspot.png" style="height: 200px;">|<img src="../img/reach/downloading-files/running-client.gif" style="height: 200px;">|
 
-??? note "Connecting via Reachview app (iOS/Android device)"
+??? note "Guia Reach RS2"
 
-	1. Get the app from [Google Play](https://play.google.com/store/apps/details?id=com.reachview) or [Apple Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)
-	2. Go to Wi-Fi settings on your device
-	3. Connect to Reach hotspot. It appears as **reach:XX:XX**
-	4. Enter password **emlidreach**
-	5. Launch ReachView app
-	6. Choose Reach from the list
+	Quando os LEDs de energia e o botão "Power" (Liga/Desliga) permanecerem sólidos, verifique o status do LED da rede.
+
+	* **O LED de rede é branco sólido.** O Reach está no modo hotspot e você pode conectar seu laptop ou smartphone. [Clique neste link para continuar seguindo o guia.] (#reach-esta-no-modo-hotspot)
+	* **O LED de rede está azul contínuo.** O Reach está no modo cliente e conectado à rede Wi-Fi. [Siga para esta parte do guia para continuar.] (#reach-esta-no-modo-cliente)
+	<br>
+
+	|Modo hotspot|Modo cliente|
+	|:----------:|:---------:|
+	|<img src="../img/reach/downloading-files/hotspot.png" style="height: 200px;">|<img src="../img/reach/downloading-files/client-mode.png" style="height: 200px;">|
+
+##Conectando ao ReachView
+
+###Reach está no modo hotspot
+
+??? note "Conectando via aplicativo Reachview (iOS/Android device)"
+
+	1. Baixe o aplicativo no [Google Play](https://play.google.com/store/apps/details?id=com.reachview) ou [Apple Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)
+	2. Vá para as configurações de Wi-Fi no seu dispositivo
+	3. Conecte-se ao ponto de acesso do Reach. Aparecerá como **reach:XX:XX**
+	4. Digite a senha **emlidreach**
+	5. Abra o aplicativo ReachView
+	6. Escolha o Reach na lista
 
 
 ??? note "Connecting via a web browser (any device)"
 
-	1. Go to Wi-Fi settings on your device
-	2. Connect to Reach hotspot. It appears as **reach:XX:XX**
-	3. Enter password **emlidreach**
+	1. Vá para as configurações de Wi-Fi no seu dispositivo
+	2. Conecte-se ao ponto de acesso do Reach. Aparecerá como **reach:XX:XX**
+	3. Digite a senha **emlidreach**
 
 		!!! tip "Windows OS"
-			If Windows suggests you to enter the PIN from the router label to connect to the network, choose **Connect using a security key instead** option.
+			Se o Windows sugerir você entrar com um PIN a partir da etiqueta, selecione a opção **Connect using a security key instead** (Conectar utilizando chave de segurança).
 
-	4. Launch a web browser (we recommend using Chrome or Mozilla)
-	5. Go to 192.168.42.1
+	4. Abra um navegador da web (recomendamos usar o Chrome ou Mozilla)
+	5. Digite o seguinte IP 192.168.42.1
 
 
 ### Reach is in client mode
 
-??? note "Connecting via Reachview app (iOS/Android device)"
-
-	1. Connect your mobile device to the same Wi-Fi network as Reach
-	2. Scan for available Reach devices
-	3. Choose Reach from the list
+??? note "Conectando-se ao Reach com dispositivos iOS/Android"
+	
+	1. Conecte seu dispositivo móvel à mesma rede Wi-Fi que o Reach
+	2. Verifique os dispositivos Reach desponíveis
+	3. Escolha o Reach na lista do aplicativo
 	
 	<div style="text-align: center;"><img src="../img/reach/downloading-files/Reach-list.PNG" style="width: 800px;"></div>
 
 
-??? note "Connecting via web-browser (any device)"
+??? note "Conectando-se através de um navegador da web (qualquer dispositivo)"
 
-	1. Connect your device to the same Wi-Fi network as Reach
-	2. Use one of the [Network Scan utility](https://docs.emlid.com/reachrs/quickstart/#accessing-reach-rsrs-device-in-a-network) or ReachView app to determine the Reach IP address
-	3. Launch a web browser (we recommend using Chrome or Mozilla)
-	4. Go to determined Reach IP
+	1. Conecte seu dispositivo móvel à mesma rede Wi-Fi que o Reach
+	2. Use um dos software de [Varredura de rede](https://docs.emlid.com/reachrs/quickstart/#acessando-o-reach-RSRS-em-uma-rede) ou use o aplicativo ReachView para encontrar o endereço de IP do Reach 
+	3. Inicie o navegador da web (recomendamos Chrome ou Mozilla)
+	4. Insira o endereço de IP em um navegador da web
 
 
-## Downloading files
+## Baixando arquivos
 
-### System Reports
+### Relatório do sistema
 
 <div style="text-align: center;"><img src="../img/reach/downloading-files/system-report.PNG" style="width: 800px;"></div>
 
 System reports carry important for issue resolving information about Reach settings and state. There are two types of system reports:
 
-* **Simple report** provides ReachView version, configurations, and network information
-* **Full report** includes a more technical device description with system logs
+* **Simple report** retorna a versão do ReachView, configuração, informação de rede
+* **Full report** inclui dados e registros mais técnicos do sistema
 
 !!! attention ""
-	We do not recommend to post Full report publicly as it contains **sensitive information** such as Wi-Fi and NTRIP credentials and location.
+	Não recomendamos publicar o *"Full report"* (Relatório completo) em locais 'públicos', pois ele contém **informações confidenciais**, como credenciais e localização de Wi-Fi e NTRIP.
 
-To download the system report you just need [to open ReachView Settings tab and follow the instructions from here.](../../reachview/settings/#system-report)
+Para baixar o relatório do sistema, você só precisa [abrir a aba "Settings" (Configurações) do ReachViewto e seguir as instruções daqui.](../../reachview/settings/#relatorio-do-sistema)
 
 ### Logs
 
 <div style="text-align: center;"><img src="../img/reach/downloading-files/logging.PNG" style="width: 800px;"></div>
 
-You can download logs as well as start or stop logs recording in ReachView “Logging” tab. [Check the Logging section in our docs to download it and learn more about log formats.](../../reachview/logging/#downloading)
+Você pode baixar logs bem como iniciar ou parar a gravação no ReachView na aba “Logging”. [Veja a seção Logging para baixar e entender os formatos.](../../reachview/logging/#baixando-os-logs)
 
-### Survey projects
+### Projetos
 
 <div style="text-align: center;"><img src="../img/reach/downloading-files/survey.PNG" style="width: 800px;"></div>
 
-Survey projects contain points you saved during RTK survey. You can find them in ReachView Survey tab. [Proceed to the corresponding article to figure out how you can export them and which formats are available.](../../reachview/survey/#exporting-data) 
+Os projetos contém pontos que você salvou durante o levantamento RTK. Você pode encontrá-los na aba "Survey" do ReachView. [Veja este guia para aprender como exportá-los e os formatos disponíveis.](../../reachview/survey/#exportando-dados) 
 
-##Where to find downloaded data
+##Onde encontrar o dado baixado
 
-Downloading completes successfully. To get the file, go to the folder where your device saves all the downloaded data.
+O download é concluído com sucesso. Para obter o arquivo, vá para a pasta onde o dispositivo salva todos os dados baixados.
 
-###Laptop or PC workaround
+###Notebook ou Desktop
 
-Files from Reach are usually saved to the default **Downloads** folder.
+Os arquivos do Reach geralmente são salvos por padrão na pasta **Downloads**.
 
-###Smartphone or tablet workaround
+###Smartphone ou tablet
 
-* **iOS**: After “Download complete” message appears, you can choose the folder to save file or share it using AirDrop or another app.
+* **iOS**: Depois que a mensagem "Download complete" (Download concluído) aparecer, você poderá escolher a pasta para salvar o arquivo ou compartilhá-lo usando o AirDrop ou outro aplicativo.
 
 <div style="text-align: center;"><img src="../img/reach/downloading-files/download-iPad.PNG" style="width: 800px;"></div>
 
-* **Android**: “Download complete!” message means the file was saved successfully. It’s more likely you will find this file in `My Files/Downloads` or in `My Files/Internal Storage/Download` folders.
+* **Android**: a mensagem "Download complete" (Download concluído) mostra que o arquivo foi salvo com sucesso. Geralmente os arquivos baixados estão nas pastas `Meus Arquivos/Downloads` ou `Meus Arquivos/Armazenamento Interno/Download`.
 
 <div style="text-align: center;"><img src="../img/reach/downloading-files/download-Android.jpg" style="width: 800px;"></div>
