@@ -5,11 +5,11 @@ Quando o Bluetooth está ligado, ele está sempre buscando outros dispositivos. 
 
 <p style="text-align:center" ><img src="../img/reachview/bluetooth/bt-on.png" style="width: 700px;" /></p>
 
-Uma vez que seu Reach está "Visível a outros dispositivos" (Always discoverable) clique nele para enviar uma solicitação de emparelhamento ao Reach. Reach automaticamente aceitará o pedido de emparelhamento. Seu dispositivo aparecerá como emparelhado  no ReachView.
+Uma vez que seu Reach está "Always discoverable" (Sempre visível) clique nele para enviar uma solicitação de emparelhamento ao Reach. Reach automaticamente aceitará o pedido de emparelhamento. Seu dispositivo aparecerá como emparelhado no ReachView.
 
 <p style="text-align:center" ><img src="../img/reachview/bluetooth/reachview-paired.png" style="width: 700px;" /></p>
 
-ReachView suporta um protocolo seguro de emparelhamento, o que aumenta a quantidade de dispositivos suportados. Reach e Reach M+/RS/RS+ suporta a integração com coletores de baseados em Windows CE.
+ReachView suporta um protocolo seguro de emparelhamento, o que aumenta a quantidade de dispositivos suportados. Reach suporta a integração com coletores de baseados em Windows.
 
-<p style="text-align:center" ><img src="../img/reachview/bluetooth/reachrs-topcon.jpg" style="width: 700px;" /></p>
-<p style="text-align:center" >Topcon FC-500 is getting NMEA over BT (photo courtesy of Brent Wiebe)</p>
+<p style="text-align:center" ><img src="../img/reachview/bluetooth/rs2_survce.JPG" style="width: 600px;" /></p>
+<p style="text-align:center" >Integração do Reach RS2 com o Calrson SurvPC</p>
