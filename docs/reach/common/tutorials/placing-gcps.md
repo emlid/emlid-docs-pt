@@ -1,35 +1,54 @@
-# Placing GCPs in RTK mode
+# Colocando GCP's no modo RTK
 
-To place GCPs with Reach RS/RS+ follow the steps from this guide.
+Para colocar GCPs com o Reach, siga as etapas deste guia.
 
-### Configure RTK
+### Configure o RTK
 
-* If you have 2 Reach RS/RS+, set RTK settings by [following "Base and rover setup" video guide](https://youtu.be/4GfUDoDwEAE)
-* If you have just one Reach RS/RS+, you need to connect it to NTRIP first. [Check this guide for more details](../../tutorials/ntrip-workflow/)
+??? note "Configurando RTK na base Reach RS2 e rover usando do rádio LoRa"
 
+	Se você possui 2 Reach RS2, este vídeo ensinará como configurá-los no modo RTK:
 
-### Create a project
+    <center>
 
-Create a project in ReachView Survey tool by [following "Creating New Project" guide.](../../reachview/survey/#creating-new-project)
+	<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/-K32ayVmH6U" allowfullscreen></iframe></div>
 
-### Fix target
+	</center>
 
-Put your pole in the center of the target.
+??? note "Configurando Reach RS+ base e rover RTK via rádio LoRa"
+
+	Se você tem 2 Reach RS/RS+, configure RTK seguinte este vídeo "Configuração base e rover":
+        
+	<center>
+
+	<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/4GfUDoDwEAE" allowfullscreen></iframe></div>
+
+	</center>
+
+??? note "Configurando RTK no Reach via NTRIP"
+	Se você tem apenas um receptor Reach, você precisa conectar primeiro ao servidor NTRIP. [Veja este tutorial para mais detalhes](../../tutorials/ntrip-workflow/)
+
+### Criar um projeto
+
+Crie um projeto com a ferramenta de levantamento do ReachView [seguindo o guia "Criando um novo projeto".](../../reachview/survey/#criando-um-novo-projeto)
+
+### Posicione-se no alvo
+
+Posicione o seu bastão no centro do alvo.
 
 <div style="text-align: center;"><img src="../img/reach/placing-gcps/placing-gcp.jpg" style="width: 800px;"></div>
 
 !!! tip ""
-	Level your pole using a bubble level.
+	Nivele o seu bastanto utilizando a bolha.
 
 
-### Collect point
+### Armazene o ponto
 
-In ReachView Survey tool press the **Collect** button and save your GCP. Repeat the procedure for as many GCPs as you need.
+Na ferramenta de levantamento do ReachView, pressione o botão *"Collect"* (Coletar) e salve seu GCP. Repita o procedimento para quantos GCPs forem necessários.
 
 !!! tip ""
-	[More info about Survey tool functionality you can find here](../../reachview/survey/)
+	[Mais informações sobre a ferramenta de levantamento você pode encontrar aqui](../../reachview/survey/)
 
-### Export
+### Exportar
 
-* Specify the GCPs data format which your GIS or photogrammetry software can handle 
-* [Export your project file in one of the suitable formats](../../reachview/survey/#exporting-data)
+* Especifique o formato de dados GCPs com o qual o seu software GIS ou fotogramétrico aceita
+* [Exporte o arquivo do seu projeto em um dos formatos disponíveis](../../reachview/survey/#exportando-dados)
