@@ -1,64 +1,64 @@
-#Working with NTRIP service
+#Trabalhando com serviço NTRIP
 
-##Overview
+##Visão geral
 
-This guide explains how to configure Reach to get correction messages from NTRIP service.
+Este guia explica como configurar o Reach para receber mensagens de correção de um serviço NTRIP.
 
 !!! tip ""
-	NTRIP correction input setup can be done at home before the survey. In that case, you just need to connect Reach to the Internet in a field.
+	A configuração da entrada de correção NTRIP pode ser feita em casa antes do levantamento. Nesse caso, você só precisa conectar o Reach à Internet em campo.
 
-##Update Reach
+##Atualize o Reach
 
-If you just received your Reach, you need to update it to make sure you have all the latest features. The instruction is in a carry case Reach comes with. 
+Se você acabou de receber seu Reach, precisará atualizá-lo para ter todos os recursos mais recentes. A instrução está no estojo de transporte do Reach.
 
-You can also find the tutorial in [documentation](../../../quickstart/) and on [Emlid YouTube channel](https://www.youtube.com/watch?v=fIY__hNjcNI).
+Você também pode ver o tutorual [primeira configuração](../../../quickstart/first-setup) e no [canal da Emlid no YouTube](https://www.youtube.com/watch?v=fIY__hNjcNI).
 
-##Connect Reach to the Internet
+##Conecte o Reach a Internet
 
-Reach requires the Internet connection to work with NTRIP. You don’t need any special devices or software for that, only a smartphone with a hotspot feature.
+O Reach requer conexão com a Internet para utilizar o NTRIP. Você não precisa de nenhum dispositivo ou software especial para isso, apenas um smartphone com um recurso de ponto de acesso (roteador).
 
-Turn on mobile data on your smartphone and share it over Wi-Fi hotspot. Reach will connect to your network and get access to the Internet.
+Ative os dados móveis no seu smartphone e compartilhe-os através do ponto de acesso Wi-Fi. O Reach se conectará à sua rede e terá acesso à Internet.
 
-[Check the tutorial for more information about how to connect Reach to other networks.](../../tutorials/connecting-to-the-internet/)
+[Consulte o tutorial para obter mais informações sobre como conectar o Reach a outras redes.](../../tutorials/connecting-to-the-internet/)
 
-##Configure Reach for RTK mode with NTRIP
+##Configure o Reach para o modo RTK com NTRIP
 
-Open ReachView and go to **RTK settings**. Set everything to the same options as on the screenshot below.
+Abra o ReachView e vá para **"RTK settings"**. Defina tudo para as mesmas opções da imagem abaixo.
 
 !!! note ""
-	In the **GNSS select** section pick either Galileo or Beidou depending on your location. While Glonass covers most of the world, Beidou might be more efficient in the Asia-Pacific region. In this example we use Glonass.
+	Na seção **"GNSS select"**, escolha GALILEO ou BeiDou, dependendo da sua localização. Enquanto GLONASS cobre a maior parte do mundo, BeiDou pode ser mais eficiente na região do Pacífico e Ásia. Neste exemplo, usamos o GLONASS.
 
-Apply changes.
+Aplique as mudanças.
 
 <div style="text-align: center;"><img src="../img/reach/ntrip-workflow/rtk-settings.png" style="width: 800px;"></div>
 
-Now go to **Correction input** tab, select **NTRIP** and fill in the information from your provider. Choose the nearest reference station to receive the corrections from.
+Agora vá para a aba **"Correction input"** (Entrada de correção), selecione **NTRIP** e preencha as informações do seu provedor. Escolha a estação de referência mais próxima para receber as correções.
 
 !!! tip ""
-	Check the website of your NTRIP provider to find out which mount point suits you better. 
+	Consulte o site do seu provedor NTRIP para descobrir qual Estação de Referência é melhor para sua localização.
 
 <div style="text-align: center;"><img src="../img/reach/ntrip-workflow/ntrip-correction-input.png" style="width: 600px;"></div>
 
 !!! note ""
-	If you are using VRS service, you might need to enable GGA messages. 
+	Se você está usando serviço VRS, você deve ativar as mensagens GGA.
 
-Press **Apply**.
+Pressione **"Apply"** (Aplicar).
 
-##Provide Reach with a clear sky view
+##Reach em um local com visão limpa para o céu
 
-Reach RS needs to have a clear view of the sky approximately 30 degrees above the horizon. There should be no obstacles that could block the view like buildings, trees, cars, humans, laptops etc.
+Reach RS/RS+ precisa ter uma visão limpa do céu aproximadamente 30 graus acima do horizonte. Não deve haver obstáculos que possam bloquear a visão, como prédios, árvores, carros, seres humanos, laptops etc.
 
 <div style="text-align: center;"><img src="../img/reach/ntrip-workflow/skyview-obstacles.png" style="width: 800px;"></div>
 
-[Learn more about Reach setup in the Placement section of Reach RS+ docs](https://docs.emlid.com/reachrs/placement/)
+[Saiba mais sobre a montagem e configuração do Reach RS+](https://docs.emlid.com/reachrs/placement/)
 
-##Collect and export data
+##Coleta e exportação dos dados
 
-Check tutorials on how to create new projects, collect and stake out points, import and export projects:
+Confira os tutoriais sobre como criar novos projetos, coletar e locar pontos, importar e exportar projetos:
 
-* [New project](../../reachview/survey/#creating-new-project)
-* [Survey tool overview](../../reachview/survey/#survey-tool-interface)
-* [Point collection](../../reachview/survey/#collecting-the-point)
-* [Stakeout](../../reachview/survey/#point-stakeout)
-* [Project import](../../reachview/survey/#points-import) and [export](../../reachview/survey/#exporting-data)
+* [Novo projeto](../../reachview/survey/#criando-um-novo-projeto)
+* [Interface do projeto](../../reachview/survey/#interface-do-projeto)
+* [Coleta de ponto](../../reachview/survey/#coletando-pontos)
+* [Locação](../../reachview/survey/#locacao-de-pontos)
+* [Importar](../../reachview/survey/#importando-pontos) e [exportar projeto](../../reachview/survey/#exportando-dados)
 
