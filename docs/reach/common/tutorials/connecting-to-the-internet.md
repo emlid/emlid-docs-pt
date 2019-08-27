@@ -19,6 +19,10 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 	1. Vá para as configurações de Wi-Fi no seu dispositivo
 	2. Conecte-se ao ponto de acesso do Reach. Aparecerá como **reach:XX:XX**
 	3. Digite a senha **emlidreach**
+	
+		!!! tip "Windows OS"
+			Se o Windows sugerir você entrar com um PIN a partir da etiqueta, selecione a opção **Connect using a security key instead** (Conectar utilizando chave de segurança).	
+	
 	4. Abra um navegador da web (recomendamos usar o Chrome ou Mozilla)
 	5. Digite o seguinte IP 192.168.42.1
 
