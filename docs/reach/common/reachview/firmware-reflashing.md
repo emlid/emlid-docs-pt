@@ -1,4 +1,4 @@
-Nestsa página, você ecnontrará as informações sobre como realizar o reflash de firmware do Reach.
+Nestsa página, você encontrará as informações sobre como realizar o reflash de firmware do Reach.
 
 Observe que você **não** precisa fazer isso, a menos que queira levar o Reach ao estado inicial.
 
@@ -15,7 +15,7 @@ Observe que você **não** precisa fazer isso, a menos que queira levar o Reach 
 	
 	|Para o Reach RS2|Para o Reach RS+ / M+|
 	|:-------------:|:-------------:|
-	|[**Reach RS2 Image v2.20.2  ↓**](http://files.emlid.com/images/reach-rs2-v2.20.2.zip), [(md5)](http://files.emlid.com/images/reach-rs2-MD5SUMS)|[**Reach RS+/M+ Image v2.18  ↓**](http://files.emlid.com/images/reach-plus-v2.18.1.zip), [(md5)](http://files.emlid.com/images/reach-plus-MD5SUMS)|
+	|[**Reach RS2 Image v2.20.7 [ZIP, 358.7 MB]**](http://files.emlid.com/images/reach-rs2-v2.20.7.zip), [(md5)](http://files.emlid.com/images/reach-rs2-MD5SUMS)|[**Reach RS+/M+ Image v2.18 [ZIP, 347 MB]**](http://files.emlid.com/images/reach-plus-v2.18.1.zip), [(md5)](http://files.emlid.com/images/reach-plus-MD5SUMS)|
 
 	</center>
 	
@@ -31,7 +31,7 @@ Observe que você **não** precisa fazer isso, a menos que queira levar o Reach 
 	
 	|Windows|Linux|
 	|:-------------:|:----------:|
-	|[Download](http://files.emlid.com/flash-tools/win/reach-firmware-flash-tool_1.0.0_setup.exe)|[Download](http://files.emlid.com/flash-tools/linux/reach-firmware-flash-tool_1.0.0_amd64.deb)|
+	|[Download [EXE, 78.3 MB]](http://files.emlid.com/flash-tools/win/reach-firmware-flash-tool_1.0.2_setup.exe)|[Download [DEB, 51.9 MB]](http://files.emlid.com/flash-tools/linux/reach-firmware-flash-tool_1.0.0_amd64.deb)|
 
 	</center>
 
@@ -133,7 +133,7 @@ Observe que você **não** precisa fazer isso, a menos que queira levar o Reach 
 	
 	|Download link|
 	|:-------------:|
-	|[**Reach Image v2.18  ↓**](https://files.emlid.com/images/ReachImage_v2.18.0.zip), [(md5)](https://files.emlid.com/images/reachview-MD5SUMS)|
+	|[**Reach Image v2.18 [ZIP, 234 MB]**](https://files.emlid.com/images/ReachImage_v2.18.1.zip), [(md5)](https://files.emlid.com/images/reachview-MD5SUMS)|
 
 	</center>
 
