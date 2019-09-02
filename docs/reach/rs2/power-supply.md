@@ -1,14 +1,14 @@
-Reach RS2 has built-in LiFePO4 battery providing up to 22 hours of autonomous work when logging data and up to 16 hours as a 3G rover. 
+Reach RS2 possui uma bateria LiFePO4 que proporciona até 22 horas de gravação de dados brutos e até 16 horas como um rover com correção NTRIP (3G). 
 
-## Charging over USB
+## Recarregando via USB
 
-You can power and charge Reach RS2 over USB-C cable using power supplies like:
+Você pode ligar e recarregar o Reach RS2 via cabo USB-C usando fontes como:
 
 * Power bank
-* USB wall adapter
+* Adaptador AC (de parede) para USB
 
-## Powering Reach RS2 from the external connector
+## Alimentando o Reach RS2 a partir do conector externo
 
-Reach RS2 can automatically turn on when the power is supplied to the device via [an external 9-pin bottom connector](../specs/#electrical-specs) with a voltage in the range from 6V to 40V. [You can enable this feature in the ReachView Settings tab.](reachview/settings.md)
+Reach RS2 pode ligar automaticamente quando a energia é fornecida via [fonte externa no conector inferior de 9 pinos](../specs/#especificacoes-eletricas) com uma voltagem de 6V a 40V. Ao parar de fornecer energia na porta externa o receptor se desliga.[Você pode habilitar esta função na guia "Settings" (Configurações) do ReachView.](reachview/settings.md)
 
-To charge the receiver 5 watts is required. For operating 7,5 watts on average is required (10 watts maximum). 
+Para recarregar o receptor, 5 watts é necessário. Para operação, é necessário uma média de 7,5 watts (máximo 10 watts).
