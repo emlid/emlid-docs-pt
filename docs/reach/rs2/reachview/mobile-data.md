@@ -1,24 +1,35 @@
-
 <p style="text-align:center" ><img src="../img/reachview/mobile-data/mobile-data.png" style="width: 800px;" /></p>
 
-Enable Mobile data on Reach to [get corrections from NTRIP over the Internet](../../common/tutorials/ntrip-workflow/) if a SIM card is inserted.
+Ative a função "Mobile data" no Reach para [receber correções NTRIP a partir da internet](../../common/tutorials/ntrip-workflow/) se um cartão SIM for inserido.
 
-[Follow this guide to insert a SIM card into Reach RS2.](../connecting-to-the-internet.md#video-guide)
+??? note "Veja como inserir um cartão SIM no Reach RS2 no nosso vídeo"
+    
+    <center>
+
+	<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/YJ2VzsKx9zQ" allowfullscreen></iframe></div>
+
+	</center>
 
 !!! note ""
-    You may need to enter the APN details of your mobile operator to connect to mobile data. Reach out to your mobile network operator to get APN.
+    Você precisará inserir os dados APN da sua operadora para receber dados. Veja com a sua operadora para conseguir os dados do APN.
 
-### Share mobile data from Reach in hotspot mode
+### Compartilhe dados do Reach no modo hotspot
 
-Reach with SIM card can share an Internet connection with other devices. Enable this option to provide your phone or tablet with mobile data.
+Reach com um cartão SIM pode compartilhar conexão a internet com outros dispositivos. Ative esta opção para compartilhar dados com o seu celular ou tablet.
 
-### Data Roaming
+### Roaming de dados
 
-Switch on the Data Roaming if you want to get the Internet connection internationally. 
+Ligue o "Data Roaming" (Roaming de dados) se você deseja conectar a internet utilizando internacionalmente.
 
-!!! danger ""
-    The general recommendation is to keep Data roaming disabled as there are can be roaming charges. The cost depends on your network operator.
+!!! note ""
+    Talvez você precise habilitar o roaming se você for trabahar em uma região diferente no mesmo país. Verifique o provedor local antes do trabalho.
 
-### About
+### Estatísticas do uso de dados
 
-This field contains additional information about your SIM card such as IMEI number.
+Você pode verificar o uso de dados no campo "Current" (atual). Veja a quantidade de dados que o Reach utilizou desde o ultimo reset.
+
+Toque em *"Reset"* (Resetar) para zerar e começar novamente a estatística.
+
+### About(Sobre)
+
+Este campo contém informações adicionais sobre o seu cartão SIM, como IMEI.
