@@ -41,6 +41,7 @@ Este LED é usado para mostrar o status RTK do ReachView.
 | <br><br><br><br><div style="text-align: center;">    Single   </div> |    <br>  <div style="text-align: center;"><img src="../img/reachrs2/led-status/single.gif" style="height: 150px;"></div>    |
 | <br><br><br><br><div style="text-align: center;">    Float   </div> |    <br>  <div style="text-align: center;"><img src="../img/reachrs2/led-status/float.gif" style="height: 150px;"></div>    |
 | <br><br><br><br><div style="text-align: center;">    Fix   </div> |    <br>  <div style="text-align: center;"><img src="../img/reachrs2/led-status/fix.png" style="height: 150px;"></div>   |
+| <br><br><br><br><div style="width:400px;text-align: center;">    Point collection </div> |    <br>  <div style="text-align: center;"><img src="../img/reachrs2/led-status/point-collection.gif" style="height: 150px;"></div>    |
 | <div style="text-align: center;"> **Status da base** </div> |
 | <br><br><br><br><div style="text-align: center;">    Recebendo correção   </div> |    <br>  <div style="text-align: center;"><img src="../img/reachrs2/led-status/base-mode.png" style="height: 150px;"></div>   |
 | <br><br><br><br><div style="text-align: center;">    Recebendo e enviado correção, <br>  o dispositivo se mantém fixo   </div> |    <br>  <div style="text-align: center;"><img src="../img/reachrs2/led-status/correction-in-out.gif" style="height: 150px;"></div>   |
