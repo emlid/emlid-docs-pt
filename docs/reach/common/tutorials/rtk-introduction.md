@@ -46,4 +46,4 @@ Leituras adicionais:
 
 * [Como funciona o PPK](ppk-introduction.md)
 * [Montando a base base](placing-the-base.md)
-* [Trabalhando com o serviço NTRIP](ntrip-workflow.md)
+* [Trabalhando com o serviço NTRIP](../quickstart/ntrip-workflow.md)

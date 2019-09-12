@@ -37,7 +37,7 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 	
 	* Se você não conseguir ver a sua rede móvel, pressione **"Connect to a hidden network"** (Conectar a uma rede oculta)
 
-<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/hidden-network.gif" style="width: 800px;" /></p>
+<p style="text-align:center" ><img src="../img/quickstart/connecting-to-the-internet/hidden-network.gif" style="width: 800px;" /></p>
 
 * Preencha os campos para a conexão
 	
@@ -60,11 +60,11 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 	!!! danger "Verifique a senha!"
 		Você pode exibir a senha clicando no símbolo de um olho no final do campo de inserir a senha.
 
-<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/new-connection.gif" style="width: 800px;" /></p>
+<p style="text-align:center" ><img src="../img/quickstart/connecting-to-the-internet/new-connection.gif" style="width: 800px;" /></p>
 
 * Pressione o botão **"Connect"** (Conectar). O LED azul deve começar a piscar no Reach
 
-	<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/network-scan.gif" style="width: 400px;" /></p>
+	<p style="text-align:center" ><img src="../img/quickstart/connecting-to-the-internet/network-scan.gif" style="width: 400px;" /></p>
 
 
 ## Processo de conexão
@@ -86,11 +86,11 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 
 * Se a conexão for bem sucedida, você verá o LED azul piscando lentamente
 
-	<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/running-client.gif" style="width: 400px;" /></p>
+	<p style="text-align:center" ><img src="../img/quickstart/connecting-to-the-internet/running-client.gif" style="width: 400px;" /></p>
 
 * Se a conexão falhar, você verá que o LED azul permanecerá sem piscar
 
-	<p style="text-align:center" ><img src="../img/reach/connecting-to-the-internet/running-hotspot.png" style="width: 400px;" /></p>
+	<p style="text-align:center" ><img src="../img/quickstart/connecting-to-the-internet/running-hotspot.png" style="width: 400px;" /></p>
 
 	!!! tip "Se a conexão falhar:"
 		* Conecte-se ao ponto de acesso do Reach novamente

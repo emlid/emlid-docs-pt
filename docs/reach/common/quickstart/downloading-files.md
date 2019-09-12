@@ -19,7 +19,7 @@ Pressione o botão "Power" (Liga/Desliga) do Reach e espere ele ligar.
 
 	|Modo hotspot|Modo cliente|
 	|:----------:|:---------:|
-	|<img src="../img/reach/downloading-files/running-hotspot.png" style="height: 200px;">|<img src="../img/reach/downloading-files/running-client.gif" style="height: 200px;">|
+	|<img src="../img/quickstart/downloading-files/running-hotspot.png" style="height: 200px;">|<img src="../img/quickstart/downloading-files/running-client.gif" style="height: 200px;">|
 
 ??? note "Guia Reach RS2"
 
@@ -31,7 +31,7 @@ Pressione o botão "Power" (Liga/Desliga) do Reach e espere ele ligar.
 
 	|Modo hotspot|Modo cliente|
 	|:----------:|:---------:|
-	|<img src="../img/reach/downloading-files/hotspot.png" style="height: 200px;">|<img src="../img/reach/downloading-files/client-mode.png" style="height: 200px;">|
+	|<img src="../img/quickstart/downloading-files/hotspot.png" style="height: 200px;">|<img src="../img/quickstart/downloading-files/client-mode.png" style="height: 200px;">|
 
 ##Conectando ao ReachView
 
@@ -68,7 +68,7 @@ Pressione o botão "Power" (Liga/Desliga) do Reach e espere ele ligar.
 	2. Verifique os dispositivos Reach desponíveis
 	3. Escolha o Reach na lista do aplicativo
 	
-	<div style="text-align: center;"><img src="../img/reach/downloading-files/Reach-list.PNG" style="width: 800px;"></div>
+	<div style="text-align: center;"><img src="../img/quickstart/downloading-files/Reach-list.PNG" style="width: 800px;"></div>
 
 
 ??? note "Conectando-se através de um navegador da web (qualquer dispositivo)"
@@ -83,7 +83,7 @@ Pressione o botão "Power" (Liga/Desliga) do Reach e espere ele ligar.
 
 ### Relatório do sistema
 
-<div style="text-align: center;"><img src="../img/reach/downloading-files/system-report.PNG" style="width: 800px;"></div>
+<div style="text-align: center;"><img src="../img/quickstart/downloading-files/system-report.PNG" style="width: 800px;"></div>
 
 System reports carry important for issue resolving information about Reach settings and state. There are two types of system reports:
 
@@ -97,13 +97,13 @@ Para baixar o relatório do sistema, você só precisa [abrir a aba "Settings" (
 
 ### Logs
 
-<div style="text-align: center;"><img src="../img/reach/downloading-files/logging.PNG" style="width: 800px;"></div>
+<div style="text-align: center;"><img src="../img/quickstart/downloading-files/logging.PNG" style="width: 800px;"></div>
 
 Você pode baixar logs bem como iniciar ou parar a gravação no ReachView na aba “Logging”. [Veja a seção Logging para baixar e entender os formatos.](../../reachview/logging/#baixando-os-logs)
 
 ### Projetos
 
-<div style="text-align: center;"><img src="../img/reach/downloading-files/survey.PNG" style="width: 800px;"></div>
+<div style="text-align: center;"><img src="../img/quickstart/downloading-files/survey.PNG" style="width: 800px;"></div>
 
 Os projetos contém pontos que você salvou durante o levantamento RTK. Você pode encontrá-los na aba "Survey" do ReachView. [Veja este guia para aprender como exportá-los e os formatos disponíveis.](../../reachview/survey/#exportando-dados) 
 
@@ -119,8 +119,8 @@ Os arquivos do Reach geralmente são salvos por padrão na pasta **Downloads**.
 
 * **iOS**: Depois que a mensagem "Download complete" (Download concluído) aparecer, você poderá escolher a pasta para salvar o arquivo ou compartilhá-lo usando o AirDrop ou outro aplicativo.
 
-<div style="text-align: center;"><img src="../img/reach/downloading-files/download-iPad.PNG" style="width: 800px;"></div>
+<div style="text-align: center;"><img src="../img/quickstart/downloading-files/download-iPad.PNG" style="width: 800px;"></div>
 
 * **Android**: a mensagem "Download complete" (Download concluído) mostra que o arquivo foi salvo com sucesso. Geralmente os arquivos baixados estão nas pastas `Meus Arquivos/Downloads` ou `Meus Arquivos/Armazenamento Interno/Download`.
 
-<div style="text-align: center;"><img src="../img/reach/downloading-files/download-Android.jpg" style="width: 800px;"></div>
+<div style="text-align: center;"><img src="../img/quickstart/downloading-files/download-Android.jpg" style="width: 800px;"></div>

@@ -30,14 +30,14 @@ Abra o ReachView e vá para **"RTK settings"**. Defina tudo para as mesmas opç�
 
 Aplique as mudanças.
 
-<div style="text-align: center;"><img src="../img/reach/ntrip-workflow/rtk-settings.png" style="width: 800px;"></div>
+<div style="text-align: center;"><img src="../img/quickstart/ntrip-workflow/rtk-settings.png" style="width: 800px;"></div>
 
 Agora vá para a aba **"Correction input"** (Entrada de correção), selecione **NTRIP** e preencha as informações do seu provedor. Escolha a estação de referência mais próxima para receber as correções.
 
 !!! tip ""
 	Consulte o site do seu provedor NTRIP para descobrir qual Estação de Referência é melhor para sua localização.
 
-<div style="text-align: center;"><img src="../img/reach/ntrip-workflow/ntrip-correction-input.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/quickstart/ntrip-workflow/ntrip-correction-input.png" style="width: 600px;"></div>
 
 !!! note ""
 	Se você está usando serviço VRS, você deve ativar as mensagens GGA.
@@ -48,7 +48,7 @@ Pressione **"Apply"** (Aplicar).
 
 Reach RS/RS+ precisa ter uma visão limpa do céu aproximadamente 30 graus acima do horizonte. Não deve haver obstáculos que possam bloquear a visão, como prédios, árvores, carros, seres humanos, laptops etc.
 
-<div style="text-align: center;"><img src="../img/reach/ntrip-workflow/skyview-obstacles.png" style="width: 800px;"></div>
+<div style="text-align: center;"><img src="../img/quickstart/ntrip-workflow/skyview-obstacles.png" style="width: 800px;"></div>
 
 [Saiba mais sobre a montagem e configuração do Reach RS+](https://docs.emlid.com/reachrs/placement/)
 
