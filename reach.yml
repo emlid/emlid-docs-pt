@@ -67,16 +67,22 @@ nav:
   - Changelogs: common/reachview/changelogs.md
 - LED status: led-status.md
 - Specification: specs.md
-- Quickstart: quickstart.md
-- Tutorials:
-  - How RTK works: common/tutorials/rtk-introduction.md
-  - How PPK works: common/tutorials/ppk-introduction.md
-  - Connecting Reach to the Internet: common/tutorials/connecting-to-the-internet.md
-  - Working with NTRIP service: common/tutorials/ntrip-workflow.md
-  - Placing GCPs in RTK mode: common/tutorials/placing-gcps.md
-  - How to download files from Reach: common/tutorials/downloading-files.md
-  - Placing the base: common/tutorials/placing-the-base.md
-  - ArduPilot integration: ardupilot-integration.md
-  - GPS post-processing: common/tutorials/gps-post-processing.md
-  - Analyzing PPK solution and logs: common/tutorials/analyzing-logs.md
-  - Bluetooth output and Android mock location: common/tutorials/mock-location.md
+- Guia Rápido:
+  - Guia Rápido: quickstart.md
+  - Conectando o Reach a Internet: common/quickstart/connecting-to-the-internet.md
+  - Trabalhando com serviço NTRIP: common/quickstart/ntrip-workflow.md
+  - Como baixar arquivos do Reach: common/quickstart/downloading-files.md
+- Tutoriais:
+   - Básicos:
+     - Como funciona o RTK: common/tutorials/rtk-introduction.md
+     - Como funciona o PPK: common/tutorials/ppk-introduction.md
+     - Tuning LoRa for RTK: common/tutorials/tuning-lora.md
+     - Instalando a base: common/tutorials/placing-the-base.md
+     - Colocando GCP's no modo RTK: common/tutorials/placing-gcps.md
+   - Fluxo de pós processamento:
+     - Como funciona o PPK: common/tutorials/ppk-introduction.md
+     - Pós processamento: common/tutorials/gps-post-processing.md
+     - Entendendo a solução PPK e os registros: common/tutorials/analyzing-logs.md
+   - Integração com software externo:
+     - Integração com ArduPilot: ardupilot-integration.md
+     - Bluetooth output e Android mock location: common/tutorials/mock-location.md
