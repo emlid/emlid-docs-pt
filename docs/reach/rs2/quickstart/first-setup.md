@@ -1,126 +1,124 @@
-## Intro
+## Introdução
 
-In this tutorial, we will walk you through the following steps:
+Neste tutorial, guiaremos você pelas seguintes etapas:
 
-* Install the ReachView app
-* Connect to Reach RS2
-* Perform firmware update
-* Set up base and rover connection
+* Instalar o aplicativo ReachView
+* Conectar-se ao Reach RS2
+* Atualizar o firmware
+* Configurar a conexão entre base e rover
 
-To do that, you will need Reach RS2 itself, a Wi-Fi network with Internet access and a smartphone or PC.
+Para fazer isso, você precisará de um Reach RS2, uma rede Wi-Fi com acesso à internet e um smpartphone ou PC.
 
 
-## Video guide
+## Video guia
 
-The video below covers the process of the first update.
+O vídeo abaixo aborda o processo da primeira atualização.
 
 <div style="text-align: center;"><iframe title="Emlid manuals" width="560" height="315" src="https://www.youtube.com/embed/Miy8L_1AgCQ" allowfullscreen></iframe></div>
 
-For managing Reach RS2, we recommend using ReachView app. Get it from the App Store or Google Play before updating.
+Para configurar o Reach RS2, recomendamos o uso do aplicativo ReachView. Faça o download na App Store ou no Google Play antes de atualizar.
 
 <center>
 
 |Google Play|App Store|
 |:-------------:|:----------:|
-|[Android ReachView app [7.7 MB]](https://play.google.com/store/apps/details?id=com.reachview)|[iOS ReachView app [7.7 MB]](https://apps.apple.com/us/app/reachview/id1295196887)|
+|[App ReachView para Android [7.7 MB]](https://play.google.com/store/apps/details?id=com.reachview)|[App ReachView para iOS [7.7 MB]](https://apps.apple.com/us/app/reachview/id1295196887)|
 
 </center>
 
 !!! note ""
-    If you encounter any issues performing these steps, we will be happy to help at our [**community forum**](http://community.emlid.com/)
+    Se você encontrar algum problema ao executar essas etapas, teremos o prazer em ajudar em nosso [**fórum da comunidade**](http://community.emlid.com/)
 
 
-## Text guide
+## Texto guia
 
-### Powering up
+### Ligando
 
-Hold the power button for 3 seconds to turn Reach RS2 on. After about 30 seconds Power LEDs will stop blinking. The Network LED will stay solid white. Reach RS2 is now broadcasting Wi-Fi.
+Mantenha o botão Power pressionado por 3 segundos para ligar o Reach RS2. Após cerca de 30 segundos, os LEDs de energia param de piscar. O LED de rede permanecerá branco sem piscar. O Reach RS2 está agora transmitindo o seu próprio Wi-Fi.
 
 <div style="text-align: center;"><img src="../img/quickstart/first-setup/hotspot.png" style="width: 200px;"></div>
 
-### Connecting to Reach RS2
+### Conectando ao RS2
 
-* Open a list of Wi-Fi networks on your smartphone/PC
+* Abra a lista de redes Wi-Fi no seu smartphone/PC
 
-* Connect to a network named **reach:xx:xx**
+* Conecte-se a rede chamada **reach:xx:xx**
 
-* Type network password: **emlidreach**
+* Digite a senha: **emlidreach**
 
 
-### Setting up Wi-Fi
+### Configurando o Wi-Fi
 
-??? note "Using Reach with iOS/Android device"
+??? note "Usando o Reach com dispositivos iOS/Android"
 
-    1. Get the ReachView app from [Google Play](https://play.google.com/store/apps/details?id=com.reachview) or [App Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)
-    2. Open the app and choose Reach from the list
-    4. Tap the *plus* button and enter your Wi-Fi network name, security type, and password
-    5. Tap *Save* button
-    6. Tap on the added network and then *Connect*
+    1. Faça o download do aplicativo ReachView no [Google Play](https://play.google.com/store/apps/details?id=com.reachview) ou [App Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)
+    2. Abra o aplicativo e escolha o Reach na lista
+    4. Toque no botão *+* e digite o nome da sua rede Wi-Fi, o tipo de segurança e a senha
+    5. Toque no botão *Save*
+    6. Toque na rede adicionada e depois em *Connect*
 
-??? note "Using Reach with a web browser from any device"
+??? note "Usando o Reach em um navegador da Web em qualquer dispositivo"
 
-    1. Launch a web browser (we recommend using Chrome or Mozilla)
-    2. Go to 192.168.42.1
-    3. Tap the *plus* button and enter your Wi-Fi network name, security type, and password
-    4. Tap *Save* button
-    5. Tap on the added network and then *Connect*
+    1. Inicie um navegador da Web (recomendamos o uso do Chrome ou Mozilla)
+    2. Digite na barra do navegador o seguinte IP 192.168.42.1
+    3. Toque no botão *+* e digite o nome da sua rede Wi-Fi, o tipo de segurança e a senha
+    4. Toque no botão *Save*
+    5. Toque na rede adicionada e depois em *Connect*
 
-Reach RS2 will stop broadcasting Wi-Fi and connect to your network. 
+O Reach RS2 para de transmitir o seu Wi-Fi e se conecta à rede adicionada. 
 
-The Network LED will blink rapidly while scanning for networks. Once Reach connects to Wi-Fi, the Network LED will be solid blue.
+O LED da rede piscará rapidamente ao procurar uma rede. Depois que o Reach se conectar ao Wi-Fi, o LED da rede ficará azul contínuo.
 
 <div style="text-align: center;"><img src="../img/quickstart/first-setup/client-mode.png" style="width: 200px;"></div>
 
 !!! note ""
-    If your device did not connect to a Wi-Fi network, it will switch back to a hotspot mode.
-    In that case, repeat the steps and double check your network name and password. 
+    Se o seu dispositivo não se conectar a rede Wi-Fi, ele voltará ao modo hotspot (ponto de acesso).
+    Nesse caso, repita as etapas e verifique novamente o nome e a senha da sua rede. 
 
 
-### Accessing Reach RS2 device in a network
+### Acessando o dispositivo Reach RS2 em uma rede
 
 !!! danger ""
-    Make sure that your smartphone/PC has connected to the same Wi-Fi network as Reach.
+    Verifique se o seu smartphone/PC está conectado à mesma rede Wi-Fi que o Reach.
 
-??? note "Using Reach with iOS/Android device"
+??? note "Usando o Reach com dispositivos iOS/Android"
 
-    1. Open ReachView app
-    2. Refresh the list of devices
-    3. Tap **reach**
+    1. Abra o aplicativo ReachView
+    2. Atualize a lista de dispositivos
+    3. Toque em **reach**
 
 
-??? note "Using Reach with PC"
+??? note "Usando o Reach com PC"
 
-    After connecting the Reach device to an existing Wi-Fi network, you will need to identify its IP.
+    Depois de conectar o dispositivo Reach a uma rede Wi-Fi existente, você precisará identificar o seu IP.
 
-    For this you can use:
+    Para isso, você pode usar:
 
-    * "**Fing**" app for [iOS](https://goo.gl/Ho0qB) or [Android](https://goo.gl/7Wuwu)
+    * O aplicativo "**Fing**" para [iOS](https://goo.gl/Ho0qB) ou [Android](https://goo.gl/7Wuwu)
 
-    * ["**Nmap**"](https://nmap.org/) on Linux/OS X
+    * ["**Nmap**"](https://nmap.org/) no Linux/OS X
 
     * ["**Zenmap**"](https://nmap.org/zenmap/) on Windows
 
     <div style="text-align: center;"><img src="../img/quickstart/first-setup/fing.png" style="width: 500px;"></div>
 
-    * Reach will show up as "**Murata Manufacturing**" or "**AMPAK Technology**" device in these apps
+    * O Reach será exibido como dispositivo "**Murata Manufacturing**" ou "**AMPAK Technology**" nesses aplicativos
 
-    * Put Reach IP in the address bar and go
+    * Coloque o IP do Reach na barra de endereço do navegador
 
 
-### Updating ReachView
+### Atualizando o ReachView
 
-After connecting to Reach RS2, you will see ReachView Updater again. Wait until it checks for the latest updates.
+Após conectar-se ao Reach RS2, você verá o ReachView Updater novamente. Aguarde até verificar se há atualizações mais recentes.
 
-* If there is an update, press *Update ReachView* button and wait. This process will take a few minutes
+* Se houver uma atualização, pressione o botão *Update ReachView* e aguarde. Esse processo levará alguns minutos
 
-* When it is done tap *Reboot and go to the app* button to reboot Reach RS2
+* Quando terminar, toque em *Reboot and go to the app* para reiniciar o Reach RS2
 
-* Wait for the blue LED to stop blinking, showing that Reach RS2 has joined your Wi-Fi network again
+* Aguarde o LED azul parar de piscar, mostrando que o Reach RS2 entrou na sua rede Wi-Fi novamente
 
-* Press *Reboot and go to the app* button and wait while device reboots
+Se você usar o aplicativo ReachView, deslize para a direita para voltar à lista de dispositivos, atualize a lista e toque em **reach**. Quanto ao navegador da Web, basta atualizar a página com o ReachView. Você verá o logotipo EMLID preenchendo, indicando o processo de carregamento do ReachView.
 
-If you use ReachView app, swipe right to get back to the list of devices, refresh the list and tap **reach**. As for the web browser, just refresh the page with ReachView. You will see the filling EMLID logo indicating the loading process of ReachView.
+Seu Reach RS2 está pronto para o trabalho. Faça o mesmo com todas as outras unidades.
 
-Your Reach RS2 is ready for work. Do the same with all other units.
-
-[Now you can set up Base and Rover connection by following instruction from our guide.](base-rover-setup.md)
+[Agora você pode configurar a conexão entre Base e Rover seguindo as intruções do nosso guia.](base-rover-setup.md)
