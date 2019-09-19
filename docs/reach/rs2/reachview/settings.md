@@ -1,47 +1,47 @@
 <p style="text-align:center" ><img src="../img/reachview/settings/settings.png" style="width: 800px;" /></p>
 
-## ReachView updates
+## Atualizações do ReachView
 
-### App version  
-Every time you power up Reach in a Wi-Fi network, it checks for new ReachView update and notify you accordingly.
+### Versão do aplicativo  
+Sempre que você liga o Reach em uma rede Wi-Fi, ele verifica se há uma nova atualização do ReachView e o notifica.
 
 !!! note ""
-    The update check is only done one time during the boot process. If you want to force new version check, please proceed to ReachView Updater. It is available on port 5000, for example, `http://reach.local:5000`. The Updater automatically scans Emlid update servers when you open it. [Learn more about ReachView updater.](../common/reachview/updater.md)
+    A verificaação da atualização é feita apenas uma vez durante o processo de inicialização. Se você deseja forçar a verificação de nova versão, vá para o ReachView Updater. Está disponível na porta 5000, por exemplo, `http://reach.local:5000`. O Updater verifica automaticamente os servidores de atualização do Emlid quando você o abre. [Saiba mais sobre o atualizador ReachView.](../common/reachview/updater.md)
 
-## System utilities
+## Utilizades do sistema
 
-### Night mode 
-Night mode allows you to turn off the LEDs until the next reboot of the device. 
+### Modo noturno 
+O modo noturno permite desligar os LEDs até a próxima reinicialização do dispositivo.
 
-### Bottom connector settings
-Enables automatic boot using the bottom connector on Reach. Perfect for integrating the receiver with cars or tractors.
+### Configurações do conector inferior
+Ativa a inicialização automática usando o conector inferior no Reach. Perfeito para integrar o receptor a carros ou tratores.
 
-### System report
-The tool is used to facilitate issues reports. There are two kinds of system reports:
+### Relatório do sistema
+A ferramenta é usada para facilitar os relatórios de problemas. Existem dois tipos de relatórios do sistema:
 
-* Simple system report (in plain text format)
-* Full system report (in a zip archive)
+* Relatório simples do sistema (em formato de texto sem formatação)
+* Relatório completo do sistema (em um arquivo zip)
 
-The former is for the forum and makes it easy to share settings, network state, and app version. The latter is for harder cases and contains system logs and technical details of your device.
+O priemiro é para o fórum e facilita o compatilhamento de configurações, estado da rede e versão do aplicativo. O último é para casos mais difíceis e contém registros do sistema e detalhes técnicos do seu dispositivo.
 
-!!! note "Getting system report"
+!!! note "Obtendo relatório do sistema"
 	<p style="text-align:center"><img src="../img/reachview/settings/system-report.gif" style="width: 800px;" /></p>
 
-### Sound notifications
+### Notificações sonoras
 
-Enables sound notifications on Reach and allows volume adjusting. Reach will warn you once it gets or loses the fix solution status.
+Ativa notificações sonoras no Reach e permite o ajuste de volume. O Reach avisará quando você obtiver ou perder o estado da solução de correção.
 
-### Reset settings to default  
-Click *Reset setting to default* button to return all settings to factory configuration. Only logs and wireless settings are preserved. If you would like to perform a complete factory reset and wipe all your data you can [reflash firmware image](../common/reachview/firmware-reflashing.md).
+### Redefinir as configurações para o padrão  
+Clique no botão *Reset setting to default* para retornar todas as configurações à configuração de fábrica. Somente logs e configurações de rede são preservados. Se você deseja executar uma redefinição de fábrica completa e limpar todos os seus dados, pode fazer o processo de [reflash firmware image](../common/reachview/firmware-reflashing.md).
 
-## General settings
+## Configurações gerais
 
-### Reach and hotspot name
+### Nome do Reach e do hotspot (ponto de acesso)
 
-Reach name can be changed in order to distinguish between multiple devices. A very common pattern is to name devices according to their base or rover function. A device name is a base for hotspot name and local network name. The default name is **reach**, changing it will also affect local name `http://reach.local` and hotspot name `reach:xx:xx`.
+O nome do Reach pode ser alterado para distinguir entre vários dispositivos. Um padrão muito comum é nomear dispositivos de acordo com a sua função, base ou rover. O nome adotado para o dispositivo servirá de base para o nome do ponto de acesso e o nome da rede local. O nome padrão é **reach**, alterando-o também afetará o nome local `http://reach.local` e o nome do ponto de acesso `reach:xx:xx`.
 
-### Logging settings
-Specify how ReachView will handle full memory behavior here, it can either stop logging or override old logs in favour of new ones. In most cases “rolling logs” is recommended.
+### Configuração de logging
+Especifique como o ReachView lidará com o comportamento da memória completa aqui, ele pode parar o log ou substituir os logs antigos em favor dos novos. Na maioria dos casos, recomenda-se “rolling logs”.
 
-### Log split period
-A new log file will be created every N hours while preserving the previous log as well. This setting allows you to control the size of the files that you work with.
+### Período de divisão do Log
+Um novo arquivo de log será criado a cada N horas, preservando também o log anterior. Essa configuração permite controlar o tamanho dos arquivos com os quais você trabalha.
