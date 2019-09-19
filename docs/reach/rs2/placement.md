@@ -1,37 +1,35 @@
-!!! tip ""
-    A well-placed Reach is essential for achieving good RTK positioning results.
+!!! Importante ""
+    A montagem em um bom local é crucial para conseguir um bom resultado no posicionamento RTK!
 
-You can place your smartphone near the window in your house and it will obtain GNSS coordinates after some time, but for RTK such environment won't be sufficient. For RTK to work there are special requirements for Reach placement.
+Você pode colocar o seu smartphone próximo a janela da sua casa e terá coordenadas GPS depois de algum tempo, mas para o RTK o ambiente não será suficiente. Para o RTK funcionar, existem requisitos especiais para a colocação de antenas que são muito mais rigorosas do que para um GPS autônomo.
 
-### Clear sky view without any obstacles
+#### Vista do céu sem nenhum obstáculo
 
-Reach needs to have a clear sky view 30 degrees above the horizon. There should be no obstacles that could block the view like buildings, trees, cars, humans, laptops, etc.
+O módulo precisa ter uma visão clara de 30 graus acima do horizonte. Não deve haver obstáculos que possam bloquear a visão como: edifícios, árvores, carros, seres humanos, laptops etc.
 
-Take a look at 2 pictures below. The left picture demonstrates desirable conditions for Reach location. The right one is an example of bad surrounding conditions such as the reduced view of the sky, possible obstructions or vegetation nearby.
+Dê uma olhada nas duas imagens abaixo. A imagem a esquerda mostra condições favoráveis para localização do Reach RS/RS+. A da direita é um exemplo de um ambiente ruim que reduz a visão do ceu, com possíveis obstruções e vegetações próximas.
 
-<div style="text-align: center;"><img src="../img/reachrs2/placement/Reach-placement-correct-wrong.png" style="width: 800px;"></div><br>
+<div style="text-align: center;"><img src="../img/reachrs/placement/Reach-placement-correct-wrong.png" style="width: 800px;"></div><br>
 
-Examples of **good** environments for Reach placement:
+Exemplos de **bons** ambientes para colocar o Reach: 
 
-* field
+* campo
 
-* top of the hill
+* topo da montanha
 
-* rooftop
+* telhado
 
-Examples of **bad** environments for Reach placement: 
+Exemplos de ambientes **ruins** para colocar o Reach:
 
-* indoors
+* áreas internas
 
-* urban area
+* áreas urbanas
 
-* forestry area
+* floresta
 
 
-### No electronics nearby
+#### Sem eletrônicos por perto
 
-Electronic devices may produce RF noise that could affect the reception of the GNSS signal. Keep all electronics as far as possible from Reach.
+Dispositivos eletrônicos podem produzir ruídos de RF que podem afetar a recepção do sinal de GPS. Mantenha todos os componentes eletrônicos o mais longe possível da antena.
 
-<br>
-
-[Learn more about placing the base by following this link.](common/tutorials/placing-the-base.md)
+[Leia mais sobre a montagem da base neste link.](common/tutorials/placing-the-base.md)
