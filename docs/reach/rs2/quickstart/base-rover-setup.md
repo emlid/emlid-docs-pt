@@ -1,133 +1,133 @@
-## Video guide
+## Video guia
 
-This tutorial will show how to set up two Reach RS2 units as rover and base and how to make them work over LoRa radio in RTK mode.
+Este tutorial mostrará como configurar duas unidades Reach RS2 como rover e base e como fazê-las funcionarem com o rádio LoRa no modo RTK.
 
-For setting NTRIP base corrections, [follow the steps from "Working with NTRIP service" guide](../common/quickstart/ntrip-workflow.md).
+Para definiar correções de base NTRIP, [siga as etapas do guia "Trabalhando com o serviço NTRIP"](../common/quickstart/ntrip-workflow.md).
 
 <div style="text-align: center;"><iframe title="Emlid manuals" width="560" height="315" src="https://www.youtube.com/embed/-K32ayVmH6U" allowfullscreen></iframe></div>
 
 
-## Text guide
+## Texto guia
 
-### Renaming Reach devices
+### Renomeando os dispositivos Reach
 
-By default, every Reach has the same name, and the first thing we will do is renaming them so it is easier to distinguish base and rover in the field.
+Por padrão, todo Reach tem o mesmo nome, e a primeira coisa que faremos será renomeá-los, para que seja mais fácil distinguir base e rover no campo.
 
-!!! note "How to define Reach?"
-    There is an easy way to understand which unit you are connected to. Just open the menu and tap the lamp-shaped button. Power Button LED will start to blink.
+!!! note "Como definir o Reach?"
+    Existe uma maneira fácil de entender a qual unidade você está conectado. Basta abrir o menu e tocar no botão em forma de lâmpada. O LED do botão Power desligará e começará a piscar.
 
-* Connect to Reach RS2 you want to use as a base
+* Conecte-se ao Reach RS2 que você deseja usar como base
 
-* Go to settings and change the name to **reach-base**. This name will also be used as a Wi-Fi network label when Reach is in hotspot mode
+* Vá para configurações e altere o nome para **reach-base**. Esse nome também será usado como um rótulo da rede Wi-Fi quando o Reach estiver no modo hotspot (ponto de acesso).
 
-* Press *Save*
+* Pressione *Save*
 
 !!! tip ""
-    Use a special sticker from a package to mark the unit.
+    Use um adesivo que vêm na embalagem do Reach para marcar a unidade.
 
-Do the same with the second Reach RS2. However, use **reach-rover** name instead of **reach-base**.
+Faça o mesmo com o segundo Reach RS2. No entanto, use o nome **reach-rover** em vez de **reach-base**.
 
 
-### Setting up base station
+### Configurando o Reach base
 
-Now we will configure RTK settings and communication between base and rover. Let’s start with the base.
+Agora vamos definir as configurações RTK e a comunicação entre a base e o rover. Vamos começar com a base.
 
-* Connect to the base unit
+* Conecte-se à unidade base
 
-* Open **RTK Settings** tab and pick each of the satellite systems
+* Abra a guia **RTK Settings** e escolha cada constelação de satélite
 
-* Set the update rate at 1 Hz
+* Defina a taxa de atualização em 1 Hz
 
 <div style="text-align: center;"><img src="../img/quickstart/base-rover-setup/reachrs2-base-rtk-settings.png" style="width: 800px;"></div>
 
 
-Now we will set up LoRa radio on Reach RS2 base to broadcast RTK corrections.
+Agora vamos configurar o rádio LoRa na base Reach RS2 para transmitir correções RTK.
 
-* Go to **Base mode** tab and in the **Corrections output** section select **LoRa**
+* Vá para a guia **Base mode** e, na seção **Corrections output**, selecione **LoRa**
 
-* Set the output power to **20 dBm** and air rate at **9.11 kb/s**
+* Defina a potência de saída para **20 dBm** e o air rate em **9.11 kb/s**
 
 <div style="text-align: center;"><img src="../img/quickstart/base-rover-setup/reachrs2-base-lora.png" style="width: 800px;"></div>
 
-* In the list of RTCM3 messages select to output **ARP station coordinates** at **0.1 Hz** and others at **1 Hz**
+* Na lista de mensagens RTCM3, selecione a saída **ARP station coordinates** em **0.1 Hz** e as outras em **1 Hz**
 
 <div style="text-align: center;"><img src="../img/quickstart/base-rover-setup/reachrs2-base-rtcm3.png" style="width: 800px;"></div>
 
 !!! danger ""
-    Make sure to select appropriate output power and frequency according to your local regulations. In case there are restrictions, frequency band limitations will be applied automatically. 
+    Certifique-se de selecionar a potência e a frequência de saída apropriadas, de acordo com os regulamentos locais. Caso haja restrições, as limitações da banda de frequência serão aplicadas automaticamente.
 
-* Apply settings and wait until base averages its position in Base coordinates box
+* Aplique as configurações e aguarde até que a base calcule a média de sua posição na caixa Base coordinates
 
 
-### Setting up rover
+### Configurando o rover
 
-* Connect to the rover unit
+* Conecte-se à unidade rover
 
-* Go to **RTK settings** tab
+* Vá para a guia **RTK settings**
 
-* Set the positioning mode to **Kinematic**
+* Defina o modo de posicionamento para **Kinematic**
 
-* Select the same GNSS systems as for the base, set 5 Hz update rate and press *Apply*
+* Selecione os mesmos sistemas GNSS da base, defina a taxa de atualização de 5 Hz e pressione *Apply*
 
 <div style="text-align: center;"><img src="../img/quickstart/base-rover-setup/reachrs2-rover-rtk-settings.png" style="width: 800px;"></div>
 
-Now we will configure LoRa radio on the rover unit to receive the corrections. 
+Agora vamos configurar o rádio LoRa na unidade rover para receber correções. 
 
 * Go to **Correction input** tab
 
-* In the **Base correction** pick **LoRa**
+* Em **Base correction** escolha **LoRa**
 
-* Frequency and air rate settings must match what was configured on the base
+* As configurações de frequência e air rate devem corresponder ao que foi configurado na base
 
-* Apply changes and you will see rover is connected to the base
+* Aplique as alterações e você verá que o rover está conectado à base
 
 <div style="text-align: center;"><img src="../img/quickstart/base-rover-setup/reachrs2-rover-lora.png" style="width: 800px;"></div>
 
 !!! tip ""
-    To make sure that corrections are passing from base to rover, you can put both receivers by the window for a few minutes to provide the sky visibility. Go to the status tab on the rover unit. Colorful bars are standing for available satellites. If LoRa is configured correctly, they will be accompanied by grey bars. These are standing for the corrections received from the base station.
+    Para garantir que as correções estejam passando da base para o rover, você pode colocar os dois receptores pela janela por alguns minutos para fornecer visibilidade ao céu. Vá para a guia Status na unidade rover. Barras coloridas estão disponíveis para os satélites disponíveis. Se o LoRa estiver configurado corretamente, eles serão acompanhados por barras cinzas. Eles representam as correções recebidas da base.
 
 
-### Placing Reach RS2 module
+### Implantação do módulo Reach RS2
 
-Once the units are configured, we can move to the field. For the field works, you will need a tripod and survey pole.
+Uma vez configuradas as unidades, podemos ir para o campo. Para os trabalhos de campo, você precisará de um tripé e um bastão.
 
-Mount Reach RS2 base and accurately level the tripod. Put the rover on the pole and attach the LoRa antennas. Turn on the devices.
+Monte o Reach RS2 da base e nivele com precisão o tripé. Coloque o rover no bastão e conecte as antenas LoRa. Ligue os dispositivos.
 
-!!! danger "Attention"
-    There **should be no** obstacles near the antenna that could block the sky view higher than 30 degrees above the horizon.
-    **Do not** test the device indoors or near buildings, do not cover the sky view for the antennas with laptops, cars or yourself. RTK requires good satellite visibility and reception.
+!!! danger "Atenção"
+    Não deve haver obstáculos perto da antena que possam bloquear a visão do céu a mais de 30 graus acima do horizonte.
+    **Não** teste o dispositivo em ambientes fechados ou próximos a edifícios, não cubra a vista do céu para as antenas com laptops, carros ou você mesmo. O RTK requer boa visibilidade e recepção de satélite.
 
-A guide on how to properly place the antennas is available in [Reach RS2 placement](../placement.md) section.
+Um guia sobre como posicionar corretamente as antenas está disponível na seção [Posicionando o Reach RS2](../placement.md).
 
-Let’s set up the base station.
+Vamos configurar a base.
 
-* Connect to the base
+* Conecte-se à base
 
-* Go to **Base mode** tab
+* Vá para guia **Base mode**
 
-* In the **Base coordinates** section select **Average single** and set averaging time. The longer you choose to accumulate data, the more accurate base position you get. Don’t move the base while Reach is accumulating data
+* Na seção **Base coordinates**, selecione **Average single** e defina o tempo médio. Quanto mais você optar por acumular dados, mais precisa será a posição da base. Não mova a base enquanto o Reach estiver acumulando dados
 
-* Once the position is calculated, press *Apply*
+* Uma vez calculada a posição, pressione *Apply*
 
-* Go to the **Status** tab on the base station to assure ReachView shows plenty of green satellites
+* Vá para guia **Status** na base para garantir que o ReachView mostre satélites verdes
 
-Connect to the rover and check the status tab. If everything is configured correctly, you will see a lot of green satellites accompanied by grey bars.
+Conecte-se ao rover e verifique a guia Status. Se tudo estiver configurado corretamente, você verá muitos satélites verdes acompanhados por barras cinzas.
 
 <div style="text-align: center;"><img src="../img/quickstart/base-rover-setup/reachrs2-status-correction.png" style="width: 800px;"></div>
 
 
-## Viewing results
+## Visualizando os resultados
 
-Go to the **Status** tab of the app on the rover device.
+Vá para guia **Status** do aplicativo no dispositivo rover.
 
-Below the SNR chart, you’ll see the current solution status.
+Abaixo do gráfico SNR, você verá o status atual da solução.
 
-* **Single** means that rover has found a solution relying on its own receiver and base corrections are not applied. Precision in standalone mode is usually meter-level
+* **Single** significa que o rover encontrou uma solução mas as correções da base não são aplicadas. A precisão no modo autônomo geralmente é no nível métrico.
 
-* **Float** means that the base corrections are now taken into consideration
+* **Float** significa que as correções da base agora são levadas em consideração
 
-* **Fix** status means all ambiguities are resolved and RTK solution is centimeter-level accurate
+* **Fix** significa que todas as ambiguidades foram resolvidas e a solução RTK é precisa no nível de centímetros.
 
-After a short period of time, the rover gets a fixed solution. In good environments, it will take a few seconds to get a fixed solution. In tough conditions, it may take a little longer. Once rover gets fix status, we are all set for work.
+Após um curto período de tempo, o rover obtém uma solução fixa. Em bons ambientes, levará alguns segundos para obter uma solução fixa. Em condições difíceis, pode demorar um pouco mais. Quando o rover obtiver o status de correção, estamos prontos para o trabalho.
 
-Scroll the status tab down to see your location in the real-time.
+Role a guia Status para baixo para ver a sua localização em tempo real.
