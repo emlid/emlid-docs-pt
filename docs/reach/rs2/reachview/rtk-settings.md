@@ -1,22 +1,22 @@
-# RTK settings
+# RTK settings (Configurações RTK)
 
-## RTK options
+## RTK options (Opções RTK)
 
 <p style="text-align:center" ><img src="../img/reachview/rtk-settings/rtk-settings-rs2.png" style="width: 800px;" /></p>
 
-### Positioning mode
+### Positioning mode (Modo de posicionamento)
 
-+ **Kinematic** - most used positioning mode, assumes that the receiver is moving
-+ **Static** - an assumption is made that Reach is static. Constraining the system helps to resolve ambiguities faster as well as produce measurements with higher precision
++ **Kinematic (Cinemático)** - modo de posicionamento mais usado, assume-se que o receptor está se movendo
++ **Static (Estático)** - assume-se que o Reach está estático. Restringir o sistema ajuda a resolver ambiguidades mais rapidamente, além de produzir medições com maior precisão
 
-### Elevation mask angle
-Satellites lower than set elevation will be excluded from the computation. The default setting is 15 degrees. Usually, satellites with a lower elevation provide too noisy measurements.
+### Elevation mask angle (Ângulo da máscara de elevação)
+Os satélites abaixo da elevação definida serão excluídos do cálculo. A configuração padrão é 15 graus. Geralmente, os satélites com altitude mais baixa fornecem medições muito ruidosas.
 
-### SNR mask
-Satellites with low SNR will be excluded from the computation. The default setting is 35.
+### SNR mask (Máscara SNR)
+Os satélites com baixo SNR serão excluídos do cálculo. A configuração padrão é 35.
 
-## GNSS selection
+## GNSS selection (Seleção GNSS)
 
-Reach RS2 tracks GPS, GLONASS, GALILEO, QZSS, and BEIDOU satellite systems. The data can be logged with 1 Hz, 5 Hz or 10 Hz update rate.
+O Reach RS2 rastreia os sistemas de satélites GPS, GLONASS, GALILEO, QZSS, e BEIDOU. Os dados podem ser registrados com taxa de atualização de 1 Hz, 5 Hz ou 10 Hz.
 
-All GNSS enabled at 5 Hz is our default recommendation.
+Todos GNSS ativado em 5 Hz é nossa recomendação padrão.
