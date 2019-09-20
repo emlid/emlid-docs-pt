@@ -1,67 +1,67 @@
-This is the main dashboard with all information about position and satellite reception.
+Este é o painel principal com todas as informações sobre posição e recepção de satélite.
 
-## Satellite SNR chart
+## Gráfico SNR (Signal to Noise Ratio) dos Satélites
 
 <p style="text-align:center" ><img src="../img/reachview/status/rs2_status.png" style="width: 800px;" /></p>
 
-RTK positioning requires excellent reception of signals from GNSS satellites. SNR (Signal to Noise Ratio) is the primary indicator of how good the reception is. The graph lists all satellites that fit in your screen size and corresponding SNR. Data is updated in real-time.
+O posicionamento RTK requer excelente recepção de sinais dos satélites GNSS. O SNR que é uma relação sinal/ruído é o principal indicador de quão boa é a recepção. O gráfico lista todos os satélites na tela com o seu respectivo SNR. Os dados são atualizados em tempo real.
 
-| Legend |                   |
-|--------|-------------------|
-|   R    | Glonass satellite |
-|   G    | GPS satellite     |
-|   E    | Galileo satellite |
-|   J    | QZSS satellite    |
-|   C    | Beidou satellite  |
+| Legenda |                   |
+|---------|-------------------|
+|   R     | Satélites Glonass |
+|   G     | Satélites GPS     |
+|   E     | Satélites Galileo |
+|   J     | Satélites QZSS    |
+|   C     | Satélites Beidou  |
  
 
-When SNR of a satellite is over 45, it will be marked green. Grey bars indicate SNR of the base station. You should aim to achieve as many satellites signals in “green zone” as possible. That will make your measurements precise and ambiguity resolution (Fix) fast. On the top of the SNR chart you can see indicators of numbers of satellites visible to rover and base receivers.
+Quando o SNR de um satélite tiver mais de 45, ele será marcado em verde. Barras cinza indicam SNR da estação base. Vodê deve procurar obter o maior número possível de sinais de satélites na "zona verde". Isso tornará suas medições precisas e a resolução da ambiguidade (Fix) rápida. No topo da tabela SNR, você pode ver indicadores de número de satélites visíveis para receptores móveis e base.
 
-## RTK parameters
+## RTK parameters (Parâmetros RTK)
 
 <p style="text-align:center" ><img src="../img/reachview/status/rs2_rtk_parameters.PNG" style="width: 550px;" /></p>
 
-### Age of differential
-In the case of a steady correction stream, age of differential will indicate link latency. It is calculated by subtracting the time when the correction message has been generated from the current receiver time. It is an invaluable tool to debug connectivity issues.
+### Age of differential (Latência)
+No caso de um fluxo de correção constante, a age of differential indicará a latência do link. É calculada subtraindo a hora em que a mensagem de correção foi gerada a partir da hora atual do receptor. É uma ferramenta inestimável para debug com problemas de conectividade.
 
-### Baseline
-Baseline is the distance from rover to the base. It should be kept within 60km for Reach RS2. If it is increased further you might experience slower fix time and lower accuracy. Accuracy is decreased by 1mm each km of baseline.
+### Baseline (Linha de base)
+A linha de base é a distância do rover até a base. Deve ser mantido dentro de 60 Km para o Reach RS2. Se aumentar ainda mais, você poderá ter um tempo de correção mais lento e com menor precisão. A precisão é reduzida em 1 mm a cada km da linha de base.
  
-## Map
-Integrated map is used to show your current position. Map layer is provided by OpenStreetMap.
+## Map (Mapa)
+Um mapa é usado para mostrar sua posição atual. A camada do mapa é fornecida pelo OpenStreetMap.
 
 <p style="text-align:center" ><img src="../img/reachview/status/rs2_map.png" style="width: 800px;" /></p>
 
-Available map features:
+Recursos disponíveis no mapa:
 
-+ Last point: zooms the map to the last point.
-+ Clear map: deleted all current points on the map.
-+ Hide background: removes OSM layer.
-+ Follow: keeps focus on the last point.
-+ Select number of points to show 100, 1000,10000.
-
-
++ Last point (último ponto): amplia o mapa até o último ponto.
++ Clear map (limpar): exclui todos os pontos atuais no mapa.
++ Hide background (ocultar plano de fundo): remove a camada OSM.
++ Follow (seguir): mantém o foco no último ponto.
++ Selecione o número de pontos para exibir 100, 1000,10000.
 
 
-| Point colors meaning |             |
+
+
+| Significado das cores|             |
 |----------------------|-------------|
-|        Green         |   RTK Fix   |
-|        Yellow        |   RTK Float |
-|        Red           |   Single    |
+|        Verde         |   RTK Fix   |
+|        Amarelo       |   RTK Float |
+|        Vermelho      |   Single    |
 
 
-### Position
-WGS84 Latitude and Longitude as well as ellipsoidal height are displayed on the status tab. Position display format can be changed to XYZ ECEF.
+### Position (Posição)
+Latitude e longitude em WGS84, bem como altura elipsoidal são exibidas na guia Status. O formato de exibição da posição pode ser alterado para XYZ ECEF.
 
 <p style="text-align:center" ><img src="../img/reachview/status/rs2_position.png" style="width: 800px;" /></p>
 
-### Solution status
-**"-"** means there is no information for the software to process. Either not enough time has passed or the antenna is not placed correctly.  
+### Solution status (Status da solução)
+**"-"** significa que não há informações para o software processar. Não passou tempo suficiente ou a antena não foi colocada corretamente.  
 
-**Single** means that rover has found a solution relying on it's own receiver and base corrections are not applied. Configuring positioning mode to Single will also result in this status. Precision in standalone mode is on meters-level.
+**Single** significa que o rover encontrou uma solução porém sem correções da base. A precisão no modo autônomo é no nível métrico.
 
-**Float** means that base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved. Precision in float mode is submeter-level.  
+**Float** significa que as correções da base estão sendo levadas em consideração e o posicionamento é relativo às coordenadas da base, mas a ambiguidade dos ciclos não foi resolvida. A precisão no modo flutuante é no nível submétrico.  
 
-**Fix** means that positioning is relative to the base and the integer ambiguity is resolved. Precision in standalone mode is centimeter-level.
+**Fix** significa que o posicionamento é relativo à base e a ambiguidade de ciclo foi resolvida. A precisão no modo fixo é centimétrica.
 
 
