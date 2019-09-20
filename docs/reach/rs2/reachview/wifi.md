@@ -1,13 +1,13 @@
 <p style="text-align:center" ><img src="../img/reachview/wifi/wifi.png" style="width: 800px;" /></p>
 
-To connect Reach to new Wi-Fi network, find it in the list of **Available Networks**, click on the name and fill in the password. If this network is not visible, you can add it by tapping on the *Connect to a hidden network* button.
+Para conectar o Reach à nova rede Wi-Fi, localize-o na lista de redes disponíveis **Available Networks**, clique no nome e preencha a senha. Se essa rede não estiver visível, você poderá adicioná-la tocando no botão *Connect to a hidden network*.
 
-Enable **Hotspot** to switch Reach to the hotspot mode. Tap the *Edit* button to change the password of the network Reach creates.
+Ative **Hotspot** para alternar para o modo ponto de acesso. Toque no botão *Edit* para alterar a senha da rede que o Reach cria.
 
 !!! note ""
-    If a SIM card is inserted into Reach, you can enable sharing mobile data from Reach in hotspot mode.
+    Se um cartão SIM estiver inserido no Reach, você poderá ativar o compartilhamento de dados móveis do Reach no modo hotspot.
 
-During power up Reach will search for known Wi-Fi networks and if it does not see any create a hotspot. 
+Durante a inicialização, o Reach pesquisará redes Wi-Fi conhecidas e, se não houver, cria um ponto de acesso. 
 
 !!! tip ""
-    If you want to make Reach create hotspot every time, you should delete all Wi-Fi networks from the list. It is not possible to delete the network that you are currently connected to, so you will  need to switch Reach to hotspot mode. After switching to hotspot and connecting to it you will be able to delete all Wi-Fi networks and Reach will always start in hotspot mode.
+    Se quiser que o Reach crie pontos de acesso sempre, exclua todas as redes Wi-Fi da lista. Não é possível excluir a rede à qual você está conectando no momento; portanto, será necessário alternar o modo do Reach para o hotspot. Depois de mudar para o ponto de acesso e conectar-se a ele, você poderá excluir todas as redes Wi-Fi e o Reach sempre iniciará no modo de ponto de acesso.
