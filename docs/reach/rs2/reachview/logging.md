@@ -1,74 +1,75 @@
-#Record and download logs
+#Gravação e download de logs
 
-This tutorial shows how to record logs for Data Analysis and Post-Processing Kinematic (PPK) and how to download them from Reach to your computer.
+Este tutorial mostra como gravar logs para análise de dados e pós-processamento cinemático (PPK) e como fazer o donwload do Reach para o seu computador.
 
 !!! tip ""
-	To learn more about PPK check [this article](../../tutorials/ppk-introduction).
+	Para saber mais sobre o PPK, leia [nossa introdução sobre o pós-processamento cinemático](../../tutorials/ppk-introduction).
 
-##Log split period
+##Período de divisão do log
 
-Before starting log recording, you can specify the log split period in ReachView [settings](settings.md). For instance, if we set to save the log every 4 hours, the new log file will be created every 4 hours, while preserving the previous log as well. This setting allows you to control the size of the files that you work with.
+Antes de iniciar a gravação do log, você pode especificar o período de divisão do log no ReachView [settings](settings.md). Por exemplo, se definirmos salvar o log a acada 4 horas, o novo arquivo de log será criado a cada 4 horas, preservando também o log anterior. Essa configuração permite controlar o tamanho dos arquivos com os quais você trabalha.
 
 ##Logging
 
-To enable logs recording, go to "Logging" tab in ReachView. Here you can see several logging options. Reach can record raw data, position log, and base corrections.
+Para ativar a gravação de logs, vá para a guia "Logging" no ReachView. Aqui você pode ver várias opções de log. O Reach pode registrar raw data (dados brutos),position log (log de posição)e base corrections (correções da base).
 
 <p style="text-align:center" ><img src="../img/reachview/logging/enable-logging.png" style="width: 800px;" /></p>
 
 <p style="text-align:center" ><img src="../img/reachview/logging/enable-logging.gif" style="width: 800px;" /></p>
 
-###Raw data
+###Raw data (Dados brutos)
 
-A raw data log contains GNSS observations from the receiver without calculation of accurate coordinates. It can be recorded in UBX or directly into industry standard RINEX format. UBX can be converted to RINEX with RTKCONV utility after downloading to your PC. If you don’t know which one you need, we recommend using RINEX 3.03.
+Um log raw data contém observações GNSS do receptor sem cálculo de coordenadas precisas. Pode ser gravado em UBX ou diretamente no formato RINEX padrão da indústria. O UBX pode ser convertido em RINEX com o RTKCONV após o donwload para o seu PC. Se você não souber qual deles precisa, recomendamos o uso do RINEX 3.03.
 
-Time marks for UAV mapping are stored in this file as well.
-
-###Position
-
-Position can be logged in different formats. Open a dropdown list to choose the format for position coordinates.
+As time marks para o mapeamento UAV também são armazenados nesse arquivo.
 
 !!! note ""
-	Here's a short formats overview. More detailed descriptions of formats may be found in Position output section of the [docs](../../reachview/position-output/#formats).
+    Durante a gravação no formato RINEX, o arquivo UBX é registrado como backup.
+
+###Position (Posição)
+
+Um log Position pode ser registrado em diferentes formatos. Abra a lista suspensa para escolher o formato para as coordenadas de posição.
+
+!!! note ""
+	Aqui está uma breve visão geral dos formatos. Descrições mais detalhadas dos formatos podem ser encontradas na seção Position output (Sáida de posição) [docs](../../reachview/position-output/#formats).
 
 * **LLH**
 
-LLH is a simple text protocol for Latitude, Longitude, and Height in WGS84. It also contains information about RTK solution status.
+LLH é um simples protocolo de texto que contém longitude, latitude e altura em WGS84. Ele também contém informações sobre o status da solução RTK.
 
 * **XYZ**
 
-XYZ is a simple text protocol for X, Y, Z ECEF coordinates as well as solution status. 
+XYZ é um simples protocolo de texto para a coordenadas X, Y, Z ECEF, bem como o status da solução. 
 
 * **ENU**
 
-ENU is also a simple text protocol for East, North and UP components of the baseline as well as solution status.
+ENU  também é um simples protocolo de texto para os componentes leste, norte e UP da linha de base, bem como o status da solução.
 
 * **NMEA**
 
-NMEA 0183 is the most popular standard in the industry. It is usually supported by most software and hardware. NMEA messages supported: GPRMC, GPGGA, GPGSA, GLGSA, GAGSA, GPGSV, GLGSV, GAGSV. 
+NMEA 0183 é o padrão mais popular do setor. Geralmente é suportado pela maioria dos softwares e hardwares. Mensagens NMEA suportadas: GPRMC, GPGGA, GPGSA, GLGSA, GAGSA, GPGSV, GLGSV, GAGSV. 
 
 * **ERB**
 
-ERB format is used for communication with Ardupilot.
+O formato ERB é usado para comunicação com o Ardupilot.
 
-###Base corrections
+###Base corrections (Correções de base)
 
-The last logging option is base corrections. This log format is defined by corrections Reach accept from the base. If you use Reach base, this log will be recorded in RTCM3.
+A última opção de log é a base corrections. Esse formato de log é definido pelas correções que o Reach aceita da base. Se você usar a base Reach, o log será gravado em RTCM3.
 
-##Downloading
+##Baixando
 
-After completing the survey, you can save logs to your Mac, Windows, Linux or mobile device. You can do it in the same "Logging" tab in ReachView.
+Após concluir os registros em campo, você pode salvar os logs no seu Mac, Windows, Linux ou dispositivo móvel. Você pode fazer isso na mes aguia "Logging" no ReachView.
 
-Turn off toggles <img src="../img/reachview/logging/toggle.svg" align="middle" /> to stop record the logs. Find your logs below in the "Logging" tab in ReachView.
+Desative as alternância <img src="../img/reachview/logging/toggle.svg" align="middle" /> para interromper o registro dos logs. Econtre os seus registros abaixo na guia  "Logging" no ReachView.
 
 <p style="text-align:center" ><img src="../img/reachview/logging/download-logs.gif" style="width: 800px;" /></p>
 
-You can see the recording date and time. 
+Você pode ver a data e hora da gravação. 
 
-There are two buttons on the right side of each log: <img src="../img/reachview/logging/blue-arrow.svg" align="middle" alt="blue arrow" />  button allows to save it, and <img src="../img/reachview/logging/garbage-can.svg" align="middle" alt="red garbage can" /> button deletes it.
+Existem dois botões no lado direito de cada log: <img src="../img/reachview/logging/blue-arrow.svg" align="middle" alt="blue arrow" />  o botão permite salvá-lo, e o botão <img src="../img/reachview/logging/garbage-can.svg" align="middle" alt="red garbage can" /> deletar.
 
-Now when the logs are downloaded, you can use [RTKLIB software](../../tutorials/gps-post-processing) from Emlid docs to start working with your data.
+Agora, quando os logs são baixados, você pode usar o [software RTKLIB](../../tutorials/gps-post-processing) nos documentos da Emlid para começar a trabalhar com seus dados.
 
-Check [PPK guide](../../tutorials/gps-post-processing) in Emlid docs to learn more about PPK. 
-
-
+Verifique o [guia PPK](../../tutorials/gps-post-processing) nos documentos da Emlid para saber mais sobre o PPK.
 
