@@ -46,11 +46,11 @@ markdown_extensions:
     - attr_list
 
 nav:
-- Introduction: index.md
-- Power supply: power-supply.md
-- Placement: placement.md
+- Introdução: index.md
+- Como ligar: power-supply.md
+- Montando: placement.md
 - ReachView:
-  - Introduction: common/reachview/index.md
+  - Introdução: common/reachview/index.md
   - Settings: reachview/settings.md
   - Status: reachview/status.md
   - Survey: common/reachview/survey.md
@@ -66,27 +66,27 @@ nav:
   - Updater: common/reachview/updater.md
   - Changelogs: common/reachview/changelogs.md
 - LED status: led-status.md
-- Specification: specs.md
+- Especificações: specs.md
 - Guia Rápido:
-    - First setup: quickstart/first-setup.md
-    - Base and rover setup: quickstart/base-rover-setup.md
-    - Conectando o Reach a Internet: connecting-to-the-internet.md
-    - Trabalhando com serviço NTRIP: common/quickstart/ntrip-workflow.md
-    - Como baixar arquivos do Reach: common/quickstart/downloading-files.md 
-- Tutorials:
-  - Basics:
-    - How RTK works: common/tutorials/rtk-introduction.md
-    - How PPK works: common/tutorials/ppk-introduction.md
+  - Primeira inicialização: quickstart/first-setup.md
+  - Configuração BASE e ROVER: quickstart/base-rover-setup.md
+  - Conectando o Reach a Internet: common/quickstart/connecting-to-the-internet.md
+  - Trabalhando com serviço NTRIP: common/quickstart/ntrip-workflow.md
+  - Como baixar arquivos do Reach: common/quickstart/downloading-files.md 
+- Tutoriais:
+  - Básicos:
+    - Como funciona o RTK: common/tutorials/rtk-introduction.md
+    - Como funciona o PPK: common/tutorials/ppk-introduction.md
     - Tuning LoRa for RTK: common/tutorials/tuning-lora.md
-    - Placing the base: common/tutorials/placing-the-base.md
-    - Placing GCPs in RTK mode: common/tutorials/placing-gcps.md
-  - Post-processing workflow:
-    - How PPK works: common/tutorials/ppk-introduction.md
-    - GPS post-processing: common/tutorials/gps-post-processing.md
-    - Analyzing PPK solution and logs: common/tutorials/analyzing-logs.md
-  - Integration with external software:
-    - Bluetooth output and Android mock location: common/tutorials/mock-location.md
-    - Using QGIS as survey tool: common/tutorials/qgis-survey.md
-    - Microsurvey FieldGenius setup guide: common/tutorials/fieldgenius.md
-    - Carlson SurvCE/SurvPC setup guide: common/tutorials/survce.md
-    - Topcon MAGNET Field Layout setup guide: common/tutorials/magnetfield.md
+    - Instalando a base: common/tutorials/placing-the-base.md
+    - Colocando GCP's no modo RTK: common/tutorials/placing-gcps.md
+  - Fluxo de pós processamento:
+    - Como funciona o PPK: common/tutorials/ppk-introduction.md
+    - Pós processamento: common/tutorials/gps-post-processing.md
+    - Entendendo a solução PPK e os registros: common/tutorials/analyzing-logs.md
+  - Integração com software externo:
+    - Bluetooth output e Android mock location: common/tutorials/mock-location.md
+    - Usando QGIS como uma ferramenta na topografia: common/tutorials/qgis-survey.md
+    - Guia de configuração Microsurvey FieldGenius: common/tutorials/fieldgenius.md
+    - Guia de configuração Carlson SurvCE/SurvPC: common/tutorials/survce.md
+    - Guia de configuração Topcon MAGNET Field: common/tutorials/magnetfield.md
