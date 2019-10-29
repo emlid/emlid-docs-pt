@@ -50,7 +50,7 @@ nav:
 - Como ligar: power-supply.md
 - Montando: placement.md
 - ReachView:
-  - Introduction: common/reachview/index.md
+  - Introdução: common/reachview/index.md
   - Settings: common/reachview/settings.md
   - Status: common/reachview/status.md
   - Survey: common/reachview/survey.md
@@ -68,8 +68,8 @@ nav:
 - Estado do LED: led-status.md
 - Especificações: specs.md
 - Guia Rápido:
-  - First setup: quickstart/first-setup.md
-  - Base and rover setup: quickstart/base-rover-setup.md
+  - Primeira inicialização: quickstart/first-setup.md
+  - Configuração BASE e ROVER: quickstart/base-rover-setup.md
   - Conectando o Reach a Internet: common/quickstart/connecting-to-the-internet.md
   - Trabalhando com serviço NTRIP: common/quickstart/ntrip-workflow.md
   - Como baixar arquivos do Reach: common/quickstart/downloading-files.md 
@@ -80,7 +80,7 @@ nav:
     - Tuning LoRa for RTK: common/tutorials/tuning-lora.md
     - Instalando a base: common/tutorials/placing-the-base.md
     - Colocando GCP's no modo RTK: common/tutorials/placing-gcps.md
-  - Post-processing workflow:
+  - Fluxo de pós processamento:
     - Como funciona o PPK: common/tutorials/ppk-introduction.md
     - Pós processamento: common/tutorials/gps-post-processing.md
     - Entendendo a solução PPK e os registros: common/tutorials/analyzing-logs.md
