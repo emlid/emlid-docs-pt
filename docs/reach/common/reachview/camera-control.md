@@ -1,4 +1,4 @@
-Reach é capaz de disparar câmeras, bem como registrar eventos. Recurso de marcar um evento é indispensável para mapeamento aéreo, pois permite para registrar o tempo exato quando o obturador foi ativado.
+Reach Module é capaz de disparar câmeras, bem como registrar eventos. Recurso de marcar um evento é indispensável para mapeamento aéreo, pois permite para registrar o tempo exato quando o obturador foi ativado.
 
 <p style="text-align:center" ><img src="../img/reachview/camera_control/camera.png" style="width: 800px;" /></p>
 
@@ -10,7 +10,7 @@ Você vê o tempo do último registro para depuração em tempo real. Só funcio
 
 #### Conectando Reach M+ a uma câmera utilizando HSA
 
-Para conectar o Reach uma câmera com adaptador de sapata (HSA) use cabo de 5 pinos JST-GH. Certifique-se de que ligar o adaptador a uma sapata de uma câmera corretamente:
+Para conectar o Reach Module uma câmera com adaptador de sapata (HSA) use cabo de 5 pinos JST-GH. Certifique-se de que ligar o adaptador a uma sapata de uma câmera corretamente:
 
 <p style="text-align:center" ><img src="../img/reachview/camera_control/emlid-hotshoe.jpg" style="width: 500px;" /></p>
 

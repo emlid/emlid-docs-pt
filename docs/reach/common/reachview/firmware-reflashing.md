@@ -1,4 +1,4 @@
-Nestsa página, você encontrará as informações sobre como realizar o reflash de firmware do Reach.
+Nestsa página, você encontrará as informações sobre como realizar o reflash de firmware do Reach Module.
 
 Observe que você **não** precisa fazer isso, a menos que queira levar o Reach ao estado inicial.
 
@@ -41,7 +41,7 @@ Observe que você **não** precisa fazer isso, a menos que queira levar o Reach 
 
 	### Processo de flashing
 
-	* Abra o Reach Firmware Flash Tool e escolha o modelo de Reach
+	* Abra o Reach Firmware Flash Tool e escolha o modelo de Reach Module
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step1-device-select.png" style="width: 300px;" /></p>
 
@@ -51,11 +51,11 @@ Observe que você **não** precisa fazer isso, a menos que queira levar o Reach 
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step2-image-select.png" style="width: 300px;" /></p>
 
-	* Desconecte todas as unidades do Reach. Se não houver nenhuma, o Flash Tool pulará automaticamente esta etapa
+	* Desconecte todas as unidades do Reach Module. Se não houver nenhuma, o Flash Tool pulará automaticamente esta etapa
 	
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step3-disconnect-devices.png" style="width: 300px;" /></p>
 
-	* Conecte o dispositivo Reach e ligue-o. A mensagem "Reach conectado" será exibida
+	* Conecte o dispositivo Reach Module e ligue-o. A mensagem "Reach conectado" será exibida
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step4-connected-reach.png" style="width: 300px;" /></p>
 
@@ -66,11 +66,11 @@ Observe que você **não** precisa fazer isso, a menos que queira levar o Reach 
 	* Após o reflashing, o Reach será reinicializado
 
 	!!! danger ""
-		Não desconecte o Reach nesta etapa.
+		Não desconecte o Reach Module nesta etapa.
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step5-rebooting.png" style="width: 300px;" /></p>
 
-	* Quando o Reach for reinicializado com sucesso, você verá a mensagem "Reach is flashed and ready to use" e estará pronto para o uso.
+	* Quando o Reach Module for reinicializado com sucesso, você verá a mensagem "Reach is flashed and ready to use" e estará pronto para o uso.
 
 	<p style="text-align:center" ><img src="../img/reachview/firmware-reflashing/app-step5-flashed-reach.png" style="width: 300px;" /></p>
 
@@ -123,9 +123,9 @@ Observe que você **não** precisa fazer isso, a menos que queira levar o Reach 
 	* [Guia rápido para Reach RS+](https://docs.emlid.com/reachrs/quickstart/first-setup)
 	* [Guia rápido para Reach M+](https://docs.emlid.com/reachm-plus/quickstart/)
 
-??? note " Guia para o flash de firmware do Reach RS / RTK"
+??? note " Guia para o flash de firmware do Reach RS / Module"
 
-	### Download do firmware do Reach RS / RTK
+	### Download do firmware do Reach RS / Module
 
 	Obtenha a versão mais recente da imagem ReachView:
 
@@ -206,7 +206,7 @@ Observe que você **não** precisa fazer isso, a menos que queira levar o Reach 
 		Não desconecte-o até que ele seja reinicializado e passe completamente pelo processo de configuração inicial.
 
 
-	Continue na seção guia rápido para configurar o seu Reach RS / RTK:
+	Continue na seção guia rápido para configurar o seu Reach RS / Module:
 
 	* [Guia rápido para Reach RS](https://docs.emlid.com/reachrs/quickstart/first-setup)
-	* [Guia rápido para Reach RTK](https://docs.emlid.com/reach/quickstart/)
+	* [Guia rápido para Reach Module](https://docs.emlid.com/reach/quickstart/)

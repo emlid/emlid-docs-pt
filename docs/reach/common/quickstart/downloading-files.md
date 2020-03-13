@@ -1,13 +1,13 @@
-#Como baixar arquivos do Reach
+#Como baixar arquivos do Reach Module
 
-Este guia descreve como fazer o download do *"System report"* (Relatório do sistema), exportar projeto de levantamento ou salvar logs do Reach no seu PC, laptop, tablet ou smartphone.
+Este guia descreve como fazer o download do *"System report"* (Relatório do sistema), exportar projeto de levantamento ou salvar logs do Reach Module no seu PC, laptop, tablet ou smartphone.
 
 !!! note ""
 	É necessário conectar ao ReachView através do Wi-Fi para baixar os arquivos. Dados não podem ser transferidos via USB.
 
-##Ligando o Reach
+##Ligando o Reach Module
 
-Pressione o botão "Power" (Liga/Desliga) do Reach e espere ele ligar.
+Pressione o botão "Power" (Liga/Desliga) do Reach Module e espere ele ligar.
 
 ??? note "Guia Reach RS/RS+"
 
@@ -25,8 +25,8 @@ Pressione o botão "Power" (Liga/Desliga) do Reach e espere ele ligar.
 
 	Quando os LEDs de energia e o botão "Power" (Liga/Desliga) permanecerem sólidos, verifique o status do LED da rede.
 
-	* **O LED de rede é branco sólido.** O Reach está no modo hotspot e você pode conectar seu laptop ou smartphone. [Clique neste link para continuar seguindo o guia.] (#reach-esta-no-modo-hotspot)
-	* **O LED de rede está azul contínuo.** O Reach está no modo cliente e conectado à rede Wi-Fi. [Siga para esta parte do guia para continuar.] (#reach-esta-no-modo-cliente)
+	* **O LED de rede é branco sólido.** O Reach Module está no modo hotspot e você pode conectar seu laptop ou smartphone. [Clique neste link para continuar seguindo o guia.] (#reach-esta-no-modo-hotspot)
+	* **O LED de rede está azul contínuo.** O Reach Module está no modo cliente e conectado à rede Wi-Fi. [Siga para esta parte do guia para continuar.] (#reach-esta-no-modo-cliente)
 	<br>
 
 	|Modo hotspot|Modo cliente|
@@ -113,7 +113,7 @@ O download é concluído com sucesso. Para obter o arquivo, vá para a pasta ond
 
 ###Notebook ou Desktop
 
-Os arquivos do Reach geralmente são salvos por padrão na pasta **Downloads**.
+Os arquivos do Reach Module geralmente são salvos por padrão na pasta **Downloads**.
 
 ###Smartphone ou tablet
 

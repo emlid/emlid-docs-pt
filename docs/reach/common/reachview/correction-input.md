@@ -1,6 +1,6 @@
 ## Correção da base
 
-Configuração da correção é necessária se você quiser ir além do posicionamento autônomo. Reach suporta os seguintes formatos de correção: RTCM2, RTCM3, OEM4, OEM3, UBX, SS2, HEMIS, SKYTRAQ, SP3. RTCM3 é o formato mais popular na indústria. Dados em qualquer um desses formatos podem ser recebidos via Serial, TCP, NTRIP, Bluetooth ou LoRa para Reach RS/RS+.
+Configuração da correção é necessária se você quiser ir além do posicionamento autônomo. Reach Module suporta os seguintes formatos de correção: RTCM2, RTCM3, OEM4, OEM3, UBX, SS2, HEMIS, SKYTRAQ, SP3. RTCM3 é o formato mais popular na indústria. Dados em qualquer um desses formatos podem ser recebidos via Serial, TCP, NTRIP, Bluetooth ou LoRa para Reach RS/RS+.
 
 ### Serial
 

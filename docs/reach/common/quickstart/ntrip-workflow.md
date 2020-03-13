@@ -5,23 +5,23 @@
 Este guia explica como configurar o Reach para receber mensagens de correção de um serviço NTRIP.
 
 !!! tip ""
-	A configuração da entrada de correção NTRIP pode ser feita em casa antes do levantamento. Nesse caso, você só precisa conectar o Reach à Internet em campo.
+	A configuração da entrada de correção NTRIP pode ser feita em casa antes do levantamento. Nesse caso, você só precisa conectar o Reach Module à Internet em campo.
 
 ##Atualize o Reach
 
-Se você acabou de receber seu Reach, precisará atualizá-lo para ter todos os recursos mais recentes. A instrução está no estojo de transporte do Reach.
+Se você acabou de receber seu Reach Module, precisará atualizá-lo para ter todos os recursos mais recentes. A instrução está no estojo de transporte do Reach Module.
 
 Você também pode ver o tutorual [primeira configuração](../../../quickstart/first-setup) e no [canal da Emlid no YouTube](https://www.youtube.com/watch?v=fIY__hNjcNI).
 
-##Conecte o Reach a Internet
+##Conecte o Reach Module a Internet
 
-O Reach requer conexão com a Internet para utilizar o NTRIP. Você não precisa de nenhum dispositivo ou software especial para isso, apenas um smartphone com um recurso de ponto de acesso (roteador).
+O Reach Module requer conexão com a Internet para utilizar o NTRIP. Você não precisa de nenhum dispositivo ou software especial para isso, apenas um smartphone com um recurso de ponto de acesso (roteador).
 
-Ative os dados móveis no seu smartphone e compartilhe-os através do ponto de acesso Wi-Fi. O Reach se conectará à sua rede e terá acesso à Internet.
+Ative os dados móveis no seu smartphone e compartilhe-os através do ponto de acesso Wi-Fi. O Reach Module se conectará à sua rede e terá acesso à Internet.
 
 [Consulte o tutorial para obter mais informações sobre como conectar o Reach a outras redes.](../../tutorials/connecting-to-the-internet/)
 
-##Configure o Reach para o modo RTK com NTRIP
+##Configure o Reach Module para o modo RTK com NTRIP
 
 Abra o ReachView e vá para **"RTK settings"**. Defina tudo para as mesmas opções da imagem abaixo.
 

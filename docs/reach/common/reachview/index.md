@@ -8,7 +8,7 @@ O ReachView é um aplicativo baseado na web que permite que você assuma o contr
 
 O aplicativo ReachView é exibido por meio de um navegador ou de um aplicativo nativo para iOS/Android. Para acessar o dispositivo Reach, é necessário encontrar o endereço IP do Reach na rede. Dependendo do sistema operacional e da versão do aplicativo ReachView a bordo do Reach ou do Reach RS/RS +, isso pode ser feito de diferentes maneiras.
 
-??? note "A versão do Reach View mais antiga que v2.8.0"
+??? note "A versão do ReachView mais antiga que v2.8.0"
 
     ### Quando o Reach está conectado ao Wi-Fi
 

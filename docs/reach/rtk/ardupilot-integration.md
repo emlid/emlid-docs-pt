@@ -1,5 +1,5 @@
 !!! tip ""
-	Reach foi substituído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M + pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
+	Reach Module foi substituído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M + pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
 
 Como o ReachView versão **0.3.0** o Reach oferece suporte à saída de coordenadas aprimoradas por RTK para os pilotos automáticos Navio e Pixhawk. Para tornar isso possível, implementamos um protocolo personalizado que chamamos de **ERB**(Emlid Reach Binary protocol).
 
@@ -26,12 +26,12 @@ A configuração que recomendamos é a seguinte:
 
 *	Navio ou Pixhawk com o firmware do ArduPilot (não menos que a versão 3.4.0 para ArduCopter, 3.6.0 para ArduPlane e 3.0.1 para ArduRover). É preferível usar a última versão estável
 * Estações base é uma unidade Reach RS/RS+ no modo Wi-Fi AP, configurada como um servidor TCP
-* O GCS é um laptop com o Mission Planner (versão 1.3.35 e superior), conectado à rede Wi-Fi do Reach.
+* O GCS é um laptop com o Mission Planner (versão 1.3.35 e superior), conectado à rede Wi-Fi do Reach Module.
 * Conexão de telemetria através de um rádio serial
 * A unidade Rover Reach M + é montada em um drone e conectada ao Navio ou ao Pixhawk através do fio 6P-to-6P. Esse tipo de conexão resolverá três problemas de uma vez: power Reach, permite que a placa ArduPilot passe por correções de base e permita que Reach passe a solução RTK de volta.
 
 
-O guia a seguir mostrará como configurar o Navio ou o Pixhawk e o Reach para funcionar nessa configuração. Se você deseja alterar este fluxo de trabalho, deve ser bastante fácil fazê-lo, já que todas as partes do sistema são independentes das outras.
+O guia a seguir mostrará como configurar o Navio ou o Pixhawk e o Reach Module para funcionar nessa configuração. Se você deseja alterar este fluxo de trabalho, deve ser bastante fácil fazê-lo, já que todas as partes do sistema são independentes das outras.
 
 
 

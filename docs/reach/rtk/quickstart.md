@@ -1,9 +1,9 @@
 !!! tip ""
-	O Reach foi substituído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
+	O Reach Module foi substituído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
 
 ## Introdução
 
-Neste guia rápido, mostraremos como configurar dois dispositivos Reach, um como base e um como rover com link de correção via Wi-Fi.
+Neste guia rápido, mostraremos como configurar dois dispositivos Reach Module, um como base e um como rover com link de correção via Wi-Fi.
 
 !!! tip ""
     Se você encontrar algum problema ao executar essas etapas, ficaremos felizes em ajudar no nosso [**fórum da comunidade**](http://community.emlid.com/).
@@ -20,7 +20,7 @@ Este tutorial cobre apenas um caso de uso. Para obter mais informações, siga e
 
 * Pegue o **Micro-USB <--> cabo USB** que vem com o pacote.
 
-* Ligue a extremidade **Micro-USB** do cabo à porta **Micro-USB** no Reach e ligue a outra extremidade a uma fonte de energia de 5V, como um power bank, um adpatador de tomada USB ou uma porta USB de um computador.
+* Ligue a extremidade **Micro-USB** do cabo à porta **Micro-USB** no Reach Module e ligue a outra extremidade a uma fonte de energia de 5V, como um power bank, um adpatador de tomada USB ou uma porta USB de um computador.
 
 !!! danger "Atenção"
     Não conecte duas fontes de energia ao mesmo tempo, pois isso pode danificar o dispositivo.
@@ -29,7 +29,7 @@ Mais sobre a fonte de energia você pode ler [aqui](power-supply.md).
 
 ## Conectando e colocando a antena GPS
 
-* Conecte o cabo da antena a entrada MCX no Reach. 
+* Conecte o cabo da antena a entrada MCX no Reach Module. 
 
 * Coloque a antena em um plano de apoio. Pode ser uma chapa de metal > 100 mm de diâmetro, o teto de uma carro ou o teto de metal de um edifício. 
 
@@ -39,9 +39,9 @@ Mais sobre a fonte de energia você pode ler [aqui](power-supply.md).
 
 Um guia sobre posicionar corretamente as antenas está disponível na seçãoA guide how to properly place the antennas is available in [Posicionamento da antena](antenna-placement.md) section.
 
-## Conectando-se ao Reach
+## Conectando-se ao Reach Module
 
-Quando o Reach é ligado pela primeira vez, ele cria um ponto de acesso Wi-Fi.
+Quando o Reach Module é ligado pela primeira vez, ele cria um ponto de acesso Wi-Fi.
 
 * Abra a lista de redes Wi-Fi no seu smartphone, tablet ou laptop.
 
@@ -51,14 +51,14 @@ Quando o Reach é ligado pela primeira vez, ele cria um ponto de acesso Wi-Fi.
 
 ## Configurando o Wi-Fi
 
-Depois de se conectar à rede hospedada pelo Reach, abra um navegador da web em seu smartphone, tablet ou laptop.
+Depois de se conectar à rede hospedada pelo Reach Module, abra um navegador da web em seu smartphone, tablet ou laptop.
 
 * Digite **http://reach.local** ou **http://192.168.42.1** na barra de endereços e você verá a tela de atualização do ReachView.
 
 <div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_updater_main.png" style="width: 700px;"></div><br>
 
 !!! note ""
-    Se sua inteface parecer diferente, você precisará realizar o reflash no dispositivo Reach com a imagem v2.3 seguindo [este guia](common/reachview/firmware-reflashing.md). Só precisa de o fazer se o seu dispositivo tiver sido comprado antes de 1 de março de 2017.
+    Se sua inteface parecer diferente, você precisará realizar o reflash no dispositivo Reach Module com a imagem v2.3 seguindo [este guia](common/reachview/firmware-reflashing.md). Só precisa de o fazer se o seu dispositivo tiver sido comprado antes de 1 de março de 2017.
 
 * Pressione o botão Mais e insira o nome da rede Wi-Fi, o tipo de segurança e a senha. Pressione o botão Salvar.
 
@@ -116,7 +116,7 @@ Depois de iniciar o aplicativo, você verá a lista dos receptores disponíveis 
 
 ## Atualizando o ReachView
 
-Após conectar-se ao Reach, você verá novamente a tela de atualização do ReachView, que instalará as atualizações mais recentes.
+Após conectar-se ao Reach Module, você verá novamente a tela de atualização do ReachView, que instalará as atualizações mais recentes.
 
 <div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_updater_finish.png" style="width: 700px;"></div><br>
 
@@ -144,7 +144,7 @@ O menu do ReachView consiste em 9 guias, mas só precisamos de três para começ
 
 ### Configurando a estação base
 
-* Conecte-se ao Reach que você deseja usar como base.
+* Conecte-se ao Reach Module que você deseja usar como base.
 
 * Navegue até a guia **Base mode** e ative a opção Correction output.
 
@@ -157,7 +157,7 @@ Por padrão, a saída de correção da base estará disponível em uma porta **T
 
 ### Configurando o Rover
 
-* Conecte-se ao segundo Reach. 
+* Conecte-se ao segundo Reach Module. 
 
 * Navegue até a guia **Correction input**. 
 

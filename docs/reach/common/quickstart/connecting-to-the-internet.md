@@ -1,11 +1,11 @@
-# Conectando o Reach à internet
+# Conectando o Reach Module à internet
 
-Conecte o Reach à internet para atualizar o ReachView para a versão mais recente ou para obter correções do seu serviço NTRIP.
+Conecte o Reach Module à internet para atualizar o ReachView para a versão mais recente ou para obter correções do seu serviço NTRIP.
 
 
 ## Conectando-se ao ReachView
 
-??? note "Conectando-se ao Reach com dispositivos iOS/Android"
+??? note "Conectando-se ao Reach Module com dispositivos iOS/Android"
 
 	1. Baixe o aplicativo no [Google Play](https://play.google.com/store/apps/details?id=com.reachview) ou [Apple Store](https://itunes.apple.com/us/app/reachview/id1295196887?mt=8)
 	2. Vá para as configurações de Wi-Fi no seu dispositivo
@@ -62,7 +62,7 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 
 <p style="text-align:center" ><img src="../img/quickstart/connecting-to-the-internet/new-connection.gif" style="width: 800px;" /></p>
 
-* Pressione o botão **"Connect"** (Conectar). O LED azul deve começar a piscar no Reach
+* Pressione o botão **"Connect"** (Conectar). O LED azul deve começar a piscar no Reach Module
 
 	<p style="text-align:center" ><img src="../img/quickstart/connecting-to-the-internet/network-scan.gif" style="width: 400px;" /></p>
 
@@ -81,7 +81,7 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 	* Ative o ponto de acesso Wi-Fi no seu dispositivo móvel
 	* Verifique se tem o mesmo nome e senha que você preencheu na etapa anterior
 	* Agora reinicie o dispositivo pressionando o botão **Power**
-	* O Reach deve se conectar ao seu ponto de acesso durante a próxima inicialização
+	* O Reach Module deve se conectar ao seu ponto de acesso durante a próxima inicialização
 
 
 * Se a conexão for bem sucedida, você verá o LED azul piscando lentamente
@@ -93,7 +93,7 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 	<p style="text-align:center" ><img src="../img/quickstart/connecting-to-the-internet/running-hotspot.png" style="width: 400px;" /></p>
 
 	!!! tip "Se a conexão falhar:"
-		* Conecte-se ao ponto de acesso do Reach novamente
+		* Conecte-se ao ponto de acesso do Reach Moduele novamente
 		* Verifique a senha
 		* Verifique se a sua rede está configurada corretamente
 		* Tente outra rede Wi-Fi
@@ -101,21 +101,21 @@ Conecte o Reach à internet para atualizar o ReachView para a versão mais recen
 
 ## Volte para o ReachView
 
-??? note "Conectando-se ao Reach com dispositivos iOS/Android"
+??? note "Conectando-se ao Reach Module com dispositivos iOS/Android"
 	
 	1. Conecte seu dispositivo móvel à mesma rede Wi-Fi que o Reach
-	2. Verifique os dispositivos Reach desponíveis
-	3. Escolha o Reach na lista do aplicativo
+	2. Verifique os dispositivos Reach Module desponíveis
+	3. Escolha o Reach Module na lista do aplicativo
 
 
 ??? note "Conectando-se através de um navegador da web de qualquer dispositivo"
 
-	1. Conecte seu dispositivo móvel à mesma rede Wi-Fi que o Reach
+	1. Conecte seu dispositivo móvel à mesma rede Wi-Fi que o Reach Module
 	2. Use um dos software de [Varredura de rede](https://docs.emlid.com/reachrs/quickstart/#acessando-o-reach-RSRS-em-uma-rede) ou use o aplicativo ReachView para encontrar o endereço de IP do Reach
 	3. Insira o endereço de IP em um navegador da web
 
 
-Depois que o Reach for conectado a uma rede Wi-Fi, você poderá:
+Depois que o Reach Module for conectado a uma rede Wi-Fi, você poderá:
 
 * [Atualizar o receptor](../../reachview/settings/#verifique-a-versao-do-aplicativo)
 * [Receber correções NTRIP](../../reachview/correction-input/#ntrip)

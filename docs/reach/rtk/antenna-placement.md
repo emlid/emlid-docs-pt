@@ -1,5 +1,5 @@
 !!! tip ""
-O Reach foi substituído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
+	O Reach Module foi substituído por [Reach M+](https://emlid.com/reach). A documentação para o Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
 
 ### Uma antena bem posicionada é crucial para alcançar bons resultados de posicionamento RTK
 
