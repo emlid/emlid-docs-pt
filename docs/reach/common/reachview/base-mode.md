@@ -2,13 +2,13 @@
 
 <p style="text-align:center"><img src="../img/reachview/base_mode/output.png" style="width: 800px;"/></p>
 
-Reach envia correção em formato de RTCM3 padrão da indústria. Dados corrigidos podem ser enviados via Serial, TCP, NTRIP ou LoRa para Reach RS/RS+.
+Reach Module envia correção em formato de RTCM3 padrão da indústria. Dados corrigidos podem ser enviados via Serial, TCP, NTRIP ou LoRa para Reach RS/RS+.
 
 ### Serial
 Conexão de porta serial está disponível através de várias opções de conexão de hardware. Todos eles suportam as seguintes taxas de transmissão: 4800, 9600, 14400, 19200, 28800, 38400, 56000, 57600, 115200, 128000, 153600, 230400, 256000, 460800.
 
 #### UART
-Corresponde a UART TTL no módulo Reach ou a porta RS232 no conector extensível do Reach RS/RS+. Maneira comum para ligar o rádio ou outro dispositivo que ofereça a correção.
+Corresponde a UART TTL no módulo Reach Module ou a porta RS232 no conector extensível do Reach RS/RS+. Maneira comum para ligar o rádio ou outro dispositivo que ofereça a correção.
 
 #### USB-to-PC
 Quando conectado por USB a um PC Reach vai aparecer como vários dispositivos, um deles será uma porta serial. Você pode usar a porta serial para enviar correções para o PC.

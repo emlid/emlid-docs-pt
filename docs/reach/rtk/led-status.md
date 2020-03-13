@@ -1,14 +1,14 @@
 !!! tip ""
-	O Reach foi substituído por [Reach M+](https://emlid.com/reach). A documentação do Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
+	O Reach Module foi substituído por [Reach M+](https://emlid.com/reach). A documentação do Reach M+ pode ser encontrada [aqui](https://docs.emlid.com/reachm-plus/).
 
 
 !!! note ""
     Funcionalidade de LED está disponível com o ReachView versão 2.7.0 e mais recente 
 
 
-## Sequência do LED de inicialização do Reach
+## Sequência do LED de inicialização do Reach Module
 
-O LED do Reach é um LED RGB que percorre um padrão simples:
+O LED do Reach Module é um LED RGB que percorre um padrão simples:
 
 Estado da rede -> estado do aplicativo
 
@@ -20,7 +20,7 @@ Durante o boot, o Reach passará por três etapas:
 
 ### Varredura de rede
 
-Durante a inicialização, o Reach entre em um estado de varredura de rede no qual ele tentará se conectar a qualquer rede Wi-Fi conhecida que possa encontrar. Isso pode resultar no conexão a uma rede adicionada anteriormente ou no criação de seu próprio ponto de acesso.
+Durante a inicialização, o Reach Module entre em um estado de varredura de rede no qual ele tentará se conectar a qualquer rede Wi-Fi conhecida que possa encontrar. Isso pode resultar no conexão a uma rede adicionada anteriormente ou no criação de seu próprio ponto de acesso.
 
 | Descrição | Demo |
 |-----------|------|
@@ -52,7 +52,7 @@ Após a sincronização de tempo, o **piscar magenta** parará e o ReachView ser
 A tabela abaixo demonstra possíveis padrões de flash descrevendo vários status do recptor.  
 
 
-| Statu do Reach | Sincronização de tempo   -> | Rede   -> | Status do aplicativo | Demo |
+| Statu do Reach Module| Sincronização de tempo    | Rede    | Status do aplicativo | Demo |
 |--------------|-----------|---------------------|---------|-----------|
 |<br> <div style="text-align: center;">    Desligado   </div>                   | <br>  </div>    |  <br> </div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/off.png" style="width: 150px;"></div>   |
 |<br> <div style="text-align: center;">    Falta de energia   </div>                   | <br>  <div style="text-align: center;"><img src="../img/reach/led-status/magenta.png" style="height: 30px;"><br>Pisca a cada 10-15 seg</div>    |  <br> </div> | <br> </div>|<br>  <div style="text-align: center;"><img src="../img/reach/led-status/low-power.gif" style="width: 150px;"></div>   |
