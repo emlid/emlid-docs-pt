@@ -84,7 +84,7 @@ Agora configure a saída de posição (Position output):
 * Selecione **Serial**
 * Escolha **UART** ou **USB-to-PC** como o dispositivo
 * Escolha a taxa de transmissão desejada (38400 por padrão)
-* Escolha **ERB** como formato de saída de posição
+* Escolha **NMEA** como formato de saída de posição
 * Clique no botão **Apply** para salvar as configurações
 
 <div style="text-align: center;"><img src="../img/reachm-plus/ardupilot-integration/reach-position-output.png" style="width: 100%;"></div>
@@ -137,7 +137,7 @@ A configuração do ArduPilot exigirá a configuração de alguns parâmetros us
 
 <div style="text-align: center;"><img src="../img/reachm-plus/ardupilot-integration/mp-full-parameter-list.png" style="width: 800px;"></div>
 
-StartComece com as configurações do parâmetro **GPS_TYPE2** para **"1"** - AUTO. Isso permitirá a segunda entrada do GPS
+StartComece com as configurações do parâmetro **GPS_TYPE2** para **"5"** - NMEA. Isso permitirá a segunda entrada do GPS
 
 <div style="text-align: center;"><img src="../img/reachm-plus/ardupilot-integration/mp-gps-type2-parameter.png" style="width: 800px;"></div>
 
